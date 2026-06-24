@@ -1,0 +1,320 @@
+PREFIX atns-rel: <https://linked.data.gov.au/def/atns/rel/>
+PREFIX cs: <https://linked.data.gov.au/def/atns/rel>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+atns-rel:00599310-6925a5f-4bc35a5266cb8bb
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Subsequent"@en ;
+    skos:inScheme cs: ;
+    skos:notation "294"^^xsd:token ;
+    skos:prefLabel "Subsequent"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-rel:055c81a2-a787c6e-07aa0e9fbfdc22b
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Intervener"@en ;
+    skos:inScheme cs: ;
+    skos:notation "357"^^xsd:token ;
+    skos:prefLabel "Intervener"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-rel:0d155470-b73dc8a-0e3cbf331035dde
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Aboriginal Representative Party"@en ;
+    skos:inScheme cs: ;
+    skos:notation "278"^^xsd:token ;
+    skos:prefLabel "Aboriginal Representative Party"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-rel:2251fd6d-689350c-b14c8373466beab
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Cross-appellant"@en ;
+    skos:inScheme cs: ;
+    skos:notation "349"^^xsd:token ;
+    skos:prefLabel "Cross-appellant"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-rel:3c52df8c-d6dd7af-e26660a6664d7f5
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Native Title Applicant"@en ;
+    skos:inScheme cs: ;
+    skos:notation "305"^^xsd:token ;
+    skos:prefLabel "Native Title Applicant"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-rel:424a0268-22f2513-3ea6c7dc6109aee
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Subsidiary"@en ;
+    skos:inScheme cs: ;
+    skos:notation "295"^^xsd:token ;
+    skos:prefLabel "Subsidiary"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-rel:45bbc54f-ae87326-414be1b9de8222f
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Owner"@en ;
+    skos:inScheme cs: ;
+    skos:notation "286"^^xsd:token ;
+    skos:prefLabel "Owner"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-rel:46bbb3ce-4b97931-4b502391398357d
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Petitioner/s"@en ;
+    skos:inScheme cs: ;
+    skos:notation "343"^^xsd:token ;
+    skos:prefLabel "Petitioner/s"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-rel:487518aa-b6957bf-8e7cb2a90ddcc3c
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Cross-respondent"@en ;
+    skos:inScheme cs: ;
+    skos:notation "350"^^xsd:token ;
+    skos:prefLabel "Cross-respondent"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-rel:53320679-d3711c1-5544f222487386b
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Collaborato"@en ;
+    skos:inScheme cs: ;
+    skos:notation "279"^^xsd:token ;
+    skos:prefLabel "Collaborato"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-rel:5d9ab083-0d419a5-5f0edc985ea8980
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Partner"@en ;
+    skos:inScheme cs: ;
+    skos:notation "287"^^xsd:token ;
+    skos:prefLabel "Partner"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-rel:5e471add-777af47-0ac36ed39889a7b
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Later known as"@en ;
+    skos:inScheme cs: ;
+    skos:notation "283"^^xsd:token ;
+    skos:prefLabel "Later known as"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-rel:6281dec0-9fef614-04678369875058a
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Appellant"@en ;
+    skos:inScheme cs: ;
+    skos:notation "336"^^xsd:token ;
+    skos:prefLabel "Appellant"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-rel:6ded15a1-e61bf9e-c3e65dc7671f6e8
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Controlled"@en ;
+    skos:inScheme cs: ;
+    skos:notation "280"^^xsd:token ;
+    skos:prefLabel "Controlled"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-rel:7d622f4f-ef06886-6b563dc5f813437
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Respondent"@en ;
+    skos:inScheme cs: ;
+    skos:notation "291"^^xsd:token ;
+    skos:prefLabel "Respondent"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-rel:835f4264-a1e4edb-5e2d18278b12d14
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Member"@en ;
+    skos:inScheme cs: ;
+    skos:notation "284"^^xsd:token ;
+    skos:prefLabel "Member"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-rel:844073e7-4428b40-4a3ef26206a5140
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Formerly known as"@en ;
+    skos:inScheme cs: ;
+    skos:notation "282"^^xsd:token ;
+    skos:prefLabel "Formerly known as"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-rel:97f5b15a-ff3bb89-d4d7fc76bcee66c
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "State Party"@en ;
+    skos:inScheme cs: ;
+    skos:notation "344"^^xsd:token ;
+    skos:prefLabel "State Party"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-rel:a00a860d-f0b0cea-6aacab6d119903c
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Signatory"@en ;
+    skos:inScheme cs: ;
+    skos:notation "293"^^xsd:token ;
+    skos:prefLabel "Signatory"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-rel:b3279398-3673933-23ea1065e2aa1e1
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Controlling"@en ;
+    skos:inScheme cs: ;
+    skos:notation "281"^^xsd:token ;
+    skos:prefLabel "Controlling"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-rel:b59dac73-562aa0c-a2f3054c46f2257
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Applicant"@en ;
+    skos:inScheme cs: ;
+    skos:notation "348"^^xsd:token ;
+    skos:prefLabel "Applicant"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-rel:b720e661-d4f1afa-9a26c26936c3b49
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Related"@en ;
+    skos:inScheme cs: ;
+    skos:notation "289"^^xsd:token ;
+    skos:prefLabel "Related"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-rel:b74771b8-1466c04-01c8ab50b47bdb8
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Shareholder"@en ;
+    skos:inScheme cs: ;
+    skos:notation "292"^^xsd:token ;
+    skos:prefLabel "Shareholder"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-rel:be6ac0c1-1a04b43-d1809c8cebf9104
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Requirement"@en ;
+    skos:inScheme cs: ;
+    skos:notation "290"^^xsd:token ;
+    skos:prefLabel "Requirement"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-rel:bfcf0ad4-cff260d-c236e226389ea69
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Previous"@en ;
+    skos:inScheme cs: ;
+    skos:notation "288"^^xsd:token ;
+    skos:prefLabel "Previous"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-rel:ee501168-6d98555-37a634c739767c8
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Native Title Claimant"@en ;
+    skos:inScheme cs: ;
+    skos:notation "285"^^xsd:token ;
+    skos:prefLabel "Native Title Claimant"@en ;
+    skos:topConceptOf cs: ;
+.
+
+<https://orcid.org/0000-0001-5640-3202>
+    a schema:Person ;
+    schema:email ""^^xsd:anyURI ;
+    schema:name "0000 0001 5640 3202" ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    owl:versionIRI atns-rel:None ;
+    skos:definition "Entity to entity relationships in the ATNS database"@en ;
+    skos:hasTopConcept
+        atns-rel:00599310-6925a5f-4bc35a5266cb8bb ,
+        atns-rel:055c81a2-a787c6e-07aa0e9fbfdc22b ,
+        atns-rel:0d155470-b73dc8a-0e3cbf331035dde ,
+        atns-rel:2251fd6d-689350c-b14c8373466beab ,
+        atns-rel:3c52df8c-d6dd7af-e26660a6664d7f5 ,
+        atns-rel:424a0268-22f2513-3ea6c7dc6109aee ,
+        atns-rel:45bbc54f-ae87326-414be1b9de8222f ,
+        atns-rel:46bbb3ce-4b97931-4b502391398357d ,
+        atns-rel:487518aa-b6957bf-8e7cb2a90ddcc3c ,
+        atns-rel:53320679-d3711c1-5544f222487386b ,
+        atns-rel:5d9ab083-0d419a5-5f0edc985ea8980 ,
+        atns-rel:5e471add-777af47-0ac36ed39889a7b ,
+        atns-rel:6281dec0-9fef614-04678369875058a ,
+        atns-rel:6ded15a1-e61bf9e-c3e65dc7671f6e8 ,
+        atns-rel:7d622f4f-ef06886-6b563dc5f813437 ,
+        atns-rel:835f4264-a1e4edb-5e2d18278b12d14 ,
+        atns-rel:844073e7-4428b40-4a3ef26206a5140 ,
+        atns-rel:97f5b15a-ff3bb89-d4d7fc76bcee66c ,
+        atns-rel:a00a860d-f0b0cea-6aacab6d119903c ,
+        atns-rel:b3279398-3673933-23ea1065e2aa1e1 ,
+        atns-rel:b59dac73-562aa0c-a2f3054c46f2257 ,
+        atns-rel:b720e661-d4f1afa-9a26c26936c3b49 ,
+        atns-rel:b74771b8-1466c04-01c8ab50b47bdb8 ,
+        atns-rel:be6ac0c1-1a04b43-d1809c8cebf9104 ,
+        atns-rel:bfcf0ad4-cff260d-c236e226389ea69 ,
+        atns-rel:ee501168-6d98555-37a634c739767c8 ;
+    skos:historyNote "To support migration of data from ATNS website to the Indigenous Data Commons" ;
+    skos:prefLabel "ATNS Relationships"@en ;
+    schema:creator <https://orcid.org/0000-0001-5640-3202> ;
+    schema:dateCreated "2026-06-22"^^xsd:date ;
+    schema:dateModified "2026-06-22"^^xsd:date ;
+    schema:keywords "Treaties" ;
+    schema:publisher
+        [
+            a schema:Organization ;
+            schema:name "Geological Survey Of Queensland" ;
+            schema:url ""^^xsd:anyURI ;
+        ] ;
+    schema:status <https://linked.data.gov.au/def/reg-statuses/experimental> ;
+    schema:version "None" ;
+.

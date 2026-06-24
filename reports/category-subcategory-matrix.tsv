@@ -1,0 +1,177 @@
+entityCategory	subcategory	subcategoryClass	count
+?	Aboriginal Community Council	Corporate Body	1
+?	Aboriginal Corporation	Corporate Body	13
+?	Aboriginal and Torres Strait Islander	People	29
+?	Agreement-in-Principle (AIP) (Canada)	Agreement	1
+?	Alcohol Management Plan	(none)	1
+?	Applicant	People	1
+?	Black Economic Empowerment Transaction (South Africa)	(none)	2
+?	Case Law	Case Law	8
+?	Consent Determination (Native Title Act)	Agreement	24
+?	Declaration	Event	1
+?	Future Act Agreement (Native Title Act)	Agreement	1
+?	Government	Corporate Body	1
+?	Indigenous Land Use Agreement (ILUA) (Native Title Act)	Agreement	32
+?	Joint Management Agreement	Agreement	1
+?	Joint Venture Agreement (South Africa)	Agreement	1
+?	Legislation	Legislation	12
+?	Litigated Determination	(none)	5
+?	Local Government	Corporate Body	10
+?	Maori People	People	1
+?	Native Title Applicant	People	15
+?	Native Title Claimants (registered)	People	8
+?	Native Title Claimants (unregistered)	People	1
+?	Native Title Holders (Native Title Act)	People	13
+?	Native Title Representative Body (NTRB)	Corporate Body	3
+?	No Liability Company	Corporate Body	2
+?	Party to an Indigenous Land Use Agreement	(none)	24
+?	Prescribed Body Corporate (PBC)	Corporate Body	6
+?	Proprietary Company	Corporate Body	8
+?	Public Company	Corporate Body	3
+?	Regional Partnership Agreement (RPA) 	Agreement	1
+?	Registered Aboriginal Party (Vic)	(none)	1
+?	Representative Body	Corporate Body	1
+?	Respondent	(none)	9
+?	Shared Responsibility Agreement (SRA)	Agreement	2
+?	State Government	Corporate Body	4
+?	Statement of Commitment/Intention	Event	1
+?	Statutory Body	Corporate Body	1
+?	Template Agreement	Agreement	1
+?	Traditional Owner Group	(none)	1
+?	Trustee Company	(none)	1
+?	Unopposed Determination	(none)	1
+Agreement		(none)	1
+Agreement	?	?	3
+Agreement	Aboriginal Community Controlled Health Organisation Peak Body Agreement	(none)	6
+Agreement	Aboriginal Community Controlled Health Service Agreement	(none)	10
+Agreement	Agreement in Principle / Heads of Agreement (New Zealand)	Agreement	1
+Agreement	Agreement-in-Principle (AIP) (Canada)	Agreement	10
+Agreement	Alcohol Management Plan	(none)	1
+Agreement	Black Economic Empowerment Transaction (South Africa)	(none)	3
+Agreement	COAG Agreement	(none)	22
+Agreement	Commercial Agreement	Agreement	37
+Agreement	Comprehensive Land Claims Agreement (Canada)	Agreement	36
+Agreement	Consent Determination (Native Title Act)	Agreement	406
+Agreement	Conservation Agreement	Agreement	4
+Agreement	Deed of Settlement (New Zealand)	Agreement	31
+Agreement	Devolution Agreement (Canada)	Agreement	2
+Agreement	Environmental Agreement (Canada)	Agreement	3
+Agreement	Exploration Agreement (Aboriginal Land Rights (Northern Territory) Act)	Agreement	15
+Agreement	Exploration Agreement (Native Title Act)	Agreement	28
+Agreement	Final Agreement (Canada)	Agreement	11
+Agreement	Framework Agreement	Agreement	65
+Agreement	Framework Agreement (Canada)	Agreement	6
+Agreement	Funding Agreement	Agreement	36
+Agreement	Future Act Agreement (Native Title Act)	Agreement	226
+Agreement	Impact and Benefits Agreement (IBA) (Canada)	Agreement	1
+Agreement	Implementation Plan (Canada)	Agreement	8
+Agreement	Indigenous Land Use Agreement (ILUA) (Native Title Act)	Agreement	1350
+Agreement	Indigenous Management Agreement (Aboriginal Land Act) (Queensland)	(none)	3
+Agreement	Indigenous Partnership	Agreement	43
+Agreement	Interim Agreement	Agreement	5
+Agreement	Interim Measures Agreement (Canada)	Agreement	4
+Agreement	Joint Management Agreement	Agreement	27
+Agreement	Joint Venture Agreement	Agreement	12
+Agreement	Joint Venture Agreement (South Africa)	Agreement	4
+Agreement	Land Restitution Agreement (South Africa)	Agreement	3
+Agreement	Land Transfer Agreement	Agreement	9
+Agreement	Land Use Agreement	Agreement	34
+Agreement	Lease	Agreement	20
+Agreement	Memorandum of Intent (MOI) (Canada)	Agreement	1
+Agreement	Memorandum of Lease	Agreement	7
+Agreement	Memorandum of Understanding	Agreement	102
+Agreement	Mining Agreement (Aboriginal Land Rights (Northern Territory) Act)	Agreement	9
+Agreement	Overlap/Boundary Agreement (Canada)	Agreement	3
+Agreement	Participation Agreement (Canada)	Agreement	5
+Agreement	Partnership Agreement (Canada)	Agreement	1
+Agreement	Political Accord (Canada)	Agreement	6
+Agreement	Regional Agreement	Agreement	8
+Agreement	Regional Partnership Agreement (RPA) 	Agreement	18
+Agreement	Research Agreement	Agreement	2
+Agreement	Section 21 Agreement (Native Title Act)	Agreement	2
+Agreement	Self-Government Agreement (Canada)	Agreement	20
+Agreement	Service Delivery Agreement (Canada)	Agreement	1
+Agreement	Settlement Agreement	(none)	2
+Agreement	Shared Responsibility Agreement (SRA)	Agreement	284
+Agreement	Socio-Economic Agreement (Canada)	Agreement	3
+Agreement	Support Agreement (Canada)	Agreement	1
+Agreement	Template Agreement	Agreement	49
+Agreement	Traditional Use Marine Resource Agreement (TUMRA)	(none)	10
+Agreement	Treaty (Canada)	Agreement	14
+Agreement	Treaty (International)	Agreement	11
+Case Law	Case Law	Case Law	107
+Case Law	Litigated Determination	(none)	43
+Case Law	Unopposed Determination	(none)	33
+Event	Convention	Event	5
+Event	Declaration	Event	6
+Event	Plan of Management	Event	5
+Event	Report	Event	12
+Event	Research	Event	7
+Event	Statement of Commitment/Intention	Event	55
+Legislation	Legislation	Legislation	289
+Organisation	?	?	6
+Organisation	Aboriginal Community Controlled Health Organisation (ACCHO)	Corporate Body	9
+Organisation	Aboriginal Community Council	Corporate Body	94
+Organisation	Aboriginal Corporation	Corporate Body	457
+Organisation	Aboriginal Land Trust (Northern Territory)	Corporate Body	15
+Organisation	Aboriginal Land Trust (Queensland)	Corporate Body	55
+Organisation	Aboriginal Lands Trust (South Australia)	Corporate Body	4
+Organisation	Aboriginal Lands Trust (Western Australia)	Corporate Body	2
+Organisation	Canadian Aboriginal Government	Corporate Body	22
+Organisation	Charitable Trust	Corporate Body	11
+Organisation	Company Limited by Guarantee	Corporate Body	24
+Organisation	Federal Government	Corporate Body	72
+Organisation	Governance Entity (New Zealand)	Corporate Body	3
+Organisation	Government	Corporate Body	41
+Organisation	Incorporated Association	Corporate Body	120
+Organisation	Indigenous Coordination Centre (ICC)	Corporate Body	30
+Organisation	Joint Venture Agreement	Agreement	2
+Organisation	Local Government	Corporate Body	396
+Organisation	Native Title Representative Body (NTRB)	Corporate Body	34
+Organisation	No Liability Company	Corporate Body	31
+Organisation	Non-Government Organisation (NGO)	Corporate Body	27
+Organisation	Party to a Deed of Settlement (New Zealand)	(none)	1
+Organisation	Party to an Indigenous Land Use Agreement	(none)	18
+Organisation	Prescribed Body Corporate (PBC)	Corporate Body	195
+Organisation	Proprietary Company	Corporate Body	687
+Organisation	Provincial/Territory Government (Canada)	Corporate Body	8
+Organisation	Public Company	Corporate Body	240
+Organisation	Registered Aboriginal Party (Vic)	(none)	10
+Organisation	Representative Body	Corporate Body	172
+Organisation	Respondent	(none)	64
+Organisation	State Government	Corporate Body	156
+Organisation	State Party	(none)	1
+Organisation	Statutory Body	Corporate Body	123
+Organisation	Territory Government	Corporate Body	25
+Organisation	Torres Strait Islander Land Trust (Queensland)	Corporate Body	3
+Organisation	Trustee Company	(none)	7
+People	?	?	4
+People	Aboriginal and Torres Strait Islander	People	647
+People	Applicant	People	27
+People	Federal Government	Corporate Body	1
+People	First Nations People of Canada	People	22
+People	Inuit of Canada	People	8
+People	Local Community of South Africa	(none)	5
+People	Maori People	People	20
+People	Métis of Canada	People	1
+People	Native Title Applicant	People	251
+People	Native Title Claimants (registered)	People	245
+People	Native Title Claimants (unregistered)	People	20
+People	Native Title Holders (Native Title Act)	People	220
+People	Party to a Deed of Settlement (New Zealand)	(none)	18
+People	Party to an Indigenous Land Use Agreement	(none)	709
+People	Petitioner/s	(none)	2
+People	Registered Aboriginal Party (Vic)	(none)	62
+People	Respondent	(none)	269
+People	Sole Trader	People	1
+People	Traditional Owner Group	(none)	4
+People	Traditional Owner Group (Aboriginal Land Rights (Northern Territory) Act)	People	17
+Place	?	?	2
+Place	Indigenous Protected Area	Place	21
+Place	National Park	Place	16
+Policy/Strategy	Declaration	Event	1
+Policy/Strategy	Policy/Strategy	Policy/Strategy	96
+Policy/Strategy	Policy/Strategy (South Africa)	(none)	13
+Policy/Strategy	Report	Event	5
+Policy/Strategy	Research	Event	1
+Policy/Strategy	Statement of Commitment/Intention	Event	2

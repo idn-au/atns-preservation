@@ -1,0 +1,3 @@
+raw/xml/*
+!raw/xml/readme.md
+raw/*.zip
