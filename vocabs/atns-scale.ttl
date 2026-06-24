@@ -1,0 +1,107 @@
+PREFIX atns-scale: <https://linked.data.gov.au/def/atns/scale/>
+PREFIX cs: <https://linked.data.gov.au/def/atns/scale>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+atns-scale:84e6772a-6a4d-507c-88ec-a27b911f2093
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS scale 'Not specified'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "220"^^xsd:token ;
+    skos:prefLabel "Not specified"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-scale:5de1dca6-e145-562f-8a91-4edc8d428945
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS scale 'Local'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "221"^^xsd:token ;
+    skos:prefLabel "Local"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-scale:8ef6d041-2362-5344-8e56-dc34528010f8
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS scale 'Regional'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "222"^^xsd:token ;
+    skos:prefLabel "Regional"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-scale:cb43e0e5-be23-539f-81cd-e425212894eb
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS scale 'Provincial'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "223"^^xsd:token ;
+    skos:prefLabel "Provincial"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-scale:9da0760b-0c8d-5efa-8f53-5cd0b8160bc2
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS scale 'National'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "224"^^xsd:token ;
+    skos:prefLabel "National"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-scale:13dd71f3-2bd7-5ad4-828f-23435a02bf84
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS scale 'International'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "225"^^xsd:token ;
+    skos:prefLabel "International"@en ;
+    skos:topConceptOf cs: ;
+.
+
+<https://orcid.org/0000-0001-5640-3202>
+    a schema:Person ;
+    schema:email "mailto:les@kurrawong.ai"^^xsd:anyURI ;
+    schema:name "Les Kneebone" ;
+.
+
+<https://idn.org.au>
+    a schema:Organization ;
+    schema:name "Indigenous Data Network" ;
+    schema:url "https://idn.org.au"^^xsd:anyURI ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    owl:versionIRI <https://linked.data.gov.au/def/atns/scale/1> ;
+    skos:definition "Geographic and jurisdictional scales recorded in the Agreements, Treaties and Negotiated Settlements database."@en ;
+    skos:hasTopConcept
+        atns-scale:84e6772a-6a4d-507c-88ec-a27b911f2093 ,
+        atns-scale:5de1dca6-e145-562f-8a91-4edc8d428945 ,
+        atns-scale:8ef6d041-2362-5344-8e56-dc34528010f8 ,
+        atns-scale:cb43e0e5-be23-539f-81cd-e425212894eb ,
+        atns-scale:9da0760b-0c8d-5efa-8f53-5cd0b8160bc2 ,
+        atns-scale:13dd71f3-2bd7-5ad4-828f-23435a02bf84 ;
+    skos:historyNote "Derived manually from the ATNS scales.tsv report to support preservation and migration of the ATNS data."@en ;
+    skos:prefLabel "ATNS Scales"@en ;
+    schema:creator <https://orcid.org/0000-0001-5640-3202> ;
+    schema:dateCreated "2026-06-24"^^xsd:date ;
+    schema:dateModified "2026-06-24"^^xsd:date ;
+    schema:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+    schema:publisher <https://idn.org.au> ;
+    schema:status <https://linked.data.gov.au/def/reg-statuses/experimental> ;
+    schema:version "1" ;
+.

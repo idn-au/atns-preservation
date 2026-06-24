@@ -1,0 +1,1511 @@
+PREFIX atns-subcat: <https://linked.data.gov.au/def/atns/subcat/>
+PREFIX cs: <https://linked.data.gov.au/def/atns/subcat>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+atns-subcat:96ed4893-3cbb-55ad-8320-7a41fca2ccc6
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Respondent'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "70"^^xsd:token ;
+    skos:prefLabel "Respondent"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:c2099cd6-cafc-54bc-9c89-11df0e41766e
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'National Park'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "71"^^xsd:token ;
+    skos:prefLabel "National Park"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:5b58045c-9ed4-5de5-9ff0-97a1b2ac015f
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'No Liability Company'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "72"^^xsd:token ;
+    skos:prefLabel "No Liability Company"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:5fbc56b2-1929-562c-822e-67dc1d7feb2f
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Native Title Applicant'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "73"^^xsd:token ;
+    skos:prefLabel "Native Title Applicant"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:243b1d27-cf40-5bee-9faa-84aed0afb787
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Applicant'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "74"^^xsd:token ;
+    skos:prefLabel "Applicant"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:1699fb80-0470-5f04-8e00-5ef955da347c
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Research Agreement'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "75"^^xsd:token ;
+    skos:prefLabel "Research Agreement"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:f005f1b8-394e-56eb-9c31-20fe08cc3f42
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Territory Government'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "76"^^xsd:token ;
+    skos:prefLabel "Territory Government"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:330fef0d-52e9-5598-8ab1-509cd921aac1
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Joint Venture Agreement'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "77"^^xsd:token ;
+    skos:prefLabel "Joint Venture Agreement"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:d811f588-0526-5f2b-be26-8c2f3f8f1abc
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Representative Body'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "78"^^xsd:token ;
+    skos:prefLabel "Representative Body"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:a6c25fbf-fc85-500f-b84e-fd99fa599993
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Convention'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "79"^^xsd:token ;
+    skos:prefLabel "Convention"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:e76f87e0-b8e3-5926-84b7-228c7fad9c7c
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Treaty (International)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "80"^^xsd:token ;
+    skos:prefLabel "Treaty (International)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:72a9c179-74f7-5b36-8f3a-0a46835c636f
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Declaration'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "81"^^xsd:token ;
+    skos:prefLabel "Declaration"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:75aa5456-8d13-506b-979c-bc34a8bd0a97
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Deed of Settlement (New Zealand)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "82"^^xsd:token ;
+    skos:prefLabel "Deed of Settlement (New Zealand)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:cac0a6f7-3a5e-508f-a1d4-c453fb671f9c
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Government'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "83"^^xsd:token ;
+    skos:prefLabel "Government"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:fce7d633-05fc-5e3e-8605-0cad9866c612
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Regional Agreement'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "84"^^xsd:token ;
+    skos:prefLabel "Regional Agreement"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:848b1af9-95b3-5332-90e1-1383bd4e0da7
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Native Title Representative Body (NTRB)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "85"^^xsd:token ;
+    skos:prefLabel "Native Title Representative Body (NTRB)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:b5a1f0b8-fda5-5c21-9210-53b047121dfd
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'First Nations People of Canada'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "86"^^xsd:token ;
+    skos:prefLabel "First Nations People of Canada"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:b4d0936c-867c-53c4-b8ca-dad372cb8c0c
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Party to an Indigenous Land Use Agreement'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "87"^^xsd:token ;
+    skos:prefLabel "Party to an Indigenous Land Use Agreement"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:3c896846-bc0f-53fa-82a8-faeedb9f0f2a
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Canadian Aboriginal Government'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "88"^^xsd:token ;
+    skos:prefLabel "Canadian Aboriginal Government"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:668b60d9-b418-541f-9b99-af1f60fce728
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Land Governance Agreement (Canada)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "89"^^xsd:token ;
+    skos:prefLabel "Land Governance Agreement (Canada)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:de48a4f0-1a8c-5488-bfa1-2fcef98c749d
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Prescribed Body Corporate (PBC)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "90"^^xsd:token ;
+    skos:prefLabel "Prescribed Body Corporate (PBC)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:7d302f05-b6eb-5d8e-bff5-9fc313296b0c
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Sole Trader'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "91"^^xsd:token ;
+    skos:prefLabel "Sole Trader"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:f2c94516-72ba-5d2d-b9e9-1b80cf9850a1
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Incorporated Association'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "92"^^xsd:token ;
+    skos:prefLabel "Incorporated Association"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:5256bda6-9db4-55ea-a7a8-c0b7773c6aa5
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Agreement in Principle / Heads of Agreement (New Zealand)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "93"^^xsd:token ;
+    skos:prefLabel "Agreement in Principle / Heads of Agreement (New Zealand)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:84f0e035-49f3-5a4d-b092-77a17ebffa36
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Governance Entity (New Zealand)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "94"^^xsd:token ;
+    skos:prefLabel "Governance Entity (New Zealand)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:23587163-67a7-5fa1-8812-c75f795d32df
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Comprehensive Land Claims Agreement (Canada)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "95"^^xsd:token ;
+    skos:prefLabel "Comprehensive Land Claims Agreement (Canada)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:0cd007d5-c58e-513b-862c-989968dcc81a
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Specific Claims Agreement (Canada)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "96"^^xsd:token ;
+    skos:prefLabel "Specific Claims Agreement (Canada)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:2d2a94e9-c385-5c3d-b6fc-8bf2c230e7ef
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Framework Agreement (Canada)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "97"^^xsd:token ;
+    skos:prefLabel "Framework Agreement (Canada)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:49e870b8-b962-5785-a662-f506350ede50
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Agreement-in-Principle (AIP) (Canada)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "98"^^xsd:token ;
+    skos:prefLabel "Agreement-in-Principle (AIP) (Canada)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:496640c9-a0b8-580b-9bba-459fe5fcc345
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Interim Measures Agreement (Canada)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "99"^^xsd:token ;
+    skos:prefLabel "Interim Measures Agreement (Canada)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:e248c2dd-231c-5ac3-b046-96514d7b5cba
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Treaty (Canada)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "101"^^xsd:token ;
+    skos:prefLabel "Treaty (Canada)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:aadb9f87-ca50-5df2-a80b-6c2fad38cb3a
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Overlap/Boundary Agreement (Canada)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "102"^^xsd:token ;
+    skos:prefLabel "Overlap/Boundary Agreement (Canada)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:d25c73be-9cb4-5d9b-9913-a32120c317b3
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Maori People'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "104"^^xsd:token ;
+    skos:prefLabel "Maori People"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:1e638a55-1881-57c7-894d-fa95737ba14a
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Aboriginal Lands Trust (Western Australia)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "105"^^xsd:token ;
+    skos:prefLabel "Aboriginal Lands Trust (Western Australia)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:3d174cb1-b9fa-5ba5-a4be-08e299ed27d2
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Aboriginal Lands Trust (South Australia)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "106"^^xsd:token ;
+    skos:prefLabel "Aboriginal Lands Trust (South Australia)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:8a117369-cce0-5a2c-9d12-d3d13719a07e
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Non-Government Organisation (NGO)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "107"^^xsd:token ;
+    skos:prefLabel "Non-Government Organisation (NGO)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:1682bda6-86ad-57ab-b605-73fb7027939d
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Shared Responsibility Agreement (SRA)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "108"^^xsd:token ;
+    skos:prefLabel "Shared Responsibility Agreement (SRA)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:599936e5-2a8b-5e7e-b079-88a9d0d0ef0c
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Aboriginal Community Controlled Health Organisation (ACCHO)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "109"^^xsd:token ;
+    skos:prefLabel "Aboriginal Community Controlled Health Organisation (ACCHO)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:314b7fb0-5d8b-5ad1-afa1-ec0d99beee3b
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Political Accord (Canada)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "110"^^xsd:token ;
+    skos:prefLabel "Political Accord (Canada)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:ad36943d-86a8-5484-8603-fdbb8581fa4e
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Aboriginal and Torres Strait Islander'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "111"^^xsd:token ;
+    skos:prefLabel "Aboriginal and Torres Strait Islander"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:d60a14ab-ee61-558f-bfda-1c3c1c509e65
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Indigenous Coordination Centre (ICC)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "112"^^xsd:token ;
+    skos:prefLabel "Indigenous Coordination Centre (ICC)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:fb0d8b19-5eb9-590c-8d50-411cdcb787e5
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Charitable Trust'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "113"^^xsd:token ;
+    skos:prefLabel "Charitable Trust"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:901d9c34-2115-5043-9846-d5cba813b9b3
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Torres Strait Islander Land Trust (Queensland)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "114"^^xsd:token ;
+    skos:prefLabel "Torres Strait Islander Land Trust (Queensland)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:bb603fdb-9bd8-5d8b-88d5-da2caaa5bf15
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Aboriginal Land Trust (Queensland)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "115"^^xsd:token ;
+    skos:prefLabel "Aboriginal Land Trust (Queensland)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:04f70685-a852-5791-aa7b-04c01938187e
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Company Limited by Guarantee'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "116"^^xsd:token ;
+    skos:prefLabel "Company Limited by Guarantee"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:8cd54a0e-184d-520e-89f3-3c7ea37e76e1
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Litigated Determination'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "117"^^xsd:token ;
+    skos:prefLabel "Litigated Determination"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:caa3eeb7-4d71-505c-9ee9-19b8c5338435
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Consent Determination (Native Title Act)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "119"^^xsd:token ;
+    skos:prefLabel "Consent Determination (Native Title Act)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:177cef4d-1963-57e3-9b5c-508480daf336
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Future Act Agreement (Native Title Act)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "120"^^xsd:token ;
+    skos:prefLabel "Future Act Agreement (Native Title Act)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:09f0a068-ce65-5c11-8dec-f081d1a81ec2
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Indigenous Land Use Agreement (ILUA) (Native Title Act)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "121"^^xsd:token ;
+    skos:prefLabel "Indigenous Land Use Agreement (ILUA) (Native Title Act)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:41d9b2e8-b492-5ae4-a167-0ad1b8625279
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Case Law'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "122"^^xsd:token ;
+    skos:prefLabel "Case Law"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:d9bcd972-b0da-5ef2-b97d-dfa3afca649f
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Legislation'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "123"^^xsd:token ;
+    skos:prefLabel "Legislation"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:009cc2ae-06a8-5cd7-922a-c90a2c0cd3b2
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Interim Agreement'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "124"^^xsd:token ;
+    skos:prefLabel "Interim Agreement"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:1b340bb0-e40e-5938-a6a5-34a49cd07960
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Memorandum of Understanding'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "125"^^xsd:token ;
+    skos:prefLabel "Memorandum of Understanding"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:b7b5cd08-d283-583c-a41f-39a8ccf7f555
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Indigenous Partnership'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "126"^^xsd:token ;
+    skos:prefLabel "Indigenous Partnership"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:076d3b9a-6064-528c-a4f2-cd910bad69f5
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Land Transfer Agreement'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "127"^^xsd:token ;
+    skos:prefLabel "Land Transfer Agreement"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:3f9e2685-7bfd-5846-9b35-84429e6dcbaf
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Public Company'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "128"^^xsd:token ;
+    skos:prefLabel "Public Company"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:5e6e7587-f46e-514c-b7f1-748fad936498
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Native Title Holders (Native Title Act)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "129"^^xsd:token ;
+    skos:prefLabel "Native Title Holders (Native Title Act)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:422e0386-70ff-5903-a802-bbf394001e44
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Traditional Owner Group (Aboriginal Land Rights (Northern Territory) Act)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "130"^^xsd:token ;
+    skos:prefLabel "Traditional Owner Group (Aboriginal Land Rights (Northern Territory) Act)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:97efd2c0-d3cb-5785-a953-d83214529992
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Local Government'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "131"^^xsd:token ;
+    skos:prefLabel "Local Government"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:a69ed78c-0c27-5b49-bee7-3c4ca6147f60
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Aboriginal Community Council'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "132"^^xsd:token ;
+    skos:prefLabel "Aboriginal Community Council"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:80f9576f-cc98-5c15-b133-0ac43fced0c6
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'State Government'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "133"^^xsd:token ;
+    skos:prefLabel "State Government"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:c43c7348-214e-5e4d-82fd-0ca183ec0745
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Federal Government'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "134"^^xsd:token ;
+    skos:prefLabel "Federal Government"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:c7a29999-091c-5086-b86d-fcd39ee1ff0b
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Proprietary Company'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "135"^^xsd:token ;
+    skos:prefLabel "Proprietary Company"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:395f9c3d-1892-5865-a0a9-bc3dbcc40009
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Aboriginal Corporation'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "136"^^xsd:token ;
+    skos:prefLabel "Aboriginal Corporation"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:b8ac89d9-085b-56a9-b061-cde49e183bc4
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Native Title Claimants (registered)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "137"^^xsd:token ;
+    skos:prefLabel "Native Title Claimants (registered)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:05a69289-48e5-5043-9a4d-d45fc411b116
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Aboriginal Land Trust (Northern Territory)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "138"^^xsd:token ;
+    skos:prefLabel "Aboriginal Land Trust (Northern Territory)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:8e1b0c83-6505-5408-be21-8d1f74b43120
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Statutory Body'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "139"^^xsd:token ;
+    skos:prefLabel "Statutory Body"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:6ffe90c2-95c9-51b5-a083-8c7d83b975ef
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Framework Agreement'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "140"^^xsd:token ;
+    skos:prefLabel "Framework Agreement"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:107a111f-ec77-5bc3-8410-8bc0fade0403
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Lease'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "141"^^xsd:token ;
+    skos:prefLabel "Lease"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:1c5aa0a9-a1bc-59d1-a43d-51b12e376432
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Section 21 Agreement (Native Title Act)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "142"^^xsd:token ;
+    skos:prefLabel "Section 21 Agreement (Native Title Act)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:6a2c747a-d581-55df-a79d-0e18378d44b4
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Native Title Claimants (unregistered)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "143"^^xsd:token ;
+    skos:prefLabel "Native Title Claimants (unregistered)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:4a28e5d2-a7b3-5528-9ea6-595807ca3c08
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Land Use Agreement'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "144"^^xsd:token ;
+    skos:prefLabel "Land Use Agreement"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:27bf4e20-d996-5e23-bbd6-03284f4b24e4
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Commercial Agreement'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "145"^^xsd:token ;
+    skos:prefLabel "Commercial Agreement"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:e25306cd-559a-5d5a-8a28-e66ca2c2323a
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Exploration Agreement (Aboriginal Land Rights (Northern Territory) Act)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "146"^^xsd:token ;
+    skos:prefLabel "Exploration Agreement (Aboriginal Land Rights (Northern Territory) Act)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:5701ef5e-fe49-5289-b4da-3345efa1ce89
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Mining Agreement (Aboriginal Land Rights (Northern Territory) Act)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "147"^^xsd:token ;
+    skos:prefLabel "Mining Agreement (Aboriginal Land Rights (Northern Territory) Act)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:f6be2b14-a012-5d67-a3b9-eec5a957c048
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Memorandum of Lease'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "148"^^xsd:token ;
+    skos:prefLabel "Memorandum of Lease"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:cb04592a-0221-592e-9bd2-7cfd7c515db8
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Exploration Agreement (Native Title Act)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "149"^^xsd:token ;
+    skos:prefLabel "Exploration Agreement (Native Title Act)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:89615198-37f5-5e14-91e6-a2ba2eb0af09
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Joint Management Agreement'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "150"^^xsd:token ;
+    skos:prefLabel "Joint Management Agreement"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:51e799aa-68a2-5df5-b3b6-ce3837c24612
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Template Agreement'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "151"^^xsd:token ;
+    skos:prefLabel "Template Agreement"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:f0427812-61d1-5004-b577-ac236a9c5c18
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Funding Agreement'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "152"^^xsd:token ;
+    skos:prefLabel "Funding Agreement"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:d95daea3-0353-524d-b9af-f7d0d06b878a
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Report'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "153"^^xsd:token ;
+    skos:prefLabel "Report"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:e9f2cbaa-5c3d-5a7e-a2de-427ab2fc804a
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Statement of Commitment/Intention'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "154"^^xsd:token ;
+    skos:prefLabel "Statement of Commitment/Intention"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:d66b4fd1-9d0a-57fb-9a2c-d480e1cbc97f
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Policy/Strategy'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "155"^^xsd:token ;
+    skos:prefLabel "Policy/Strategy"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:114e4b10-f8d9-5c01-9470-e5036762cb1b
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Plan of Management'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "156"^^xsd:token ;
+    skos:prefLabel "Plan of Management"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:1eb2e7ab-f69e-50e0-96b3-ae27f43fe296
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Research'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "157"^^xsd:token ;
+    skos:prefLabel "Research"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:88a6616e-8f95-5953-8f69-3d07e051515c
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Indigenous Protected Area'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "158"^^xsd:token ;
+    skos:prefLabel "Indigenous Protected Area"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:66ca48c6-5504-5f8e-9835-c46a3bce657e
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Final Agreement (Canada)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "160"^^xsd:token ;
+    skos:prefLabel "Final Agreement (Canada)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:7dff9d75-8efe-5518-a99d-54546a46d417
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Implementation Plan (Canada)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "161"^^xsd:token ;
+    skos:prefLabel "Implementation Plan (Canada)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:fc06dde7-2239-580c-b4b9-09d0f530c888
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Self-Government Agreement (Canada)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "162"^^xsd:token ;
+    skos:prefLabel "Self-Government Agreement (Canada)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:76172eac-f556-58a7-85ae-e9378e301734
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Devolution Agreement (Canada)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "163"^^xsd:token ;
+    skos:prefLabel "Devolution Agreement (Canada)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:07dcb544-00ed-512d-9af0-a2d18865d9d3
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Socio-Economic Agreement (Canada)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "164"^^xsd:token ;
+    skos:prefLabel "Socio-Economic Agreement (Canada)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:64c0b91c-926f-5d0c-8368-12601a23c8f2
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Environmental Agreement (Canada)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "165"^^xsd:token ;
+    skos:prefLabel "Environmental Agreement (Canada)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:300b61b1-8d08-5374-9ff8-b28c881f5b11
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Impact and Benefits Agreement (IBA) (Canada)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "166"^^xsd:token ;
+    skos:prefLabel "Impact and Benefits Agreement (IBA) (Canada)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:011f1a86-2366-53c2-8f6d-a60006646e79
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Mining Agreement (Canada)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "167"^^xsd:token ;
+    skos:prefLabel "Mining Agreement (Canada)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:a8368baa-c7b2-5b8f-a071-57fe2a7ec152
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Support Agreement (Canada)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "168"^^xsd:token ;
+    skos:prefLabel "Support Agreement (Canada)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:58e5a837-54f1-58e7-93cb-e780e6096ac2
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Memorandum of Intent (MOI) (Canada)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "169"^^xsd:token ;
+    skos:prefLabel "Memorandum of Intent (MOI) (Canada)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:0eb5fb8a-c7a0-5513-9544-e257fba66e8c
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Partnership Agreement (Canada)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "170"^^xsd:token ;
+    skos:prefLabel "Partnership Agreement (Canada)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:7cfbd20c-917a-5a6c-b2cc-9baa5762381b
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Participation Agreement (Canada)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "171"^^xsd:token ;
+    skos:prefLabel "Participation Agreement (Canada)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:7b236814-e530-5bde-856c-b25535686470
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Service Delivery Agreement (Canada)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "172"^^xsd:token ;
+    skos:prefLabel "Service Delivery Agreement (Canada)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:fa695837-692e-5ecd-954d-f00c369e7c2e
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Inuit of Canada'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "173"^^xsd:token ;
+    skos:prefLabel "Inuit of Canada"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:f1e9e6d7-06bd-5773-bbb6-9d851c344924
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Métis of Canada'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "174"^^xsd:token ;
+    skos:prefLabel "Métis of Canada"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:7767aecc-ae64-5c1e-8fe6-b2b68c0cf7e4
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Provincial/Territory Government (Canada)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "175"^^xsd:token ;
+    skos:prefLabel "Provincial/Territory Government (Canada)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:a7cf88da-5009-583e-a88f-5323d27c417a
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Conservation Agreement'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "176"^^xsd:token ;
+    skos:prefLabel "Conservation Agreement"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:395827ef-ba33-5bcc-96ff-bc0f3bd5d47a
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Registered Aboriginal Party (Vic)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "299"^^xsd:token ;
+    skos:prefLabel "Registered Aboriginal Party (Vic)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:5fef068a-6a72-5e16-8885-194d2e021bfe
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Regional Partnership Agreement (RPA)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "302"^^xsd:token ;
+    skos:prefLabel "Regional Partnership Agreement (RPA)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:28ea34b8-add0-5293-9708-7ff499b124b6
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Unopposed Determination'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "303"^^xsd:token ;
+    skos:prefLabel "Unopposed Determination"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:428c348f-cb02-5b4a-9f58-b6172ccba9f9
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Local Community of South Africa'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "307"^^xsd:token ;
+    skos:prefLabel "Local Community of South Africa"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:cf3b9aee-3198-5049-bab0-fa15a46e1c06
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Trustee Company'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "311"^^xsd:token ;
+    skos:prefLabel "Trustee Company"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:73e7ea31-7278-515a-ad91-72314b50074c
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Party to a Deed of Settlement (New Zealand)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "313"^^xsd:token ;
+    skos:prefLabel "Party to a Deed of Settlement (New Zealand)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:fd0b443c-f78b-5840-926a-9b0080a9ebdb
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Land Restitution Agreement (South Africa)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "314"^^xsd:token ;
+    skos:prefLabel "Land Restitution Agreement (South Africa)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:53c4c72c-0c84-5487-b3b9-13134a218163
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Joint Venture Agreement (South Africa)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "316"^^xsd:token ;
+    skos:prefLabel "Joint Venture Agreement (South Africa)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:a49a985c-aa37-5165-8e47-e59a724f040e
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Policy/Strategy (South Africa)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "320"^^xsd:token ;
+    skos:prefLabel "Policy/Strategy (South Africa)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:b6d2bb0f-4564-5bb9-b667-3700821f5a5b
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Black Economic Empowerment Transaction (South Africa)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "321"^^xsd:token ;
+    skos:prefLabel "Black Economic Empowerment Transaction (South Africa)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:ccad408c-37fe-5a36-a785-baf3b25cdce9
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Indigenous Management Agreement (Aboriginal Land Act) (Queensland)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "324"^^xsd:token ;
+    skos:prefLabel "Indigenous Management Agreement (Aboriginal Land Act) (Queensland)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:9dcbe1a3-5e12-5b7e-bf28-8badef099c68
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Traditional Use Marine Resource Agreement (TUMRA)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "325"^^xsd:token ;
+    skos:prefLabel "Traditional Use Marine Resource Agreement (TUMRA)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:123a2199-09c1-53e0-9c4d-6ae2033ea91c
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'COAG Agreement'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "330"^^xsd:token ;
+    skos:prefLabel "COAG Agreement"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:2e0a88f3-2189-5129-9101-57be0d2aefbc
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Aboriginal Community Controlled Health Service Agreement'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "331"^^xsd:token ;
+    skos:prefLabel "Aboriginal Community Controlled Health Service Agreement"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:410f394f-f53a-5ab1-bc86-8b1fe5a901ba
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Alcohol Management Plan'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "332"^^xsd:token ;
+    skos:prefLabel "Alcohol Management Plan"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:c97ff061-87de-5580-9efc-4dd4eb83f378
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Aboriginal Community Controlled Health Organisation Peak Body Agreement'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "333"^^xsd:token ;
+    skos:prefLabel "Aboriginal Community Controlled Health Organisation Peak Body Agreement"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:61baccc9-0196-5528-a334-1ebd2c143b73
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Settlement Agreement'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "337"^^xsd:token ;
+    skos:prefLabel "Settlement Agreement"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:9cde7d45-5757-5d67-9fea-1c29e3b8a9f9
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Petitioner/s'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "341"^^xsd:token ;
+    skos:prefLabel "Petitioner/s"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:c868472d-2d34-594a-8479-8ab66eddde4e
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'State Party'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "342"^^xsd:token ;
+    skos:prefLabel "State Party"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-subcat:0057a2c2-f2e6-5896-942d-c99eeaa42337
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS subcategory 'Traditional Owner Group'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "345"^^xsd:token ;
+    skos:prefLabel "Traditional Owner Group"@en ;
+    skos:topConceptOf cs: ;
+.
+
+<https://orcid.org/0000-0001-5640-3202>
+    a schema:Person ;
+    schema:email "mailto:les@kurrawong.ai"^^xsd:anyURI ;
+    schema:name "Les Kneebone" ;
+.
+
+<https://idn.org.au>
+    a schema:Organization ;
+    schema:name "Indigenous Data Network" ;
+    schema:url "https://idn.org.au"^^xsd:anyURI ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    owl:versionIRI <https://linked.data.gov.au/def/atns/subcat/1> ;
+    skos:definition "Subcategories used to classify entities in the Agreements, Treaties and Negotiated Settlements database."@en ;
+    skos:hasTopConcept
+        atns-subcat:96ed4893-3cbb-55ad-8320-7a41fca2ccc6 ,
+        atns-subcat:c2099cd6-cafc-54bc-9c89-11df0e41766e ,
+        atns-subcat:5b58045c-9ed4-5de5-9ff0-97a1b2ac015f ,
+        atns-subcat:5fbc56b2-1929-562c-822e-67dc1d7feb2f ,
+        atns-subcat:243b1d27-cf40-5bee-9faa-84aed0afb787 ,
+        atns-subcat:1699fb80-0470-5f04-8e00-5ef955da347c ,
+        atns-subcat:f005f1b8-394e-56eb-9c31-20fe08cc3f42 ,
+        atns-subcat:330fef0d-52e9-5598-8ab1-509cd921aac1 ,
+        atns-subcat:d811f588-0526-5f2b-be26-8c2f3f8f1abc ,
+        atns-subcat:a6c25fbf-fc85-500f-b84e-fd99fa599993 ,
+        atns-subcat:e76f87e0-b8e3-5926-84b7-228c7fad9c7c ,
+        atns-subcat:72a9c179-74f7-5b36-8f3a-0a46835c636f ,
+        atns-subcat:75aa5456-8d13-506b-979c-bc34a8bd0a97 ,
+        atns-subcat:cac0a6f7-3a5e-508f-a1d4-c453fb671f9c ,
+        atns-subcat:fce7d633-05fc-5e3e-8605-0cad9866c612 ,
+        atns-subcat:848b1af9-95b3-5332-90e1-1383bd4e0da7 ,
+        atns-subcat:b5a1f0b8-fda5-5c21-9210-53b047121dfd ,
+        atns-subcat:b4d0936c-867c-53c4-b8ca-dad372cb8c0c ,
+        atns-subcat:3c896846-bc0f-53fa-82a8-faeedb9f0f2a ,
+        atns-subcat:668b60d9-b418-541f-9b99-af1f60fce728 ,
+        atns-subcat:de48a4f0-1a8c-5488-bfa1-2fcef98c749d ,
+        atns-subcat:7d302f05-b6eb-5d8e-bff5-9fc313296b0c ,
+        atns-subcat:f2c94516-72ba-5d2d-b9e9-1b80cf9850a1 ,
+        atns-subcat:5256bda6-9db4-55ea-a7a8-c0b7773c6aa5 ,
+        atns-subcat:84f0e035-49f3-5a4d-b092-77a17ebffa36 ,
+        atns-subcat:23587163-67a7-5fa1-8812-c75f795d32df ,
+        atns-subcat:0cd007d5-c58e-513b-862c-989968dcc81a ,
+        atns-subcat:2d2a94e9-c385-5c3d-b6fc-8bf2c230e7ef ,
+        atns-subcat:49e870b8-b962-5785-a662-f506350ede50 ,
+        atns-subcat:496640c9-a0b8-580b-9bba-459fe5fcc345 ,
+        atns-subcat:e248c2dd-231c-5ac3-b046-96514d7b5cba ,
+        atns-subcat:aadb9f87-ca50-5df2-a80b-6c2fad38cb3a ,
+        atns-subcat:d25c73be-9cb4-5d9b-9913-a32120c317b3 ,
+        atns-subcat:1e638a55-1881-57c7-894d-fa95737ba14a ,
+        atns-subcat:3d174cb1-b9fa-5ba5-a4be-08e299ed27d2 ,
+        atns-subcat:8a117369-cce0-5a2c-9d12-d3d13719a07e ,
+        atns-subcat:1682bda6-86ad-57ab-b605-73fb7027939d ,
+        atns-subcat:599936e5-2a8b-5e7e-b079-88a9d0d0ef0c ,
+        atns-subcat:314b7fb0-5d8b-5ad1-afa1-ec0d99beee3b ,
+        atns-subcat:ad36943d-86a8-5484-8603-fdbb8581fa4e ,
+        atns-subcat:d60a14ab-ee61-558f-bfda-1c3c1c509e65 ,
+        atns-subcat:fb0d8b19-5eb9-590c-8d50-411cdcb787e5 ,
+        atns-subcat:901d9c34-2115-5043-9846-d5cba813b9b3 ,
+        atns-subcat:bb603fdb-9bd8-5d8b-88d5-da2caaa5bf15 ,
+        atns-subcat:04f70685-a852-5791-aa7b-04c01938187e ,
+        atns-subcat:8cd54a0e-184d-520e-89f3-3c7ea37e76e1 ,
+        atns-subcat:caa3eeb7-4d71-505c-9ee9-19b8c5338435 ,
+        atns-subcat:177cef4d-1963-57e3-9b5c-508480daf336 ,
+        atns-subcat:09f0a068-ce65-5c11-8dec-f081d1a81ec2 ,
+        atns-subcat:41d9b2e8-b492-5ae4-a167-0ad1b8625279 ,
+        atns-subcat:d9bcd972-b0da-5ef2-b97d-dfa3afca649f ,
+        atns-subcat:009cc2ae-06a8-5cd7-922a-c90a2c0cd3b2 ,
+        atns-subcat:1b340bb0-e40e-5938-a6a5-34a49cd07960 ,
+        atns-subcat:b7b5cd08-d283-583c-a41f-39a8ccf7f555 ,
+        atns-subcat:076d3b9a-6064-528c-a4f2-cd910bad69f5 ,
+        atns-subcat:3f9e2685-7bfd-5846-9b35-84429e6dcbaf ,
+        atns-subcat:5e6e7587-f46e-514c-b7f1-748fad936498 ,
+        atns-subcat:422e0386-70ff-5903-a802-bbf394001e44 ,
+        atns-subcat:97efd2c0-d3cb-5785-a953-d83214529992 ,
+        atns-subcat:a69ed78c-0c27-5b49-bee7-3c4ca6147f60 ,
+        atns-subcat:80f9576f-cc98-5c15-b133-0ac43fced0c6 ,
+        atns-subcat:c43c7348-214e-5e4d-82fd-0ca183ec0745 ,
+        atns-subcat:c7a29999-091c-5086-b86d-fcd39ee1ff0b ,
+        atns-subcat:395f9c3d-1892-5865-a0a9-bc3dbcc40009 ,
+        atns-subcat:b8ac89d9-085b-56a9-b061-cde49e183bc4 ,
+        atns-subcat:05a69289-48e5-5043-9a4d-d45fc411b116 ,
+        atns-subcat:8e1b0c83-6505-5408-be21-8d1f74b43120 ,
+        atns-subcat:6ffe90c2-95c9-51b5-a083-8c7d83b975ef ,
+        atns-subcat:107a111f-ec77-5bc3-8410-8bc0fade0403 ,
+        atns-subcat:1c5aa0a9-a1bc-59d1-a43d-51b12e376432 ,
+        atns-subcat:6a2c747a-d581-55df-a79d-0e18378d44b4 ,
+        atns-subcat:4a28e5d2-a7b3-5528-9ea6-595807ca3c08 ,
+        atns-subcat:27bf4e20-d996-5e23-bbd6-03284f4b24e4 ,
+        atns-subcat:e25306cd-559a-5d5a-8a28-e66ca2c2323a ,
+        atns-subcat:5701ef5e-fe49-5289-b4da-3345efa1ce89 ,
+        atns-subcat:f6be2b14-a012-5d67-a3b9-eec5a957c048 ,
+        atns-subcat:cb04592a-0221-592e-9bd2-7cfd7c515db8 ,
+        atns-subcat:89615198-37f5-5e14-91e6-a2ba2eb0af09 ,
+        atns-subcat:51e799aa-68a2-5df5-b3b6-ce3837c24612 ,
+        atns-subcat:f0427812-61d1-5004-b577-ac236a9c5c18 ,
+        atns-subcat:d95daea3-0353-524d-b9af-f7d0d06b878a ,
+        atns-subcat:e9f2cbaa-5c3d-5a7e-a2de-427ab2fc804a ,
+        atns-subcat:d66b4fd1-9d0a-57fb-9a2c-d480e1cbc97f ,
+        atns-subcat:114e4b10-f8d9-5c01-9470-e5036762cb1b ,
+        atns-subcat:1eb2e7ab-f69e-50e0-96b3-ae27f43fe296 ,
+        atns-subcat:88a6616e-8f95-5953-8f69-3d07e051515c ,
+        atns-subcat:66ca48c6-5504-5f8e-9835-c46a3bce657e ,
+        atns-subcat:7dff9d75-8efe-5518-a99d-54546a46d417 ,
+        atns-subcat:fc06dde7-2239-580c-b4b9-09d0f530c888 ,
+        atns-subcat:76172eac-f556-58a7-85ae-e9378e301734 ,
+        atns-subcat:07dcb544-00ed-512d-9af0-a2d18865d9d3 ,
+        atns-subcat:64c0b91c-926f-5d0c-8368-12601a23c8f2 ,
+        atns-subcat:300b61b1-8d08-5374-9ff8-b28c881f5b11 ,
+        atns-subcat:011f1a86-2366-53c2-8f6d-a60006646e79 ,
+        atns-subcat:a8368baa-c7b2-5b8f-a071-57fe2a7ec152 ,
+        atns-subcat:58e5a837-54f1-58e7-93cb-e780e6096ac2 ,
+        atns-subcat:0eb5fb8a-c7a0-5513-9544-e257fba66e8c ,
+        atns-subcat:7cfbd20c-917a-5a6c-b2cc-9baa5762381b ,
+        atns-subcat:7b236814-e530-5bde-856c-b25535686470 ,
+        atns-subcat:fa695837-692e-5ecd-954d-f00c369e7c2e ,
+        atns-subcat:f1e9e6d7-06bd-5773-bbb6-9d851c344924 ,
+        atns-subcat:7767aecc-ae64-5c1e-8fe6-b2b68c0cf7e4 ,
+        atns-subcat:a7cf88da-5009-583e-a88f-5323d27c417a ,
+        atns-subcat:395827ef-ba33-5bcc-96ff-bc0f3bd5d47a ,
+        atns-subcat:5fef068a-6a72-5e16-8885-194d2e021bfe ,
+        atns-subcat:28ea34b8-add0-5293-9708-7ff499b124b6 ,
+        atns-subcat:428c348f-cb02-5b4a-9f58-b6172ccba9f9 ,
+        atns-subcat:cf3b9aee-3198-5049-bab0-fa15a46e1c06 ,
+        atns-subcat:73e7ea31-7278-515a-ad91-72314b50074c ,
+        atns-subcat:fd0b443c-f78b-5840-926a-9b0080a9ebdb ,
+        atns-subcat:53c4c72c-0c84-5487-b3b9-13134a218163 ,
+        atns-subcat:a49a985c-aa37-5165-8e47-e59a724f040e ,
+        atns-subcat:b6d2bb0f-4564-5bb9-b667-3700821f5a5b ,
+        atns-subcat:ccad408c-37fe-5a36-a785-baf3b25cdce9 ,
+        atns-subcat:9dcbe1a3-5e12-5b7e-bf28-8badef099c68 ,
+        atns-subcat:123a2199-09c1-53e0-9c4d-6ae2033ea91c ,
+        atns-subcat:2e0a88f3-2189-5129-9101-57be0d2aefbc ,
+        atns-subcat:410f394f-f53a-5ab1-bc86-8b1fe5a901ba ,
+        atns-subcat:c97ff061-87de-5580-9efc-4dd4eb83f378 ,
+        atns-subcat:61baccc9-0196-5528-a334-1ebd2c143b73 ,
+        atns-subcat:9cde7d45-5757-5d67-9fea-1c29e3b8a9f9 ,
+        atns-subcat:c868472d-2d34-594a-8479-8ab66eddde4e ,
+        atns-subcat:0057a2c2-f2e6-5896-942d-c99eeaa42337 ;
+    skos:historyNote "Derived manually from the ATNS subcategories.tsv report to support preservation and migration of the ATNS data. Source records 326, 334, 335, 338, 339, 340 were omitted because they have no label."@en ;
+    skos:prefLabel "ATNS Subcategories"@en ;
+    schema:creator <https://orcid.org/0000-0001-5640-3202> ;
+    schema:dateCreated "2026-06-24"^^xsd:date ;
+    schema:dateModified "2026-06-24"^^xsd:date ;
+    schema:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+    schema:publisher <https://idn.org.au> ;
+    schema:status <https://linked.data.gov.au/def/reg-statuses/experimental> ;
+    schema:version "1" ;
+.

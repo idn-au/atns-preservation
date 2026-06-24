@@ -1,0 +1,587 @@
+PREFIX atns-bin: <https://linked.data.gov.au/def/atns/bin/>
+PREFIX cs: <https://linked.data.gov.au/def/atns/bin>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+atns-bin:0b750760-1974-52db-80e5-0b6a18e8118b
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS binomial name 'None'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "230"^^xsd:token ;
+    skos:prefLabel "None"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-bin:1e7e28dc-a478-5a10-8ab7-284d37b9c989
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS binomial name 'AM'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "231"^^xsd:token ;
+    skos:prefLabel "AM"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-bin:2038b638-2d8b-50a1-b4ec-bed6454f5555
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS binomial name 'Australian Capital Territory Government'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "232"^^xsd:token ;
+    skos:prefLabel "Australian Capital Territory Government"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-bin:5367a0e0-8c1b-5838-b5d9-fce02d316239
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS binomial name 'Australian Commonwealth Government'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "233"^^xsd:token ;
+    skos:prefLabel "Australian Commonwealth Government"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-bin:a0d04a97-0736-54ec-88fa-2a8fc06ea8fb
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS binomial name 'Bilateral Agreement'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "234"^^xsd:token ;
+    skos:prefLabel "Bilateral Agreement"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-bin:e1b40980-ddf5-5a54-a469-d560b315bf72
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS binomial name 'Budjiti & Mardigan People'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "235"^^xsd:token ;
+    skos:prefLabel "Budjiti & Mardigan People"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-bin:f12880eb-9806-5a8c-8f93-cff17c826824
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS binomial name 'Canada'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "236"^^xsd:token ;
+    skos:prefLabel "Canada"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-bin:4668d3b1-34e1-527b-9807-27206dcc5218
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS binomial name 'Canadian Federal Government'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "237"^^xsd:token ;
+    skos:prefLabel "Canadian Federal Government"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-bin:3a626230-5210-59dd-97c4-df7474e17bf8
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS binomial name 'City of Moreland'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "238"^^xsd:token ;
+    skos:prefLabel "City of Moreland"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-bin:36176323-4627-5e49-958d-f57e793c2ff6
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS binomial name 'Councilor TRAWQ'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "239"^^xsd:token ;
+    skos:prefLabel "Councilor TRAWQ"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-bin:6aebe488-d375-5d74-8847-77078669eed9
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS binomial name 'Department of Health and Community Services, Northern Territory Government'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "240"^^xsd:token ;
+    skos:prefLabel "Department of Health and Community Services, Northern Territory Government"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-bin:fd9b711b-0712-5cbb-84c7-8a1b5f03a825
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS binomial name 'Department of the Environment and Heritage'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "241"^^xsd:token ;
+    skos:prefLabel "Department of the Environment and Heritage"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-bin:49447d8d-056e-5a72-ac89-3c9e1534234e
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS binomial name 'Director General NPWS'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "242"^^xsd:token ;
+    skos:prefLabel "Director General NPWS"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-bin:594f5c21-a870-5c55-aaaf-20cf0af6b375
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS binomial name 'Federal Court of Australia'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "243"^^xsd:token ;
+    skos:prefLabel "Federal Court of Australia"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-bin:8061b5e0-c257-54ac-99f1-5004e9b2f4d6
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS binomial name 'Gombumerri People'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "244"^^xsd:token ;
+    skos:prefLabel "Gombumerri People"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-bin:dd7c0dce-59e4-5e3a-9c45-218a8c9a58d2
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS binomial name 'Government of New Zealand'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "245"^^xsd:token ;
+    skos:prefLabel "Government of New Zealand"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-bin:61f41b74-6a29-562c-b69f-7c6b822a48e8
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS binomial name 'Government of Quebec'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "246"^^xsd:token ;
+    skos:prefLabel "Government of Quebec"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-bin:75bc01dd-e4b5-5ae6-b28f-084858c4c8c6
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS binomial name 'High Court of Australia'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "247"^^xsd:token ;
+    skos:prefLabel "High Court of Australia"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-bin:8ff63804-6190-5f43-afd2-f7447ea5a092
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS binomial name 'International Union for the Conservation of Nature'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "248"^^xsd:token ;
+    skos:prefLabel "International Union for the Conservation of Nature"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-bin:067d9991-c7fd-5079-abda-758c1f390201
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS binomial name 'Larrakia People'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "249"^^xsd:token ;
+    skos:prefLabel "Larrakia People"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-bin:9f34e69d-dcbf-5bcf-9bdd-dfdd26622783
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS binomial name 'MLC, Minister for Lands (NSW)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "250"^^xsd:token ;
+    skos:prefLabel "MLC, Minister for Lands (NSW)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-bin:2653d364-aa2e-56af-8e5b-be9254f4369b
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS binomial name 'Multilateral Agreement'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "251"^^xsd:token ;
+    skos:prefLabel "Multilateral Agreement"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-bin:5f2ebd59-c44d-5ce3-8cda-f3ea4b960ba1
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS binomial name 'Native Title Parties to the Gregory National Park NLC ILUA'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "252"^^xsd:token ;
+    skos:prefLabel "Native Title Parties to the Gregory National Park NLC ILUA"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-bin:731091c2-89f7-5842-84e4-40a6db93e8c3
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS binomial name 'New South Wales Government'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "253"^^xsd:token ;
+    skos:prefLabel "New South Wales Government"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-bin:440e69c0-bd40-5b65-bc32-1f98d27229a2
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS binomial name 'New South Wales Minister for the Environment 1999'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "254"^^xsd:token ;
+    skos:prefLabel "New South Wales Minister for the Environment 1999"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-bin:10ef9d24-7dff-5f3a-ba0e-ffcc45a69952
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS binomial name 'New Zealand'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "255"^^xsd:token ;
+    skos:prefLabel "New Zealand"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-bin:07782c9c-fe69-558c-8dbe-0b64836c2fa4
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS binomial name 'Northern Territory'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "256"^^xsd:token ;
+    skos:prefLabel "Northern Territory"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-bin:3cbca855-934c-5b28-8b23-e06ed655c422
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS binomial name 'Northern Territory Government'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "257"^^xsd:token ;
+    skos:prefLabel "Northern Territory Government"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-bin:587e8afd-83db-5327-baff-2ceaa178ac11
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS binomial name 'Queensland Government'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "258"^^xsd:token ;
+    skos:prefLabel "Queensland Government"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-bin:45e2e8d9-b8df-549d-8e92-f9719cbf4cc4
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS binomial name 'South Australian Government'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "259"^^xsd:token ;
+    skos:prefLabel "South Australian Government"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-bin:d0d8ff42-a8e2-50f5-ae25-efdcc2cc1e25
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS binomial name 'State of New South Wales'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "260"^^xsd:token ;
+    skos:prefLabel "State of New South Wales"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-bin:991c15e6-4b0c-5673-87c9-e97f71787e9b
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS binomial name 'State of Queensland'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "261"^^xsd:token ;
+    skos:prefLabel "State of Queensland"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-bin:df46a985-5629-51f2-9583-b5d15c144b71
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS binomial name 'State of South Australia'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "262"^^xsd:token ;
+    skos:prefLabel "State of South Australia"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-bin:f9278799-622c-50b8-a7e6-65ae1a0a99c8
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS binomial name 'State of Tasmania'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "263"^^xsd:token ;
+    skos:prefLabel "State of Tasmania"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-bin:0be6d48e-24fe-5ffb-92a3-41abd3eee9cb
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS binomial name 'State of Victoria'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "264"^^xsd:token ;
+    skos:prefLabel "State of Victoria"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-bin:1e60b4a6-6f97-5469-9d9c-d38e6a760832
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS binomial name 'State of Western Australia'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "265"^^xsd:token ;
+    skos:prefLabel "State of Western Australia"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-bin:d07b0b4c-43a5-5de2-932d-45857f646f8c
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS binomial name 'Tagalaka ILUA'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "266"^^xsd:token ;
+    skos:prefLabel "Tagalaka ILUA"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-bin:e155d132-752b-5e83-b4a3-f09d038870b1
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS binomial name 'Tasmanian Government'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "267"^^xsd:token ;
+    skos:prefLabel "Tasmanian Government"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-bin:76d912c6-409b-5770-b149-44579f2cba6a
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS binomial name 'UNESCO (United Nations Educational Scientific and Cultural Organisation)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "268"^^xsd:token ;
+    skos:prefLabel "UNESCO (United Nations Educational Scientific and Cultural Organisation)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-bin:5c5e7cba-b451-507a-b54f-66de20969da7
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS binomial name 'Victorian Government'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "269"^^xsd:token ;
+    skos:prefLabel "Victorian Government"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-bin:b7be1cb4-c6d8-54f2-9523-05514e12a2a6
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS binomial name 'Wardaman People'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "270"^^xsd:token ;
+    skos:prefLabel "Wardaman People"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-bin:1c70cc5a-e818-5561-ac77-dec7c2f835a7
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS binomial name 'West Australian Government'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "271"^^xsd:token ;
+    skos:prefLabel "West Australian Government"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-bin:451f37ca-f556-5de2-8585-4dbe66c0ef34
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS binomial name 'Government of the Republic of South Africa'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "306"^^xsd:token ;
+    skos:prefLabel "Government of the Republic of South Africa"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-bin:f33c8a7c-6a5d-5b52-b6d6-170b67af0baa
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS binomial name 'Privy Council'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "351"^^xsd:token ;
+    skos:prefLabel "Privy Council"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-bin:7e154aef-8f3b-5851-858c-f508a4f7338e
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS binomial name 'Supreme Court'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "352"^^xsd:token ;
+    skos:prefLabel "Supreme Court"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-bin:5d4d4f7d-81c5-5d97-9255-fd6eededa63c
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS binomial name 'Lower court'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "353"^^xsd:token ;
+    skos:prefLabel "Lower court"@en ;
+    skos:topConceptOf cs: ;
+.
+
+<https://orcid.org/0000-0001-5640-3202>
+    a schema:Person ;
+    schema:email "mailto:les@kurrawong.ai"^^xsd:anyURI ;
+    schema:name "Les Kneebone" ;
+.
+
+<https://idn.org.au>
+    a schema:Organization ;
+    schema:name "Indigenous Data Network" ;
+    schema:url "https://idn.org.au"^^xsd:anyURI ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    owl:versionIRI <https://linked.data.gov.au/def/atns/bin/1> ;
+    skos:definition "Binomial names recorded in the Agreements, Treaties and Negotiated Settlements database."@en ;
+    skos:hasTopConcept
+        atns-bin:0b750760-1974-52db-80e5-0b6a18e8118b ,
+        atns-bin:1e7e28dc-a478-5a10-8ab7-284d37b9c989 ,
+        atns-bin:2038b638-2d8b-50a1-b4ec-bed6454f5555 ,
+        atns-bin:5367a0e0-8c1b-5838-b5d9-fce02d316239 ,
+        atns-bin:a0d04a97-0736-54ec-88fa-2a8fc06ea8fb ,
+        atns-bin:e1b40980-ddf5-5a54-a469-d560b315bf72 ,
+        atns-bin:f12880eb-9806-5a8c-8f93-cff17c826824 ,
+        atns-bin:4668d3b1-34e1-527b-9807-27206dcc5218 ,
+        atns-bin:3a626230-5210-59dd-97c4-df7474e17bf8 ,
+        atns-bin:36176323-4627-5e49-958d-f57e793c2ff6 ,
+        atns-bin:6aebe488-d375-5d74-8847-77078669eed9 ,
+        atns-bin:fd9b711b-0712-5cbb-84c7-8a1b5f03a825 ,
+        atns-bin:49447d8d-056e-5a72-ac89-3c9e1534234e ,
+        atns-bin:594f5c21-a870-5c55-aaaf-20cf0af6b375 ,
+        atns-bin:8061b5e0-c257-54ac-99f1-5004e9b2f4d6 ,
+        atns-bin:dd7c0dce-59e4-5e3a-9c45-218a8c9a58d2 ,
+        atns-bin:61f41b74-6a29-562c-b69f-7c6b822a48e8 ,
+        atns-bin:75bc01dd-e4b5-5ae6-b28f-084858c4c8c6 ,
+        atns-bin:8ff63804-6190-5f43-afd2-f7447ea5a092 ,
+        atns-bin:067d9991-c7fd-5079-abda-758c1f390201 ,
+        atns-bin:9f34e69d-dcbf-5bcf-9bdd-dfdd26622783 ,
+        atns-bin:2653d364-aa2e-56af-8e5b-be9254f4369b ,
+        atns-bin:5f2ebd59-c44d-5ce3-8cda-f3ea4b960ba1 ,
+        atns-bin:731091c2-89f7-5842-84e4-40a6db93e8c3 ,
+        atns-bin:440e69c0-bd40-5b65-bc32-1f98d27229a2 ,
+        atns-bin:10ef9d24-7dff-5f3a-ba0e-ffcc45a69952 ,
+        atns-bin:07782c9c-fe69-558c-8dbe-0b64836c2fa4 ,
+        atns-bin:3cbca855-934c-5b28-8b23-e06ed655c422 ,
+        atns-bin:587e8afd-83db-5327-baff-2ceaa178ac11 ,
+        atns-bin:45e2e8d9-b8df-549d-8e92-f9719cbf4cc4 ,
+        atns-bin:d0d8ff42-a8e2-50f5-ae25-efdcc2cc1e25 ,
+        atns-bin:991c15e6-4b0c-5673-87c9-e97f71787e9b ,
+        atns-bin:df46a985-5629-51f2-9583-b5d15c144b71 ,
+        atns-bin:f9278799-622c-50b8-a7e6-65ae1a0a99c8 ,
+        atns-bin:0be6d48e-24fe-5ffb-92a3-41abd3eee9cb ,
+        atns-bin:1e60b4a6-6f97-5469-9d9c-d38e6a760832 ,
+        atns-bin:d07b0b4c-43a5-5de2-932d-45857f646f8c ,
+        atns-bin:e155d132-752b-5e83-b4a3-f09d038870b1 ,
+        atns-bin:76d912c6-409b-5770-b149-44579f2cba6a ,
+        atns-bin:5c5e7cba-b451-507a-b54f-66de20969da7 ,
+        atns-bin:b7be1cb4-c6d8-54f2-9523-05514e12a2a6 ,
+        atns-bin:1c70cc5a-e818-5561-ac77-dec7c2f835a7 ,
+        atns-bin:451f37ca-f556-5de2-8585-4dbe66c0ef34 ,
+        atns-bin:f33c8a7c-6a5d-5b52-b6d6-170b67af0baa ,
+        atns-bin:7e154aef-8f3b-5851-858c-f508a4f7338e ,
+        atns-bin:5d4d4f7d-81c5-5d97-9255-fd6eededa63c ;
+    skos:historyNote "Derived manually from the ATNS binomial-names.tsv report to support preservation and migration of the ATNS data."@en ;
+    skos:prefLabel "ATNS Binomial Names"@en ;
+    schema:creator <https://orcid.org/0000-0001-5640-3202> ;
+    schema:dateCreated "2026-06-24"^^xsd:date ;
+    schema:dateModified "2026-06-24"^^xsd:date ;
+    schema:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+    schema:publisher <https://idn.org.au> ;
+    schema:status <https://linked.data.gov.au/def/reg-statuses/experimental> ;
+    schema:version "1" ;
+.

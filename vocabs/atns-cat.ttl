@@ -1,0 +1,131 @@
+PREFIX atns-cat: <https://linked.data.gov.au/def/atns/cat/>
+PREFIX cs: <https://linked.data.gov.au/def/atns/cat>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+atns-cat:13e77fec-44fd-554f-a075-ec60788eb1b1
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS entity category 'Agreement'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "1"^^xsd:token ;
+    skos:prefLabel "Agreement"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-cat:1dad59ae-4020-598a-b5df-d9e0eae7f9c6
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS entity category 'Organisation'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "3"^^xsd:token ;
+    skos:prefLabel "Organisation"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-cat:02206946-38bf-55ff-9914-66c62f79ae28
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS entity category 'Event'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "4"^^xsd:token ;
+    skos:prefLabel "Event"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-cat:0dbac8b3-1760-5321-b65a-6bef3f8bc957
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS entity category 'Legislation'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "5"^^xsd:token ;
+    skos:prefLabel "Legislation"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-cat:2d179b15-6fdb-5df4-ada6-b9214e6ed5e4
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS entity category 'People'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "6"^^xsd:token ;
+    skos:prefLabel "People"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-cat:a241d596-7122-50ab-b08d-2b24f2835c04
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS entity category 'Place'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "8"^^xsd:token ;
+    skos:prefLabel "Place"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-cat:3303b0bc-4a7b-5535-b93a-159ae7b48345
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS entity category 'Case Law'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "272"^^xsd:token ;
+    skos:prefLabel "Case Law"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-cat:8896af60-959e-5d4c-b541-5947e9f5ca5f
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS entity category 'Policy/Strategy'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "273"^^xsd:token ;
+    skos:prefLabel "Policy/Strategy"@en ;
+    skos:topConceptOf cs: ;
+.
+
+<https://orcid.org/0000-0001-5640-3202>
+    a schema:Person ;
+    schema:email "mailto:les@kurrawong.ai"^^xsd:anyURI ;
+    schema:name "Les Kneebone" ;
+.
+
+<https://idn.org.au>
+    a schema:Organization ;
+    schema:name "Indigenous Data Network" ;
+    schema:url "https://idn.org.au"^^xsd:anyURI ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    owl:versionIRI <https://linked.data.gov.au/def/atns/cat/1> ;
+    skos:definition "Top-level categories used to classify entities in the Agreements, Treaties and Negotiated Settlements database."@en ;
+    skos:hasTopConcept
+        atns-cat:13e77fec-44fd-554f-a075-ec60788eb1b1 ,
+        atns-cat:1dad59ae-4020-598a-b5df-d9e0eae7f9c6 ,
+        atns-cat:02206946-38bf-55ff-9914-66c62f79ae28 ,
+        atns-cat:0dbac8b3-1760-5321-b65a-6bef3f8bc957 ,
+        atns-cat:2d179b15-6fdb-5df4-ada6-b9214e6ed5e4 ,
+        atns-cat:a241d596-7122-50ab-b08d-2b24f2835c04 ,
+        atns-cat:3303b0bc-4a7b-5535-b93a-159ae7b48345 ,
+        atns-cat:8896af60-959e-5d4c-b541-5947e9f5ca5f ;
+    skos:historyNote "Derived manually from the ATNS entity-categories.tsv report to support preservation and migration of the ATNS data."@en ;
+    skos:prefLabel "ATNS Entity Categories"@en ;
+    schema:creator <https://orcid.org/0000-0001-5640-3202> ;
+    schema:dateCreated "2026-06-24"^^xsd:date ;
+    schema:dateModified "2026-06-24"^^xsd:date ;
+    schema:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+    schema:publisher <https://idn.org.au> ;
+    schema:status <https://linked.data.gov.au/def/reg-statuses/experimental> ;
+    schema:version "1" ;
+.

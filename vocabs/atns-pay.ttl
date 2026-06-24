@@ -1,0 +1,239 @@
+PREFIX atns-pay: <https://linked.data.gov.au/def/atns/pay/>
+PREFIX cs: <https://linked.data.gov.au/def/atns/pay>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+atns-pay:8b3b4e8b-a388-554c-bb76-e16724d3da57
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS payment type 'Not specified'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "61"^^xsd:token ;
+    skos:prefLabel "Not specified"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-pay:0a834f9f-7221-562c-98fa-4e664d4da1a9
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS payment type 'Comalco Annual Contribution'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "62"^^xsd:token ;
+    skos:prefLabel "Comalco Annual Contribution"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-pay:a6c21441-4a3d-58d8-a647-63b52158171a
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS payment type 'Compensation'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "63"^^xsd:token ;
+    skos:prefLabel "Compensation"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-pay:6fd4060c-45d1-53e2-9078-6a7e758f580f
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS payment type 'Infrastructure Provision'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "64"^^xsd:token ;
+    skos:prefLabel "Infrastructure Provision"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-pay:f91f47b9-9af9-5ef1-82c5-6ab4977f9741
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS payment type 'Payment for Share in Joint Venture'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "65"^^xsd:token ;
+    skos:prefLabel "Payment for Share in Joint Venture"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-pay:19252792-393d-5512-aad9-d08b28fd7ec4
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS payment type 'Payment for Share of Expenditure in Joint Venture'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "66"^^xsd:token ;
+    skos:prefLabel "Payment for Share of Expenditure in Joint Venture"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-pay:7c7e86fa-efd3-5a7d-9f93-8b088a948009
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS payment type 'Queensland Government Annual Contribution'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "67"^^xsd:token ;
+    skos:prefLabel "Queensland Government Annual Contribution"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-pay:7e3cb602-aa65-5cc8-9897-e2db1089503f
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS payment type 'Rental'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "68"^^xsd:token ;
+    skos:prefLabel "Rental"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-pay:77681bd3-5410-59cb-be29-b1af4023831f
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS payment type 'Service Delivery'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "69"^^xsd:token ;
+    skos:prefLabel "Service Delivery"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-pay:b31f11d2-ff93-5ea1-99e7-ac14cbba0f8e
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS payment type 'Proposed contribution'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "277"^^xsd:token ;
+    skos:prefLabel "Proposed contribution"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-pay:c5ce5997-e7ba-539c-98ac-39b8174cdb56
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS payment type 'Consideration for entering into agreement'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "308"^^xsd:token ;
+    skos:prefLabel "Consideration for entering into agreement"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-pay:091976d1-fa4e-5679-9041-a7361cd932a3
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS payment type 'Financial and Commercial Redress (New Zealand)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "310"^^xsd:token ;
+    skos:prefLabel "Financial and Commercial Redress (New Zealand)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-pay:7f4986e4-f749-5c0d-8ade-ef376ade93c9
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS payment type 'Annuity Redress (New Zealand)'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "315"^^xsd:token ;
+    skos:prefLabel "Annuity Redress (New Zealand)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-pay:314aa98c-80f4-5ddb-a103-b7ca99404350
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS payment type 'Long-term royalty prepayment'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "317"^^xsd:token ;
+    skos:prefLabel "Long-term royalty prepayment"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-pay:54cba9d3-4a8d-5ca7-ac02-d21045b82807
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS payment type 'Black Economic Empowerment (BEE) compensation charge'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "318"^^xsd:token ;
+    skos:prefLabel "Black Economic Empowerment (BEE) compensation charge"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-pay:226ac4a3-0455-5582-ac99-ee088a443eec
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS payment type 'Negotiating costs'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "322"^^xsd:token ;
+    skos:prefLabel "Negotiating costs"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-pay:0abb7f13-70d5-5395-933c-8244c0993708
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS payment type 'Legal Costs'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "323"^^xsd:token ;
+    skos:prefLabel "Legal Costs"@en ;
+    skos:topConceptOf cs: ;
+.
+
+<https://orcid.org/0000-0001-5640-3202>
+    a schema:Person ;
+    schema:email "mailto:les@kurrawong.ai"^^xsd:anyURI ;
+    schema:name "Les Kneebone" ;
+.
+
+<https://idn.org.au>
+    a schema:Organization ;
+    schema:name "Indigenous Data Network" ;
+    schema:url "https://idn.org.au"^^xsd:anyURI ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    owl:versionIRI <https://linked.data.gov.au/def/atns/pay/1> ;
+    skos:definition "Types used to classify payments in the Agreements, Treaties and Negotiated Settlements database."@en ;
+    skos:hasTopConcept
+        atns-pay:8b3b4e8b-a388-554c-bb76-e16724d3da57 ,
+        atns-pay:0a834f9f-7221-562c-98fa-4e664d4da1a9 ,
+        atns-pay:a6c21441-4a3d-58d8-a647-63b52158171a ,
+        atns-pay:6fd4060c-45d1-53e2-9078-6a7e758f580f ,
+        atns-pay:f91f47b9-9af9-5ef1-82c5-6ab4977f9741 ,
+        atns-pay:19252792-393d-5512-aad9-d08b28fd7ec4 ,
+        atns-pay:7c7e86fa-efd3-5a7d-9f93-8b088a948009 ,
+        atns-pay:7e3cb602-aa65-5cc8-9897-e2db1089503f ,
+        atns-pay:77681bd3-5410-59cb-be29-b1af4023831f ,
+        atns-pay:b31f11d2-ff93-5ea1-99e7-ac14cbba0f8e ,
+        atns-pay:c5ce5997-e7ba-539c-98ac-39b8174cdb56 ,
+        atns-pay:091976d1-fa4e-5679-9041-a7361cd932a3 ,
+        atns-pay:7f4986e4-f749-5c0d-8ade-ef376ade93c9 ,
+        atns-pay:314aa98c-80f4-5ddb-a103-b7ca99404350 ,
+        atns-pay:54cba9d3-4a8d-5ca7-ac02-d21045b82807 ,
+        atns-pay:226ac4a3-0455-5582-ac99-ee088a443eec ,
+        atns-pay:0abb7f13-70d5-5395-933c-8244c0993708 ;
+    skos:historyNote "Derived manually from the ATNS payment-types.tsv report to support preservation and migration of the ATNS data."@en ;
+    skos:prefLabel "ATNS Payment Types"@en ;
+    schema:creator <https://orcid.org/0000-0001-5640-3202> ;
+    schema:dateCreated "2026-06-24"^^xsd:date ;
+    schema:dateModified "2026-06-24"^^xsd:date ;
+    schema:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+    schema:publisher <https://idn.org.au> ;
+    schema:status <https://linked.data.gov.au/def/reg-statuses/experimental> ;
+    schema:version "1" ;
+.

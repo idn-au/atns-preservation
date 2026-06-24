@@ -1,0 +1,395 @@
+PREFIX atns-ref: <https://linked.data.gov.au/def/atns/ref/>
+PREFIX cs: <https://linked.data.gov.au/def/atns/ref>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+atns-ref:9cc10eb2-8fd9-5f15-9637-0a44b7e829c8
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A general reference."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "180"^^xsd:token ;
+    skos:prefLabel "General Reference"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-ref:9f593112-d62e-5afa-8a01-03fcf89debcf
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "An agreement used as a reference."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "181"^^xsd:token ;
+    skos:prefLabel "Agreement"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-ref:f09f14af-9acf-58af-9e6e-4cd2cc54818d
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A book."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "183"^^xsd:token ;
+    skos:prefLabel "Book"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-ref:0d9beee1-9ab7-56f0-ab37-bca07c79e2b7
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A chapter within a book."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "184"^^xsd:token ;
+    skos:prefLabel "Book Chapter"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-ref:833eb86a-b432-5e1e-9190-e01b3f615a94
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A section within a book."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "185"^^xsd:token ;
+    skos:prefLabel "Book Section"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-ref:731cfb0f-61c0-50ce-bba6-8f0ca2d43183
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A booklet."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "186"^^xsd:token ;
+    skos:prefLabel "Booklet"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-ref:c5d5794c-e1b0-55f0-8602-b091b4397143
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A section within a book, represented by the source term Booksection."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "187"^^xsd:token ;
+    skos:prefLabel "Booksection"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-ref:4b825bca-2f41-5000-ad13-2a739262ceef
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A paper presented at a conference."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "188"^^xsd:token ;
+    skos:prefLabel "Conference Paper"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-ref:b5dd9847-e221-5089-8201-a9857a006090
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A decision."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "189"^^xsd:token ;
+    skos:prefLabel "Decision"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-ref:3a5f4721-be93-55db-be5f-90f0d5bd7870
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "An edited book."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "190"^^xsd:token ;
+    skos:prefLabel "Edited Book"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-ref:b766e9b0-f1c9-553b-87d6-ab5593918bb8
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A journal published electronically."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "191"^^xsd:token ;
+    skos:prefLabel "Electronic Journal"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-ref:20d75415-920b-52e8-b801-4f8a3b4860c6
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A fact sheet."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "192"^^xsd:token ;
+    skos:prefLabel "Fact Sheet"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-ref:bd95afd7-f872-5d3f-a43b-df0bf7f4eb01
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "An article published in a journal."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "193"^^xsd:token ;
+    skos:prefLabel "Journal Article"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-ref:c5bfc691-2fcb-58e2-89e6-14096a4ae3e3
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A judicial decision or other case law."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "194"^^xsd:token ;
+    skos:prefLabel "Case Law"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-ref:36ddd830-d1a6-59ec-83f1-67d936350df5
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A lease."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "196"^^xsd:token ;
+    skos:prefLabel "Lease"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-ref:56f5003a-ef5d-5792-8501-8368b74e1ef8
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A magazine."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "197"^^xsd:token ;
+    skos:prefLabel "Magazine"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-ref:982d5b8d-c171-56f9-9b1a-f0a0aaab8885
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A media release."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "198"^^xsd:token ;
+    skos:prefLabel "Media Release"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-ref:a6651196-f435-5c66-b9b6-9c1c872f491a
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A news item."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "199"^^xsd:token ;
+    skos:prefLabel "News Item"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-ref:eeb6fd8d-43c6-5fc1-bc2d-f7e085765dd7
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A paper presented to or produced by a parliament."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "200"^^xsd:token ;
+    skos:prefLabel "Parliamentary Paper"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-ref:ff2fbe3e-26e6-5133-8acb-8edaa1078ff3
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A report."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "201"^^xsd:token ;
+    skos:prefLabel "Report"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-ref:5f376307-9421-5ed8-aad9-7d12cb7b7fb6
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A resource."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "202"^^xsd:token ;
+    skos:prefLabel "Resource"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-ref:61e37e95-a02a-5d42-909e-051c2e94644f
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A section within a resource."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "203"^^xsd:token ;
+    skos:prefLabel "Resource Section"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-ref:4f834fd5-e023-5d7b-8969-d1db9bbadc27
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A publication."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "204"^^xsd:token ;
+    skos:prefLabel "Publication"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-ref:6cda789d-b656-5f2e-8891-5d9a3c2bcd2f
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A presentation delivered at a workshop."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "205"^^xsd:token ;
+    skos:prefLabel "Workshop Presentation"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-ref:500e4bd1-c2b7-5608-a6da-3cb6d23551bb
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A seminar."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "206"^^xsd:token ;
+    skos:prefLabel "Seminar"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-ref:255eaf75-55e7-5c3f-ab16-7384696d2845
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "An official record of parliamentary debates."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "300"^^xsd:token ;
+    skos:prefLabel "Hansard"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-ref:72298b30-c4eb-58a8-81d3-1a4320ee2db4
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A submission made to a government."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "327"^^xsd:token ;
+    skos:prefLabel "Submissions to Government"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-ref:26df5c43-11cb-52c8-ae87-4d1f21038c2f
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A working paper."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "328"^^xsd:token ;
+    skos:prefLabel "Working Paper"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-ref:2e2208b5-5fc3-5214-9da3-a5c47a9d35ab
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "An interview."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "329"^^xsd:token ;
+    skos:prefLabel "Interview"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-ref:9197536c-acd1-55e2-a207-dfff86fe0da1
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A response."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "347"^^xsd:token ;
+    skos:prefLabel "Response"@en ;
+    skos:topConceptOf cs: ;
+.
+
+<https://orcid.org/0000-0001-5640-3202>
+    a schema:Person ;
+    schema:email "mailto:les@kurrawong.ai"^^xsd:anyURI ;
+    schema:name "Les Kneebone" ;
+.
+
+<https://idn.org.au>
+    a schema:Organization ;
+    schema:name "Indigenous Data Network" ;
+    schema:url "https://idn.org.au"^^xsd:anyURI ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    owl:versionIRI <https://linked.data.gov.au/def/atns/ref/1> ;
+    skos:definition "Types used to classify references in the Agreements, Treaties and Negotiated Settlements database."@en ;
+    skos:hasTopConcept
+        atns-ref:0d9beee1-9ab7-56f0-ab37-bca07c79e2b7 ,
+        atns-ref:20d75415-920b-52e8-b801-4f8a3b4860c6 ,
+        atns-ref:255eaf75-55e7-5c3f-ab16-7384696d2845 ,
+        atns-ref:26df5c43-11cb-52c8-ae87-4d1f21038c2f ,
+        atns-ref:2e2208b5-5fc3-5214-9da3-a5c47a9d35ab ,
+        atns-ref:36ddd830-d1a6-59ec-83f1-67d936350df5 ,
+        atns-ref:3a5f4721-be93-55db-be5f-90f0d5bd7870 ,
+        atns-ref:4b825bca-2f41-5000-ad13-2a739262ceef ,
+        atns-ref:4f834fd5-e023-5d7b-8969-d1db9bbadc27 ,
+        atns-ref:500e4bd1-c2b7-5608-a6da-3cb6d23551bb ,
+        atns-ref:56f5003a-ef5d-5792-8501-8368b74e1ef8 ,
+        atns-ref:5f376307-9421-5ed8-aad9-7d12cb7b7fb6 ,
+        atns-ref:61e37e95-a02a-5d42-909e-051c2e94644f ,
+        atns-ref:6cda789d-b656-5f2e-8891-5d9a3c2bcd2f ,
+        atns-ref:72298b30-c4eb-58a8-81d3-1a4320ee2db4 ,
+        atns-ref:731cfb0f-61c0-50ce-bba6-8f0ca2d43183 ,
+        atns-ref:833eb86a-b432-5e1e-9190-e01b3f615a94 ,
+        atns-ref:9197536c-acd1-55e2-a207-dfff86fe0da1 ,
+        atns-ref:982d5b8d-c171-56f9-9b1a-f0a0aaab8885 ,
+        atns-ref:9cc10eb2-8fd9-5f15-9637-0a44b7e829c8 ,
+        atns-ref:9f593112-d62e-5afa-8a01-03fcf89debcf ,
+        atns-ref:a6651196-f435-5c66-b9b6-9c1c872f491a ,
+        atns-ref:b5dd9847-e221-5089-8201-a9857a006090 ,
+        atns-ref:b766e9b0-f1c9-553b-87d6-ab5593918bb8 ,
+        atns-ref:bd95afd7-f872-5d3f-a43b-df0bf7f4eb01 ,
+        atns-ref:c5bfc691-2fcb-58e2-89e6-14096a4ae3e3 ,
+        atns-ref:c5d5794c-e1b0-55f0-8602-b091b4397143 ,
+        atns-ref:eeb6fd8d-43c6-5fc1-bc2d-f7e085765dd7 ,
+        atns-ref:f09f14af-9acf-58af-9e6e-4cd2cc54818d ,
+        atns-ref:ff2fbe3e-26e6-5133-8acb-8edaa1078ff3 ;
+    skos:historyNote "Derived manually from the ATNS reference types report to support preservation and migration of the ATNS data. Source record 182 was omitted because it has no label."@en ;
+    skos:prefLabel "ATNS Reference Types"@en ;
+    schema:creator <https://orcid.org/0000-0001-5640-3202> ;
+    schema:dateCreated "2026-06-24"^^xsd:date ;
+    schema:dateModified "2026-06-24"^^xsd:date ;
+    schema:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+    schema:publisher <https://idn.org.au> ;
+    schema:status <https://linked.data.gov.au/def/reg-statuses/experimental> ;
+    schema:version "1" ;
+.

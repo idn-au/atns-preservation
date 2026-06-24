@@ -1,0 +1,83 @@
+PREFIX atns-link: <https://linked.data.gov.au/def/atns/link/>
+PREFIX cs: <https://linked.data.gov.au/def/atns/link>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+atns-link:4033402c-46f3-54f2-b516-6d3deb866ef4
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS link type 'Australia'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "226"^^xsd:token ;
+    skos:prefLabel "Australia"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-link:482f1ad6-d857-5887-aba0-e0419181c829
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS link type 'Canada'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "227"^^xsd:token ;
+    skos:prefLabel "Canada"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-link:2357209d-309b-5ede-bca8-96959e689f45
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS link type 'New Zealand'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "228"^^xsd:token ;
+    skos:prefLabel "New Zealand"@en ;
+    skos:topConceptOf cs: ;
+.
+
+atns-link:59eb95a0-0ea8-589a-9128-470d74fb78f3
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The ATNS link type 'South Africa'."@en ;
+    skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:inScheme cs: ;
+    skos:notation "229"^^xsd:token ;
+    skos:prefLabel "South Africa"@en ;
+    skos:topConceptOf cs: ;
+.
+
+<https://orcid.org/0000-0001-5640-3202>
+    a schema:Person ;
+    schema:email "mailto:les@kurrawong.ai"^^xsd:anyURI ;
+    schema:name "Les Kneebone" ;
+.
+
+<https://idn.org.au>
+    a schema:Organization ;
+    schema:name "Indigenous Data Network" ;
+    schema:url "https://idn.org.au"^^xsd:anyURI ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    owl:versionIRI <https://linked.data.gov.au/def/atns/link/1> ;
+    skos:definition "Types used to classify links in the Agreements, Treaties and Negotiated Settlements database."@en ;
+    skos:hasTopConcept
+        atns-link:4033402c-46f3-54f2-b516-6d3deb866ef4 ,
+        atns-link:482f1ad6-d857-5887-aba0-e0419181c829 ,
+        atns-link:2357209d-309b-5ede-bca8-96959e689f45 ,
+        atns-link:59eb95a0-0ea8-589a-9128-470d74fb78f3 ;
+    skos:historyNote "Derived manually from the ATNS link-types.tsv report to support preservation and migration of the ATNS data."@en ;
+    skos:prefLabel "ATNS Link Types"@en ;
+    schema:creator <https://orcid.org/0000-0001-5640-3202> ;
+    schema:dateCreated "2026-06-24"^^xsd:date ;
+    schema:dateModified "2026-06-24"^^xsd:date ;
+    schema:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+    schema:publisher <https://idn.org.au> ;
+    schema:status <https://linked.data.gov.au/def/reg-statuses/experimental> ;
+    schema:version "1" ;
+.
