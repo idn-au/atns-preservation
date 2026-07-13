@@ -15,6 +15,8 @@ Agreement-like distinctions such as framework agreement, funding agreement, ILUA
 
 Entity-to-entity relationships are represented as relationship nodes. This preserves the source `Entity_EntityID`, the subject entity, the object entity and the ATNS relationship-type concept. It also leaves room to attach provenance or confidence later.
 
+Entity-to-reference links use `dcterms:references` in the simple sample. The ATNS source also records reference-link roles such as `Primary`; if those qualifiers become important, model `Entity_Refs` rows as qualified relationship nodes rather than flattening them to direct reference links.
+
 ## Sensitivity note
 
 The sample intentionally uses public, non-deleted entity and reference rows only. It does not include attachment/document binaries or raw legal documents, because project context indicates some source materials may have been internal-only and not intended for public release.

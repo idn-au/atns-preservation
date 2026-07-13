@@ -5,6 +5,7 @@ PREFIX atns-entity: <https://data.idnau.org/pid/resource/atns/entity/>
 PREFIX atns-refdata: <https://data.idnau.org/pid/resource/atns/reference/>
 PREFIX atns-ref: <https://linked.data.gov.au/def/atns/ref/>
 PREFIX atns-rel: <https://linked.data.gov.au/def/atns/rel/>
+PREFIX atns-catalogue: <https://data.idnau.org/pid/resource/atns/catalogue/>
 PREFIX atns-relrow: <https://data.idnau.org/pid/resource/atns/entity-relationship/>
 PREFIX atns-sample: <https://data.idnau.org/pid/resource/atns/sample/>
 PREFIX atns-subcat: <https://linked.data.gov.au/def/atns/subcat/>
@@ -13,10 +14,23 @@ PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX schema: <https://schema.org/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
+atns-catalogue:atns-preservation
+    a schema:DataCatalog ;
+    dcterms:source <https://www.atns.net.au> ;
+    schema:citation <https://www.atns.net.au> ;
+    schema:dateCreated "2026-07-14"^^xsd:date ;
+    schema:description "Draft catalogue wrapper for RDF resources preserving records recovered from the Agreements, Treaties and Negotiated Settlements website."@en ;
+    schema:hasPart atns-sample:9790d0d2-9e7d-523d-9078-dde994b9896c ;
+    schema:name "ATNS Preservation Catalogue"@en ;
+.
+
 atns-sample:9790d0d2-9e7d-523d-9078-dde994b9896c
     a schema:Dataset ;
-    dcterms:source "ATNS_XML_05Apr22 export, sampled from public, non-deleted agreement records."@en ;
+    dcterms:source
+        "ATNS_XML_05Apr22 export, sampled from public, non-deleted agreement records."@en ,
+        <https://www.atns.net.au> ;
     owl:imports atns: ;
+    schema:citation <https://www.atns.net.au> ;
     schema:dateCreated "2026-07-14"^^xsd:date ;
     schema:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
     schema:name "ATNS public agreement sample"@en ;
@@ -28,10 +42,10 @@ atns-entity:34524ede-2abc-50f1-af30-8493753c928e
     atns:country atns-country:244f6961-729f-5b21-8fc9-baff9dd9af7e ;
     atns:deleted false ;
     atns:eid "A003259"^^xsd:token ;
-    atns:primaryReference atns-refdata:ca68a358-3931-5011-adfd-0a695adc4812 ;
-    atns:public true ;
+    schema:conditionsOfAccess "Public"@en ;
     atns:sourceEntityId 24 ;
     atns:subcategory atns-subcat:6ffe90c2-95c9-51b5-a083-8c7d83b975ef ;
+    dcterms:references atns-refdata:ca68a358-3931-5011-adfd-0a695adc4812 ;
     schema:abstract "Public ATNS summary describes a 2002 health agreement between Queensland, Commonwealth, ATSIC and Queensland Aboriginal and Islander Health Forum parties."@en ;
     schema:location "Queensland, Australia"@en ;
     schema:name "Agreement on Queensland Aboriginal and Torres Strait Islander Health"@en ;
@@ -45,7 +59,7 @@ atns-entity:dd9b004b-1c22-5b53-8381-bd93760ee922
     atns:country atns-country:244f6961-729f-5b21-8fc9-baff9dd9af7e ;
     atns:deleted false ;
     atns:eid "A003262"^^xsd:token ;
-    atns:public true ;
+    schema:conditionsOfAccess "Public"@en ;
     atns:sourceEntityId 27 ;
     atns:subcategory atns-subcat:09f0a068-ce65-5c11-8dec-f081d1a81ec2 ;
     schema:abstract "Public ATNS summary describes an Indigenous Land Use Agreement concerning native title and Telstra Corporation Limited interests in the agreement area."@en ;
@@ -60,10 +74,10 @@ atns-entity:3c2b10f8-eb83-5de4-b54d-28f7ed058109
     atns:country atns-country:244f6961-729f-5b21-8fc9-baff9dd9af7e ;
     atns:deleted false ;
     atns:eid "A003265"^^xsd:token ;
-    atns:primaryReference
+    dcterms:references
         atns-refdata:180b6fcc-dcc6-5592-a390-5179366066fd ,
         atns-refdata:97dd3be9-f4ca-586a-971a-594015bbfcc4 ;
-    atns:public true ;
+    schema:conditionsOfAccess "Public"@en ;
     atns:sourceEntityId 30 ;
     atns:subcategory
         atns-subcat:6ffe90c2-95c9-51b5-a083-8c7d83b975ef ,
@@ -82,10 +96,10 @@ atns-entity:7c1def57-546e-5389-bde5-24d566944930
     atns:country atns-country:244f6961-729f-5b21-8fc9-baff9dd9af7e ;
     atns:deleted false ;
     atns:eid "A003272"^^xsd:token ;
-    atns:primaryReference
+    dcterms:references
         atns-refdata:180b6fcc-dcc6-5592-a390-5179366066fd ,
         atns-refdata:0cca8502-926a-5770-88a4-de3ae0d9c4e9 ;
-    atns:public true ;
+    schema:conditionsOfAccess "Public"@en ;
     atns:sourceEntityId 37 ;
     atns:subcategory
         atns-subcat:6ffe90c2-95c9-51b5-a083-8c7d83b975ef ,
@@ -100,7 +114,7 @@ atns-entity:7c1def57-546e-5389-bde5-24d566944930
 atns-entity:9c0487c1-a143-57e0-874f-d3566a1b71e3
     atns:category atns-cat:1dad59ae-4020-598a-b5df-d9e0eae7f9c6 ;
     atns:deleted false ;
-    atns:public true ;
+    schema:conditionsOfAccess "Public"@en ;
     atns:sourceEntityId 384 ;
     schema:name "Telstra Corporation Limited"@en ;
 .
@@ -108,7 +122,7 @@ atns-entity:9c0487c1-a143-57e0-874f-d3566a1b71e3
 atns-entity:92c9e33d-4ac3-5bc8-8bcb-e76171dd13c9
     atns:category atns-cat:1dad59ae-4020-598a-b5df-d9e0eae7f9c6 ;
     atns:deleted false ;
-    atns:public true ;
+    schema:conditionsOfAccess "Public"@en ;
     atns:sourceEntityId 617 ;
     schema:name "Commonwealth of Australia"@en ;
 .
@@ -116,7 +130,7 @@ atns-entity:92c9e33d-4ac3-5bc8-8bcb-e76171dd13c9
 atns-entity:050308f6-67e6-52f6-82c9-56c20413cac6
     atns:category atns-cat:1dad59ae-4020-598a-b5df-d9e0eae7f9c6 ;
     atns:deleted false ;
-    atns:public true ;
+    schema:conditionsOfAccess "Public"@en ;
     atns:sourceEntityId 618 ;
     schema:name "Aboriginal and Torres Strait Islander Commission (ATSIC)"@en ;
 .
@@ -124,7 +138,7 @@ atns-entity:050308f6-67e6-52f6-82c9-56c20413cac6
 atns-entity:24e6bdb4-39f2-5b5c-b7d8-54d7cc8e7f9b
     atns:category atns-cat:1dad59ae-4020-598a-b5df-d9e0eae7f9c6 ;
     atns:deleted false ;
-    atns:public true ;
+    schema:conditionsOfAccess "Public"@en ;
     atns:sourceEntityId 760 ;
     schema:name "Queensland Aboriginal and Islander Health Forum"@en ;
 .
@@ -132,7 +146,7 @@ atns-entity:24e6bdb4-39f2-5b5c-b7d8-54d7cc8e7f9b
 atns-entity:b2d9f12b-163c-5975-a491-4989fae9ef78
     atns:category atns-cat:1dad59ae-4020-598a-b5df-d9e0eae7f9c6 ;
     atns:deleted false ;
-    atns:public true ;
+    schema:conditionsOfAccess "Public"@en ;
     atns:sourceEntityId 753 ;
     schema:name "Ngaanyatjarra Land Council"@en ;
 .
@@ -140,7 +154,7 @@ atns-entity:b2d9f12b-163c-5975-a491-4989fae9ef78
 atns-entity:d689a611-e0e8-5972-bcbe-3cd0ebe94f0f
     atns:category atns-cat:1dad59ae-4020-598a-b5df-d9e0eae7f9c6 ;
     atns:deleted false ;
-    atns:public true ;
+    schema:conditionsOfAccess "Public"@en ;
     atns:sourceEntityId 3160 ;
     schema:name "Yarnangu Ngaanyatjarraku Parna Aboriginal Corporation"@en ;
 .
@@ -148,7 +162,7 @@ atns-entity:d689a611-e0e8-5972-bcbe-3cd0ebe94f0f
 atns-entity:2f133c6b-1d33-5f72-94a1-82b250dcf3ff
     atns:category atns-cat:1dad59ae-4020-598a-b5df-d9e0eae7f9c6 ;
     atns:deleted false ;
-    atns:public true ;
+    schema:conditionsOfAccess "Public"@en ;
     atns:sourceEntityId 1845 ;
     schema:name "Australian Capital Territory"@en ;
 .
@@ -156,7 +170,7 @@ atns-entity:2f133c6b-1d33-5f72-94a1-82b250dcf3ff
 atns-entity:c8122728-6e9f-597c-b4d9-68b8858e66c7
     atns:category atns-cat:13e77fec-44fd-554f-a075-ec60788eb1b1 ;
     atns:deleted false ;
-    atns:public true ;
+    schema:conditionsOfAccess "Public"@en ;
     atns:sourceEntityId 1624 ;
     schema:name "Commonwealth State Housing Agreement 1999-2003"@en ;
 .
@@ -164,7 +178,7 @@ atns-entity:c8122728-6e9f-597c-b4d9-68b8858e66c7
 atns-refdata:ca68a358-3931-5011-adfd-0a695adc4812
     a atns:Reference ;
     atns:deleted false ;
-    atns:public true ;
+    schema:conditionsOfAccess "Public"@en ;
     atns:referenceType atns-ref:5f376307-9421-5ed8-aad9-7d12cb7b7fb6 ;
     atns:sourceReferenceId 1126 ;
     schema:author "Queensland Government"@en ;
@@ -176,7 +190,7 @@ atns-refdata:ca68a358-3931-5011-adfd-0a695adc4812
 atns-refdata:180b6fcc-dcc6-5592-a390-5179366066fd
     a atns:Reference ;
     atns:deleted false ;
-    atns:public true ;
+    schema:conditionsOfAccess "Public"@en ;
     atns:referenceType atns-ref:5f376307-9421-5ed8-aad9-7d12cb7b7fb6 ;
     atns:sourceReferenceId 1134 ;
     schema:author "ACT Department of Disability, Housing and Community Services (DHCS)"@en ;
@@ -188,7 +202,7 @@ atns-refdata:180b6fcc-dcc6-5592-a390-5179366066fd
 atns-refdata:0cca8502-926a-5770-88a4-de3ae0d9c4e9
     a atns:Reference ;
     atns:deleted false ;
-    atns:public true ;
+    schema:conditionsOfAccess "Public"@en ;
     atns:referenceType atns-ref:5f376307-9421-5ed8-aad9-7d12cb7b7fb6 ;
     atns:sourceReferenceId 1142 ;
     schema:author "ABC Radio National"@en ;
@@ -201,7 +215,7 @@ atns-refdata:0cca8502-926a-5770-88a4-de3ae0d9c4e9
 atns-refdata:97dd3be9-f4ca-586a-971a-594015bbfcc4
     a atns:Reference ;
     atns:deleted false ;
-    atns:public true ;
+    schema:conditionsOfAccess "Public"@en ;
     atns:referenceType atns-ref:5f376307-9421-5ed8-aad9-7d12cb7b7fb6 ;
     atns:sourceReferenceId 1238 ;
     schema:author "Senate Community Affairs Legislation Committee"@en ;

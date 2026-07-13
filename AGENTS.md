@@ -17,6 +17,16 @@ This repository preserves data recovered from the Agreements, Treaties and Negot
 - Represent relationship rows as nodes when source row identity, provenance, or uncertainty matters.
 - Model agreement-like distinctions such as ILUA, framework agreement, funding agreement, treaty, deed of settlement, and settlement agreement as subcategory concepts unless the project adopts a richer ontology.
 
+## IDN Catalogue Profile
+
+- Follow the IDN Catalogue Profile where ATNS resources are being shaped for IDN or Prez-style publication.
+- Treat the profile as current project guidance, not natural law. The specification is still settling; if it is inconsistent or underspecified, flag the issue and model pragmatically with the published terms available.
+- Use HTTP/HTTPS PID IRIs as resource IRIs where possible, following the profile's identifier requirement.
+- Do not duplicate HTTP/HTTPS PID IRIs as `schema:PropertyValue` identifier nodes.
+- Use `schema:identifier "..."^^xsd:token` only when a non-HTTP identifier needs to be recorded as a catalogue identifier.
+- Keep legacy ATNS identifiers, such as `EntityID`, `RefID`, `Entity_EntityID` and `EID`, as preservation/source-system identifiers unless a more specific publication pattern is agreed.
+- Use `schema:conditionsOfAccess "Public"@en` for public sample records. Prefer a controlled access-rights concept later only when suitable concepts and the project pattern are clear. Avoid `schema:permissions` for data access status.
+
 ## Tools
 
 - Use the cross-project `kurra-rdf-workflow` skill for RDF, SPARQL, SHACL, and Kurra-oriented work.
