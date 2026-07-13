@@ -1,0 +1,174 @@
+PREFIX atns: <https://linked.data.gov.au/def/atns/model/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+atns:
+    a owl:Ontology ;
+    rdfs:label "ATNS sample preservation model"@en ;
+    rdfs:comment "Minimal draft terms used by the ATNS sample instance data. These terms are intentionally conservative: controlled-list values remain SKOS concepts and source row identifiers are retained for traceability."@en ;
+    schema:dateCreated "2026-07-14"^^xsd:date ;
+    schema:description "A minimal preservation-oriented model for sample data recovered from the Agreements, Treaties and Negotiated Settlements database. The model keeps ATNS entities, references, controlled-list classifications and source relationship rows explicit so that legacy semantics can be migrated toward Prez-compatible RDF without prematurely imposing a full domain ontology."@en ;
+    schema:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+    schema:name "Agreements, Treaties and Negotiated Settlements Sample Preservation Model"@en ;
+    schema:status <https://linked.data.gov.au/def/reg-statuses/experimental> ;
+.
+
+atns:Entity
+    a owl:Class ;
+    rdfs:label "ATNS entity"@en ;
+    rdfs:comment "A record from the ATNS Entities table."@en ;
+    schema:description "A preserved record from the ATNS Entities table. Entity records are the central units in the legacy ATNS data and may represent agreements, organisations, events, legislation, people, places, case law, policies or strategies according to their ATNS category."@en ;
+    schema:name "Agreements, Treaties and Negotiated Settlements Entity"@en ;
+.
+
+atns:Agreement
+    a owl:Class ;
+    rdfs:subClassOf atns:Entity ;
+    rdfs:label "Agreement"@en ;
+    rdfs:comment "An ATNS entity classified with the ATNS entity category Agreement."@en ;
+    schema:description "An ATNS entity classified with the ATNS entity category Agreement. Agreement-like distinctions such as ILUA, framework agreement, funding agreement, treaty, deed of settlement and settlement agreement are represented separately as ATNS subcategory concepts unless a richer project ontology is adopted."@en ;
+    schema:name "Agreement"@en ;
+.
+
+atns:Reference
+    a owl:Class ;
+    rdfs:label "ATNS reference"@en ;
+    rdfs:comment "A bibliographic or web reference from the ATNS Refs table."@en ;
+    schema:description "A bibliographic, web or documentary reference preserved from the ATNS Refs table. References are modelled as first-class resources so they can be linked to entities and typed with ATNS reference-type concepts."@en ;
+    schema:name "Agreements, Treaties and Negotiated Settlements Reference"@en ;
+.
+
+atns:EntityRelationship
+    a owl:Class ;
+    rdfs:label "ATNS entity relationship"@en ;
+    rdfs:comment "A source relationship row connecting two ATNS entities and, where present, a relationship type concept."@en ;
+    schema:description "A preserved source row from the ATNS Entity_Entity join table. Relationship rows identify a subject entity, an object entity and, where supplied, the controlled-list relationship type used in the legacy data."@en ;
+    schema:name "Agreements, Treaties and Negotiated Settlements Entity Relationship"@en ;
+.
+
+atns:eid
+    a owl:DatatypeProperty ;
+    rdfs:label "ATNS EID"@en ;
+    schema:description "The public-facing or legacy ATNS entity identifier recorded in the EID field, such as A003259. This identifier is distinct from the numeric source EntityID."@en ;
+    schema:name "ATNS Entity Identifier"@en ;
+    rdfs:domain atns:Entity ;
+    rdfs:range xsd:token ;
+.
+
+atns:sourceEntityId
+    a owl:DatatypeProperty ;
+    rdfs:label "source EntityID"@en ;
+    schema:description "The numeric primary key of the source row in the ATNS Entities table."@en ;
+    schema:name "Source Entity Identifier"@en ;
+    rdfs:domain atns:Entity ;
+    rdfs:range xsd:integer ;
+.
+
+atns:sourceReferenceId
+    a owl:DatatypeProperty ;
+    rdfs:label "source RefID"@en ;
+    schema:description "The numeric primary key of the source row in the ATNS Refs table."@en ;
+    schema:name "Source Reference Identifier"@en ;
+    rdfs:domain atns:Reference ;
+    rdfs:range xsd:integer ;
+.
+
+atns:sourceRelationshipId
+    a owl:DatatypeProperty ;
+    rdfs:label "source Entity_EntityID"@en ;
+    schema:description "The numeric primary key of the source row in the ATNS Entity_Entity relationship table."@en ;
+    schema:name "Source Entity Relationship Identifier"@en ;
+    rdfs:domain atns:EntityRelationship ;
+    rdfs:range xsd:integer ;
+.
+
+atns:category
+    a owl:ObjectProperty ;
+    rdfs:label "ATNS category"@en ;
+    schema:description "Links an ATNS entity to the controlled-list concept that records its top-level ATNS entity category."@en ;
+    schema:name "ATNS Entity Category"@en ;
+    rdfs:domain atns:Entity ;
+    rdfs:range skos:Concept ;
+.
+
+atns:subcategory
+    a owl:ObjectProperty ;
+    rdfs:label "ATNS subcategory"@en ;
+    schema:description "Links an ATNS entity to one or more controlled-list concepts that record more specific ATNS classifications."@en ;
+    schema:name "ATNS Entity Subcategory"@en ;
+    rdfs:domain atns:Entity ;
+    rdfs:range skos:Concept ;
+.
+
+atns:country
+    a owl:ObjectProperty ;
+    rdfs:label "ATNS country"@en ;
+    schema:description "Links an ATNS entity to the controlled-list country concept recorded for the source entity."@en ;
+    schema:name "ATNS Country Classification"@en ;
+    rdfs:domain atns:Entity ;
+    rdfs:range skos:Concept ;
+.
+
+atns:referenceType
+    a owl:ObjectProperty ;
+    rdfs:label "ATNS reference type"@en ;
+    schema:description "Links an ATNS reference to the controlled-list concept that records its ATNS reference type."@en ;
+    schema:name "ATNS Reference Type"@en ;
+    rdfs:domain atns:Reference ;
+    rdfs:range skos:Concept ;
+.
+
+atns:primaryReference
+    a owl:ObjectProperty ;
+    rdfs:label "primary reference"@en ;
+    schema:description "Links an ATNS entity to a reference identified in the source data as a primary reference for that entity."@en ;
+    schema:name "Primary Reference"@en ;
+    rdfs:domain atns:Entity ;
+    rdfs:range atns:Reference ;
+.
+
+atns:subjectEntity
+    a owl:ObjectProperty ;
+    rdfs:label "subject entity"@en ;
+    schema:description "Links an ATNS entity relationship row to the source entity from which the relationship is asserted."@en ;
+    schema:name "Subject Entity"@en ;
+    rdfs:domain atns:EntityRelationship ;
+    rdfs:range atns:Entity ;
+.
+
+atns:objectEntity
+    a owl:ObjectProperty ;
+    rdfs:label "object entity"@en ;
+    schema:description "Links an ATNS entity relationship row to the related target entity."@en ;
+    schema:name "Object Entity"@en ;
+    rdfs:domain atns:EntityRelationship ;
+    rdfs:range atns:Entity ;
+.
+
+atns:relationshipType
+    a owl:ObjectProperty ;
+    rdfs:label "relationship type"@en ;
+    schema:description "Links an ATNS entity relationship row to the controlled-list concept that describes the relationship, such as Signatory, Related or Later known as."@en ;
+    schema:name "Relationship Type"@en ;
+    rdfs:domain atns:EntityRelationship ;
+    rdfs:range skos:Concept ;
+.
+
+atns:public
+    a owl:DatatypeProperty ;
+    rdfs:label "public flag"@en ;
+    schema:description "Boolean flag preserving whether the source ATNS row was marked public."@en ;
+    schema:name "Public Status Flag"@en ;
+    rdfs:range xsd:boolean ;
+.
+
+atns:deleted
+    a owl:DatatypeProperty ;
+    rdfs:label "deleted flag"@en ;
+    schema:description "Boolean flag preserving whether the source ATNS row was marked deleted."@en ;
+    schema:name "Deleted Status Flag"@en ;
+    rdfs:range xsd:boolean ;
+.
