@@ -18,3 +18,18 @@ Hypothesis:
 Entities represent agreements, organisations, groups, people and other resources.
 
 Entity_Entity represents graph edges.
+
+
+Agreement
+Organisation
+Person
+Legislation
+Place
+Event
+
+Agreement ---signatory---> Organisation
+Agreement ---respondent--> Organisation
+Agreement ---claimant----> Person
+Organisation ---member---> Person
+Organisation ---partner--> Organisation
+Organisation ---formerlyKnownAs--> Organisation
