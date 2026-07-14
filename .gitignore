@@ -2,3 +2,5 @@ raw/xml/*
 !raw/xml/readme.md
 raw/*.zip
 AGENTS.md
+reports/sample-*.md
+39
