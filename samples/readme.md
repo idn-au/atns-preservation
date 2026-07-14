@@ -2,7 +2,7 @@
 
 These files are small modelling samples for public, non-deleted ATNS agreement records:
 
-- `atns-sample-model.ttl` defines conservative draft classes and properties for sample instance data.
+- `atns-model.ttl` defines conservative draft classes and properties for sample instance data.
 - `public-agreements.ttl` contains four public agreement examples and a small set of related public entity/reference records.
 
 ## Modelling notes
