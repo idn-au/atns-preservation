@@ -9,6 +9,7 @@ PREFIX atns-catalogue: <https://data.idnau.org/pid/resource/atns/catalogue/>
 PREFIX atns-relrow: <https://data.idnau.org/pid/resource/atns/entity-relationship/>
 PREFIX atns-sample: <https://data.idnau.org/pid/resource/atns/sample/>
 PREFIX atns-subcat: <https://linked.data.gov.au/def/atns/subcat/>
+PREFIX atns-sub: <https://linked.data.gov.au/def/atns/sub/>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX schema: <https://schema.org/>
@@ -28,6 +29,9 @@ atns-entity:7c1def57-546e-5389-bde5-24d566944930
     atns:subcategory
         atns-subcat:6ffe90c2-95c9-51b5-a083-8c7d83b975ef ,
         atns-subcat:f0427812-61d1-5004-b577-ac236a9c5c18 ;
+    atns:subjectMatter
+        atns-sub:d15dd1de-4696-50c8-9f10-2e95eea88e6f ,
+        atns-sub:ffe61b3b-8b29-5264-89ac-758a03928ea5 ;
     schema:abstract "Public ATNS summary describes a Commonwealth, State and Territory housing agreement authorised under the Housing Assistance Act 1996 (Cth)."@en ;
     schema:location "Australia"@en ;
     schema:name "Commonwealth State Housing Agreement 2003-2008"@en ;

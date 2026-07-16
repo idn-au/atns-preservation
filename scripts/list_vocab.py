@@ -9,7 +9,7 @@ UUID_NAMESPACE = uuid.UUID("00000000-0000-0000-0000-000000000000")
 
 SCHEME = {
     "1": "atns-entity-category",
-    "2": "atns-subject",
+    "2": "atns-sub",
     "3": "atns-document-type",
     "4": "atns-attachment-type",
     "5": "atns-payment-type",

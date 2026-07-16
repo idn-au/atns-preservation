@@ -1,0 +1,30 @@
+PREFIX atns-att: <https://linked.data.gov.au/def/atns/att/>
+PREFIX coar-resource-type: <http://purl.org/coar/resource_type/>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/atns/mapping/attachment-type>
+    a owl:Ontology ;
+    dcterms:created "2026-07-14"^^xsd:date ;
+    dcterms:description "Draft mappings and transformation hints for legacy ATNS attachment types. The source list mixes derivative role, media type and resource type."@en ;
+    dcterms:title "ATNS attachment-type mappings"@en ;
+.
+
+atns-att:b54a6a1c-6bd4-577d-8591-922be45eb914
+    dcterms:relation dbo:thumbnail ;
+    skos:editorialNote "Thumbnail describes the attachment's derivative role, not its media type. During transformation, dbo:thumbnail may be used as the predicate linking the primary resource to this attachment; it is a property and therefore not a SKOS exact-match target."@en ;
+.
+
+atns-att:b15bcf06-bcfa-5f93-8794-706bfb472a42
+    schema:encodingFormat "application/pdf" ;
+    skos:editorialNote "Transform this legacy value to the registered IANA media type application/pdf rather than to a resource-type concept."@en ;
+.
+
+atns-att:9887ae1e-1973-5c1e-ace5-1a67847b0390
+    skos:exactMatch coar-resource-type:c_c513 ;
+    skos:editorialNote "Use the attachment filename or detected media type to derive a more specific encoding format during transformation."@en ;
+.

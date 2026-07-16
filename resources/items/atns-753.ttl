@@ -9,6 +9,7 @@ PREFIX atns-catalogue: <https://data.idnau.org/pid/resource/atns/catalogue/>
 PREFIX atns-relrow: <https://data.idnau.org/pid/resource/atns/entity-relationship/>
 PREFIX atns-sample: <https://data.idnau.org/pid/resource/atns/sample/>
 PREFIX atns-subcat: <https://linked.data.gov.au/def/atns/subcat/>
+PREFIX atns-sub: <https://linked.data.gov.au/def/atns/sub/>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX schema: <https://schema.org/>
@@ -19,5 +20,6 @@ atns-entity:b2d9f12b-163c-5975-a491-4989fae9ef78
     atns:deleted false ;
     schema:conditionsOfAccess "Public"@en ;
     atns:sourceEntityId 753 ;
+    atns:subjectMatter atns-sub:c74e76ef-701f-5784-8223-5fcd87a7641c ;
     schema:name "Ngaanyatjarra Land Council"@en ;
 .

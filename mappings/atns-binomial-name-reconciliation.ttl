@@ -1,0 +1,167 @@
+PREFIX atns-bin: <https://linked.data.gov.au/def/atns/bin/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/atns/mapping/binomial-name>
+    a owl:Ontology ;
+    dcterms:created "2026-07-14"^^xsd:date ;
+    dcterms:description "Draft reconciliation of the heterogeneous legacy ATNS Binomial Names list. Organization links use schema:sameAs, geographic concepts use SKOS mappings, and unresolved values retain editorial notes."@en ;
+    dcterms:title "ATNS binomial-name reconciliation"@en ;
+.
+
+# The source ListElement value is empty; it should produce no value downstream.
+atns-bin:0b750760-1974-52db-80e5-0b6a18e8118b
+    skos:editorialNote "Null/default source value represented as 'None' in the preservation vocabulary. Suppress it during transformation."@en ;
+.
+
+# Geographic values
+atns-bin:f12880eb-9806-5a8c-8f93-cff17c826824
+    skos:exactMatch <https://sws.geonames.org/6251999/> ;
+.
+
+atns-bin:10ef9d24-7dff-5f3a-ba0e-ffcc45a69952
+    skos:exactMatch <https://sws.geonames.org/2186224/> ;
+.
+
+atns-bin:07782c9c-fe69-558c-8dbe-0b64836c2fa4
+    skos:exactMatch <https://sws.geonames.org/2064513/> ;
+.
+
+# Organizations with verified ROR records. No suitable record was exposed by
+# the public representation of the incomplete linked.data.gov.au organisation
+# register. Preferred linked.data.gov.au IRIs found in the registry source clone
+# are used below where available.
+atns-bin:2038b638-2d8b-50a1-b4ec-bed6454f5555
+    schema:sameAs <https://ror.org/03fy7b149> ;
+.
+
+atns-bin:5367a0e0-8c1b-5838-b5d9-fce02d316239
+    schema:sameAs <https://linked.data.gov.au/org/au> ;
+.
+
+atns-bin:8ff63804-6190-5f43-afd2-f7447ea5a092
+    schema:sameAs <https://ror.org/04tehfn33> ;
+.
+
+atns-bin:76d912c6-409b-5770-b149-44579f2cba6a
+    schema:sameAs <https://ror.org/04h4z8k05> ;
+.
+
+atns-bin:dd7c0dce-59e4-5e3a-9c45-218a8c9a58d2
+    schema:sameAs <https://ror.org/04v3jxv31> ;
+.
+
+atns-bin:61f41b74-6a29-562c-b69f-7c6b822a48e8
+    schema:sameAs <https://ror.org/05waa5295> ;
+.
+
+atns-bin:3cbca855-934c-5b28-8b23-e06ed655c422
+    schema:sameAs <https://linked.data.gov.au/org/nt> ;
+.
+
+# Likely duplicate organization labels within the legacy list.
+atns-bin:731091c2-89f7-5842-84e4-40a6db93e8c3
+    schema:sameAs <https://linked.data.gov.au/org/nsw> ;
+    skos:exactMatch atns-bin:d0d8ff42-a8e2-50f5-ae25-efdcc2cc1e25 ;
+.
+
+atns-bin:d0d8ff42-a8e2-50f5-ae25-efdcc2cc1e25
+    schema:sameAs <https://linked.data.gov.au/org/nsw> ;
+.
+
+atns-bin:587e8afd-83db-5327-baff-2ceaa178ac11
+    schema:sameAs <https://linked.data.gov.au/org/qld> ;
+    skos:exactMatch atns-bin:991c15e6-4b0c-5673-87c9-e97f71787e9b ;
+.
+
+atns-bin:991c15e6-4b0c-5673-87c9-e97f71787e9b
+    schema:sameAs <https://linked.data.gov.au/org/qld> ;
+.
+
+atns-bin:45e2e8d9-b8df-549d-8e92-f9719cbf4cc4
+    schema:sameAs <https://ror.org/04g3scy39> ;
+    skos:exactMatch atns-bin:df46a985-5629-51f2-9583-b5d15c144b71 ;
+.
+
+atns-bin:df46a985-5629-51f2-9583-b5d15c144b71
+    schema:sameAs <https://ror.org/04g3scy39> ;
+.
+
+atns-bin:e155d132-752b-5e83-b4a3-f09d038870b1
+    schema:sameAs <https://ror.org/04k0s2970> ;
+    skos:exactMatch atns-bin:f9278799-622c-50b8-a7e6-65ae1a0a99c8 ;
+.
+
+atns-bin:f9278799-622c-50b8-a7e6-65ae1a0a99c8
+    schema:sameAs <https://ror.org/04k0s2970> ;
+.
+
+atns-bin:5c5e7cba-b451-507a-b54f-66de20969da7
+    schema:sameAs <https://ror.org/02xvc5r05> ;
+    skos:exactMatch atns-bin:0be6d48e-24fe-5ffb-92a3-41abd3eee9cb ;
+.
+
+atns-bin:0be6d48e-24fe-5ffb-92a3-41abd3eee9cb
+    schema:sameAs <https://ror.org/02xvc5r05> ;
+.
+
+atns-bin:1c70cc5a-e818-5561-ac77-dec7c2f835a7
+    schema:sameAs <https://ror.org/00wqdbc63> ;
+    skos:exactMatch atns-bin:1e60b4a6-6f97-5469-9d9c-d38e6a760832 ;
+.
+
+atns-bin:1e60b4a6-6f97-5469-9d9c-d38e6a760832
+    schema:sameAs <https://ror.org/00wqdbc63> ;
+.
+
+atns-bin:451f37ca-f556-5de2-8585-4dbe66c0ef34
+    schema:sameAs <https://ror.org/01gwm7a05> ;
+.
+
+# These are classifications, not named agents.
+atns-bin:a0d04a97-0736-54ec-88fa-2a8fc06ea8fb
+    skos:editorialNote "Agreement-type value. Reconcile to an agreement-type vocabulary rather than an organization registry."@en ;
+.
+
+atns-bin:2653d364-aa2e-56af-8e5b-be9254f4369b
+    skos:editorialNote "Agreement-type value. Reconcile to an agreement-type vocabulary rather than an organization registry."@en ;
+.
+
+# Apparent offices or role strings, not identifiable natural persons. Do not
+# assign ORCID IRIs unless a named person can be established from source context.
+atns-bin:36176323-4627-5e49-958d-f57e793c2ff6
+    skos:editorialNote "Ambiguous office or role string ('Councilor TRAWQ'); no ORCID reconciliation attempted."@en ;
+.
+
+atns-bin:49447d8d-056e-5a72-ac89-3c9e1534234e
+    skos:editorialNote "Office or role ('Director General NPWS'), not a named person; no ORCID reconciliation attempted."@en ;
+.
+
+atns-bin:9f34e69d-dcbf-5bcf-9bdd-dfdd26622783
+    skos:editorialNote "Office or role ('MLC, Minister for Lands (NSW)'), not a named person; no ORCID reconciliation attempted."@en ;
+.
+
+atns-bin:440e69c0-bd40-5b65-bc32-1f98d27229a2
+    skos:editorialNote "Dated ministerial office, not a named person; no ORCID reconciliation attempted."@en ;
+.
+
+# Candidate organizations checked without a usable linked.data.gov.au/org or
+# ROR match. Retain locally for manual reconciliation.
+atns-bin:594f5c21-a870-5c55-aaaf-20cf0af6b375
+    skos:editorialNote "Federal Court of Australia: no suitable linked.data.gov.au/org or ROR record found."@en ;
+.
+
+atns-bin:75bc01dd-e4b5-5ae6-b28f-084858c4c8c6
+    skos:editorialNote "High Court of Australia: no suitable linked.data.gov.au/org or ROR record found."@en ;
+.
+
+atns-bin:fd9b711b-0712-5cbb-84c7-8a1b5f03a825
+    skos:editorialNote "Historical Australian Government department: no suitable linked.data.gov.au/org or ROR record found."@en ;
+.
+
+atns-bin:6aebe488-d375-5d74-8847-77078669eed9
+    skos:editorialNote "Historical Northern Territory department: no suitable linked.data.gov.au/org or ROR record found."@en ;
+.

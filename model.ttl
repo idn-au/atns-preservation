@@ -119,6 +119,16 @@ atns:subcategory
     rdfs:range skos:Concept ;
 .
 
+atns:subjectMatter
+    a owl:ObjectProperty ;
+    rdfs:isDefinedBy atns: ;
+    rdfs:label "ATNS subject matter"@en ;
+    schema:description "Links an ATNS entity to one or more controlled-list concepts that describe its subject matter."@en ;
+    schema:name "ATNS Subject Matter"@en ;
+    rdfs:domain atns:Entity ;
+    rdfs:range skos:Concept ;
+.
+
 atns:country
     a owl:ObjectProperty ;
     rdfs:isDefinedBy atns: ;

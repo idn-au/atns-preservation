@@ -6,7 +6,7 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/atns/sub/atns-subject:06f9cf03-2d66-5dfe-807c-b7632b2ea564>
+<https://linked.data.gov.au/def/atns/sub/06f9cf03-2d66-5dfe-807c-b7632b2ea564>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Local Government"@en ;
@@ -16,7 +16,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/def/atns/sub/atns-subject:078baf41-50e7-561d-9163-fb3b43a98261>
+<https://linked.data.gov.au/def/atns/sub/078baf41-50e7-561d-9163-fb3b43a98261>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Implementation"@en ;
@@ -26,7 +26,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/def/atns/sub/atns-subject:0dd6cccd-dec1-56e3-93da-f93c889a921d>
+<https://linked.data.gov.au/def/atns/sub/0dd6cccd-dec1-56e3-93da-f93c889a921d>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Green Energy"@en ;
@@ -36,7 +36,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/def/atns/sub/atns-subject:17d993e0-d19e-5349-a48e-4de57b1dba59>
+<https://linked.data.gov.au/def/atns/sub/17d993e0-d19e-5349-a48e-4de57b1dba59>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Cultural Heritage"@en ;
@@ -46,7 +46,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/def/atns/sub/atns-subject:1ec05be0-16ac-52de-bf3b-54bec0211332>
+<https://linked.data.gov.au/def/atns/sub/1ec05be0-16ac-52de-bf3b-54bec0211332>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Management / Administration"@en ;
@@ -56,7 +56,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/def/atns/sub/atns-subject:226851a5-4652-58c0-9a88-448bc922deed>
+<https://linked.data.gov.au/def/atns/sub/226851a5-4652-58c0-9a88-448bc922deed>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Defence"@en ;
@@ -66,7 +66,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/def/atns/sub/atns-subject:29221ef9-81d0-59aa-a9c9-744b71ff8349>
+<https://linked.data.gov.au/def/atns/sub/29221ef9-81d0-59aa-a9c9-744b71ff8349>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Land Use"@en ;
@@ -76,7 +76,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/def/atns/sub/atns-subject:2dbadeb9-2a38-5b9f-ad49-b1fddafe7c93>
+<https://linked.data.gov.au/def/atns/sub/2dbadeb9-2a38-5b9f-ad49-b1fddafe7c93>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Research"@en ;
@@ -86,7 +86,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/def/atns/sub/atns-subject:3302d162-15ce-5b7d-ad89-1f11c3cb6e0d>
+<https://linked.data.gov.au/def/atns/sub/3302d162-15ce-5b7d-ad89-1f11c3cb6e0d>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Mining and Minerals"@en ;
@@ -96,7 +96,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/def/atns/sub/atns-subject:35e19906-2659-5157-8aee-b9d82eedbb1c>
+<https://linked.data.gov.au/def/atns/sub/35e19906-2659-5157-8aee-b9d82eedbb1c>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Exploration"@en ;
@@ -106,7 +106,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/def/atns/sub/atns-subject:45d231c6-43e2-507e-b962-39416468877c>
+<https://linked.data.gov.au/def/atns/sub/45d231c6-43e2-507e-b962-39416468877c>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Agriculture"@en ;
@@ -116,7 +116,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/def/atns/sub/atns-subject:4f924c21-9e16-51f1-823e-8944b84c7142>
+<https://linked.data.gov.au/def/atns/sub/4f924c21-9e16-51f1-823e-8944b84c7142>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Land Planning"@en ;
@@ -126,7 +126,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/def/atns/sub/atns-subject:51637aba-8d5a-5309-abd9-b42fbe3ec733>
+<https://linked.data.gov.au/def/atns/sub/51637aba-8d5a-5309-abd9-b42fbe3ec733>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Fishing"@en ;
@@ -136,7 +136,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/def/atns/sub/atns-subject:51ca8813-b7bb-5a37-819e-afae35771fff>
+<https://linked.data.gov.au/def/atns/sub/51ca8813-b7bb-5a37-819e-afae35771fff>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Economic Development"@en ;
@@ -146,7 +146,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/def/atns/sub/atns-subject:5996de0c-8cc6-5f14-8901-d839af36a4d4>
+<https://linked.data.gov.au/def/atns/sub/5996de0c-8cc6-5f14-8901-d839af36a4d4>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Collaboration / Partnership"@en ;
@@ -156,7 +156,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/def/atns/sub/atns-subject:61167f4a-3766-5848-9d7f-369aa9ebd427>
+<https://linked.data.gov.au/def/atns/sub/61167f4a-3766-5848-9d7f-369aa9ebd427>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Intra-Indigenous Agreement"@en ;
@@ -166,7 +166,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/def/atns/sub/atns-subject:6a8815da-e29d-506f-85fd-c64c8807fea2>
+<https://linked.data.gov.au/def/atns/sub/6a8815da-e29d-506f-85fd-c64c8807fea2>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Education"@en ;
@@ -176,7 +176,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/def/atns/sub/atns-subject:6dbc2651-9cf2-58ba-a929-248a3b0b9e86>
+<https://linked.data.gov.au/def/atns/sub/6dbc2651-9cf2-58ba-a929-248a3b0b9e86>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Self Government"@en ;
@@ -186,7 +186,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/def/atns/sub/atns-subject:710c226b-1fba-5eba-86c9-5087f506ac80>
+<https://linked.data.gov.au/def/atns/sub/710c226b-1fba-5eba-86c9-5087f506ac80>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Land Transaction"@en ;
@@ -196,7 +196,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/def/atns/sub/atns-subject:746b3b59-88ea-5685-81f7-1558875d7c47>
+<https://linked.data.gov.au/def/atns/sub/746b3b59-88ea-5685-81f7-1558875d7c47>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Recognition of Native Title or Traditional Ownership"@en ;
@@ -206,7 +206,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/def/atns/sub/atns-subject:7cc37d9a-fe3c-5fec-b115-d1bb8d72db9c>
+<https://linked.data.gov.au/def/atns/sub/7cc37d9a-fe3c-5fec-b115-d1bb8d72db9c>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Land Management"@en ;
@@ -216,7 +216,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/def/atns/sub/atns-subject:81edd075-cb8e-5a7e-a65d-a47cec815898>
+<https://linked.data.gov.au/def/atns/sub/81edd075-cb8e-5a7e-a65d-a47cec815898>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Oil and Gas"@en ;
@@ -226,7 +226,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/def/atns/sub/atns-subject:8afa6040-57f6-5faf-a4f9-863bd8f4f470>
+<https://linked.data.gov.au/def/atns/sub/8afa6040-57f6-5faf-a4f9-863bd8f4f470>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Water"@en ;
@@ -236,7 +236,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/def/atns/sub/atns-subject:8ba4812a-c06b-587d-b491-67362ac3f001>
+<https://linked.data.gov.au/def/atns/sub/8ba4812a-c06b-587d-b491-67362ac3f001>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Recognition Agreement / Acknowledgement"@en ;
@@ -246,7 +246,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/def/atns/sub/atns-subject:9073e633-80a9-5ba7-8892-f556bd0a0612>
+<https://linked.data.gov.au/def/atns/sub/9073e633-80a9-5ba7-8892-f556bd0a0612>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Employment and Training"@en ;
@@ -256,7 +256,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/def/atns/sub/atns-subject:9335b2f1-4915-55cc-9736-2ded7c4a2008>
+<https://linked.data.gov.au/def/atns/sub/9335b2f1-4915-55cc-9736-2ded7c4a2008>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Access"@en ;
@@ -266,7 +266,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/def/atns/sub/atns-subject:9468ab8c-2b3a-54c2-b5e8-88e552bdd046>
+<https://linked.data.gov.au/def/atns/sub/9468ab8c-2b3a-54c2-b5e8-88e552bdd046>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Land Settlement"@en ;
@@ -276,7 +276,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/def/atns/sub/atns-subject:97be12ad-fd1c-5136-9323-0929eb90b556>
+<https://linked.data.gov.au/def/atns/sub/97be12ad-fd1c-5136-9323-0929eb90b556>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Petroleum"@en ;
@@ -286,7 +286,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/def/atns/sub/atns-subject:99f93fc8-8a58-5ec5-a630-93b5790334b4>
+<https://linked.data.gov.au/def/atns/sub/99f93fc8-8a58-5ec5-a630-93b5790334b4>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Youth"@en ;
@@ -296,7 +296,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/def/atns/sub/atns-subject:9c404ff9-19e6-5e64-a8bd-2e3b39773146>
+<https://linked.data.gov.au/def/atns/sub/9c404ff9-19e6-5e64-a8bd-2e3b39773146>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Future Act"@en ;
@@ -306,7 +306,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/def/atns/sub/atns-subject:9e5e8f61-69be-5e2a-a9cd-58fb000349bd>
+<https://linked.data.gov.au/def/atns/sub/9e5e8f61-69be-5e2a-a9cd-58fb000349bd>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Recognition of Traditional Rights and Interests"@en ;
@@ -316,7 +316,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/def/atns/sub/atns-subject:aa1bc55e-742c-5978-99d6-fac55a6e5775>
+<https://linked.data.gov.au/def/atns/sub/aa1bc55e-742c-5978-99d6-fac55a6e5775>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Horticulture"@en ;
@@ -326,7 +326,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/def/atns/sub/atns-subject:b39d3bcb-b425-5b5d-b1f1-9735a7a6a23b>
+<https://linked.data.gov.au/def/atns/sub/b39d3bcb-b425-5b5d-b1f1-9735a7a6a23b>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Law - Policy and Justice"@en ;
@@ -336,7 +336,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/def/atns/sub/atns-subject:b5868ee2-df76-5e62-ae92-ff325f5dbc01>
+<https://linked.data.gov.au/def/atns/sub/b5868ee2-df76-5e62-ae92-ff325f5dbc01>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Marine"@en ;
@@ -346,7 +346,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/def/atns/sub/atns-subject:b9cb4d2e-5a5b-57ae-a2ac-5450c37a61d8>
+<https://linked.data.gov.au/def/atns/sub/b9cb4d2e-5a5b-57ae-a2ac-5450c37a61d8>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Consultation"@en ;
@@ -356,7 +356,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/def/atns/sub/atns-subject:bda82010-54a4-5bac-8bf5-4b5341822974>
+<https://linked.data.gov.au/def/atns/sub/bda82010-54a4-5bac-8bf5-4b5341822974>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Pastoral Activities"@en ;
@@ -366,7 +366,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/def/atns/sub/atns-subject:c3a6447e-4d24-590c-b351-d34140bf0801>
+<https://linked.data.gov.au/def/atns/sub/c3a6447e-4d24-590c-b351-d34140bf0801>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Financial Services"@en ;
@@ -376,7 +376,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/def/atns/sub/atns-subject:c74e76ef-701f-5784-8223-5fcd87a7641c>
+<https://linked.data.gov.au/def/atns/sub/c74e76ef-701f-5784-8223-5fcd87a7641c>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Native Title"@en ;
@@ -386,7 +386,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/def/atns/sub/atns-subject:d15dd1de-4696-50c8-9f10-2e95eea88e6f>
+<https://linked.data.gov.au/def/atns/sub/d15dd1de-4696-50c8-9f10-2e95eea88e6f>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Health and Community Services"@en ;
@@ -396,7 +396,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/def/atns/sub/atns-subject:d18543b6-8e20-5924-993d-7df513bd89e2>
+<https://linked.data.gov.au/def/atns/sub/d18543b6-8e20-5924-993d-7df513bd89e2>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Aquaculture"@en ;
@@ -406,7 +406,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/def/atns/sub/atns-subject:dbff1607-a2a3-5baf-995d-8c9bb0552665>
+<https://linked.data.gov.au/def/atns/sub/dbff1607-a2a3-5baf-995d-8c9bb0552665>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Native Title - Extinguishment"@en ;
@@ -416,7 +416,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/def/atns/sub/atns-subject:dc50c698-80b0-5ef4-bd95-928f2be8da05>
+<https://linked.data.gov.au/def/atns/sub/dc50c698-80b0-5ef4-bd95-928f2be8da05>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Compensation"@en ;
@@ -426,7 +426,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/def/atns/sub/atns-subject:df1f9525-0566-5955-b635-505a930f14b2>
+<https://linked.data.gov.au/def/atns/sub/df1f9525-0566-5955-b635-505a930f14b2>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Leadership"@en ;
@@ -436,7 +436,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/def/atns/sub/atns-subject:e39913b8-e0d0-5c07-b96c-d2ac36af9557>
+<https://linked.data.gov.au/def/atns/sub/e39913b8-e0d0-5c07-b96c-d2ac36af9557>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Intellectual Property"@en ;
@@ -446,7 +446,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/def/atns/sub/atns-subject:e52a2091-dcda-569c-aafb-6497428c615c>
+<https://linked.data.gov.au/def/atns/sub/e52a2091-dcda-569c-aafb-6497428c615c>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Environmental Heritage"@en ;
@@ -456,7 +456,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/def/atns/sub/atns-subject:eb0505b2-1a8a-50e0-81ae-843a12f07744>
+<https://linked.data.gov.au/def/atns/sub/eb0505b2-1a8a-50e0-81ae-843a12f07744>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Customary Law"@en ;
@@ -466,7 +466,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/def/atns/sub/atns-subject:ef36130b-f525-5200-b398-93681fdc865b>
+<https://linked.data.gov.au/def/atns/sub/ef36130b-f525-5200-b398-93681fdc865b>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Sports and Physical Recreation"@en ;
@@ -476,7 +476,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/def/atns/sub/atns-subject:f373baa1-6611-5aae-a140-c2cd1c548f13>
+<https://linked.data.gov.au/def/atns/sub/f373baa1-6611-5aae-a140-c2cd1c548f13>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Reconciliation"@en ;
@@ -486,7 +486,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/def/atns/sub/atns-subject:f630e08a-ea9c-57e3-ab87-066e4b9ad57e>
+<https://linked.data.gov.au/def/atns/sub/f630e08a-ea9c-57e3-ab87-066e4b9ad57e>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Tourism"@en ;
@@ -496,7 +496,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/def/atns/sub/atns-subject:fdfa75e8-9832-5b80-93b8-4868091b8235>
+<https://linked.data.gov.au/def/atns/sub/fdfa75e8-9832-5b80-93b8-4868091b8235>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Transport"@en ;
@@ -506,7 +506,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/def/atns/sub/atns-subject:ff4e6e61-8ae5-5b37-b306-00502be1d9d6>
+<https://linked.data.gov.au/def/atns/sub/ff4e6e61-8ae5-5b37-b306-00502be1d9d6>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Forestry"@en ;
@@ -516,7 +516,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/def/atns/sub/atns-subject:ffe61b3b-8b29-5264-89ac-758a03928ea5>
+<https://linked.data.gov.au/def/atns/sub/ffe61b3b-8b29-5264-89ac-758a03928ea5>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Housing, Construction and Infrastructure"@en ;
@@ -537,58 +537,58 @@ cs:
     owl:versionIRI :None ;
     skos:definition "Subjects in the ATNS database"@en ;
     skos:hasTopConcept
-        <https://linked.data.gov.au/def/atns/sub/atns-subject:06f9cf03-2d66-5dfe-807c-b7632b2ea564> ,
-        <https://linked.data.gov.au/def/atns/sub/atns-subject:078baf41-50e7-561d-9163-fb3b43a98261> ,
-        <https://linked.data.gov.au/def/atns/sub/atns-subject:0dd6cccd-dec1-56e3-93da-f93c889a921d> ,
-        <https://linked.data.gov.au/def/atns/sub/atns-subject:17d993e0-d19e-5349-a48e-4de57b1dba59> ,
-        <https://linked.data.gov.au/def/atns/sub/atns-subject:1ec05be0-16ac-52de-bf3b-54bec0211332> ,
-        <https://linked.data.gov.au/def/atns/sub/atns-subject:226851a5-4652-58c0-9a88-448bc922deed> ,
-        <https://linked.data.gov.au/def/atns/sub/atns-subject:29221ef9-81d0-59aa-a9c9-744b71ff8349> ,
-        <https://linked.data.gov.au/def/atns/sub/atns-subject:2dbadeb9-2a38-5b9f-ad49-b1fddafe7c93> ,
-        <https://linked.data.gov.au/def/atns/sub/atns-subject:3302d162-15ce-5b7d-ad89-1f11c3cb6e0d> ,
-        <https://linked.data.gov.au/def/atns/sub/atns-subject:35e19906-2659-5157-8aee-b9d82eedbb1c> ,
-        <https://linked.data.gov.au/def/atns/sub/atns-subject:45d231c6-43e2-507e-b962-39416468877c> ,
-        <https://linked.data.gov.au/def/atns/sub/atns-subject:4f924c21-9e16-51f1-823e-8944b84c7142> ,
-        <https://linked.data.gov.au/def/atns/sub/atns-subject:51637aba-8d5a-5309-abd9-b42fbe3ec733> ,
-        <https://linked.data.gov.au/def/atns/sub/atns-subject:51ca8813-b7bb-5a37-819e-afae35771fff> ,
-        <https://linked.data.gov.au/def/atns/sub/atns-subject:5996de0c-8cc6-5f14-8901-d839af36a4d4> ,
-        <https://linked.data.gov.au/def/atns/sub/atns-subject:61167f4a-3766-5848-9d7f-369aa9ebd427> ,
-        <https://linked.data.gov.au/def/atns/sub/atns-subject:6a8815da-e29d-506f-85fd-c64c8807fea2> ,
-        <https://linked.data.gov.au/def/atns/sub/atns-subject:6dbc2651-9cf2-58ba-a929-248a3b0b9e86> ,
-        <https://linked.data.gov.au/def/atns/sub/atns-subject:710c226b-1fba-5eba-86c9-5087f506ac80> ,
-        <https://linked.data.gov.au/def/atns/sub/atns-subject:746b3b59-88ea-5685-81f7-1558875d7c47> ,
-        <https://linked.data.gov.au/def/atns/sub/atns-subject:7cc37d9a-fe3c-5fec-b115-d1bb8d72db9c> ,
-        <https://linked.data.gov.au/def/atns/sub/atns-subject:81edd075-cb8e-5a7e-a65d-a47cec815898> ,
-        <https://linked.data.gov.au/def/atns/sub/atns-subject:8afa6040-57f6-5faf-a4f9-863bd8f4f470> ,
-        <https://linked.data.gov.au/def/atns/sub/atns-subject:8ba4812a-c06b-587d-b491-67362ac3f001> ,
-        <https://linked.data.gov.au/def/atns/sub/atns-subject:9073e633-80a9-5ba7-8892-f556bd0a0612> ,
-        <https://linked.data.gov.au/def/atns/sub/atns-subject:9335b2f1-4915-55cc-9736-2ded7c4a2008> ,
-        <https://linked.data.gov.au/def/atns/sub/atns-subject:9468ab8c-2b3a-54c2-b5e8-88e552bdd046> ,
-        <https://linked.data.gov.au/def/atns/sub/atns-subject:97be12ad-fd1c-5136-9323-0929eb90b556> ,
-        <https://linked.data.gov.au/def/atns/sub/atns-subject:99f93fc8-8a58-5ec5-a630-93b5790334b4> ,
-        <https://linked.data.gov.au/def/atns/sub/atns-subject:9c404ff9-19e6-5e64-a8bd-2e3b39773146> ,
-        <https://linked.data.gov.au/def/atns/sub/atns-subject:9e5e8f61-69be-5e2a-a9cd-58fb000349bd> ,
-        <https://linked.data.gov.au/def/atns/sub/atns-subject:aa1bc55e-742c-5978-99d6-fac55a6e5775> ,
-        <https://linked.data.gov.au/def/atns/sub/atns-subject:b39d3bcb-b425-5b5d-b1f1-9735a7a6a23b> ,
-        <https://linked.data.gov.au/def/atns/sub/atns-subject:b5868ee2-df76-5e62-ae92-ff325f5dbc01> ,
-        <https://linked.data.gov.au/def/atns/sub/atns-subject:b9cb4d2e-5a5b-57ae-a2ac-5450c37a61d8> ,
-        <https://linked.data.gov.au/def/atns/sub/atns-subject:bda82010-54a4-5bac-8bf5-4b5341822974> ,
-        <https://linked.data.gov.au/def/atns/sub/atns-subject:c3a6447e-4d24-590c-b351-d34140bf0801> ,
-        <https://linked.data.gov.au/def/atns/sub/atns-subject:c74e76ef-701f-5784-8223-5fcd87a7641c> ,
-        <https://linked.data.gov.au/def/atns/sub/atns-subject:d15dd1de-4696-50c8-9f10-2e95eea88e6f> ,
-        <https://linked.data.gov.au/def/atns/sub/atns-subject:d18543b6-8e20-5924-993d-7df513bd89e2> ,
-        <https://linked.data.gov.au/def/atns/sub/atns-subject:dbff1607-a2a3-5baf-995d-8c9bb0552665> ,
-        <https://linked.data.gov.au/def/atns/sub/atns-subject:dc50c698-80b0-5ef4-bd95-928f2be8da05> ,
-        <https://linked.data.gov.au/def/atns/sub/atns-subject:df1f9525-0566-5955-b635-505a930f14b2> ,
-        <https://linked.data.gov.au/def/atns/sub/atns-subject:e39913b8-e0d0-5c07-b96c-d2ac36af9557> ,
-        <https://linked.data.gov.au/def/atns/sub/atns-subject:e52a2091-dcda-569c-aafb-6497428c615c> ,
-        <https://linked.data.gov.au/def/atns/sub/atns-subject:eb0505b2-1a8a-50e0-81ae-843a12f07744> ,
-        <https://linked.data.gov.au/def/atns/sub/atns-subject:ef36130b-f525-5200-b398-93681fdc865b> ,
-        <https://linked.data.gov.au/def/atns/sub/atns-subject:f373baa1-6611-5aae-a140-c2cd1c548f13> ,
-        <https://linked.data.gov.au/def/atns/sub/atns-subject:f630e08a-ea9c-57e3-ab87-066e4b9ad57e> ,
-        <https://linked.data.gov.au/def/atns/sub/atns-subject:fdfa75e8-9832-5b80-93b8-4868091b8235> ,
-        <https://linked.data.gov.au/def/atns/sub/atns-subject:ff4e6e61-8ae5-5b37-b306-00502be1d9d6> ,
-        <https://linked.data.gov.au/def/atns/sub/atns-subject:ffe61b3b-8b29-5264-89ac-758a03928ea5> ;
+        <https://linked.data.gov.au/def/atns/sub/06f9cf03-2d66-5dfe-807c-b7632b2ea564> ,
+        <https://linked.data.gov.au/def/atns/sub/078baf41-50e7-561d-9163-fb3b43a98261> ,
+        <https://linked.data.gov.au/def/atns/sub/0dd6cccd-dec1-56e3-93da-f93c889a921d> ,
+        <https://linked.data.gov.au/def/atns/sub/17d993e0-d19e-5349-a48e-4de57b1dba59> ,
+        <https://linked.data.gov.au/def/atns/sub/1ec05be0-16ac-52de-bf3b-54bec0211332> ,
+        <https://linked.data.gov.au/def/atns/sub/226851a5-4652-58c0-9a88-448bc922deed> ,
+        <https://linked.data.gov.au/def/atns/sub/29221ef9-81d0-59aa-a9c9-744b71ff8349> ,
+        <https://linked.data.gov.au/def/atns/sub/2dbadeb9-2a38-5b9f-ad49-b1fddafe7c93> ,
+        <https://linked.data.gov.au/def/atns/sub/3302d162-15ce-5b7d-ad89-1f11c3cb6e0d> ,
+        <https://linked.data.gov.au/def/atns/sub/35e19906-2659-5157-8aee-b9d82eedbb1c> ,
+        <https://linked.data.gov.au/def/atns/sub/45d231c6-43e2-507e-b962-39416468877c> ,
+        <https://linked.data.gov.au/def/atns/sub/4f924c21-9e16-51f1-823e-8944b84c7142> ,
+        <https://linked.data.gov.au/def/atns/sub/51637aba-8d5a-5309-abd9-b42fbe3ec733> ,
+        <https://linked.data.gov.au/def/atns/sub/51ca8813-b7bb-5a37-819e-afae35771fff> ,
+        <https://linked.data.gov.au/def/atns/sub/5996de0c-8cc6-5f14-8901-d839af36a4d4> ,
+        <https://linked.data.gov.au/def/atns/sub/61167f4a-3766-5848-9d7f-369aa9ebd427> ,
+        <https://linked.data.gov.au/def/atns/sub/6a8815da-e29d-506f-85fd-c64c8807fea2> ,
+        <https://linked.data.gov.au/def/atns/sub/6dbc2651-9cf2-58ba-a929-248a3b0b9e86> ,
+        <https://linked.data.gov.au/def/atns/sub/710c226b-1fba-5eba-86c9-5087f506ac80> ,
+        <https://linked.data.gov.au/def/atns/sub/746b3b59-88ea-5685-81f7-1558875d7c47> ,
+        <https://linked.data.gov.au/def/atns/sub/7cc37d9a-fe3c-5fec-b115-d1bb8d72db9c> ,
+        <https://linked.data.gov.au/def/atns/sub/81edd075-cb8e-5a7e-a65d-a47cec815898> ,
+        <https://linked.data.gov.au/def/atns/sub/8afa6040-57f6-5faf-a4f9-863bd8f4f470> ,
+        <https://linked.data.gov.au/def/atns/sub/8ba4812a-c06b-587d-b491-67362ac3f001> ,
+        <https://linked.data.gov.au/def/atns/sub/9073e633-80a9-5ba7-8892-f556bd0a0612> ,
+        <https://linked.data.gov.au/def/atns/sub/9335b2f1-4915-55cc-9736-2ded7c4a2008> ,
+        <https://linked.data.gov.au/def/atns/sub/9468ab8c-2b3a-54c2-b5e8-88e552bdd046> ,
+        <https://linked.data.gov.au/def/atns/sub/97be12ad-fd1c-5136-9323-0929eb90b556> ,
+        <https://linked.data.gov.au/def/atns/sub/99f93fc8-8a58-5ec5-a630-93b5790334b4> ,
+        <https://linked.data.gov.au/def/atns/sub/9c404ff9-19e6-5e64-a8bd-2e3b39773146> ,
+        <https://linked.data.gov.au/def/atns/sub/9e5e8f61-69be-5e2a-a9cd-58fb000349bd> ,
+        <https://linked.data.gov.au/def/atns/sub/aa1bc55e-742c-5978-99d6-fac55a6e5775> ,
+        <https://linked.data.gov.au/def/atns/sub/b39d3bcb-b425-5b5d-b1f1-9735a7a6a23b> ,
+        <https://linked.data.gov.au/def/atns/sub/b5868ee2-df76-5e62-ae92-ff325f5dbc01> ,
+        <https://linked.data.gov.au/def/atns/sub/b9cb4d2e-5a5b-57ae-a2ac-5450c37a61d8> ,
+        <https://linked.data.gov.au/def/atns/sub/bda82010-54a4-5bac-8bf5-4b5341822974> ,
+        <https://linked.data.gov.au/def/atns/sub/c3a6447e-4d24-590c-b351-d34140bf0801> ,
+        <https://linked.data.gov.au/def/atns/sub/c74e76ef-701f-5784-8223-5fcd87a7641c> ,
+        <https://linked.data.gov.au/def/atns/sub/d15dd1de-4696-50c8-9f10-2e95eea88e6f> ,
+        <https://linked.data.gov.au/def/atns/sub/d18543b6-8e20-5924-993d-7df513bd89e2> ,
+        <https://linked.data.gov.au/def/atns/sub/dbff1607-a2a3-5baf-995d-8c9bb0552665> ,
+        <https://linked.data.gov.au/def/atns/sub/dc50c698-80b0-5ef4-bd95-928f2be8da05> ,
+        <https://linked.data.gov.au/def/atns/sub/df1f9525-0566-5955-b635-505a930f14b2> ,
+        <https://linked.data.gov.au/def/atns/sub/e39913b8-e0d0-5c07-b96c-d2ac36af9557> ,
+        <https://linked.data.gov.au/def/atns/sub/e52a2091-dcda-569c-aafb-6497428c615c> ,
+        <https://linked.data.gov.au/def/atns/sub/eb0505b2-1a8a-50e0-81ae-843a12f07744> ,
+        <https://linked.data.gov.au/def/atns/sub/ef36130b-f525-5200-b398-93681fdc865b> ,
+        <https://linked.data.gov.au/def/atns/sub/f373baa1-6611-5aae-a140-c2cd1c548f13> ,
+        <https://linked.data.gov.au/def/atns/sub/f630e08a-ea9c-57e3-ab87-066e4b9ad57e> ,
+        <https://linked.data.gov.au/def/atns/sub/fdfa75e8-9832-5b80-93b8-4868091b8235> ,
+        <https://linked.data.gov.au/def/atns/sub/ff4e6e61-8ae5-5b37-b306-00502be1d9d6> ,
+        <https://linked.data.gov.au/def/atns/sub/ffe61b3b-8b29-5264-89ac-758a03928ea5> ;
     skos:historyNote "To support migration of data from ATNS website to the Indigenous Data Commons" ;
     skos:prefLabel "ATNS Subjects"@en ;
     schema:creator <https://orcid.org/0000-0001-5640-3202> ;

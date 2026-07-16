@@ -1,0 +1,21 @@
+PREFIX atns-doc: <https://linked.data.gov.au/def/atns/doc/>
+PREFIX coar-resource-type: <http://purl.org/coar/resource_type/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/atns/mapping/document-type>
+    a owl:Ontology ;
+    dcterms:created "2026-07-14"^^xsd:date ;
+    dcterms:description "Draft mappings from legacy ATNS document types to the COAR Controlled Vocabulary for Resource Type."@en ;
+    dcterms:title "ATNS document-type mappings"@en ;
+.
+
+atns-doc:0b1b554f-3dac-5539-b5b6-44ba67243ef6
+    skos:exactMatch coar-resource-type:c_12cd ;
+.
+
+atns-doc:bdaa45b6-0873-5223-b121-c793c8f26f39
+    skos:exactMatch coar-resource-type:c_18cf ;
+.

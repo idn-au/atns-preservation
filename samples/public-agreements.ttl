@@ -9,6 +9,7 @@ PREFIX atns-catalogue: <https://data.idnau.org/pid/resource/atns/catalogue/>
 PREFIX atns-relrow: <https://data.idnau.org/pid/resource/atns/entity-relationship/>
 PREFIX atns-sample: <https://data.idnau.org/pid/resource/atns/sample/>
 PREFIX atns-subcat: <https://linked.data.gov.au/def/atns/subcat/>
+PREFIX atns-sub: <https://linked.data.gov.au/def/atns/sub/>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX schema: <https://schema.org/>
@@ -45,6 +46,9 @@ atns-entity:34524ede-2abc-50f1-af30-8493753c928e
     schema:conditionsOfAccess "Public"@en ;
     atns:sourceEntityId 24 ;
     atns:subcategory atns-subcat:6ffe90c2-95c9-51b5-a083-8c7d83b975ef ;
+    atns:subjectMatter
+        atns-sub:5996de0c-8cc6-5f14-8901-d839af36a4d4 ,
+        atns-sub:d15dd1de-4696-50c8-9f10-2e95eea88e6f ;
     dcterms:references atns-refdata:ca68a358-3931-5011-adfd-0a695adc4812 ;
     schema:abstract "Public ATNS summary describes a 2002 health agreement between Queensland, Commonwealth, ATSIC and Queensland Aboriginal and Islander Health Forum parties."@en ;
     schema:location "Queensland, Australia"@en ;
@@ -62,6 +66,9 @@ atns-entity:dd9b004b-1c22-5b53-8381-bd93760ee922
     schema:conditionsOfAccess "Public"@en ;
     atns:sourceEntityId 27 ;
     atns:subcategory atns-subcat:09f0a068-ce65-5c11-8dec-f081d1a81ec2 ;
+    atns:subjectMatter
+        atns-sub:9335b2f1-4915-55cc-9736-2ded7c4a2008 ,
+        atns-sub:ffe61b3b-8b29-5264-89ac-758a03928ea5 ;
     schema:abstract "Public ATNS summary describes an Indigenous Land Use Agreement concerning native title and Telstra Corporation Limited interests in the agreement area."@en ;
     schema:location "Shire of Laverton and Shire of Ngaanyatjarra, West, Western Australia, Australia"@en ;
     schema:name "Telstra Ngaanyatjarra Indigenous Land Use Agreement (ILUA)"@en ;
@@ -82,6 +89,7 @@ atns-entity:3c2b10f8-eb83-5de4-b54d-28f7ed058109
     atns:subcategory
         atns-subcat:6ffe90c2-95c9-51b5-a083-8c7d83b975ef ,
         atns-subcat:f0427812-61d1-5004-b577-ac236a9c5c18 ;
+    atns:subjectMatter atns-sub:ffe61b3b-8b29-5264-89ac-758a03928ea5 ;
     schema:abstract "Public ATNS summary describes a 2005-2008 agreement between Australian Government and ACT Government parties for Indigenous housing provision."@en ;
     schema:endDate "2008-06-30"^^xsd:date ;
     schema:location "Australian Capital Territory, Australia"@en ;
@@ -104,6 +112,9 @@ atns-entity:7c1def57-546e-5389-bde5-24d566944930
     atns:subcategory
         atns-subcat:6ffe90c2-95c9-51b5-a083-8c7d83b975ef ,
         atns-subcat:f0427812-61d1-5004-b577-ac236a9c5c18 ;
+    atns:subjectMatter
+        atns-sub:d15dd1de-4696-50c8-9f10-2e95eea88e6f ,
+        atns-sub:ffe61b3b-8b29-5264-89ac-758a03928ea5 ;
     schema:abstract "Public ATNS summary describes a Commonwealth, State and Territory housing agreement authorised under the Housing Assistance Act 1996 (Cth)."@en ;
     schema:location "Australia"@en ;
     schema:name "Commonwealth State Housing Agreement 2003-2008"@en ;
@@ -140,6 +151,10 @@ atns-entity:24e6bdb4-39f2-5b5c-b7d8-54d7cc8e7f9b
     atns:deleted false ;
     schema:conditionsOfAccess "Public"@en ;
     atns:sourceEntityId 760 ;
+    atns:subjectMatter
+        atns-sub:5996de0c-8cc6-5f14-8901-d839af36a4d4 ,
+        atns-sub:6a8815da-e29d-506f-85fd-c64c8807fea2 ,
+        atns-sub:d15dd1de-4696-50c8-9f10-2e95eea88e6f ;
     schema:name "Queensland Aboriginal and Islander Health Forum"@en ;
 .
 
@@ -148,6 +163,7 @@ atns-entity:b2d9f12b-163c-5975-a491-4989fae9ef78
     atns:deleted false ;
     schema:conditionsOfAccess "Public"@en ;
     atns:sourceEntityId 753 ;
+    atns:subjectMatter atns-sub:c74e76ef-701f-5784-8223-5fcd87a7641c ;
     schema:name "Ngaanyatjarra Land Council"@en ;
 .
 
@@ -156,6 +172,7 @@ atns-entity:d689a611-e0e8-5972-bcbe-3cd0ebe94f0f
     atns:deleted false ;
     schema:conditionsOfAccess "Public"@en ;
     atns:sourceEntityId 3160 ;
+    atns:subjectMatter atns-sub:c74e76ef-701f-5784-8223-5fcd87a7641c ;
     schema:name "Yarnangu Ngaanyatjarraku Parna Aboriginal Corporation"@en ;
 .
 
@@ -172,6 +189,9 @@ atns-entity:c8122728-6e9f-597c-b4d9-68b8858e66c7
     atns:deleted false ;
     schema:conditionsOfAccess "Public"@en ;
     atns:sourceEntityId 1624 ;
+    atns:subjectMatter
+        atns-sub:d15dd1de-4696-50c8-9f10-2e95eea88e6f ,
+        atns-sub:ffe61b3b-8b29-5264-89ac-758a03928ea5 ;
     schema:name "Commonwealth State Housing Agreement 1999-2003"@en ;
 .
 

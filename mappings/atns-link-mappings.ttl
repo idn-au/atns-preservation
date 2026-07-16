@@ -1,0 +1,28 @@
+PREFIX atns-link: <https://linked.data.gov.au/def/atns/link/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/atns/mapping/link>
+    a owl:Ontology ;
+    dcterms:created "2026-07-14"^^xsd:date ;
+    dcterms:description "Draft mappings from legacy ATNS link-type values to GeoNames places. The source values classify links by country rather than by link type."@en ;
+    dcterms:title "ATNS link-type mappings"@en ;
+.
+
+atns-link:4033402c-46f3-54f2-b516-6d3deb866ef4
+    skos:exactMatch <https://sws.geonames.org/2077456/> ;
+.
+
+atns-link:482f1ad6-d857-5887-aba0-e0419181c829
+    skos:exactMatch <https://sws.geonames.org/6251999/> ;
+.
+
+atns-link:2357209d-309b-5ede-bca8-96959e689f45
+    skos:exactMatch <https://sws.geonames.org/2186224/> ;
+.
+
+atns-link:59eb95a0-0ea8-589a-9128-470d74fb78f3
+    skos:exactMatch <https://sws.geonames.org/953987/> ;
+.

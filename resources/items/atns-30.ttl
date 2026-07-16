@@ -9,6 +9,7 @@ PREFIX atns-catalogue: <https://data.idnau.org/pid/resource/atns/catalogue/>
 PREFIX atns-relrow: <https://data.idnau.org/pid/resource/atns/entity-relationship/>
 PREFIX atns-sample: <https://data.idnau.org/pid/resource/atns/sample/>
 PREFIX atns-subcat: <https://linked.data.gov.au/def/atns/subcat/>
+PREFIX atns-sub: <https://linked.data.gov.au/def/atns/sub/>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX schema: <https://schema.org/>
@@ -28,6 +29,7 @@ atns-entity:3c2b10f8-eb83-5de4-b54d-28f7ed058109
     atns:subcategory
         atns-subcat:6ffe90c2-95c9-51b5-a083-8c7d83b975ef ,
         atns-subcat:f0427812-61d1-5004-b577-ac236a9c5c18 ;
+    atns:subjectMatter atns-sub:ffe61b3b-8b29-5264-89ac-758a03928ea5 ;
     schema:abstract "Public ATNS summary describes a 2005-2008 agreement between Australian Government and ACT Government parties for Indigenous housing provision."@en ;
     schema:endDate "2008-06-30"^^xsd:date ;
     schema:location "Australian Capital Territory, Australia"@en ;
