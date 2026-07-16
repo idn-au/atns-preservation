@@ -2,6 +2,7 @@ PREFIX atns-doc: <https://linked.data.gov.au/def/atns/doc/>
 PREFIX coar-resource-type: <http://purl.org/coar/resource_type/>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
@@ -13,9 +14,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 .
 
 atns-doc:0b1b554f-3dac-5539-b5b6-44ba67243ef6
-    skos:exactMatch coar-resource-type:c_12cd ;
+    skos:exactMatch schema:Map ;
 .
 
 atns-doc:bdaa45b6-0873-5223-b121-c793c8f26f39
     skos:exactMatch coar-resource-type:c_18cf ;
+    skos:narrowMatch schema:DigitalDocument ;
 .
