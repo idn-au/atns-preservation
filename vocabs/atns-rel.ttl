@@ -102,7 +102,7 @@ atns-rel:53320679-d3711c1-5544f222487386b
     skos:definition "Collaborato"@en ;
     skos:inScheme cs: ;
     skos:notation "279"^^xsd:token ;
-    skos:prefLabel "Collaborato"@en ;
+    skos:prefLabel "Collaborator"@en ;
     skos:topConceptOf cs: ;
 .
 
