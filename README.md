@@ -8,6 +8,7 @@ The preserved ATNS data is a graph rather than a set of isolated records. The
 diagram below shows the principal connections, including how an external
 creative work can cite an ATNS agreement. Boxes containing example values are
 resources with their own IRIs; predicates are shown on the connecting arrows.
+The shaded box with the dashed border is external to the ATNS model.
 
 ```mermaid
 flowchart LR
@@ -39,6 +40,9 @@ flowchart LR
     relationship -->|atns:subjectEntity| agreement
     relationship -->|atns:objectEntity| relatedEntity
     relationship -->|atns:relationshipType| relationshipType
+
+    classDef external fill:#fff3cd,stroke:#9a6700,color:#3d2a00,stroke-width:2px,stroke-dasharray:5 3
+    class work external
 ```
 
 `atns:EntityRelationship` is deliberately represented as a resource, rather
