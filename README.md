@@ -11,20 +11,20 @@ resources with their own IRIs; predicates are shown on the connecting arrows.
 
 ```mermaid
 flowchart LR
-    work["Creative work: schema:CreativeWork"]
-    agreement["Agreement: atns:Agreement; schema:name"]
+    work["schema:CreativeWork"]
+    agreement["atns:Agreement; schema:name"]
 
-    category["Category: SKOS concept"]
-    country["Country: SKOS concept"]
-    subject["Subject matter: SKOS concept"]
-    subcategory["Subcategory: SKOS concept"]
+    category["Category: e.g. Agreement"]
+    country["Country: e.g. Australia"]
+    subject["Subject: e.g. Agriculture"]
+    subcategory["Subcategory: e.g. Litigated Determination"]
 
-    reference["Reference: atns:Reference; schema:name; schema:url"]
-    referenceType["Reference type: SKOS concept"]
+    reference["Reference: schema:name; schema:url"]
+    referenceType["Reference type: e.g. Journal Article"]
 
     relationship["Relationship record: atns:EntityRelationship"]
     relatedEntity["Related ATNS entity"]
-    relationshipType["Relationship type: SKOS concept, for example Signatory"]
+    relationshipType["Relationship type: e.g. Signatory"]
 
     work -->|schema:citation| agreement
 
