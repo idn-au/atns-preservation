@@ -9,10 +9,37 @@ diagram below shows the principal connections, including how an external
 creative work can cite an ATNS agreement. Boxes containing example values are
 resources with their own IRIs; predicates are shown on the connecting arrows.
 
-![ATNS resource model](docs/atns-resource-model.svg)
+```mermaid
+flowchart LR
+    work["Creative work: schema:CreativeWork"]
+    agreement["Agreement: atns:Agreement; schema:name"]
 
-The editable [Mermaid source](docs/atns-resource-model.mmd) is kept alongside
-the rendered diagram.
+    category["Category: SKOS concept"]
+    country["Country: SKOS concept"]
+    subject["Subject matter: SKOS concept"]
+    subcategory["Subcategory: SKOS concept"]
+
+    reference["Reference: atns:Reference; schema:name; schema:url"]
+    referenceType["Reference type: SKOS concept"]
+
+    relationship["Relationship record: atns:EntityRelationship"]
+    relatedEntity["Related ATNS entity"]
+    relationshipType["Relationship type: SKOS concept, for example Signatory"]
+
+    work -->|schema:citation| agreement
+
+    agreement -->|atns:category| category
+    agreement -->|atns:country| country
+    agreement -->|atns:subjectMatter| subject
+    agreement -->|atns:subcategory| subcategory
+
+    agreement -->|dcterms:references| reference
+    reference -->|atns:referenceType| referenceType
+
+    relationship -->|atns:subjectEntity| agreement
+    relationship -->|atns:objectEntity| relatedEntity
+    relationship -->|atns:relationshipType| relationshipType
+```
 
 `atns:EntityRelationship` is deliberately represented as a resource, rather
 than as a direct edge between two entities. This preserves the original ATNS
