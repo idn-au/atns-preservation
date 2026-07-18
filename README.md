@@ -1,6 +1,7 @@
 # ATNS preservation
 
-Data extracted from the Agreements, Treaties and Negotiated Settlements website.
+Data extracted from the Agreements, Treaties and Negotiated Settlements [website](https://www.atns.net.au)
+.
 
 ## Resource model
 
@@ -45,15 +46,13 @@ flowchart LR
     class work external
 ```
 
-`atns:EntityRelationship` is deliberately represented as a resource, rather
+`EntityRelationship` is deliberately represented as a resource, rather
 than as a direct edge between two entities. This preserves the original ATNS
 relationship row and allows its type and source identifier to be described.
-The subject and object directions are those recorded by ATNS; an agreement may
-occur in either position. Classification values such as category, country and
-relationship type are also resources, allowing stable identifiers and labels
+The subject and object directions are those recorded by ATNS; an `Agreement` may
+occur in either position. Classification values such as `Category`, `Country` and
+`Relationship type` are also resources, allowing stable identifiers and labels
 to be reused across records.
-
-[ATNS website](https://www.atns.net.au)
 
 Copyright ATNS 2020.  ATNS is maintained by the Indigenous Studies Unit at The University of Melbourne. 
 This work is licensed under a Creative Commons Attribution-Non Commercial-No Derivatives 4.0 International License.
