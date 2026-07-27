@@ -1,23 +1,19 @@
 PREFIX atns: <https://linked.data.gov.au/def/atns/model/>
 PREFIX atns-cat: <https://data.idnau.org/pid/atns-cat/>
 PREFIX atns-country: <https://linked.data.gov.au/def/atns/country/>
-PREFIX atns-entity: <https://data.idnau.org/pid/resource/atns/entity/>
-PREFIX atns-refdata: <https://data.idnau.org/pid/resource/atns/reference/>
+PREFIX idn-resource: <https://data.idnau.org/pid/resource/>
 PREFIX atns-ref: <https://linked.data.gov.au/def/atns/ref/>
 PREFIX atns-rel: <https://linked.data.gov.au/def/atns/rel/>
-PREFIX atns-catalogue: <https://data.idnau.org/pid/resource/atns/catalogue/>
-PREFIX atns-relrow: <https://data.idnau.org/pid/resource/atns/entity-relationship/>
-PREFIX atns-sample: <https://data.idnau.org/pid/resource/atns/sample/>
 PREFIX atns-subcat: <https://linked.data.gov.au/def/atns/subcat/>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX schema: <https://schema.org/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-atns-relrow:15763845-5c8b-5f08-8132-b4ee620da4ca
+idn-resource:15763845-5c8b-5f08-8132-b4ee620da4ca
     a atns:EntityRelationship ;
-    atns:objectEntity atns-entity:92c9e33d-4ac3-5bc8-8bcb-e76171dd13c9 ;
+    atns:objectEntity idn-resource:92c9e33d-4ac3-5bc8-8bcb-e76171dd13c9 ;
     atns:relationshipType atns-rel:a00a860d-f0b0cea-6aacab6d119903c ;
     atns:sourceRelationshipId 23300 ;
-    atns:subjectEntity atns-entity:3c2b10f8-eb83-5de4-b54d-28f7ed058109 ;
+    atns:subjectEntity idn-resource:3c2b10f8-eb83-5de4-b54d-28f7ed058109 ;
 .

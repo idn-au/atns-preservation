@@ -1,13 +1,10 @@
 PREFIX atns: <https://linked.data.gov.au/def/atns/model/>
 PREFIX atns-cat: <https://data.idnau.org/pid/atns-cat/>
 PREFIX atns-country: <https://linked.data.gov.au/def/atns/country/>
-PREFIX atns-entity: <https://data.idnau.org/pid/resource/atns/entity/>
-PREFIX atns-refdata: <https://data.idnau.org/pid/resource/atns/reference/>
+PREFIX idn-resource: <https://data.idnau.org/pid/resource/>
 PREFIX atns-ref: <https://linked.data.gov.au/def/atns/ref/>
 PREFIX atns-rel: <https://linked.data.gov.au/def/atns/rel/>
 PREFIX atns-catalogue: <https://data.idnau.org/pid/resource/atns/catalogue/>
-PREFIX atns-relrow: <https://data.idnau.org/pid/resource/atns/entity-relationship/>
-PREFIX atns-sample: <https://data.idnau.org/pid/resource/atns/sample/>
 PREFIX atns-subcat: <https://linked.data.gov.au/def/atns/subcat/>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
@@ -20,11 +17,11 @@ atns-catalogue:atns-preservation
     schema:citation <https://www.atns.net.au> ;
     schema:dateCreated "2026-07-14"^^xsd:date ;
     schema:description "Draft catalogue wrapper for RDF resources preserving records recovered from the Agreements, Treaties and Negotiated Settlements website."@en ;
-    schema:hasPart atns-sample:9790d0d2-9e7d-523d-9078-dde994b9896c ;
+    schema:hasPart idn-resource:9790d0d2-9e7d-523d-9078-dde994b9896c ;
     schema:name "ATNS Preservation Catalogue"@en ;
 .
 
-atns-sample:9790d0d2-9e7d-523d-9078-dde994b9896c
+idn-resource:9790d0d2-9e7d-523d-9078-dde994b9896c
     a schema:Dataset ;
     dcterms:source
         "ATNS_XML_05Apr22 export, sampled from public, non-deleted agreement records."@en ,

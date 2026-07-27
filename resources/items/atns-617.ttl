@@ -1,20 +1,16 @@
 PREFIX atns: <https://linked.data.gov.au/def/atns/model/>
 PREFIX atns-cat: <https://data.idnau.org/pid/atns-cat/>
 PREFIX atns-country: <https://linked.data.gov.au/def/atns/country/>
-PREFIX atns-entity: <https://data.idnau.org/pid/resource/atns/entity/>
-PREFIX atns-refdata: <https://data.idnau.org/pid/resource/atns/reference/>
+PREFIX idn-resource: <https://data.idnau.org/pid/resource/>
 PREFIX atns-ref: <https://linked.data.gov.au/def/atns/ref/>
 PREFIX atns-rel: <https://linked.data.gov.au/def/atns/rel/>
-PREFIX atns-catalogue: <https://data.idnau.org/pid/resource/atns/catalogue/>
-PREFIX atns-relrow: <https://data.idnau.org/pid/resource/atns/entity-relationship/>
-PREFIX atns-sample: <https://data.idnau.org/pid/resource/atns/sample/>
 PREFIX atns-subcat: <https://linked.data.gov.au/def/atns/subcat/>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX schema: <https://schema.org/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-atns-entity:92c9e33d-4ac3-5bc8-8bcb-e76171dd13c9
+idn-resource:92c9e33d-4ac3-5bc8-8bcb-e76171dd13c9
     a atns:Entity, schema:Organization ;
     atns:category atns-cat:1dad59ae-4020-598a-b5df-d9e0eae7f9c6 ;
     atns:deleted false ;
