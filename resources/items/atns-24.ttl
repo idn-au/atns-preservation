@@ -28,7 +28,7 @@ atns-entity:34524ede-2abc-50f1-af30-8493753c928e
         atns-sub:5996de0c-8cc6-5f14-8901-d839af36a4d4 ,
         atns-sub:d15dd1de-4696-50c8-9f10-2e95eea88e6f ;
     dcterms:references atns-refdata:ca68a358-3931-5011-adfd-0a695adc4812 ;
-    schema:abstract "Public ATNS summary describes a 2002 health agreement between Queensland, Commonwealth, ATSIC and Queensland Aboriginal and Islander Health Forum parties."@en ;
+    schema:description "Public ATNS summary describes a 2002 health agreement between Queensland, Commonwealth, ATSIC and Queensland Aboriginal and Islander Health Forum parties."@en ;
     schema:location "Queensland, Australia"@en ;
     schema:name "Agreement on Queensland Aboriginal and Torres Strait Islander Health"@en ;
     schema:startDate "2002-06-12"^^xsd:date ;

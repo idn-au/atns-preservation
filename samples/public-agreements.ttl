@@ -50,7 +50,7 @@ atns-entity:34524ede-2abc-50f1-af30-8493753c928e
         atns-sub:5996de0c-8cc6-5f14-8901-d839af36a4d4 ,
         atns-sub:d15dd1de-4696-50c8-9f10-2e95eea88e6f ;
     dcterms:references atns-refdata:ca68a358-3931-5011-adfd-0a695adc4812 ;
-    schema:abstract "Public ATNS summary describes a 2002 health agreement between Queensland, Commonwealth, ATSIC and Queensland Aboriginal and Islander Health Forum parties."@en ;
+    schema:description "Public ATNS summary describes a 2002 health agreement between Queensland, Commonwealth, ATSIC and Queensland Aboriginal and Islander Health Forum parties."@en ;
     schema:location "Queensland, Australia"@en ;
     schema:name "Agreement on Queensland Aboriginal and Torres Strait Islander Health"@en ;
     schema:startDate "2002-06-12"^^xsd:date ;
@@ -69,7 +69,7 @@ atns-entity:dd9b004b-1c22-5b53-8381-bd93760ee922
     schema:keywords
         atns-sub:9335b2f1-4915-55cc-9736-2ded7c4a2008 ,
         atns-sub:ffe61b3b-8b29-5264-89ac-758a03928ea5 ;
-    schema:abstract "Public ATNS summary describes an Indigenous Land Use Agreement concerning native title and Telstra Corporation Limited interests in the agreement area."@en ;
+    schema:description "Public ATNS summary describes an Indigenous Land Use Agreement concerning native title and Telstra Corporation Limited interests in the agreement area."@en ;
     schema:location "Shire of Laverton and Shire of Ngaanyatjarra, West, Western Australia, Australia"@en ;
     schema:name "Telstra Ngaanyatjarra Indigenous Land Use Agreement (ILUA)"@en ;
     schema:startDate "2006-08-11"^^xsd:date ;
@@ -90,7 +90,7 @@ atns-entity:3c2b10f8-eb83-5de4-b54d-28f7ed058109
         atns-subcat:6ffe90c2-95c9-51b5-a083-8c7d83b975ef ,
         atns-subcat:f0427812-61d1-5004-b577-ac236a9c5c18 ;
     schema:keywords atns-sub:ffe61b3b-8b29-5264-89ac-758a03928ea5 ;
-    schema:abstract "Public ATNS summary describes a 2005-2008 agreement between Australian Government and ACT Government parties for Indigenous housing provision."@en ;
+    schema:description "Public ATNS summary describes a 2005-2008 agreement between Australian Government and ACT Government parties for Indigenous housing provision."@en ;
     schema:endDate "2008-06-30"^^xsd:date ;
     schema:location "Australian Capital Territory, Australia"@en ;
     schema:name "Agreement for the Provision of Housing for Indigenous People (ACT)"@en ;
@@ -115,7 +115,7 @@ atns-entity:7c1def57-546e-5389-bde5-24d566944930
     schema:keywords
         atns-sub:d15dd1de-4696-50c8-9f10-2e95eea88e6f ,
         atns-sub:ffe61b3b-8b29-5264-89ac-758a03928ea5 ;
-    schema:abstract "Public ATNS summary describes a Commonwealth, State and Territory housing agreement authorised under the Housing Assistance Act 1996 (Cth)."@en ;
+    schema:description "Public ATNS summary describes a Commonwealth, State and Territory housing agreement authorised under the Housing Assistance Act 1996 (Cth)."@en ;
     schema:location "Australia"@en ;
     schema:name "Commonwealth State Housing Agreement 2003-2008"@en ;
     schema:startDate "2003-07-01"^^xsd:date ;

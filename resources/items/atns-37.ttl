@@ -32,7 +32,7 @@ atns-entity:7c1def57-546e-5389-bde5-24d566944930
     schema:keywords
         atns-sub:d15dd1de-4696-50c8-9f10-2e95eea88e6f ,
         atns-sub:ffe61b3b-8b29-5264-89ac-758a03928ea5 ;
-    schema:abstract "Public ATNS summary describes a Commonwealth, State and Territory housing agreement authorised under the Housing Assistance Act 1996 (Cth)."@en ;
+    schema:description "Public ATNS summary describes a Commonwealth, State and Territory housing agreement authorised under the Housing Assistance Act 1996 (Cth)."@en ;
     schema:location "Australia"@en ;
     schema:name "Commonwealth State Housing Agreement 2003-2008"@en ;
     schema:startDate "2003-07-01"^^xsd:date ;

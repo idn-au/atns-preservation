@@ -27,7 +27,7 @@ atns-entity:dd9b004b-1c22-5b53-8381-bd93760ee922
     schema:keywords
         atns-sub:9335b2f1-4915-55cc-9736-2ded7c4a2008 ,
         atns-sub:ffe61b3b-8b29-5264-89ac-758a03928ea5 ;
-    schema:abstract "Public ATNS summary describes an Indigenous Land Use Agreement concerning native title and Telstra Corporation Limited interests in the agreement area."@en ;
+    schema:description "Public ATNS summary describes an Indigenous Land Use Agreement concerning native title and Telstra Corporation Limited interests in the agreement area."@en ;
     schema:location "Shire of Laverton and Shire of Ngaanyatjarra, West, Western Australia, Australia"@en ;
     schema:name "Telstra Ngaanyatjarra Indigenous Land Use Agreement (ILUA)"@en ;
     schema:startDate "2006-08-11"^^xsd:date ;
