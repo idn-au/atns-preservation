@@ -32,7 +32,7 @@ flowchart LR
 
     agreement -->|atns:category| category
     agreement -->|atns:country| country
-    agreement -->|atns:subjectMatter| subject
+    agreement -->|schema:keywords| subject
     agreement -->|atns:subcategory| subcategory
 
     agreement -->|dcterms:references| reference
