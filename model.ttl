@@ -26,28 +26,28 @@ atns:
 atns:Entity
     a owl:Class ;
     rdfs:isDefinedBy atns: ;
-    rdfs:label "ATNS entity record"@en ;
+    rdfs:label "ATNS Entity Record"@en ;
     rdfs:comment "A record from the ATNS Entities table."@en ;
     schema:description "A preserved record from the ATNS Entities table. All source entity rows use this class; their legacy kind is recorded with an ATNS category concept rather than a custom subclass hierarchy. Where the represented thing has a clear external type, such as schema:Organization, that type may be asserted in addition."@en ;
-    schema:name "Agreements, Treaties and Negotiated Settlements Entity Record"@en ;
+    schema:name "ATNS Entity Record"@en ;
 .
 
 atns:Reference
     a owl:Class ;
     rdfs:isDefinedBy atns: ;
-    rdfs:label "ATNS reference"@en ;
+    rdfs:label "ATNS Reference"@en ;
     rdfs:comment "A bibliographic or web reference from the ATNS Refs table."@en ;
     schema:description "A bibliographic, web or documentary reference preserved from the ATNS Refs table. References are modelled as first-class resources so they can be linked to entities and typed with ATNS reference-type concepts."@en ;
-    schema:name "Agreements, Treaties and Negotiated Settlements Reference"@en ;
+    schema:name "ATNS Reference"@en ;
 .
 
 atns:EntityRelationship
     a owl:Class ;
     rdfs:isDefinedBy atns: ;
-    rdfs:label "ATNS entity relationship"@en ;
+    rdfs:label "ATNS Entity Relationship"@en ;
     rdfs:comment "A source relationship row connecting two ATNS entities and, where present, a relationship type concept."@en ;
     schema:description "A preserved source row from the ATNS Entity_Entity join table. Relationship rows identify a subject entity, an object entity and, where supplied, the controlled-list relationship type used in the legacy data."@en ;
-    schema:name "Agreements, Treaties and Negotiated Settlements Entity Relationship"@en ;
+    schema:name "ATNS Entity Relationship"@en ;
 .
 
 atns:eid
