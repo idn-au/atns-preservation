@@ -1,5 +1,5 @@
 PREFIX atns: <https://linked.data.gov.au/def/atns/model/>
-PREFIX atns-cat: <https://linked.data.gov.au/def/atns/cat/>
+PREFIX atns-cat: <https://data.idnau.org/pid/atns-cat/>
 PREFIX atns-country: <https://linked.data.gov.au/def/atns/country/>
 PREFIX atns-entity: <https://data.idnau.org/pid/resource/atns/entity/>
 PREFIX atns-refdata: <https://data.idnau.org/pid/resource/atns/reference/>
@@ -17,11 +17,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 atns-refdata:97dd3be9-f4ca-586a-971a-594015bbfcc4
     a atns:Reference ;
     atns:deleted false ;
-    schema:conditionsOfAccess "Public"@en ;
+    schema:conditionsOfAccess <https://linked.data.gov.au/def/data-access-rights/open> ;
     atns:referenceType atns-ref:5f376307-9421-5ed8-aad9-7d12cb7b7fb6 ;
     atns:sourceReferenceId 1238 ;
     schema:author "Senate Community Affairs Legislation Committee"@en ;
     schema:datePublished "2006" ;
     schema:name "Examination of Budget Estimates 2006-2007: Additional Information Received: Families, Community Services and Indigenous Affiars Portfolio"@en ;
-    schema:url <http://www.aph.gov.au/Senate/committee/clac_ctte/estimates/bud_0607/vol1_facsia_Oct06.pdf> ;
+    schema:url "http://www.aph.gov.au/Senate/committee/clac_ctte/estimates/bud_0607/vol1_facsia_Oct06.pdf"^^xsd:anyURI ;
 .

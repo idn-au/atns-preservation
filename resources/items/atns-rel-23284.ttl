@@ -1,5 +1,5 @@
 PREFIX atns: <https://linked.data.gov.au/def/atns/model/>
-PREFIX atns-cat: <https://linked.data.gov.au/def/atns/cat/>
+PREFIX atns-cat: <https://data.idnau.org/pid/atns-cat/>
 PREFIX atns-country: <https://linked.data.gov.au/def/atns/country/>
 PREFIX atns-entity: <https://data.idnau.org/pid/resource/atns/entity/>
 PREFIX atns-refdata: <https://data.idnau.org/pid/resource/atns/reference/>

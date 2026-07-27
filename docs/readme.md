@@ -1,16 +1,20 @@
-Core classes
-------------
+Core source record and categories
+---------------------------------
 
+Every row from the source `Entities` table is represented as an `atns:Entity`.
+The following are controlled category values, not a custom RDF class hierarchy:
 
-Entity
-├── Agreement       CategoryID 1
-├── Organisation    CategoryID 3
-├── Event           CategoryID 4
-├── Legislation     CategoryID 5
-├── Person/People   CategoryID 6
-└── Place           CategoryID 8
-|__ Case Law        CategoryID 272
-|__ Policy/Strategy CategoryID 273
+- Agreement — CategoryID 1
+- Organisation — CategoryID 3
+- Event — CategoryID 4
+- Legislation — CategoryID 5
+- Person/People — CategoryID 6
+- Place — CategoryID 8
+- Case Law — CategoryID 272
+- Policy/Strategy — CategoryID 273
+
+Published external classes such as `schema:Organization` may be asserted in
+addition where the category-to-class mapping is clear.
 
 Core tables
 -----------

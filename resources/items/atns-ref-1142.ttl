@@ -1,5 +1,5 @@
 PREFIX atns: <https://linked.data.gov.au/def/atns/model/>
-PREFIX atns-cat: <https://linked.data.gov.au/def/atns/cat/>
+PREFIX atns-cat: <https://data.idnau.org/pid/atns-cat/>
 PREFIX atns-country: <https://linked.data.gov.au/def/atns/country/>
 PREFIX atns-entity: <https://data.idnau.org/pid/resource/atns/entity/>
 PREFIX atns-refdata: <https://data.idnau.org/pid/resource/atns/reference/>
@@ -17,12 +17,12 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 atns-refdata:0cca8502-926a-5770-88a4-de3ae0d9c4e9
     a atns:Reference ;
     atns:deleted false ;
-    schema:conditionsOfAccess "Public"@en ;
+    schema:conditionsOfAccess <https://linked.data.gov.au/def/data-access-rights/open> ;
     atns:referenceType atns-ref:5f376307-9421-5ed8-aad9-7d12cb7b7fb6 ;
     atns:sourceReferenceId 1142 ;
     schema:author "ABC Radio National"@en ;
     schema:contributor "Alison Anderson"@en ;
     schema:datePublished "2004" ;
     schema:name "Perspective: Indigenous Housing"@en ;
-    schema:url <http://www.abc.net.au/rn/perspective/stories/2004/1032578.htm#> ;
+    schema:url "http://www.abc.net.au/rn/perspective/stories/2004/1032578.htm#"^^xsd:anyURI ;
 .

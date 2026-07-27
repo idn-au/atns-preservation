@@ -10,6 +10,7 @@ atns:
     rdfs:label "ATNS preservation model"@en ;
     rdfs:comment "Minimal draft terms used by ATNS instance data. These terms are intentionally conservative: controlled-list values remain SKOS concepts and source row identifiers are retained for traceability."@en ;
     schema:dateCreated "2026-07-14"^^xsd:date ;
+    schema:dateModified "2026-07-27"^^xsd:date ;
     schema:description "A minimal preservation-oriented model for data recovered from the Agreements, Treaties and Negotiated Settlements database. The model keeps ATNS entities, references, controlled-list classifications and source relationship rows explicit so that legacy semantics can be migrated toward Prez-compatible RDF without prematurely imposing a full domain ontology."@en ;
     schema:codeRespository "https://github.com/idn-au/atns-preservation/"^^xsd:anyURI ;
     schema:copyrightHolder <https://linked.data.gov.au/org/idn> ;
@@ -25,20 +26,10 @@ atns:
 atns:Entity
     a owl:Class ;
     rdfs:isDefinedBy atns: ;
-    rdfs:label "ATNS entity"@en ;
+    rdfs:label "ATNS entity record"@en ;
     rdfs:comment "A record from the ATNS Entities table."@en ;
-    schema:description "A preserved record from the ATNS Entities table. Entity records are the central units in the legacy ATNS data and may represent agreements, organisations, events, legislation, people, places, case law, policies or strategies according to their ATNS category."@en ;
-    schema:name "Agreements, Treaties and Negotiated Settlements Entity"@en ;
-.
-
-atns:Agreement
-    a owl:Class ;
-    rdfs:subClassOf atns:Entity ;
-    rdfs:isDefinedBy atns: ;
-    rdfs:label "Agreement"@en ;
-    rdfs:comment "An ATNS entity classified with the ATNS entity category Agreement."@en ;
-    schema:description "An ATNS entity classified with the ATNS entity category Agreement. Agreement-like distinctions such as ILUA, framework agreement, funding agreement, treaty, deed of settlement and settlement agreement are represented separately as ATNS subcategory concepts unless a richer project ontology is adopted."@en ;
-    schema:name "Agreement"@en ;
+    schema:description "A preserved record from the ATNS Entities table. All source entity rows use this class; their legacy kind is recorded with an ATNS category concept rather than a custom subclass hierarchy. Where the represented thing has a clear external type, such as schema:Organization, that type may be asserted in addition."@en ;
+    schema:name "Agreements, Treaties and Negotiated Settlements Entity Record"@en ;
 .
 
 atns:Reference
@@ -115,16 +106,6 @@ atns:subcategory
     rdfs:label "ATNS subcategory"@en ;
     schema:description "Links an ATNS entity to one or more controlled-list concepts that record more specific ATNS classifications."@en ;
     schema:name "ATNS Entity Subcategory"@en ;
-    rdfs:domain atns:Entity ;
-    rdfs:range skos:Concept ;
-.
-
-atns:subjectMatter
-    a owl:ObjectProperty ;
-    rdfs:isDefinedBy atns: ;
-    rdfs:label "ATNS subject matter"@en ;
-    schema:description "Links an ATNS entity to one or more controlled-list concepts that describe its subject matter."@en ;
-    schema:name "ATNS Subject Matter"@en ;
     rdfs:domain atns:Entity ;
     rdfs:range skos:Concept ;
 .

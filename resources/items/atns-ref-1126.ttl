@@ -1,5 +1,5 @@
 PREFIX atns: <https://linked.data.gov.au/def/atns/model/>
-PREFIX atns-cat: <https://linked.data.gov.au/def/atns/cat/>
+PREFIX atns-cat: <https://data.idnau.org/pid/atns-cat/>
 PREFIX atns-country: <https://linked.data.gov.au/def/atns/country/>
 PREFIX atns-entity: <https://data.idnau.org/pid/resource/atns/entity/>
 PREFIX atns-refdata: <https://data.idnau.org/pid/resource/atns/reference/>
@@ -17,11 +17,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 atns-refdata:ca68a358-3931-5011-adfd-0a695adc4812
     a atns:Reference ;
     atns:deleted false ;
-    schema:conditionsOfAccess "Public"@en ;
+    schema:conditionsOfAccess <https://linked.data.gov.au/def/data-access-rights/open> ;
     atns:referenceType atns-ref:5f376307-9421-5ed8-aad9-7d12cb7b7fb6 ;
     atns:sourceReferenceId 1126 ;
     schema:author "Queensland Government"@en ;
     schema:datePublished "2005" ;
     schema:name "Strategic Policy for Aboriginal and Torres Strait Islander Children and Young People's Health 2005-2010: Implementation Guide"@en ;
-    schema:url <http://foodsafetymatters.gov.au/publications/corporate/strategicpolicies/2005imp.pdf> ;
+    schema:url "http://foodsafetymatters.gov.au/publications/corporate/strategicpolicies/2005imp.pdf"^^xsd:anyURI ;
 .

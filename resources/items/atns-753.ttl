@@ -1,5 +1,5 @@
 PREFIX atns: <https://linked.data.gov.au/def/atns/model/>
-PREFIX atns-cat: <https://linked.data.gov.au/def/atns/cat/>
+PREFIX atns-cat: <https://data.idnau.org/pid/atns-cat/>
 PREFIX atns-country: <https://linked.data.gov.au/def/atns/country/>
 PREFIX atns-entity: <https://data.idnau.org/pid/resource/atns/entity/>
 PREFIX atns-refdata: <https://data.idnau.org/pid/resource/atns/reference/>
@@ -16,10 +16,11 @@ PREFIX schema: <https://schema.org/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 atns-entity:b2d9f12b-163c-5975-a491-4989fae9ef78
+    a atns:Entity, schema:Organization ;
     atns:category atns-cat:1dad59ae-4020-598a-b5df-d9e0eae7f9c6 ;
     atns:deleted false ;
-    schema:conditionsOfAccess "Public"@en ;
+    schema:conditionsOfAccess <https://linked.data.gov.au/def/data-access-rights/open> ;
     atns:sourceEntityId 753 ;
-    atns:subjectMatter atns-sub:c74e76ef-701f-5784-8223-5fcd87a7641c ;
+    schema:keywords atns-sub:c74e76ef-701f-5784-8223-5fcd87a7641c ;
     schema:name "Ngaanyatjarra Land Council"@en ;
 .
