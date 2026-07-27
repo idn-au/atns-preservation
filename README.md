@@ -66,7 +66,7 @@ The Resource model supports linking and navigation between
 - Creative works that cite an atns:Entity, such as an agreement
 - Agreements referring to other creative works
 
-See example [‘Changing the Mix’: Contestation Surrounding the Public Housing Stock Transfer Process in Victoria, New South Wales and Tasmania](https://data.idnau.org/pid/resource/f73b42cf-d39b-406c-a8c5-10a01ae0594e
+See example [‘Changing the Mix’](https://data.idnau.org/pid/resource/f73b42cf-d39b-406c-a8c5-10a01ae0594e
 ) in the IDN Demonstration Catalogue.
 
 Copyright ATNS 2020.  ATNS is maintained by the Indigenous Studies Unit at The University of Melbourne. 
