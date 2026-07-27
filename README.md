@@ -60,5 +60,14 @@ where the mapping is clear. Classification values such as `Category`, `Country`
 and `Relationship type` are resources, allowing stable identifiers and labels
 to be reused across records.
 
+## Integration with IDN catalogues
+
+The Resource model supports linking and navigation between 
+- Creative works that cite an atns:Entity, such as an agreement
+- Agreements referring to other creative works
+
+See example [‘Changing the Mix’: Contestation Surrounding the Public Housing Stock Transfer Process in Victoria, New South Wales and Tasmania](https://data.idnau.org/pid/resource/f73b42cf-d39b-406c-a8c5-10a01ae0594e
+) in the IDN Demonstration Catalogue.
+
 Copyright ATNS 2020.  ATNS is maintained by the Indigenous Studies Unit at The University of Melbourne. 
 This work is licensed under a Creative Commons Attribution-Non Commercial-No Derivatives 4.0 International License.
