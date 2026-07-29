@@ -170,6 +170,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Education"@en ;
+    skos:exactMatch <https://vocabularyserver.com/apais/xml.php?skosTema=691> ;
     skos:inScheme cs: ;
     skos:notation "13"^^xsd:token ;
     skos:prefLabel "Education"@en ;
@@ -290,6 +291,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Youth"@en ;
+    skos:exactMatch <https://vocabularyserver.com/apais/xml.php?skosTema=2355> ;
     skos:inScheme cs: ;
     skos:notation "312"^^xsd:token ;
     skos:prefLabel "Youth"@en ;
@@ -380,6 +382,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Native Title"@en ;
+    skos:exactMatch <https://linked.data.gov.au/def/policy/0dd4edea-d719-472b-956c-f8b5a5db72b1> ;
     skos:inScheme cs: ;
     skos:notation "21"^^xsd:token ;
     skos:prefLabel "Native Title"@en ;
@@ -409,6 +412,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <https://linked.data.gov.au/def/atns/sub/dbff1607-a2a3-5baf-995d-8c9bb0552665>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
+    skos:broadMatch <https://linked.data.gov.au/def/policy/0dd4edea-d719-472b-956c-f8b5a5db72b1> ;
     skos:definition "Native Title - Extinguishment"@en ;
     skos:inScheme cs: ;
     skos:notation "32"^^xsd:token ;
@@ -460,6 +464,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Customary Law"@en ;
+    skos:exactMatch <https://vocabularyserver.com/apais/xml.php?skosTema=559> ;
     skos:inScheme cs: ;
     skos:notation "42"^^xsd:token ;
     skos:prefLabel "Customary Law"@en ;
@@ -480,6 +485,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Reconciliation"@en ;
+    skos:exactMatch <https://linked.data.gov.au/def/policy/5c65abcf-1014-4e12-bcb8-7590f95ff012> ;
     skos:inScheme cs: ;
     skos:notation "25"^^xsd:token ;
     skos:prefLabel "Reconciliation"@en ;
@@ -589,11 +595,13 @@ cs:
         <https://linked.data.gov.au/def/atns/sub/fdfa75e8-9832-5b80-93b8-4868091b8235> ,
         <https://linked.data.gov.au/def/atns/sub/ff4e6e61-8ae5-5b37-b306-00502be1d9d6> ,
         <https://linked.data.gov.au/def/atns/sub/ffe61b3b-8b29-5264-89ac-758a03928ea5> ;
-    skos:historyNote "To support migration of data from ATNS website to the Indigenous Data Commons" ;
+    skos:historyNote
+        "To support migration of data from ATNS website to the Indigenous Data Commons"@en ,
+        "The SKOS mapping relationships to concepts in the IDN Thesaurus were added by the ATNS preservation project and have not been authorised by the ATNS source."@en ;
     skos:prefLabel "ATNS Subjects"@en ;
     schema:creator <https://orcid.org/0000-0001-5640-3202> ;
     schema:dateCreated "2026-06-22"^^xsd:date ;
-    schema:dateModified "2026-06-22"^^xsd:date ;
+    schema:dateModified "2026-07-29"^^xsd:date ;
     schema:keywords "Treaties" ;
     schema:publisher <https://idn.org.au> ;
     schema:status <https://linked.data.gov.au/def/reg-statuses/experimental> ;
