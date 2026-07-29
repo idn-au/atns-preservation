@@ -2,7 +2,12 @@ Core source record and categories
 ---------------------------------
 
 Every row from the source `Entities` table is represented as an `atns:Entity`.
-The following are controlled category values, not a custom RDF class hierarchy:
+Rows with source CategoryID 1 are also represented as `atns:AgreementRecord`, a
+subclass of `atns:Entity`. The corresponding Agreement category concept is
+retained as source classification evidence. This ATNS record class does not
+entail `odrl:Agreement`.
+
+The following controlled category values are retained:
 
 - Agreement — CategoryID 1
 - Organisation — CategoryID 3
@@ -112,9 +117,11 @@ ListID 12 = Relationship Types
 Current modelling principle
 ---------------------------
 
-Treat Entity as the fundamental class.
+Treat Entity as the fundamental record class.
 
-Subclass/type membership is determined by CategoryID using ListElements.
+Use `atns:AgreementRecord` for records with Agreement CategoryID 1 while retaining
+the source category concept. Do not transform this class or category into
+`odrl:Agreement`.
 
 Model Reference as a separate first-class class.
 

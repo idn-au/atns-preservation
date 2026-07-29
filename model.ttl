@@ -10,7 +10,7 @@ atns:
     rdfs:label "ATNS preservation model"@en ;
     rdfs:comment "Minimal draft terms used by ATNS instance data. These terms are intentionally conservative: controlled-list values remain SKOS concepts and source row identifiers are retained for traceability."@en ;
     schema:dateCreated "2026-07-14"^^xsd:date ;
-    schema:dateModified "2026-07-27"^^xsd:date ;
+    schema:dateModified "2026-07-29"^^xsd:date ;
     schema:description "A minimal preservation-oriented model for data recovered from the Agreements, Treaties and Negotiated Settlements database. The model keeps ATNS entities, references, controlled-list classifications and source relationship rows explicit so that legacy semantics can be migrated toward Prez-compatible RDF without prematurely imposing a full domain ontology."@en ;
     schema:codeRespository "https://github.com/idn-au/atns-preservation/"^^xsd:anyURI ;
     schema:copyrightHolder <https://linked.data.gov.au/org/idn> ;
@@ -28,8 +28,18 @@ atns:Entity
     rdfs:isDefinedBy atns: ;
     rdfs:label "ATNS Entity Record"@en ;
     rdfs:comment "A record from the ATNS Entities table."@en ;
-    schema:description "A preserved record from the ATNS Entities table. All source entity rows use this class; their legacy kind is recorded with an ATNS category concept rather than a custom subclass hierarchy. Where the represented thing has a clear external type, such as schema:Organization, that type may be asserted in addition."@en ;
+    schema:description "A preserved record from the ATNS Entities table. All source entity rows use this class and retain their legacy kind as an ATNS category concept. More specific record classes or published external classes may also be asserted where the mapping is clear."@en ;
     schema:name "ATNS Entity Record"@en ;
+.
+
+atns:AgreementRecord
+    a owl:Class ;
+    rdfs:isDefinedBy atns: ;
+    rdfs:label "ATNS Agreement Record"@en ;
+    rdfs:comment "A preserved record classified as an Agreement in the ATNS Entities table."@en ;
+    rdfs:subClassOf atns:Entity ;
+    schema:description "A preserved ATNS entity record whose source category is Agreement. This class records the ATNS source-system type and does not entail that the resource is an odrl:Agreement or otherwise constitute an ODRL policy expression."@en ;
+    schema:name "ATNS Agreement Record"@en ;
 .
 
 atns:Reference

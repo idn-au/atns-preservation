@@ -14,7 +14,7 @@ The shaded box with the dashed border is external to the ATNS model.
 ```mermaid
 flowchart LR
     work["schema:CreativeWork"]
-    agreement["atns:Entity; schema:name"]
+    agreement["atns:AgreementRecord; schema:name"]
 
     category["Category: e.g. Agreement"]
     country["Country: e.g. Australia"]
@@ -52,13 +52,15 @@ relationship row and allows its type and source identifier to be described.
 The subject and object directions are those recorded by ATNS; any source entity
 may occur in either position.
 
-Every record from the legacy ATNS `Entities` table is typed `atns:Entity`. Its
-ATNS category supplies the source-system soft type, such as `Agreement` or
-`Organisation`, without introducing a parallel custom class hierarchy. A
-published external class such as `schema:Organization` may also be asserted
-where the mapping is clear. Classification values such as `Category`, `Country`
-and `Relationship type` are resources, allowing stable identifiers and labels
-to be reused across records.
+Every record from the legacy ATNS `Entities` table is typed `atns:Entity`. Records
+with the source category `Agreement` are more specifically typed
+`atns:AgreementRecord`, a subclass of `atns:Entity`. The original ATNS category
+concept is retained alongside the class assertion. `atns:AgreementRecord` records
+the ATNS source-system type and does not entail `odrl:Agreement`. A published
+external class such as `schema:Organization` may also be asserted where the
+mapping is clear. Classification values such as `Category`, `Country` and
+`Relationship type` remain resources, allowing stable identifiers and labels to
+be reused across records.
 
 ## Integration with IDN catalogues
 

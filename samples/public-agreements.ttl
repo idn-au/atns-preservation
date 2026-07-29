@@ -35,7 +35,7 @@ idn-resource:9790d0d2-9e7d-523d-9078-dde994b9896c
 .
 
 idn-resource:34524ede-2abc-50f1-af30-8493753c928e
-    a atns:Entity ;
+    a atns:AgreementRecord, atns:Entity ;
     atns:category atns-cat:13e77fec-44fd-554f-a075-ec60788eb1b1 ;
     atns:country atns-country:244f6961-729f-5b21-8fc9-baff9dd9af7e ;
     atns:deleted false ;
@@ -55,7 +55,7 @@ idn-resource:34524ede-2abc-50f1-af30-8493753c928e
 .
 
 idn-resource:dd9b004b-1c22-5b53-8381-bd93760ee922
-    a atns:Entity ;
+    a atns:AgreementRecord, atns:Entity ;
     atns:category atns-cat:13e77fec-44fd-554f-a075-ec60788eb1b1 ;
     atns:country atns-country:244f6961-729f-5b21-8fc9-baff9dd9af7e ;
     atns:deleted false ;
@@ -73,7 +73,7 @@ idn-resource:dd9b004b-1c22-5b53-8381-bd93760ee922
 .
 
 idn-resource:3c2b10f8-eb83-5de4-b54d-28f7ed058109
-    a atns:Entity ;
+    a atns:AgreementRecord, atns:Entity ;
     atns:category atns-cat:13e77fec-44fd-554f-a075-ec60788eb1b1 ;
     atns:country atns-country:244f6961-729f-5b21-8fc9-baff9dd9af7e ;
     atns:deleted false ;
@@ -96,7 +96,7 @@ idn-resource:3c2b10f8-eb83-5de4-b54d-28f7ed058109
 .
 
 idn-resource:7c1def57-546e-5389-bde5-24d566944930
-    a atns:Entity ;
+    a atns:AgreementRecord, atns:Entity ;
     atns:category atns-cat:13e77fec-44fd-554f-a075-ec60788eb1b1 ;
     atns:country atns-country:244f6961-729f-5b21-8fc9-baff9dd9af7e ;
     atns:deleted false ;
@@ -189,7 +189,7 @@ idn-resource:2f133c6b-1d33-5f72-94a1-82b250dcf3ff
 .
 
 idn-resource:c8122728-6e9f-597c-b4d9-68b8858e66c7
-    a atns:Entity ;
+    a atns:AgreementRecord, atns:Entity ;
     atns:category atns-cat:13e77fec-44fd-554f-a075-ec60788eb1b1 ;
     atns:deleted false ;
     schema:conditionsOfAccess <https://linked.data.gov.au/def/data-access-rights/open> ;

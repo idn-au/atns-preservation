@@ -12,7 +12,7 @@ PREFIX schema: <https://schema.org/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 idn-resource:34524ede-2abc-50f1-af30-8493753c928e
-    a atns:Entity ;
+    a atns:AgreementRecord, atns:Entity ;
     atns:category atns-cat:13e77fec-44fd-554f-a075-ec60788eb1b1 ;
     atns:country atns-country:244f6961-729f-5b21-8fc9-baff9dd9af7e ;
     atns:deleted false ;

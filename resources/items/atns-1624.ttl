@@ -12,7 +12,7 @@ PREFIX schema: <https://schema.org/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 idn-resource:c8122728-6e9f-597c-b4d9-68b8858e66c7
-    a atns:Entity ;
+    a atns:AgreementRecord, atns:Entity ;
     atns:category atns-cat:13e77fec-44fd-554f-a075-ec60788eb1b1 ;
     atns:deleted false ;
     schema:conditionsOfAccess <https://linked.data.gov.au/def/data-access-rights/open> ;
