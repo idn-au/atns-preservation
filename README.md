@@ -3,6 +3,10 @@
 Data extracted from the Agreements, Treaties and Negotiated Settlements [website](https://www.atns.net.au)
 .
 
+## Reproducible conversion
+
+The current public preservation sample can be regenerated from the private ATNS XML export through a checksum-verified XML-to-CSV extraction stage and declarative `rdfcon` YAML specifications. The generated RDF is accepted only when it is graph-identical to both the curated aggregate sample and the split publication files. Manual source updates are fail-closed: duplicate identities are rejected and missing, deleted or private published records are reported for removal review. See [Conversion process](docs/conversion.md) for the security boundary, update procedure, editorial inputs, commands and equivalence checks.
+
 ## Resource model
 
 The preserved ATNS data is a graph rather than a set of isolated records. The

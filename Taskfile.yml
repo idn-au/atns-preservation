@@ -1,0 +1,55 @@
+# https://taskfile.dev/usage
+
+version: "3"
+
+silent: true
+
+tasks:
+  default:
+    desc: List the available tasks
+    cmd: task -a
+
+  setup:
+    desc: Create the pinned Python environment
+    cmds:
+      - uv python install
+      - uv sync --frozen
+
+  extract:
+    desc: Extract the required private XML tables to ignored normalized CSV files
+    cmd: uv run --frozen python scripts/extract_xml.py
+
+  accept-source:
+    desc: Validate and checksum-pin a reviewed row-only replacement XML export
+    cmds:
+      - uv run --frozen python scripts/extract_xml.py --update-manifest
+      - uv run --frozen python scripts/prepare_public_sample.py
+
+  prepare:
+    desc: Select the declared public sample rows from the normalized source tables
+    deps: [extract]
+    cmd: uv run --frozen python scripts/prepare_public_sample.py
+
+  convert:
+    desc: Generate the public ATNS sample RDF from the normalized CSV tables
+    deps: [prepare]
+    cmds:
+      - uv run --frozen rdfcon --processes 1 specs/catalogue.yaml
+      - uv run --frozen rdfcon --processes 1 specs/entities.yaml
+      - uv run --frozen rdfcon --processes 1 specs/references.yaml
+      - uv run --frozen rdfcon --processes 1 specs/relationships.yaml
+
+  validate:
+    desc: Validate generated Turtle syntax
+    deps: [convert]
+    cmd: riot --validate build/rdf/*.ttl
+
+  check:
+    desc: Prove generated, aggregate, and split RDF graphs are equivalent
+    deps: [validate]
+    cmd: uv run --frozen python scripts/check_rdf_equivalence.py
+
+  pipeline:
+    desc: Run extraction, conversion, validation, and graph-equivalence checks
+    cmds:
+      - task: check

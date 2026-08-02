@@ -1,0 +1,42 @@
+export:
+  name: ATNS_XML_05Apr22
+  archive: raw/ATNS_XML_05Apr22_unsecure.zip
+  sha256: 3a38713b0eb662aa1327624182305ef3594d835d8faa4d9f302945c053a41586
+  sensitivity: private-source
+
+tables:
+  Entities:
+    sha256: ca68c29da9a7f33cd1a1c7ce144289e6c84a7cfec8e9ce969d4d507d3febeb34
+    primary_key: EntityID
+    row_count: 8609
+    columns_sha256: 14b38ba56abe395fc0cc97d81d749dd517641e1fd675f04e03ebeafea7c16a77
+  Refs:
+    sha256: d10403457dcf5b72056ea578f3b7c9617a7c4ea457d665c035b8f9b15a55132a
+    primary_key: RefID
+    row_count: 5658
+    columns_sha256: c05ccd0a7c41edec90885d4c4b731af3d6955bb01c26712693f1230c5d58ccf0
+  Entity_Refs:
+    sha256: 17acba5b1356879af18ac6c1ae6ca6293f25fa1b30ef0090c268691b14c45e8a
+    primary_key: Entity_RefID
+    row_count: 8909
+    columns_sha256: 1375676aa0a89cb5491dac6f94c9c7636c3c898d17e769687f113996ba6042e5
+  Entity_Entity:
+    sha256: f5328724cd31024dfd4e8b7d9cade13034d1783e8e6e3ede06bff664143f09f4
+    primary_key: Entity_EntityID
+    row_count: 61242
+    columns_sha256: 23093b3123bcf1204f11c43b72ff816a1b02993e8dd3cee3ff0ec52e99aba284
+  Entity_SubCategory:
+    sha256: d2ad34e0948348f396603564a9f5de31b878c3863bf3b2c15bf58abb951b839a
+    primary_key: Entity_SubCategoryID
+    row_count: 9734
+    columns_sha256: e764f13dc59f507e8d062f48f1037a62916384edb259826723ae1ecd3b955981
+  Entity_SubjectMatter:
+    sha256: 1996cc6ae434eb794614b6e6ed356cf2efdd5b623408ffd00e66190d58ed4e51
+    primary_key: Entity_SubjectMatterID
+    row_count: 13299
+    columns_sha256: 8cec539532d966c4f50605803fbe8b8bbb3d0443916008f694df50683dc21121
+  ListElements:
+    sha256: eebce5df34bb3d61130b1f7ca5e798ab7fab42f1364aa8acf184d0ce92a0dad6
+    primary_key: ListElementID
+    row_count: 342
+    columns_sha256: 9e8010536fafc844d7e4eee281574e9b8c2a3efe48cae76ee3f71513923e559c

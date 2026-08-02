@@ -1,0 +1,8 @@
+# These publication classes are project-authored interpretations of source
+# CategoryID values. They are not asserted as classifications authorised by
+# the ATNS source owners.
+entity_category_types:
+  "1":
+    - https://linked.data.gov.au/def/atns/model/AgreementRecord
+  "3":
+    - https://schema.org/Organization

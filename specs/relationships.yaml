@@ -1,0 +1,14 @@
+imports:
+  - base.yaml
+infile: ../build/sample/Entity_Entity.csv
+template: |-
+  {% set resource = sample_resource("relationship", r["Entity_EntityID"]) %}
+  {% if resource %}
+  <{{ resource["resource_iri"] }}>
+    a atns:EntityRelationship ;
+    atns:objectEntity <{{ resource_iri("entity", r["RelatedEntityID"]) }}> ;
+    atns:relationshipType <{{ concept_iri("relationship_type", r["RelationshipTypeID"]) }}> ;
+    atns:sourceRelationshipId {{ r["Entity_EntityID"] }} ;
+    atns:subjectEntity <{{ resource_iri("entity", r["EntityID"]) }}> ;
+  .
+  {% endif %}

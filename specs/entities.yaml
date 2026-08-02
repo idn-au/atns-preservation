@@ -1,0 +1,49 @@
+imports:
+  - base.yaml
+infile: ../build/sample/Entities.csv
+template: |-
+  {% set resource = sample_resource("entity", r["EntityID"]) %}
+  {% if resource %}
+  <{{ resource["resource_iri"] }}>
+    a atns:Entity{% for type in entity_types(r["CategoryID"]) %}, <{{ type }}>{% endfor %} ;
+    atns:category <{{ concept_iri("category", r["CategoryID"]) }}> ;
+    atns:deleted {{ source_boolean(r["Deleted"]) }} ;
+    {% if access_iri(r["Public"]) %}
+    schema:conditionsOfAccess <{{ access_iri(r["Public"]) }}> ;
+    {% endif %}
+    atns:sourceEntityId {{ r["EntityID"] }} ;
+    {% for subject in subjects_for_entity(r["EntityID"]) %}
+    schema:keywords <{{ subject }}> ;
+    {% endfor %}
+    {% for reference in references_for_entity(r["EntityID"]) %}
+    dcterms:references <{{ reference }}> ;
+    {% endfor %}
+    {% if resource["profile"] == "full" %}
+    {% for subcategory in subcategories_for_entity(r["EntityID"]) %}
+    atns:subcategory <{{ subcategory }}> ;
+    {% endfor %}
+    {% if r["Country"] and r["CountryID"] %}
+    atns:country <{{ concept_iri("country", r["CountryID"]) }}> ;
+    {% endif %}
+    {% if r["EID"] %}
+    atns:eid {{ literal(r["EID"], datatype="http://www.w3.org/2001/XMLSchema#token") }} ;
+    {% endif %}
+    {% if entity_description(r["EntityID"]) %}
+    schema:description {{ literal(entity_description(r["EntityID"]), lang="en") }} ;
+    {% endif %}
+    {% if r["Location"] %}
+    schema:location {{ literal(r["Location"], lang="en") }} ;
+    {% endif %}
+    {% if r["DateFrom"] %}
+    schema:startDate {{ literal(iso_date(r["DateFrom"]), datatype="http://www.w3.org/2001/XMLSchema#date") }} ;
+    {% endif %}
+    {% if r["DateTo"] %}
+    schema:endDate {{ literal(iso_date(r["DateTo"]), datatype="http://www.w3.org/2001/XMLSchema#date") }} ;
+    {% endif %}
+    {% if r["URL"] %}
+    schema:url {{ literal(r["URL"], datatype="http://www.w3.org/2001/XMLSchema#anyURI") }} ;
+    {% endif %}
+    {% endif %}
+    schema:name {{ literal(r["Name"], lang="en") }} ;
+  .
+  {% endif %}

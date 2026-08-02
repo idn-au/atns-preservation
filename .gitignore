@@ -1,6 +1,10 @@
 raw/xml/*
 !raw/xml/readme.md
 raw/*.zip
+build/
+.venv/
+__pycache__/
+*.py[cod]
 AGENTS.md
 reports/sample-*.md
 39

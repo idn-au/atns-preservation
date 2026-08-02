@@ -1,0 +1,29 @@
+imports:
+  - base.yaml
+infile: ../build/sample/Refs.csv
+template: |-
+  {% set resource = sample_resource("reference", r["RefID"]) %}
+  {% if resource %}
+  <{{ resource["resource_iri"] }}>
+    a atns:Reference ;
+    atns:deleted {{ source_boolean(r["Deleted"]) }} ;
+    {% if access_iri(r["Public"]) %}
+    schema:conditionsOfAccess <{{ access_iri(r["Public"]) }}> ;
+    {% endif %}
+    atns:referenceType <{{ concept_iri("reference_type", r["TypeID"]) }}> ;
+    atns:sourceReferenceId {{ r["RefID"] }} ;
+    {% if r["Author"] %}
+    schema:author {{ literal(r["Author"], lang="en") }} ;
+    {% endif %}
+    {% if r["SecondaryAuthor"] %}
+    schema:contributor {{ literal(r["SecondaryAuthor"], lang="en") }} ;
+    {% endif %}
+    {% if r["Year"] %}
+    schema:datePublished {{ literal(r["Year"]) }} ;
+    {% endif %}
+    schema:name {{ literal(r["Title"], lang="en") }} ;
+    {% if r["URL"] %}
+    schema:url {{ literal(r["URL"], datatype="http://www.w3.org/2001/XMLSchema#anyURI") }} ;
+    {% endif %}
+  .
+  {% endif %}

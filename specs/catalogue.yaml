@@ -1,0 +1,25 @@
+imports:
+  - base.yaml
+infile: catalogue.csv
+template: |-
+  <{catalogue_iri}>
+    a schema:DataCatalog ;
+    dcterms:source <https://www.atns.net.au> ;
+    schema:citation <https://www.atns.net.au> ;
+    schema:dateCreated "2026-07-14"^^xsd:date ;
+    schema:description "Draft catalogue wrapper for RDF resources preserving records recovered from the Agreements, Treaties and Negotiated Settlements website."@en ;
+    schema:hasPart <{dataset_iri}> ;
+    schema:name "ATNS Preservation Catalogue"@en ;
+  .
+
+  <{dataset_iri}>
+    a schema:Dataset ;
+    dcterms:source
+      "ATNS_XML_05Apr22 export, sampled from public, non-deleted agreement records."@en ,
+      <https://www.atns.net.au> ;
+    owl:imports <https://linked.data.gov.au/def/atns/model/> ;
+    schema:citation <https://www.atns.net.au> ;
+    schema:dateCreated "2026-07-14"^^xsd:date ;
+    schema:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+    schema:name "ATNS public agreement sample"@en ;
+  .
