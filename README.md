@@ -69,11 +69,16 @@ be reused across records.
 ## Integration with IDN catalogues
 
 The Resource model supports linking and navigation between 
-- Creative works that cite an `atns:Entity`, such as an agreement
+- Creative works that cite an `atns:Agreement`
 - Agreements referring to other creative works
+- Agreements formalised with [ODRL](https://www.w3.org/ns/odrl/2/) data model
 
-See example [‘Changing the Mix’](https://data.idnau.org/pid/resource/f73b42cf-d39b-406c-a8c5-10a01ae0594e
-) in the IDN Demonstration Catalogue.
+## Examples 
+
+* [‘Changing the Mix’](https://data.idnau.org/pid/resource/f73b42cf-d39b-406c-a8c5-10a01ae0594e
+) which links a `schema:CreativeWork` to an `atns:Agreement`.
+
+* [Telstra Ngaanyatjarra Indigenous Land Use Agreement (ILUA)](https://data.idnau.org/pid/resource/dd9b004b-1c22-5b53-8381-bd93760ee922), an `atns:Agreement` that links to [ODRL](https://www.w3.org/ns/odrl/2/) `Agreement` > `Permission` > `Assigner` | `Use` | `Assignee` | `Target` > `Asset`, a semantic-web-friendly formalisation of the agreement.
 
 Copyright ATNS 2020.  ATNS is maintained by the Indigenous Studies Unit at The University of Melbourne. 
 This work is licensed under a Creative Commons Attribution-Non Commercial-No Derivatives 4.0 International License.
