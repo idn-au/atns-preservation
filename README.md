@@ -48,6 +48,9 @@ flowchart LR
 
     classDef external fill:#fff3cd,stroke:#9a6700,color:#3d2a00,stroke-width:2px,stroke-dasharray:5 3
     class work external
+
+    classDef external2 fill:#d3ebeb,stroke:#9a6700,color:#3d2a00,stroke-width:2px,stroke-dasharray:5 3
+    class agreement external2
 ```
 
 `EntityRelationship` is deliberately represented as a resource, rather
