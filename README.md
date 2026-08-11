@@ -9,10 +9,8 @@ The current public preservation sample can be regenerated from the private ATNS 
 
 ## Resource model
 
-The preserved ATNS data is a graph rather than a set of isolated records. The
-diagram below shows the principal connections, including how an external
-creative work can cite an ATNS agreement. Boxes containing example values are
-resources with their own IRIs; predicates are shown on the connecting arrows.
+The preserved ATNS data is a graph rather than a set of isolated records. The diagram below shows the principal connections, including how an external
+creative work can cite an ATNS agreement. Boxes containing example values are resources with their own IRIs; predicates are shown on the connecting arrows.
 The shaded box with the dashed border is external to the ATNS model.
 
 ```mermaid
@@ -79,9 +77,9 @@ The Resource model supports linking and navigation between
 ## Examples 
 
 * [‘Changing the Mix’](https://data.idnau.org/pid/resource/f73b42cf-d39b-406c-a8c5-10a01ae0594e
-) which links a `schema:CreativeWork` to an `atns:Agreement`.
+) which links a `schema:CreativeWork` to an `atns:AgreementRecord`.
 
-* [Telstra Ngaanyatjarra Indigenous Land Use Agreement (ILUA)](https://data.idnau.org/pid/resource/dd9b004b-1c22-5b53-8381-bd93760ee922), an `atns:Agreement` that links to [ODRL](https://www.w3.org/ns/odrl/2/) `Agreement` > `Permission` > `Assigner` | `Use` | `Assignee` | `Target` > `Asset`, a semantic-web-friendly formalisation of the agreement.
+* [Telstra Ngaanyatjarra Indigenous Land Use Agreement (ILUA)](https://data.idnau.org/pid/resource/dd9b004b-1c22-5b53-8381-bd93760ee922), an `atns:AgreementRecord` that links to [ODRL](https://www.w3.org/ns/odrl/2/) `Agreement` > `Permission` > `Assigner` | `Use` | `Assignee` | `Target` > `Asset`, a semantic-web-friendly formalisation of the agreement.
 
 Copyright ATNS 2020.  ATNS is maintained by the Indigenous Studies Unit at The University of Melbourne. 
 This work is licensed under a Creative Commons Attribution-Non Commercial-No Derivatives 4.0 International License.
