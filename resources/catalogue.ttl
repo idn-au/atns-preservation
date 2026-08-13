@@ -23,6 +23,7 @@ atns-catalogue:atns-preservation
 
 idn-resource:9790d0d2-9e7d-523d-9078-dde994b9896c
     a schema:Dataset ;
+    dcterms:isPartOf idn-resource:d23405b4-fc04-47e2-9e7a-9c5735ae3780 ;
     dcterms:source
         "ATNS_XML_05Apr22 export, sampled from public, non-deleted agreement records."@en ,
         <https://www.atns.net.au> ;

@@ -95,9 +95,9 @@ The golden graph check is expected to fail when an accepted source update legiti
 
 `tests/golden-baseline.yaml` freezes the approved graph characteristics:
 
-- 235 triples
+- 236 triples
 - no blank-node triples
-- canonical sorted N-Triples SHA-256 `edb1eb9283cb1e7cbc6aa792799cb2e422acef7b32256ad1ea0dc59140da9653`
+- canonical sorted N-Triples SHA-256 `11e1edec723808583d57684f2f9d7d12e5ae16f5e7ab934c5e9db29f8fe1ebd5`
 - 26 split resource item files plus the catalogue wrapper
 
 `scripts/check_rdf_equivalence.py` rejects a conversion if the golden baseline changes unexpectedly, if any generated triple is missing or extra, or if the published split files cease to represent the same graph. Turtle whitespace, prefix choice and triple ordering may differ because RDF graph identity—not byte identity—is the preservation requirement.
