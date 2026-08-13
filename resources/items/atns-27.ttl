@@ -19,6 +19,7 @@ idn-resource:dd9b004b-1c22-5b53-8381-bd93760ee922
     atns:eid "A003262"^^xsd:token ;
     schema:conditionsOfAccess <https://linked.data.gov.au/def/data-access-rights/open> ;
     atns:sourceEntityId 27 ;
+    schema:isPartOf idn-resource:d23405b4-fc04-47e2-9e7a-9c5735ae3780 ;
     atns:subcategory atns-subcat:09f0a068-ce65-5c11-8dec-f081d1a81ec2 ;
     schema:keywords
         atns-sub:9335b2f1-4915-55cc-9736-2ded7c4a2008 ,

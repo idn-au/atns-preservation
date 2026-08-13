@@ -82,6 +82,13 @@ def entity_types(category_id: str) -> list[str]:
     )
 
 
+def is_agreement(category_id: str) -> bool:
+    return (
+        "https://linked.data.gov.au/def/atns/model/AgreementRecord"
+        in entity_types(category_id)
+    )
+
+
 @lru_cache(maxsize=1)
 def _editorial_overrides() -> dict:
     return yaml.safe_load(

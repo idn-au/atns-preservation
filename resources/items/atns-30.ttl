@@ -22,6 +22,7 @@ idn-resource:3c2b10f8-eb83-5de4-b54d-28f7ed058109
         idn-resource:97dd3be9-f4ca-586a-971a-594015bbfcc4 ;
     schema:conditionsOfAccess <https://linked.data.gov.au/def/data-access-rights/open> ;
     atns:sourceEntityId 30 ;
+    schema:isPartOf idn-resource:d23405b4-fc04-47e2-9e7a-9c5735ae3780 ;
     atns:subcategory
         atns-subcat:6ffe90c2-95c9-51b5-a083-8c7d83b975ef ,
         atns-subcat:f0427812-61d1-5004-b577-ac236a9c5c18 ;

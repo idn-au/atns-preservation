@@ -6,11 +6,20 @@ import hashlib
 from pathlib import Path
 
 import yaml
-from rdflib import BNode, Graph
+from rdflib import BNode, Graph, URIRef
+from rdflib.namespace import RDF
 
 
 ROOT = Path(__file__).resolve().parent.parent
 BASELINE_PATH = ROOT / "tests" / "golden-baseline.yaml"
+AGREEMENT_RECORD = URIRef(
+    "https://linked.data.gov.au/def/atns/model/AgreementRecord"
+)
+ATNS_DATASET = URIRef(
+    "https://data.idnau.org/pid/resource/"
+    "d23405b4-fc04-47e2-9e7a-9c5735ae3780"
+)
+SCHEMA_IS_PART_OF = URIRef("https://schema.org/isPartOf")
 
 
 def load_graph(paths: list[Path]) -> Graph:
@@ -61,10 +70,26 @@ def assert_equal(label: str, expected: Graph, actual: Graph) -> None:
     raise SystemExit(1)
 
 
+def assert_agreement_dataset_membership(graph: Graph) -> None:
+    agreements = set(graph.subjects(RDF.type, AGREEMENT_RECORD))
+    missing = sorted(
+        agreement
+        for agreement in agreements
+        if (agreement, SCHEMA_IS_PART_OF, ATNS_DATASET) not in graph
+    )
+    if missing:
+        joined = "\n  ".join(str(value) for value in missing)
+        raise SystemExit(
+            "Agreement records missing ATNS dataset membership:\n  " + joined
+        )
+    print(f"ATNS dataset membership: {len(agreements)} agreement records")
+
+
 def main() -> None:
     baseline = yaml.safe_load(BASELINE_PATH.read_text(encoding="utf-8"))
     aggregate_path = ROOT / baseline["aggregate"]
     aggregate = load_graph([aggregate_path])
+    assert_agreement_dataset_membership(aggregate)
 
     if len(aggregate) != baseline["triple_count"]:
         raise SystemExit(
