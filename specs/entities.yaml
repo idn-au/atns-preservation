@@ -12,6 +12,9 @@ template: |-
     schema:conditionsOfAccess <{{ access_iri(r["Public"]) }}> ;
     {% endif %}
     atns:sourceEntityId {{ r["EntityID"] }} ;
+    {% if is_agreement(r["CategoryID"]) %}
+    schema:isPartOf <https://data.idnau.org/pid/resource/d23405b4-fc04-47e2-9e7a-9c5735ae3780> ;
+    {% endif %}
     {% for subject in subjects_for_entity(r["EntityID"]) %}
     schema:keywords <{{ subject }}> ;
     {% endfor %}

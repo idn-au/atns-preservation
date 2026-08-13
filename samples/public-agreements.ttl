@@ -24,7 +24,7 @@ atns-catalogue:atns-preservation
 
 idn-resource:9790d0d2-9e7d-523d-9078-dde994b9896c
     a schema:Dataset ;
-    dcterms:isPartOf idn-resource:d23405b4-fc04-47e2-9e7a-9c5735ae3780 ;
+    schema:isPartOf idn-resource:d23405b4-fc04-47e2-9e7a-9c5735ae3780 ;
     dcterms:source
         "ATNS_XML_05Apr22 export, sampled from public, non-deleted agreement records."@en ,
         <https://www.atns.net.au> ;
@@ -35,6 +35,21 @@ idn-resource:9790d0d2-9e7d-523d-9078-dde994b9896c
     schema:name "ATNS public agreement sample"@en ;
 .
 
+idn-resource:d23405b4-fc04-47e2-9e7a-9c5735ae3780
+    a schema:Dataset ;
+    dcterms:source <https://www.atns.net.au> ;
+    schema:citation <https://www.atns.net.au> ;
+    schema:conditionsOfAccess "Public"@en ;
+    schema:creator <https://orcid.org/0000-0002-1398-7524> ;
+    schema:dateCreated "2002"^^xsd:gYear ;
+    schema:dateModified "2026-05-25"^^xsd:date ;
+    schema:description "The ATNS Database documents agreements, treaties and negotiated settlements between Indigenous peoples and governments, primarily in Australia."@en ;
+    schema:license <http://purl.org/NET/rdflicense/cc-by-nc-nd4.0> ;
+    schema:name "Agreements, Treaties and Negotiated Settlements"@en ;
+    schema:publisher <https://linked.data.gov.au/org/isu> ;
+    schema:url "https://www.atns.net.au/"^^xsd:anyURI ;
+.
+
 idn-resource:34524ede-2abc-50f1-af30-8493753c928e
     a atns:AgreementRecord, atns:Entity ;
     atns:category atns-cat:13e77fec-44fd-554f-a075-ec60788eb1b1 ;
@@ -43,6 +58,7 @@ idn-resource:34524ede-2abc-50f1-af30-8493753c928e
     atns:eid "A003259"^^xsd:token ;
     schema:conditionsOfAccess <https://linked.data.gov.au/def/data-access-rights/open> ;
     atns:sourceEntityId 24 ;
+    schema:isPartOf idn-resource:d23405b4-fc04-47e2-9e7a-9c5735ae3780 ;
     atns:subcategory atns-subcat:6ffe90c2-95c9-51b5-a083-8c7d83b975ef ;
     schema:keywords
         atns-sub:5996de0c-8cc6-5f14-8901-d839af36a4d4 ,
@@ -63,6 +79,7 @@ idn-resource:dd9b004b-1c22-5b53-8381-bd93760ee922
     atns:eid "A003262"^^xsd:token ;
     schema:conditionsOfAccess <https://linked.data.gov.au/def/data-access-rights/open> ;
     atns:sourceEntityId 27 ;
+    schema:isPartOf idn-resource:d23405b4-fc04-47e2-9e7a-9c5735ae3780 ;
     atns:subcategory atns-subcat:09f0a068-ce65-5c11-8dec-f081d1a81ec2 ;
     schema:keywords
         atns-sub:9335b2f1-4915-55cc-9736-2ded7c4a2008 ,
@@ -84,6 +101,7 @@ idn-resource:3c2b10f8-eb83-5de4-b54d-28f7ed058109
         idn-resource:97dd3be9-f4ca-586a-971a-594015bbfcc4 ;
     schema:conditionsOfAccess <https://linked.data.gov.au/def/data-access-rights/open> ;
     atns:sourceEntityId 30 ;
+    schema:isPartOf idn-resource:d23405b4-fc04-47e2-9e7a-9c5735ae3780 ;
     atns:subcategory
         atns-subcat:6ffe90c2-95c9-51b5-a083-8c7d83b975ef ,
         atns-subcat:f0427812-61d1-5004-b577-ac236a9c5c18 ;
@@ -107,6 +125,7 @@ idn-resource:7c1def57-546e-5389-bde5-24d566944930
         idn-resource:0cca8502-926a-5770-88a4-de3ae0d9c4e9 ;
     schema:conditionsOfAccess <https://linked.data.gov.au/def/data-access-rights/open> ;
     atns:sourceEntityId 37 ;
+    schema:isPartOf idn-resource:d23405b4-fc04-47e2-9e7a-9c5735ae3780 ;
     atns:subcategory
         atns-subcat:6ffe90c2-95c9-51b5-a083-8c7d83b975ef ,
         atns-subcat:f0427812-61d1-5004-b577-ac236a9c5c18 ;
@@ -195,6 +214,7 @@ idn-resource:c8122728-6e9f-597c-b4d9-68b8858e66c7
     atns:deleted false ;
     schema:conditionsOfAccess <https://linked.data.gov.au/def/data-access-rights/open> ;
     atns:sourceEntityId 1624 ;
+    schema:isPartOf idn-resource:d23405b4-fc04-47e2-9e7a-9c5735ae3780 ;
     schema:keywords
         atns-sub:d15dd1de-4696-50c8-9f10-2e95eea88e6f ,
         atns-sub:ffe61b3b-8b29-5264-89ac-758a03928ea5 ;

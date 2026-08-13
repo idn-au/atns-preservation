@@ -23,7 +23,7 @@ atns-catalogue:atns-preservation
 
 idn-resource:9790d0d2-9e7d-523d-9078-dde994b9896c
     a schema:Dataset ;
-    dcterms:isPartOf idn-resource:d23405b4-fc04-47e2-9e7a-9c5735ae3780 ;
+    schema:isPartOf idn-resource:d23405b4-fc04-47e2-9e7a-9c5735ae3780 ;
     dcterms:source
         "ATNS_XML_05Apr22 export, sampled from public, non-deleted agreement records."@en ,
         <https://www.atns.net.au> ;
@@ -32,4 +32,19 @@ idn-resource:9790d0d2-9e7d-523d-9078-dde994b9896c
     schema:dateCreated "2026-07-14"^^xsd:date ;
     schema:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
     schema:name "ATNS public agreement sample"@en ;
+.
+
+idn-resource:d23405b4-fc04-47e2-9e7a-9c5735ae3780
+    a schema:Dataset ;
+    dcterms:source <https://www.atns.net.au> ;
+    schema:citation <https://www.atns.net.au> ;
+    schema:conditionsOfAccess "Public"@en ;
+    schema:creator <https://orcid.org/0000-0002-1398-7524> ;
+    schema:dateCreated "2002"^^xsd:gYear ;
+    schema:dateModified "2026-05-25"^^xsd:date ;
+    schema:description "The ATNS Database documents agreements, treaties and negotiated settlements between Indigenous peoples and governments, primarily in Australia."@en ;
+    schema:license <http://purl.org/NET/rdflicense/cc-by-nc-nd4.0> ;
+    schema:name "Agreements, Treaties and Negotiated Settlements"@en ;
+    schema:publisher <https://linked.data.gov.au/org/isu> ;
+    schema:url "https://www.atns.net.au/"^^xsd:anyURI ;
 .
