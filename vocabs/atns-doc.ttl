@@ -1,5 +1,5 @@
-PREFIX atns-doc: <https://linked.data.gov.au/def/atns/doc/>
-PREFIX cs: <https://linked.data.gov.au/def/atns/doc>
+PREFIX atns-doc: <https://data.idnau.org/pid/vocab/atns-doc/>
+PREFIX cs: <https://data.idnau.org/pid/vocab/atns-doc>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
@@ -42,7 +42,7 @@ atns-doc:bdaa45b6-0873-5223-b121-c793c8f26f39
 
 cs:
     a skos:ConceptScheme ;
-    owl:versionIRI <https://linked.data.gov.au/def/atns/doc/1> ;
+    owl:versionIRI <https://data.idnau.org/pid/vocab/atns-doc/1> ;
     skos:definition "Types used to classify documents in the Agreements, Treaties and Negotiated Settlements database."@en ;
     skos:hasTopConcept
         atns-doc:0b1b554f-3dac-5539-b5b6-44ba67243ef6 ,
@@ -51,7 +51,7 @@ cs:
     skos:prefLabel "ATNS Document Types"@en ;
     schema:creator <https://orcid.org/0000-0001-5640-3202> ;
     schema:dateCreated "2026-06-24"^^xsd:date ;
-    schema:dateModified "2026-06-24"^^xsd:date ;
+    schema:dateModified "2026-08-14"^^xsd:date ;
     schema:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
     schema:publisher <https://idn.org.au> ;
     schema:status <https://linked.data.gov.au/def/reg-statuses/experimental> ;

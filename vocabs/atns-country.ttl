@@ -1,5 +1,5 @@
-PREFIX atns-country: <https://linked.data.gov.au/def/atns/country/>
-PREFIX cs: <https://linked.data.gov.au/def/atns/country>
+PREFIX atns-country: <https://data.idnau.org/pid/vocab/atns-country/>
+PREFIX cs: <https://data.idnau.org/pid/vocab/atns-country>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
@@ -208,7 +208,7 @@ atns-country:b696949b-f104-5d53-88ae-c8420bf7d73f
 
 cs:
     a skos:ConceptScheme ;
-    owl:versionIRI <https://linked.data.gov.au/def/atns/country/1> ;
+    owl:versionIRI <https://data.idnau.org/pid/vocab/atns-country/1> ;
     skos:definition "Countries and country groupings recorded in the Agreements, Treaties and Negotiated Settlements database."@en ;
     skos:hasTopConcept
         atns-country:244f6961-729f-5b21-8fc9-baff9dd9af7e ,
@@ -231,7 +231,7 @@ cs:
     skos:prefLabel "ATNS Countries"@en ;
     schema:creator <https://orcid.org/0000-0001-5640-3202> ;
     schema:dateCreated "2026-06-24"^^xsd:date ;
-    schema:dateModified "2026-07-14"^^xsd:date ;
+    schema:dateModified "2026-08-14"^^xsd:date ;
     schema:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
     schema:publisher <https://idn.org.au> ;
     schema:status <https://linked.data.gov.au/def/reg-statuses/experimental> ;

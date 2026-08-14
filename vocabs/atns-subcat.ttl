@@ -1,5 +1,5 @@
-PREFIX atns-subcat: <https://linked.data.gov.au/def/atns/subcat/>
-PREFIX cs: <https://linked.data.gov.au/def/atns/subcat>
+PREFIX atns-subcat: <https://data.idnau.org/pid/vocab/atns-subcat/>
+PREFIX cs: <https://data.idnau.org/pid/vocab/atns-subcat>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
@@ -1373,7 +1373,7 @@ atns-subcat:0057a2c2-f2e6-5896-942d-c99eeaa42337
 
 cs:
     a skos:ConceptScheme ;
-    owl:versionIRI <https://linked.data.gov.au/def/atns/subcat/1> ;
+    owl:versionIRI <https://data.idnau.org/pid/vocab/atns-subcat/1> ;
     skos:definition "Subcategories used to classify entities in the Agreements, Treaties and Negotiated Settlements database."@en ;
     skos:hasTopConcept
         atns-subcat:96ed4893-3cbb-55ad-8320-7a41fca2ccc6 ,
@@ -1503,7 +1503,7 @@ cs:
     skos:prefLabel "ATNS Subcategories"@en ;
     schema:creator <https://orcid.org/0000-0001-5640-3202> ;
     schema:dateCreated "2026-06-24"^^xsd:date ;
-    schema:dateModified "2026-06-24"^^xsd:date ;
+    schema:dateModified "2026-08-14"^^xsd:date ;
     schema:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
     schema:publisher <https://idn.org.au> ;
     schema:status <https://linked.data.gov.au/def/reg-statuses/experimental> ;

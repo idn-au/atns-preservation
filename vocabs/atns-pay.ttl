@@ -1,5 +1,5 @@
-PREFIX atns-pay: <https://linked.data.gov.au/def/atns/pay/>
-PREFIX cs: <https://linked.data.gov.au/def/atns/pay>
+PREFIX atns-pay: <https://data.idnau.org/pid/vocab/atns-pay/>
+PREFIX cs: <https://data.idnau.org/pid/vocab/atns-pay>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
@@ -207,7 +207,7 @@ atns-pay:0abb7f13-70d5-5395-933c-8244c0993708
 
 cs:
     a skos:ConceptScheme ;
-    owl:versionIRI <https://linked.data.gov.au/def/atns/pay/1> ;
+    owl:versionIRI <https://data.idnau.org/pid/vocab/atns-pay/1> ;
     skos:definition "Types used to classify payments in the Agreements, Treaties and Negotiated Settlements database."@en ;
     skos:hasTopConcept
         atns-pay:8b3b4e8b-a388-554c-bb76-e16724d3da57 ,
@@ -231,7 +231,7 @@ cs:
     skos:prefLabel "ATNS Payment Types"@en ;
     schema:creator <https://orcid.org/0000-0001-5640-3202> ;
     schema:dateCreated "2026-06-24"^^xsd:date ;
-    schema:dateModified "2026-06-24"^^xsd:date ;
+    schema:dateModified "2026-08-14"^^xsd:date ;
     schema:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
     schema:publisher <https://idn.org.au> ;
     schema:status <https://linked.data.gov.au/def/reg-statuses/experimental> ;

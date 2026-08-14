@@ -1,10 +1,10 @@
 PREFIX atns: <https://linked.data.gov.au/def/atns/model/>
-PREFIX atns-cat: <https://data.idnau.org/pid/atns-cat/>
-PREFIX atns-country: <https://linked.data.gov.au/def/atns/country/>
+PREFIX atns-cat: <https://data.idnau.org/pid/vocab/atns-cat/>
+PREFIX atns-country: <https://data.idnau.org/pid/vocab/atns-country/>
 PREFIX idn-resource: <https://data.idnau.org/pid/resource/>
-PREFIX atns-ref: <https://linked.data.gov.au/def/atns/ref/>
-PREFIX atns-rel: <https://linked.data.gov.au/def/atns/rel/>
-PREFIX atns-subcat: <https://linked.data.gov.au/def/atns/subcat/>
+PREFIX atns-ref: <https://data.idnau.org/pid/vocab/atns-ref/>
+PREFIX atns-rel: <https://data.idnau.org/pid/vocab/atns-rel/>
+PREFIX atns-subcat: <https://data.idnau.org/pid/vocab/atns-subcat/>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX schema: <https://schema.org/>

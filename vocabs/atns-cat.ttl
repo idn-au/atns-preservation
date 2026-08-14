@@ -1,5 +1,5 @@
-PREFIX atns-cat: <https://data.idnau.org/pid/atns-cat/>
-PREFIX cs: <https://linked.data.gov.au/def/atns/cat>
+PREFIX atns-cat: <https://data.idnau.org/pid/vocab/atns-cat/>
+PREFIX cs: <https://data.idnau.org/pid/vocab/atns-cat>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
@@ -108,7 +108,7 @@ atns-cat:8896af60-959e-5d4c-b541-5947e9f5ca5f
 
 cs:
     a skos:ConceptScheme ;
-    owl:versionIRI <https://data.idnau.org/pid/atns-cat/1> ;
+    owl:versionIRI <https://data.idnau.org/pid/vocab/atns-cat/1> ;
     skos:definition "Top-level categories used to classify entities in the Agreements, Treaties and Negotiated Settlements database."@en ;
     skos:hasTopConcept
         atns-cat:13e77fec-44fd-554f-a075-ec60788eb1b1 ,
@@ -123,7 +123,7 @@ cs:
     skos:prefLabel "ATNS Entity Categories"@en ;
     schema:creator <https://orcid.org/0000-0001-5640-3202> ;
     schema:dateCreated "2026-06-24"^^xsd:date ;
-    schema:dateModified "2026-06-24"^^xsd:date ;
+    schema:dateModified "2026-08-14"^^xsd:date ;
     schema:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
     schema:publisher <https://idn.org.au> ;
     schema:status <https://linked.data.gov.au/def/reg-statuses/experimental> ;

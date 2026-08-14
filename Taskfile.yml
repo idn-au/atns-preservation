@@ -53,3 +53,17 @@ tasks:
     desc: Run extraction, conversion, validation, and graph-equivalence checks
     cmds:
       - task: check
+
+  crawl-subject-definitions:
+    desc: Recover ATNS subject-matter definitions from pinned Wayback captures
+    cmd: uv run --frozen python scripts/crawl_subject_matter_definitions.py
+
+  retry-subject-definitions:
+    desc: Retry unresolved archived subject-matter definitions conservatively
+    cmd: uv run --frozen python scripts/crawl_subject_matter_definitions.py --retry-unresolved --workers 1
+
+  apply-subject-definitions:
+    desc: Apply reviewed archived definitions to the curated ATNS subject vocabulary
+    cmds:
+      - uv run --frozen python scripts/apply_subject_matter_definitions.py
+      - riot --validate vocabs/atns-sub.ttl
