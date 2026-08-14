@@ -52,6 +52,7 @@ Source-derived facts and project-authored publication decisions are kept distinc
 - `specs/classification-rules.yaml` declares the project interpretation that source CategoryID `1` receives `atns:AgreementRecord` and CategoryID `3` receives `schema:Organization`. These classifications are not represented as authorised by the ATNS source owners.
 - `specs/editorial-overrides.yaml` contains the four concise public descriptions written for the preservation sample rather than copied mechanically from the XML.
 - `specs/subject-matter-definitions.tsv` records definitions recovered from timestamped Internet Archive captures of the public ATNS subject-matter pages, including the selected capture and review status.
+- `specs/sub-categories-definitions.tsv` records the equivalent archival evidence and review status for ATNS subcategories.
 - The `profile` column in `specs/public-sample-resources.csv` explains why the four showcased agreements contain richer descriptive fields while entities included only to support relationships remain deliberately minimal.
 
 Controlled-list IRIs are resolved by their preserved source notations in the committed `vocabs/*.ttl` files. The curated schemes and concepts use the IDN PID pattern `https://data.idnau.org/pid/vocab/atns-{name}`; the structural ATNS model remains in its separate `https://linked.data.gov.au/def/atns/model/` namespace. Project-authored vocabulary definitions, mappings, alignments and history notes remain curated RDF overlays and are not regenerated from `ListElements.xml` by this sample pipeline.
@@ -65,6 +66,12 @@ Run `task crawl-subject-definitions` only when intentionally refreshing the arch
 After review, run `task apply-subject-definitions`. This deterministic offline step replaces generated label-as-definition text only where the TSV contains usable evidence, adds a timestamped `dcterms:source` and history note to each enriched concept, updates the scheme modification date, and validates the resulting Turtle. Missing or empty archived definitions are left unchanged for later source-owner review.
 
 The recovered text is represented as historical ATNS-published material, not as newly authorised terminology. The concept scheme records that the definitions have not yet been reconfirmed by the current ATNS custodians.
+
+### Archived subcategory definitions
+
+ATNS also published dedicated pages for its subcategory values. `scripts/crawl_sub_category_definitions.py` applies the same capture-selection and review-status method to the fixed `reports/subcategories.tsv` manifest and writes the evidence to `specs/sub-categories-definitions.tsv`.
+
+Use `task crawl-subcategory-definitions` for an intentional full refresh, `task retry-subcategory-definitions` for unresolved rows, and `task apply-subcategory-definitions` only after reviewing the TSV. The offline application step updates stable, single-sample and historically changed definitions; it leaves missing, empty, failed and heading-mismatched evidence untouched. Each applied concept cites its selected timestamped capture, and the scheme records that the recovered definitions have not been reconfirmed by the current ATNS custodians.
 
 ## Pinned tools
 
@@ -109,7 +116,7 @@ The golden graph check is expected to fail when an accepted source update legiti
 - 253 triples
 - no blank-node triples
 - every `atns:AgreementRecord` linked to the Keeping Place ATNS dataset with `schema:isPartOf`
-- canonical sorted N-Triples SHA-256 `cfe2734a7dce8b9b76890424ca3a9ddd19b2d6e44246a9f601d8bb9339d27664`
+- canonical sorted N-Triples SHA-256 `62be4a20df05851c6766e29eebee383b214529e5247edc2a26db8e1d6aaad23c`
 - 26 split resource item files plus the catalogue wrapper
 
 `scripts/check_rdf_equivalence.py` rejects a conversion if the golden baseline changes unexpectedly, if any generated triple is missing or extra, or if the published split files cease to represent the same graph. Turtle whitespace, prefix choice and triple ordering may differ because RDF graph identity—not byte identity—is the preservation requirement.

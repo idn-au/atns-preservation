@@ -1,0 +1,13 @@
+PREFIX idn-resource: <https://data.idnau.org/pid/resource/>
+PREFIX schema: <https://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+idn-resource:atns-reference-guidance
+    a schema:CreativeWork ;
+    schema:dateCreated "2026-08-14"^^xsd:date ;
+    schema:dateModified "2026-08-14"^^xsd:date ;
+    schema:description "Referencing system instruction taken from the ATNS Procedures Manual, 2019"@en ;
+    schema:name "ATNS reference citation guidance"@en ;
+    schema:citation <https://search.worldcat.org/title/1087497869> ;
+    schema:text "All references are to follow the format style of the Australian Guide to Legal Citation, third or fourth edition, produced by the Melbourne University Law Review Association Inc."
+.

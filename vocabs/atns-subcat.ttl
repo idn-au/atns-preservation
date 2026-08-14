@@ -1,4 +1,5 @@
 PREFIX atns-subcat: <https://data.idnau.org/pid/vocab/atns-subcat/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX cs: <https://data.idnau.org/pid/vocab/atns-subcat>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -8,9 +9,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 atns-subcat:96ed4893-3cbb-55ad-8320-7a41fca2ccc6
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20200924105031/https://atns.net.au/subcategory.asp?subcategoryid=70> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Respondent'."@en ;
+    skos:definition "Respondent(s) in a native title or related case before the Federal Court of Australia."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "70"^^xsd:token ;
     skos:prefLabel "Respondent"@en ;
@@ -19,9 +22,11 @@ atns-subcat:96ed4893-3cbb-55ad-8320-7a41fca2ccc6
 
 atns-subcat:c2099cd6-cafc-54bc-9c89-11df0e41766e
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20140126160621/http://atns.net.au/subcategory.asp?subcategoryID=71> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'National Park'."@en ;
+    skos:definition "A relatively large area of land that is generally owned or leased by the Commonwealth Government in order to preserve its natural, cultural and historic attributes. The legislative basis for a National Park might be, for example, the National Parks and Wildlife Act 1974 (NSW) or the Nature Conservation Act 1992 (Qld)."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "71"^^xsd:token ;
     skos:prefLabel "National Park"@en ;
@@ -30,9 +35,11 @@ atns-subcat:c2099cd6-cafc-54bc-9c89-11df0e41766e
 
 atns-subcat:5b58045c-9ed4-5de5-9ff0-97a1b2ac015f
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20190314235420/https://www.atns.net.au/subcategory.asp?subcategoryID=72> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'No Liability Company'."@en ;
+    skos:definition "The activities of a no liability company must be confined to mining. No liability companies are public companies that have no statutory or contractual right to recover unpaid calls on partly paid shares. Such companies have ‘No Liability’ or ‘NL’ in their name."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "72"^^xsd:token ;
     skos:prefLabel "No Liability Company"@en ;
@@ -63,9 +70,11 @@ atns-subcat:243b1d27-cf40-5bee-9faa-84aed0afb787
 
 atns-subcat:1699fb80-0470-5f04-8e00-5ef955da347c
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20140302103623/http://atns.net.au/subcategory.asp?subcategoryID=75> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Research Agreement'."@en ;
+    skos:definition "An agreement with regard to research protocols and commitments."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "75"^^xsd:token ;
     skos:prefLabel "Research Agreement"@en ;
@@ -74,9 +83,11 @@ atns-subcat:1699fb80-0470-5f04-8e00-5ef955da347c
 
 atns-subcat:f005f1b8-394e-56eb-9c31-20fe08cc3f42
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20070901075716/http://www.atns.net.au/subcategory.asp?subcategoryID=76> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Territory Government'."@en ;
+    skos:definition "The government of a Territory of Australia. The Northern Territory of Australia was established under the Northern Territory (Self-Government) Act 1978 , a Commonwealth Government Act of Parliament, while the Australian Capital Territory (ACT) Government was established in 1989."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "76"^^xsd:token ;
     skos:prefLabel "Territory Government"@en ;
@@ -85,9 +96,11 @@ atns-subcat:f005f1b8-394e-56eb-9c31-20fe08cc3f42
 
 atns-subcat:330fef0d-52e9-5598-8ab1-509cd921aac1
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20070902033444/http://www.atns.net.au/subcategory.asp?subcategoryid=77> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Joint Venture Agreement'."@en ;
+    skos:definition "A Joint Venture Agreement is a commercial agreement creating a business partnership whereby the two or more parties each take up part ownership of a commercial venture."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "77"^^xsd:token ;
     skos:prefLabel "Joint Venture Agreement"@en ;
@@ -96,9 +109,11 @@ atns-subcat:330fef0d-52e9-5598-8ab1-509cd921aac1
 
 atns-subcat:d811f588-0526-5f2b-be26-8c2f3f8f1abc
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20200923132957/https://atns.net.au/subcategory.asp?subcategoryid=78> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Representative Body'."@en ;
+    skos:definition "A body which represents the interests of a larger group or groups."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "78"^^xsd:token ;
     skos:prefLabel "Representative Body"@en ;
@@ -107,9 +122,11 @@ atns-subcat:d811f588-0526-5f2b-be26-8c2f3f8f1abc
 
 atns-subcat:a6c25fbf-fc85-500f-b84e-fd99fa599993
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20140125204501/http://atns.net.au/subcategory.asp?subcategoryID=79> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Convention'."@en ;
+    skos:definition "A Convention is a binding agreement between states or nations; used synonymously with Treaty and Covenant. Conventions are stronger than Declarations because they are legally binding on governments that have signed them. When the UN General Assembly adopts a Convention, it creates international norms and standards. Once a Convention is adopted by the UN General Assembly, Member States can then ratify the Convention, promising to uphold it. Governments that violate the standards set forth in a Convention can then be censured by the UN. In Australia, treaty obligations are only recognised by courts as binding where they have been enacted by domestic legislation."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "79"^^xsd:token ;
     skos:prefLabel "Convention"@en ;
@@ -118,9 +135,11 @@ atns-subcat:a6c25fbf-fc85-500f-b84e-fd99fa599993
 
 atns-subcat:e76f87e0-b8e3-5926-84b7-228c7fad9c7c
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20150325192439/http://atns.net.au/subcategory.asp?subcategoryid=80> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Treaty (International)'."@en ;
+    skos:definition "A legally binding agreement between two or more sovereign governments."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "80"^^xsd:token ;
     skos:prefLabel "Treaty (International)"@en ;
@@ -129,9 +148,11 @@ atns-subcat:e76f87e0-b8e3-5926-84b7-228c7fad9c7c
 
 atns-subcat:72a9c179-74f7-5b36-8f3a-0a46835c636f
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20200925094045/https://atns.net.au/subcategory.asp?subcategoryID=81> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Declaration'."@en ;
+    skos:definition "A Declaration is a formal or public statement or document stating agreed upon standards which is not legally binding."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "81"^^xsd:token ;
     skos:prefLabel "Declaration"@en ;
@@ -140,9 +161,11 @@ atns-subcat:72a9c179-74f7-5b36-8f3a-0a46835c636f
 
 atns-subcat:75aa5456-8d13-506b-979c-bc34a8bd0a97
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20140302103416/http://atns.net.au/subcategory.asp?subcategoryid=82> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Deed of Settlement (New Zealand)'."@en ;
+    skos:definition "A Deed of Settlement contains the fine detail of a settlement and is initialled by the Crown and the claimant negotiators. Once ratified by the wider claimant group, the final Deed of Settlement is drawn up and signed by the parties, at which time it becomes binding."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "82"^^xsd:token ;
     skos:prefLabel "Deed of Settlement (New Zealand)"@en ;
@@ -151,9 +174,11 @@ atns-subcat:75aa5456-8d13-506b-979c-bc34a8bd0a97
 
 atns-subcat:cac0a6f7-3a5e-508f-a1d4-c453fb671f9c
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20201029024718/https://atns.net.au/subcategory.asp?subcategoryID=83> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Government'."@en ;
+    skos:definition "A publicly elected body which has governing authority over a political unit."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "83"^^xsd:token ;
     skos:prefLabel "Government"@en ;
@@ -162,9 +187,11 @@ atns-subcat:cac0a6f7-3a5e-508f-a1d4-c453fb671f9c
 
 atns-subcat:fce7d633-05fc-5e3e-8605-0cad9866c612
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20140302103618/http://atns.net.au/subcategory.asp?subcategoryID=84> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Regional Agreement'."@en ;
+    skos:definition "Regional agreements are made between Indigenous communities and other organisations, usually government and/or industry. Regional agreements can be used to organise policies, politics, administration and/or public services for or by an Indigenous people in a defined, frequently large, territory of land, or land and sea. Regional agreements can be legally enforceable as contracts."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "84"^^xsd:token ;
     skos:prefLabel "Regional Agreement"@en ;
@@ -184,9 +211,11 @@ atns-subcat:848b1af9-95b3-5332-90e1-1383bd4e0da7
 
 atns-subcat:b5a1f0b8-fda5-5c21-9210-53b047121dfd
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20070901081117/http://www.atns.net.au/subcategory.asp?subcategoryID=86> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'First Nations People of Canada'."@en ;
+    skos:definition "The indigenous people of Canada who are not Inuit or Métis."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "86"^^xsd:token ;
     skos:prefLabel "First Nations People of Canada"@en ;
@@ -195,9 +224,11 @@ atns-subcat:b5a1f0b8-fda5-5c21-9210-53b047121dfd
 
 atns-subcat:b4d0936c-867c-53c4-b8ca-dad372cb8c0c
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20201029022700/https://atns.net.au/subcategory.asp?subcategoryID=87> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Party to an Indigenous Land Use Agreement'."@en ;
+    skos:definition "A party to a voluntary agreement about use and management of land and waters. May include one or more native title groups, government or private enterprise."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "87"^^xsd:token ;
     skos:prefLabel "Party to an Indigenous Land Use Agreement"@en ;
@@ -206,9 +237,11 @@ atns-subcat:b4d0936c-867c-53c4-b8ca-dad372cb8c0c
 
 atns-subcat:3c896846-bc0f-53fa-82a8-faeedb9f0f2a
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20140125204625/http://atns.net.au/subcategory.asp?subcategoryID=88> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Canadian Aboriginal Government'."@en ;
+    skos:definition "Typically a regional and popularly elected Aboriginal government which may have jurisdiction over law-making, education, health and social services. May be created pursuant to a self-government agreement."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "88"^^xsd:token ;
     skos:prefLabel "Canadian Aboriginal Government"@en ;
@@ -217,9 +250,11 @@ atns-subcat:3c896846-bc0f-53fa-82a8-faeedb9f0f2a
 
 atns-subcat:668b60d9-b418-541f-9b99-af1f60fce728
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20140302103727/http://atns.net.au/subcategory.asp?subcategoryID=89> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Land Governance Agreement (Canada)'."@en ;
+    skos:definition "An agreement between the Canadian federal government and a First Nation or Aboriginal group which provides for the reservation of lands under s 91 of the Constitution Act, 1867 . It provides for the exercise of jurisdiction by the group over the use and regulation of the lands. It is distinct from land claims or self-government agreements under the federal Comprehensive Claims Policy"@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "89"^^xsd:token ;
     skos:prefLabel "Land Governance Agreement (Canada)"@en ;
@@ -239,9 +274,11 @@ atns-subcat:de48a4f0-1a8c-5488-bfa1-2fcef98c749d
 
 atns-subcat:7d302f05-b6eb-5d8e-bff5-9fc313296b0c
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20110216102828/http://atns.net.au/subcategory.asp?subcategoryID=91> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Sole Trader'."@en ;
+    skos:definition "An individual who runs a business in their own name which is not a limited company or a partnership."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "91"^^xsd:token ;
     skos:prefLabel "Sole Trader"@en ;
@@ -250,9 +287,11 @@ atns-subcat:7d302f05-b6eb-5d8e-bff5-9fc313296b0c
 
 atns-subcat:f2c94516-72ba-5d2d-b9e9-1b80cf9850a1
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20201029103124/https://atns.net.au/subcategory.asp?subcategoryid=92> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Incorporated Association'."@en ;
+    skos:definition "An association or group of people who, as a group, are recognised as a legal entity separate from its members. An association may be incorporated under commonwealth, state or territory legislation. Once incorporated, an association has all the powers of an individual and is legally able to do things in its own name, such as own land, sign a lease, or appear in court."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "92"^^xsd:token ;
     skos:prefLabel "Incorporated Association"@en ;
@@ -261,9 +300,11 @@ atns-subcat:f2c94516-72ba-5d2d-b9e9-1b80cf9850a1
 
 atns-subcat:5256bda6-9db4-55ea-a7a8-c0b7773c6aa5
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20140303160818/http://atns.net.au/subcategory.asp?subcategoryID=93> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Agreement in Principle / Heads of Agreement (New Zealand)'."@en ;
+    skos:definition "An Agreement in Principle or Heads of Agreement outlines the preliminary elements of a settlement and includes basic details of the historical account of the claim as well as cultural and commercial redress. It may also include a proposed financial quantum of the settlement."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "93"^^xsd:token ;
     skos:prefLabel "Agreement in Principle / Heads of Agreement (New Zealand)"@en ;
@@ -272,9 +313,11 @@ atns-subcat:5256bda6-9db4-55ea-a7a8-c0b7773c6aa5
 
 atns-subcat:84f0e035-49f3-5a4d-b092-77a17ebffa36
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20140125204641/http://atns.net.au/subcategory.asp?subcategoryID=94> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Governance Entity (New Zealand)'."@en ;
+    skos:definition "The Governance Entity is the legal entity that is responsible to a wider claimant group to hold and manage settlement assets and exercise the forms of cultural redress that are provided for in the settlement package."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "94"^^xsd:token ;
     skos:prefLabel "Governance Entity (New Zealand)"@en ;
@@ -283,9 +326,11 @@ atns-subcat:84f0e035-49f3-5a4d-b092-77a17ebffa36
 
 atns-subcat:23587163-67a7-5fa1-8812-c75f795d32df
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20140302103654/http://atns.net.au/subcategory.asp?subcategoryID=95> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Comprehensive Land Claims Agreement (Canada)'."@en ;
+    skos:definition "An agreement negotiated under the Canadian federal government’s Comprehensive Claims Policy, which clearly defines the rights of Aboriginal groups with respect to land and resources. Arrangements for self-government may also be included. The rights ensured by the agreement are constitutionally protected."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "95"^^xsd:token ;
     skos:prefLabel "Comprehensive Land Claims Agreement (Canada)"@en ;
@@ -294,9 +339,11 @@ atns-subcat:23587163-67a7-5fa1-8812-c75f795d32df
 
 atns-subcat:0cd007d5-c58e-513b-862c-989968dcc81a
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20140303160805/http://atns.net.au/subcategory.asp?subcategoryID=96> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Specific Claims Agreement (Canada)'."@en ;
+    skos:definition "An agreement negotiated under the Canadian federal government’s Specific Claims Policy, which deals with outstanding treaty or other legal obligations. Such agreements are designed to achieve ‘full and final closure’ to grievances and to facilitate economic opportunities for First Nation governments."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "96"^^xsd:token ;
     skos:prefLabel "Specific Claims Agreement (Canada)"@en ;
@@ -305,9 +352,11 @@ atns-subcat:0cd007d5-c58e-513b-862c-989968dcc81a
 
 atns-subcat:2d2a94e9-c385-5c3d-b6fc-8bf2c230e7ef
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20140302103710/http://atns.net.au/subcategory.asp?subcategoryID=97> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Framework Agreement (Canada)'."@en ;
+    skos:definition "An agreement often representing the first stage of negotiations of a land claims or self-government agreement. It may set out the details of the negotiation subject matter, the process and timetable for reaching an agreement-in-principle."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "97"^^xsd:token ;
     skos:prefLabel "Framework Agreement (Canada)"@en ;
@@ -316,9 +365,11 @@ atns-subcat:2d2a94e9-c385-5c3d-b6fc-8bf2c230e7ef
 
 atns-subcat:49e870b8-b962-5785-a662-f506350ede50
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20140302103648/http://atns.net.au/subcategory.asp?subcategoryID=98> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Agreement-in-Principle (AIP) (Canada)'."@en ;
+    skos:definition "An agreement setting out the objectives of, and elements to be included in a final agreement. The AIP does not create binding legal relations but paves the way for negotiation, and thereby functions as the basis of a final agreement."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "98"^^xsd:token ;
     skos:prefLabel "Agreement-in-Principle (AIP) (Canada)"@en ;
@@ -327,9 +378,11 @@ atns-subcat:49e870b8-b962-5785-a662-f506350ede50
 
 atns-subcat:496640c9-a0b8-580b-9bba-459fe5fcc345
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20140302103724/http://atns.net.au/subcategory.asp?subcategoryID=99> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Interim Measures Agreement (Canada)'."@en ;
+    skos:definition "An agreement which sets out temporary arrangements intended to afford a measure of protection to Aboriginal interests while a final agreement is in the process of being negotiated. It protects the rights and benefits negotiated in the agreement-in-principle, and may recognise certain principles by which negotiations are to be guided. An interim measures agreement does not create binding legal relations but serves as a bridge to the negotiation of a final agreement."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "99"^^xsd:token ;
     skos:prefLabel "Interim Measures Agreement (Canada)"@en ;
@@ -338,9 +391,11 @@ atns-subcat:496640c9-a0b8-580b-9bba-459fe5fcc345
 
 atns-subcat:e248c2dd-231c-5ac3-b046-96514d7b5cba
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20140303160814/http://atns.net.au/subcategory.asp?subcategoryID=101> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Treaty (Canada)'."@en ;
+    skos:definition "Historical treaties in the Canadian context were first signed between the British Crown and First Nations. They impose a range of mutual obligations on signatory parties. Modern treaties take the form of land claims settlements which are constitutionally protected."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "101"^^xsd:token ;
     skos:prefLabel "Treaty (Canada)"@en ;
@@ -349,9 +404,11 @@ atns-subcat:e248c2dd-231c-5ac3-b046-96514d7b5cba
 
 atns-subcat:aadb9f87-ca50-5df2-a80b-6c2fad38cb3a
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20140303160737/http://atns.net.au/subcategory.asp?subcategoryID=102> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Overlap/Boundary Agreement (Canada)'."@en ;
+    skos:definition "Overlap or boundary agreements are negotiated between First Nations in the context of land claims negotiations where traditional territories overlap or intersect. Such agreements may cover both land and resource interests and may set out provisions relating to matters including the exercise of harvesting rights, delineation of shared use and claims areas, consultation and shared decision-making."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "102"^^xsd:token ;
     skos:prefLabel "Overlap/Boundary Agreement (Canada)"@en ;
@@ -360,9 +417,11 @@ atns-subcat:aadb9f87-ca50-5df2-a80b-6c2fad38cb3a
 
 atns-subcat:d25c73be-9cb4-5d9b-9913-a32120c317b3
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20140126160517/http://atns.net.au/subcategory.asp?subcategoryID=104> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Maori People'."@en ;
+    skos:definition "The indigenous inhabitants of New Zealand."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "104"^^xsd:token ;
     skos:prefLabel "Maori People"@en ;
@@ -371,9 +430,11 @@ atns-subcat:d25c73be-9cb4-5d9b-9913-a32120c317b3
 
 atns-subcat:1e638a55-1881-57c7-894d-fa95737ba14a
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20131029223303/http://www.atns.net.au/subcategory.asp?subcategoryID=105> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Aboriginal Lands Trust (Western Australia)'."@en ;
+    skos:definition "The Aboriginal Lands Trust (ALT) was established by the Western Australian Aboriginal Affairs Planning Authority Act 1972 (WA) (AAPA Act). The functions of the ALT (s23 AAPA Act) are primarily to acquire and hold land and to use and manage that land for the benefit of persons of Aboriginal descent."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "105"^^xsd:token ;
     skos:prefLabel "Aboriginal Lands Trust (Western Australia)"@en ;
@@ -382,9 +443,11 @@ atns-subcat:1e638a55-1881-57c7-894d-fa95737ba14a
 
 atns-subcat:3d174cb1-b9fa-5ba5-a4be-08e299ed27d2
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20131029202612/http://www.atns.net.au/subcategory.asp?subcategoryID=106> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Aboriginal Lands Trust (South Australia)'."@en ;
+    skos:definition "The Aboriginal Lands Trust in South Australia is a statutory body under the Aboriginal Lands Trust Act 1966 (SA) (ALTA). The Lands Trust holds certain lands in trust for the economic and cultural benefit of the Aboriginal people of South Australia and may not sell any such land without the approval of both houses of Parliament."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "106"^^xsd:token ;
     skos:prefLabel "Aboriginal Lands Trust (South Australia)"@en ;
@@ -393,9 +456,11 @@ atns-subcat:3d174cb1-b9fa-5ba5-a4be-08e299ed27d2
 
 atns-subcat:8a117369-cce0-5a2c-9d12-d3d13719a07e
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20170214233025/http://atns.net.au/subcategory.asp?subcategoryID=107> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Non-Government Organisation (NGO)'."@en ;
+    skos:definition "An association based on the common interests of its members, individuals, or institutions. It has no government status or function and is not created by, nor is its agenda set or implemented by, a government."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "107"^^xsd:token ;
     skos:prefLabel "Non-Government Organisation (NGO)"@en ;
@@ -404,9 +469,11 @@ atns-subcat:8a117369-cce0-5a2c-9d12-d3d13719a07e
 
 atns-subcat:1682bda6-86ad-57ab-b605-73fb7027939d
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20200921194826/https://atns.net.au/subcategory.asp?subcategoryID=108> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Shared Responsibility Agreement (SRA)'."@en ;
+    skos:definition "Shared Responsibility Agreements (SRAs) are agreements made between federal and state governments and Indigenous communities to provide discretionary funding in return for community obligations. Such agreements form part of the Council of Australian Governments' (COAG) original commitment to the Framework to Advance Reconciliation and the Commonwealth Government's whole of government initiatives. ‘Shared Responsibility’ is a key concept in these arrangements. SRAs set out what all partners to the agreement will contribute in order to develop effective and long-term changes for Indigenous communities. SRAs are developed with reference to local community priorities and ideas as to how these might be achieved."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "108"^^xsd:token ;
     skos:prefLabel "Shared Responsibility Agreement (SRA)"@en ;
@@ -415,9 +482,11 @@ atns-subcat:1682bda6-86ad-57ab-b605-73fb7027939d
 
 atns-subcat:599936e5-2a8b-5e7e-b079-88a9d0d0ef0c
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20140125204538/http://atns.net.au/subcategory.asp?subcategoryID=109> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Aboriginal Community Controlled Health Organisation (ACCHO)'."@en ;
+    skos:definition "ACCHOs operate in the metropolitan, regional, rural and remote areas of all States and Territories in Australia. ACCHOs are controlled by, and accountable to, Aboriginal people in those areas in which they operate. ACCHOs aim to deliver holistic, comprehensive and culturally appropriate health care to the community that controls it."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "109"^^xsd:token ;
     skos:prefLabel "Aboriginal Community Controlled Health Organisation (ACCHO)"@en ;
@@ -426,9 +495,11 @@ atns-subcat:599936e5-2a8b-5e7e-b079-88a9d0d0ef0c
 
 atns-subcat:314b7fb0-5d8b-5ad1-afa1-ec0d99beee3b
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20140303160749/http://atns.net.au/subcategory.asp?subcategoryID=110> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Political Accord (Canada)'."@en ;
+    skos:definition "Political Accords are generally characterised by a cross-governmental approach to agreement making. This means that federal, provincial and Aboriginal governments or bodies are party to negotiations. An accord may establish a consultation process and subject matter of a proposed agreement, or may constitute a final agreement itself. Political accords often take place in the context of self-government negotiations."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "110"^^xsd:token ;
     skos:prefLabel "Political Accord (Canada)"@en ;
@@ -437,9 +508,11 @@ atns-subcat:314b7fb0-5d8b-5ad1-afa1-ec0d99beee3b
 
 atns-subcat:ad36943d-86a8-5484-8603-fdbb8581fa4e
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20201029015723/https://atns.net.au/subcategory.asp?subcategoryID=111> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Aboriginal and Torres Strait Islander'."@en ;
+    skos:definition "The Indigenous inhabitants of mainland Australia, Tasmania and the Torres Strait Islands."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "111"^^xsd:token ;
     skos:prefLabel "Aboriginal and Torres Strait Islander"@en ;
@@ -448,9 +521,11 @@ atns-subcat:ad36943d-86a8-5484-8603-fdbb8581fa4e
 
 atns-subcat:d60a14ab-ee61-558f-bfda-1c3c1c509e65
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20200319040153/https://www.atns.net.au/subcategory.asp?subcategoryID=112> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Indigenous Coordination Centre (ICC)'."@en ;
+    skos:definition "Prior to the abolition of the Aboriginal and Torres Strait Islander Commission (ATSIC), ICCs were ATSIC and Aboriginal and Torres Strait Islander Services (ATSIS) Regional and State Offices. The ICCs now operate as whole-of-government centres which house staff from a range of departments which deliver services to Indigenous Australians. Prior to the abolition of the Aboriginal and Torres Strait Islander Commission (ATSIC), ICCs were ATSIC and Aboriginal and Torres Strait Islander Services (ATSIS) Regional and State Offices. The ICCs now operate as whole-of-government centres which house staff from a range of departments which deliver services to Indigenous Australians. They operate in 29 locations around Australia and also negotiate Shared Responsibility Agreements (SRAs) with Indigenous communities."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "112"^^xsd:token ;
     skos:prefLabel "Indigenous Coordination Centre (ICC)"@en ;
@@ -470,9 +545,11 @@ atns-subcat:fb0d8b19-5eb9-590c-8d50-411cdcb787e5
 
 atns-subcat:901d9c34-2115-5043-9846-d5cba813b9b3
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20140125204819/http://atns.net.au/subcategory.asp?subcategoryID=114> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Torres Strait Islander Land Trust (Queensland)'."@en ;
+    skos:definition "Torres Strait Islander Land Trusts are statutory bodies created under the Torres Strait Islander Land Act 1991 (Qld). A Land Trust holds land granted under one of the mechanisms in the Act. It is a body corporate of which the grantees are members, holding land on trust for the benefit of Torres Strait Islander people, their ancestors and descendants. It is subject to restrictions in dealings with the land and is required to comply with the administrative and financial requirements of the Torres Strait Islander Land Regulation 1991 (Qld)."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "114"^^xsd:token ;
     skos:prefLabel "Torres Strait Islander Land Trust (Queensland)"@en ;
@@ -481,9 +558,11 @@ atns-subcat:901d9c34-2115-5043-9846-d5cba813b9b3
 
 atns-subcat:bb603fdb-9bd8-5d8b-88d5-da2caaa5bf15
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20200319040031/https://www.atns.net.au/subcategory.asp?subcategoryID=115> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Aboriginal Land Trust (Queensland)'."@en ;
+    skos:definition "Aboriginal Land Trusts are statutory bodies created under the Aboriginal Land Act 1991 (Qld). A Land Trust holds land granted under one of the mechanisms in the Act."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "115"^^xsd:token ;
     skos:prefLabel "Aboriginal Land Trust (Queensland)"@en ;
@@ -503,9 +582,11 @@ atns-subcat:04f70685-a852-5791-aa7b-04c01938187e
 
 atns-subcat:8cd54a0e-184d-520e-89f3-3c7ea37e76e1
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20201022100405/https://atns.net.au/subcategory.asp?subcategoryid=117> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Litigated Determination'."@en ;
+    skos:definition "A litigated determination is a decision by an Australian court or other recognised body that native title does or does not exist in a particular area of land or waters, which is made following a trial."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "117"^^xsd:token ;
     skos:prefLabel "Litigated Determination"@en ;
@@ -514,9 +595,11 @@ atns-subcat:8cd54a0e-184d-520e-89f3-3c7ea37e76e1
 
 atns-subcat:caa3eeb7-4d71-505c-9ee9-19b8c5338435
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20200921191157/https://atns.net.au/subcategory.asp?subcategoryID=119> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Consent Determination (Native Title Act)'."@en ;
+    skos:definition "A decision by the Federal Court, High Court or a recognised body that native title does or does not exist in a particular area, which is made when parties have reached an agreement."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "119"^^xsd:token ;
     skos:prefLabel "Consent Determination (Native Title Act)"@en ;
@@ -525,9 +608,11 @@ atns-subcat:caa3eeb7-4d71-505c-9ee9-19b8c5338435
 
 atns-subcat:177cef4d-1963-57e3-9b5c-508480daf336
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20200921073646/https://atns.net.au/subcategory.asp?subcategoryid=120> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Future Act Agreement (Native Title Act)'."@en ;
+    skos:definition "An agreement made under the future act provisions of the Native Title Act 1993 (Cth) about a \"future act\" - a proposed activity or development that may affect native title - which requires an agreement with the native title parties in order for the activity to be valid."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "120"^^xsd:token ;
     skos:prefLabel "Future Act Agreement (Native Title Act)"@en ;
@@ -536,9 +621,11 @@ atns-subcat:177cef4d-1963-57e3-9b5c-508480daf336
 
 atns-subcat:09f0a068-ce65-5c11-8dec-f081d1a81ec2
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20070517170812/http://www.atns.net.au:80/subcategory.asp?subcategoryid=121> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Indigenous Land Use Agreement (ILUA) (Native Title Act)'."@en ;
+    skos:definition "The Indigenous Land Use Agreement (ILUA) is a voluntary agreement between a native title group and others about the use and management of land and waters."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "121"^^xsd:token ;
     skos:prefLabel "Indigenous Land Use Agreement (ILUA) (Native Title Act)"@en ;
@@ -547,9 +634,11 @@ atns-subcat:09f0a068-ce65-5c11-8dec-f081d1a81ec2
 
 atns-subcat:41d9b2e8-b492-5ae4-a167-0ad1b8625279
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20110216100100/http://atns.net.au/subcategory.asp?subcategoryID=122> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Case Law'."@en ;
+    skos:definition "Decisions or findings of courts regarding litigated matters."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "122"^^xsd:token ;
     skos:prefLabel "Case Law"@en ;
@@ -558,9 +647,11 @@ atns-subcat:41d9b2e8-b492-5ae4-a167-0ad1b8625279
 
 atns-subcat:d9bcd972-b0da-5ef2-b97d-dfa3afca649f
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20200925094319/https://atns.net.au/subcategory.asp?subcategoryID=123> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Legislation'."@en ;
+    skos:definition "Also known as 'statutes' or 'acts', these are laws enacted by Commonwealth, State, or Territory Parliament or other national equivalent."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "123"^^xsd:token ;
     skos:prefLabel "Legislation"@en ;
@@ -569,9 +660,11 @@ atns-subcat:d9bcd972-b0da-5ef2-b97d-dfa3afca649f
 
 atns-subcat:009cc2ae-06a8-5cd7-922a-c90a2c0cd3b2
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20200921180851/https://atns.net.au/subcategory.asp?subcategoryID=124> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Interim Agreement'."@en ;
+    skos:definition "This agreement derives its name from its position in longer term negotiation. It will record matters agreed to along the path to a final agreement. Some or most of the matters will be of a temporary nature intended to be superseded by the envisaged final agreement. The agreement may also record matters agreed to in principle, which will be fully defined in a final draft. Where of the latter type this type of agreement may also be known as a draft agreement."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "124"^^xsd:token ;
     skos:prefLabel "Interim Agreement"@en ;
@@ -580,9 +673,11 @@ atns-subcat:009cc2ae-06a8-5cd7-922a-c90a2c0cd3b2
 
 atns-subcat:1b340bb0-e40e-5938-a6a5-34a49cd07960
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20190403123343/https://www.atns.net.au/subcategory.asp?subcategoryid=125> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Memorandum of Understanding'."@en ;
+    skos:definition "A statement of intent that is not necessarily legally binding."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "125"^^xsd:token ;
     skos:prefLabel "Memorandum of Understanding"@en ;
@@ -591,9 +686,11 @@ atns-subcat:1b340bb0-e40e-5938-a6a5-34a49cd07960
 
 atns-subcat:b7b5cd08-d283-583c-a41f-39a8ccf7f555
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20151130183938/http://www.atns.net.au/subcategory.asp?subcategoryID=126> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Indigenous Partnership'."@en ;
+    skos:definition "An agreement between indigenous and non-indigenous parties whereby the parties set out their intention to jointly cooperate together over a variety of important issues."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "126"^^xsd:token ;
     skos:prefLabel "Indigenous Partnership"@en ;
@@ -602,9 +699,11 @@ atns-subcat:b7b5cd08-d283-583c-a41f-39a8ccf7f555
 
 atns-subcat:076d3b9a-6064-528c-a4f2-cd910bad69f5
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20200921133040/https://atns.net.au/subcategory.asp?subcategoryid=127> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Land Transfer Agreement'."@en ;
+    skos:definition "'Land transfer agreement' is a term which describes the subject matter of an agreement, rather than a specific category of agreement. A land transfer agreement is an agreement which includes the transfer of land from one party to another."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "127"^^xsd:token ;
     skos:prefLabel "Land Transfer Agreement"@en ;
@@ -613,9 +712,11 @@ atns-subcat:076d3b9a-6064-528c-a4f2-cd910bad69f5
 
 atns-subcat:3f9e2685-7bfd-5846-9b35-84429e6dcbaf
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20110216101653/http://atns.net.au/subcategory.asp?subcategoryID=128> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Public Company'."@en ;
+    skos:definition "A public company is one which is not incorporated as a proprietary company. It may or may not be listed on the stock exchange for the public sale of shares, although any company that is listed, is a public company. More onerous obligations are imposed on public companies than on proprietary companies."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "128"^^xsd:token ;
     skos:prefLabel "Public Company"@en ;
@@ -624,9 +725,11 @@ atns-subcat:3f9e2685-7bfd-5846-9b35-84429e6dcbaf
 
 atns-subcat:5e6e7587-f46e-514c-b7f1-748fad936498
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20110216102628/http://atns.net.au/subcategory.asp?subcategoryID=129> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Native Title Holders (Native Title Act)'."@en ;
+    skos:definition "Aboriginal and Torres Strait Islander people who are registered as native title holders under the Native Title Act 1993 (Cth)."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "129"^^xsd:token ;
     skos:prefLabel "Native Title Holders (Native Title Act)"@en ;
@@ -635,9 +738,11 @@ atns-subcat:5e6e7587-f46e-514c-b7f1-748fad936498
 
 atns-subcat:422e0386-70ff-5903-a802-bbf394001e44
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20140126160612/http://atns.net.au/subcategory.asp?subcategoryID=130> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Traditional Owner Group (Aboriginal Land Rights (Northern Territory) Act)'."@en ;
+    skos:definition "The indigenous inhabitants of an area of Australia who assert traditional rights and interests in that area."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "130"^^xsd:token ;
     skos:prefLabel "Traditional Owner Group (Aboriginal Land Rights (Northern Territory) Act)"@en ;
@@ -646,9 +751,11 @@ atns-subcat:422e0386-70ff-5903-a802-bbf394001e44
 
 atns-subcat:97efd2c0-d3cb-5785-a953-d83214529992
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20201029114017/https://atns.net.au/subcategory.asp?subcategoryid=131> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Local Government'."@en ;
+    skos:definition "Local government performs the administrative functions for a particular municipality, city, town, township which are carried out by locally elected political bodies."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "131"^^xsd:token ;
     skos:prefLabel "Local Government"@en ;
@@ -657,9 +764,11 @@ atns-subcat:97efd2c0-d3cb-5785-a953-d83214529992
 
 atns-subcat:a69ed78c-0c27-5b49-bee7-3c4ca6147f60
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20200925090322/https://atns.net.au/subcategory.asp?subcategoryID=132> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Aboriginal Community Council'."@en ;
+    skos:definition "An Aboriginal council which typically represents the interests of, and makes decisions on behalf of the local indigenous community."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "132"^^xsd:token ;
     skos:prefLabel "Aboriginal Community Council"@en ;
@@ -668,9 +777,11 @@ atns-subcat:a69ed78c-0c27-5b49-bee7-3c4ca6147f60
 
 atns-subcat:80f9576f-cc98-5c15-b133-0ac43fced0c6
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20201022013251/https://atns.net.au/subcategory.asp?subcategoryid=133> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'State Government'."@en ;
+    skos:definition "The government of a State in Australia."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "133"^^xsd:token ;
     skos:prefLabel "State Government"@en ;
@@ -679,9 +790,11 @@ atns-subcat:80f9576f-cc98-5c15-b133-0ac43fced0c6
 
 atns-subcat:c43c7348-214e-5e4d-82fd-0ca183ec0745
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20201024180234/https://atns.net.au/subcategory.asp?subcategoryid=134> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Federal Government'."@en ;
+    skos:definition "The central government of a union of states in which sovereignty is divided between the central authority and the state authorities."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "134"^^xsd:token ;
     skos:prefLabel "Federal Government"@en ;
@@ -690,9 +803,11 @@ atns-subcat:c43c7348-214e-5e4d-82fd-0ca183ec0745
 
 atns-subcat:c7a29999-091c-5086-b86d-fcd39ee1ff0b
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20200925102017/https://atns.net.au/subcategory.asp?subcategoryID=135> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Proprietary Company'."@en ;
+    skos:definition "A proprietary (or private) company is limited to no more than 50 members and operates with restricted rights of transfer of shares. It can neither invite the general public to subscribe for its shares or debentures nor take deposits from the public. It is the most common form of company type."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "135"^^xsd:token ;
     skos:prefLabel "Proprietary Company"@en ;
@@ -701,9 +816,11 @@ atns-subcat:c7a29999-091c-5086-b86d-fcd39ee1ff0b
 
 atns-subcat:395f9c3d-1892-5865-a0a9-bc3dbcc40009
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20201029020908/https://atns.net.au/subcategory.asp?subcategoryID=136> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Aboriginal Corporation'."@en ;
+    skos:definition "An Aboriginal corporation is a company owned by Indigenous Australians."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "136"^^xsd:token ;
     skos:prefLabel "Aboriginal Corporation"@en ;
@@ -712,9 +829,11 @@ atns-subcat:395f9c3d-1892-5865-a0a9-bc3dbcc40009
 
 atns-subcat:b8ac89d9-085b-56a9-b061-cde49e183bc4
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20200922033909/https://atns.net.au/subcategory.asp?subcategoryid=137> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Native Title Claimants (registered)'."@en ;
+    skos:definition "Aboriginal and Torres Strait Islander people who have made an application for the legal recognition of their native title rights and interests with the Federal Court and who have fulfilled the requirements to be included on the Register of Native Title Claims."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "137"^^xsd:token ;
     skos:prefLabel "Native Title Claimants (registered)"@en ;
@@ -723,9 +842,11 @@ atns-subcat:b8ac89d9-085b-56a9-b061-cde49e183bc4
 
 atns-subcat:05a69289-48e5-5043-9a4d-d45fc411b116
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20110216100719/http://atns.net.au/subcategory.asp?subcategoryID=138> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Aboriginal Land Trust (Northern Territory)'."@en ;
+    skos:definition "Land Trusts in the Northern Territory are statutory bodies under the Aboriginal Land Rights (Northern Territory) Act 1976 (Cth) (ALRA). Land Trusts hold the title to land handed back to the traditional Aboriginal owners under one of the mechanisms outlined in the ALRA. A Land Trust exercises certain functions in relation to the land held by it as set out in the ALRA, but cannot exercise those functions except in accordance with a direction given to it by the Land Council for the area in which that land is situated."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "138"^^xsd:token ;
     skos:prefLabel "Aboriginal Land Trust (Northern Territory)"@en ;
@@ -734,9 +855,11 @@ atns-subcat:05a69289-48e5-5043-9a4d-d45fc411b116
 
 atns-subcat:8e1b0c83-6505-5408-be21-8d1f74b43120
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20200923115902/https://atns.net.au/subcategory.asp?subcategoryid=139> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Statutory Body'."@en ;
+    skos:definition "A statutory body is one established by legislation."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "139"^^xsd:token ;
     skos:prefLabel "Statutory Body"@en ;
@@ -745,9 +868,11 @@ atns-subcat:8e1b0c83-6505-5408-be21-8d1f74b43120
 
 atns-subcat:6ffe90c2-95c9-51b5-a083-8c7d83b975ef
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20200919214053/https://atns.net.au/subcategory.asp?subcategoryid=140> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Framework Agreement'."@en ;
+    skos:definition "These can be legally binding agreements, however they are essentially ‘process agreements’, that is, they generally bind parties to adhere to certain processes rather than to substantive issues."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "140"^^xsd:token ;
     skos:prefLabel "Framework Agreement"@en ;
@@ -756,9 +881,11 @@ atns-subcat:6ffe90c2-95c9-51b5-a083-8c7d83b975ef
 
 atns-subcat:107a111f-ec77-5bc3-8410-8bc0fade0403
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20150326094647/http://atns.net.au/subcategory.asp?subcategoryID=141> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Lease'."@en ;
+    skos:definition "A legal agreement between parties allowing one party to have a temporary interest in property, usually assuming most of the rights of the owner, and to use the property in accordance with the agreement. Leases will mostly have a date when they terminate, at which time the leased rights in the property return to the owner."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "141"^^xsd:token ;
     skos:prefLabel "Lease"@en ;
@@ -767,9 +894,11 @@ atns-subcat:107a111f-ec77-5bc3-8410-8bc0fade0403
 
 atns-subcat:1c5aa0a9-a1bc-59d1-a43d-51b12e376432
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20070902022448/http://www.atns.net.au/subcategory.asp?subcategoryid=142> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Section 21 Agreement (Native Title Act)'."@en ;
+    skos:definition "Local and regional land use and access agreements made between government and native title holders under the original section 21 of the Native Title Act 1993 (Cth) (unamended), where negotiations commenced or the agreement was finalised prior to the 1998 amendments to the Act."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "142"^^xsd:token ;
     skos:prefLabel "Section 21 Agreement (Native Title Act)"@en ;
@@ -778,9 +907,11 @@ atns-subcat:1c5aa0a9-a1bc-59d1-a43d-51b12e376432
 
 atns-subcat:6a2c747a-d581-55df-a79d-0e18378d44b4
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20200921051047/https://atns.net.au/subcategory.asp?subcategoryid=143> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Native Title Claimants (unregistered)'."@en ;
+    skos:definition "Aboriginal and Torres Strait Islander people who have made an application for the legal recognition of their native title rights and interests with the Federal Court and who have not fulfilled the requirements to be included on the Register of Native Title Claims."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "143"^^xsd:token ;
     skos:prefLabel "Native Title Claimants (unregistered)"@en ;
@@ -789,9 +920,11 @@ atns-subcat:6a2c747a-d581-55df-a79d-0e18378d44b4
 
 atns-subcat:4a28e5d2-a7b3-5528-9ea6-595807ca3c08
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20200921184930/https://atns.net.au/subcategory.asp?subcategoryID=144> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Land Use Agreement'."@en ;
+    skos:definition "A land use agreement is made between two or more parties, where a party with rights in land grants permission for another party (who may also have rights in the same area of land) to use the land for a particular purpose, or in a particular way, in exchange for rights, goods or services."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "144"^^xsd:token ;
     skos:prefLabel "Land Use Agreement"@en ;
@@ -800,9 +933,11 @@ atns-subcat:4a28e5d2-a7b3-5528-9ea6-595807ca3c08
 
 atns-subcat:27bf4e20-d996-5e23-bbd6-03284f4b24e4
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20140302103516/http://atns.net.au/subcategory.asp?subcategoryID=145> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Commercial Agreement'."@en ;
+    skos:definition "Agreements made on the open market for the exchange of goods and services, including the use of land. Although this category usually refers to binding contracts made between parties, it may also include any agreements made in the course of commerce, such as non-binding pre-contractual arrangements between parties. By convention this category does not include agreements made under statutory regimes dealing with native title rights, as those rights cannot be sold in the open market."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "145"^^xsd:token ;
     skos:prefLabel "Commercial Agreement"@en ;
@@ -811,9 +946,11 @@ atns-subcat:27bf4e20-d996-5e23-bbd6-03284f4b24e4
 
 atns-subcat:e25306cd-559a-5d5a-8a28-e66ca2c2323a
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20140302103525/http://atns.net.au/subcategory.asp?subcategoryID=146> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Exploration Agreement (Aboriginal Land Rights (Northern Territory) Act)'."@en ;
+    skos:definition "An agreement made with Aboriginal Traditional Owners for the grant of exploration licences over Aboriginal land, made under s 40 of the Aboriginal Land Rights (Northern Territory) Act 1976 (Cth) (the ALRA)."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "146"^^xsd:token ;
     skos:prefLabel "Exploration Agreement (Aboriginal Land Rights (Northern Territory) Act)"@en ;
@@ -822,9 +959,11 @@ atns-subcat:e25306cd-559a-5d5a-8a28-e66ca2c2323a
 
 atns-subcat:5701ef5e-fe49-5289-b4da-3345efa1ce89
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20140302103614/http://atns.net.au/subcategory.asp?subcategoryID=147> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Mining Agreement (Aboriginal Land Rights (Northern Territory) Act)'."@en ;
+    skos:definition "An agreement made with Aboriginal Traditional Owners for the grant of mining interests over Aboriginal land, made under s 46 of the Aboriginal Land Rights (Northern Territory) Act 1976 (Cth) (the ALRA)."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "147"^^xsd:token ;
     skos:prefLabel "Mining Agreement (Aboriginal Land Rights (Northern Territory) Act)"@en ;
@@ -833,9 +972,11 @@ atns-subcat:5701ef5e-fe49-5289-b4da-3345efa1ce89
 
 atns-subcat:f6be2b14-a012-5d67-a3b9-eec5a957c048
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20200921191001/https://atns.net.au/subcategory.asp?subcategoryID=148> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Memorandum of Lease'."@en ;
+    skos:definition "The written document containing the terms of a lease."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "148"^^xsd:token ;
     skos:prefLabel "Memorandum of Lease"@en ;
@@ -844,9 +985,11 @@ atns-subcat:f6be2b14-a012-5d67-a3b9-eec5a957c048
 
 atns-subcat:cb04592a-0221-592e-9bd2-7cfd7c515db8
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20140302103529/http://atns.net.au/subcategory.asp?subcategoryID=149> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Exploration Agreement (Native Title Act)'."@en ;
+    skos:definition "Exploration Agreements are made under the future act provisions of the Native Title Act 1993 (Cth) (not including Indigenous Land Use Agreements (ILUAs)). South Australia has its own provisions which comply with the regulations under the Native Title Act 1993 (Cth) for separate state regimes."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "149"^^xsd:token ;
     skos:prefLabel "Exploration Agreement (Native Title Act)"@en ;
@@ -855,9 +998,11 @@ atns-subcat:cb04592a-0221-592e-9bd2-7cfd7c515db8
 
 atns-subcat:89615198-37f5-5e14-91e6-a2ba2eb0af09
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20070902033248/http://www.atns.net.au/subcategory.asp?subcategoryid=150> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Joint Management Agreement'."@en ;
+    skos:definition "An agreement between indigenous and non-indigenous parties for the joint management of land of traditional significance to the indigenous parties."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "150"^^xsd:token ;
     skos:prefLabel "Joint Management Agreement"@en ;
@@ -866,9 +1011,11 @@ atns-subcat:89615198-37f5-5e14-91e6-a2ba2eb0af09
 
 atns-subcat:51e799aa-68a2-5df5-b3b6-ce3837c24612
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20070911154925/http://www.atns.net.au/subcategory.asp?subcategoryID=151> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Template Agreement'."@en ;
+    skos:definition "An Agreement which includes standard terms and conditions to be applied to a range of individual agreements all covering the same or similar issues and which is altered in certain respects to suit each particular situation."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "151"^^xsd:token ;
     skos:prefLabel "Template Agreement"@en ;
@@ -877,9 +1024,11 @@ atns-subcat:51e799aa-68a2-5df5-b3b6-ce3837c24612
 
 atns-subcat:f0427812-61d1-5004-b577-ac236a9c5c18
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20140302103532/http://atns.net.au/subcategory.asp?subcategoryID=152> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Funding Agreement'."@en ;
+    skos:definition "An Agreement under which the National or State Governments agree to fund an Indigenous body for a particular purpose. Such an agreement will not be legally binding upon the government unless the legislation under which it is made does in fact bind the government."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "152"^^xsd:token ;
     skos:prefLabel "Funding Agreement"@en ;
@@ -899,9 +1048,11 @@ atns-subcat:d95daea3-0353-524d-b9af-f7d0d06b878a
 
 atns-subcat:e9f2cbaa-5c3d-5a7e-a2de-427ab2fc804a
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20170214232859/http://atns.net.au/subcategory.asp?subcategoryID=154> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Statement of Commitment/Intention'."@en ;
+    skos:definition "A Statement of Commitment or Intention can be made by any entity and is a non-binding instrument that relates to the achievement a particular aim or aims. Many relate to enhancing the reconciliation process with Aboriginal peoples and practical measures to that end."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "154"^^xsd:token ;
     skos:prefLabel "Statement of Commitment/Intention"@en ;
@@ -910,9 +1061,11 @@ atns-subcat:e9f2cbaa-5c3d-5a7e-a2de-427ab2fc804a
 
 atns-subcat:d66b4fd1-9d0a-57fb-9a2c-d480e1cbc97f
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20170214233253/http://atns.net.au/subcategory.asp?subcategoryID=155> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Policy/Strategy'."@en ;
+    skos:definition "National, State or Local Government Policy or Strategy in relation to Indigenous issues."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "155"^^xsd:token ;
     skos:prefLabel "Policy/Strategy"@en ;
@@ -921,9 +1074,11 @@ atns-subcat:d66b4fd1-9d0a-57fb-9a2c-d480e1cbc97f
 
 atns-subcat:114e4b10-f8d9-5c01-9470-e5036762cb1b
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20140125204510/http://atns.net.au/subcategory.asp?subcategoryID=156> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Plan of Management'."@en ;
+    skos:definition "A Plan of Management in relation to the joint management, co-management, or for Indigenous input into, the management of a particular area of land."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "156"^^xsd:token ;
     skos:prefLabel "Plan of Management"@en ;
@@ -943,9 +1098,11 @@ atns-subcat:1eb2e7ab-f69e-50e0-96b3-ae27f43fe296
 
 atns-subcat:88a6616e-8f95-5953-8f69-3d07e051515c
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20140126160616/http://atns.net.au/subcategory.asp?subcategoryID=158> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Indigenous Protected Area'."@en ;
+    skos:definition "This is an area of land or sea over which the Traditional Indigenous Owners have entered into a voluntary agreement for the purposes of promoting biodiversity and cultural resource conservation. The declaration of an Indigenous Protected Area over Indigenous owned lands results in that land being considered as part of the National Reserve System."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "158"^^xsd:token ;
     skos:prefLabel "Indigenous Protected Area"@en ;
@@ -954,9 +1111,11 @@ atns-subcat:88a6616e-8f95-5953-8f69-3d07e051515c
 
 atns-subcat:66ca48c6-5504-5f8e-9835-c46a3bce657e
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20140302103706/http://atns.net.au/subcategory.asp?subcategoryID=160> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Final Agreement (Canada)'."@en ;
+    skos:definition "An agreement concluding comprehensive land claims negotiations, and recognising Aboriginal rights and interests to traditional territory."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "160"^^xsd:token ;
     skos:prefLabel "Final Agreement (Canada)"@en ;
@@ -965,9 +1124,11 @@ atns-subcat:66ca48c6-5504-5f8e-9835-c46a3bce657e
 
 atns-subcat:7dff9d75-8efe-5518-a99d-54546a46d417
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20140302103717/http://atns.net.au/subcategory.asp?subcategoryID=161> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Implementation Plan (Canada)'."@en ;
+    skos:definition "An agreement which guides and monitors the implementation of a final agreement. The implementation plan sets out the activities and obligations of the parties required to fulfil the agreement. It does not create legal obligations beyond those identified in the final agreement."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "161"^^xsd:token ;
     skos:prefLabel "Implementation Plan (Canada)"@en ;
@@ -976,9 +1137,11 @@ atns-subcat:7dff9d75-8efe-5518-a99d-54546a46d417
 
 atns-subcat:fc06dde7-2239-580c-b4b9-09d0f530c888
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20140303160753/http://atns.net.au/subcategory.asp?subcategoryID=162> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Self-Government Agreement (Canada)'."@en ;
+    skos:definition "An agreement which recognises that the inherent right of self-government is an existing right under section 35 of the of the Constitution Act, 1982. It sets out the self-government arrangements and jurisdictional powers of First Nation Governments. Self-government agreements are often negotiated in conjunction with comprehensive land claims agreements."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "162"^^xsd:token ;
     skos:prefLabel "Self-Government Agreement (Canada)"@en ;
@@ -987,9 +1150,11 @@ atns-subcat:fc06dde7-2239-580c-b4b9-09d0f530c888
 
 atns-subcat:76172eac-f556-58a7-85ae-e9378e301734
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20140302103657/http://atns.net.au/subcategory.asp?subcategoryID=163> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Devolution Agreement (Canada)'."@en ;
+    skos:definition "An agreement between the federal and territorial governments transferring province-like powers and responsibilities to the territorial governments. It may cover matters such as legislative authority, development of resource management schemes, financial relationships and human and capital resources transfers."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "163"^^xsd:token ;
     skos:prefLabel "Devolution Agreement (Canada)"@en ;
@@ -998,9 +1163,11 @@ atns-subcat:76172eac-f556-58a7-85ae-e9378e301734
 
 atns-subcat:07dcb544-00ed-512d-9af0-a2d18865d9d3
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20140303160802/http://atns.net.au/subcategory.asp?subcategoryID=164> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Socio-Economic Agreement (Canada)'."@en ;
+    skos:definition "An agreement typically negotiated in the context of resource development between a company, various levels of government and the local community. It establishes a framework that promotes the efficient use of resources by Canada, the relevant province or territory, and the local residents. A socio-economic agreement recognises the potential impact of mining or exploration and seeks to promote the economic development and well-being of neighbouring communities."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "164"^^xsd:token ;
     skos:prefLabel "Socio-Economic Agreement (Canada)"@en ;
@@ -1009,9 +1176,11 @@ atns-subcat:07dcb544-00ed-512d-9af0-a2d18865d9d3
 
 atns-subcat:64c0b91c-926f-5d0c-8368-12601a23c8f2
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20140302103700/http://atns.net.au/subcategory.asp?subcategoryID=165> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Environmental Agreement (Canada)'."@en ;
+    skos:definition "An agreement typically negotiated in the context of resource development between a company, the federal government and the relevant provincial or territory government, frequently with the participation of local Aboriginal organisations. Environmental Agreements set out the responsibilities of the parties for the mitigation of any adverse impacts of a given development project."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "165"^^xsd:token ;
     skos:prefLabel "Environmental Agreement (Canada)"@en ;
@@ -1020,9 +1189,11 @@ atns-subcat:64c0b91c-926f-5d0c-8368-12601a23c8f2
 
 atns-subcat:300b61b1-8d08-5374-9ff8-b28c881f5b11
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20140302103714/http://atns.net.au/subcategory.asp?subcategoryID=166> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Impact and Benefits Agreement (IBA) (Canada)'."@en ;
+    skos:definition "A confidential agreement negotiated in the context of resource development between a company, the relevant provincial or territorial government and affected Aboriginal organisations. An IBA establishes the terms under which affected Aboriginal people will benefit from a development project. It is otherwise known as a participation agreement."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "166"^^xsd:token ;
     skos:prefLabel "Impact and Benefits Agreement (IBA) (Canada)"@en ;
@@ -1031,9 +1202,11 @@ atns-subcat:300b61b1-8d08-5374-9ff8-b28c881f5b11
 
 atns-subcat:011f1a86-2366-53c2-8f6d-a60006646e79
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20140302103734/http://atns.net.au/subcategory.asp?subcategoryID=167> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Mining Agreement (Canada)'."@en ;
+    skos:definition "Any agreement between mining companies, the two levels of government and local Aboriginal organisations regarding the construction and operation of mining projects."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "167"^^xsd:token ;
     skos:prefLabel "Mining Agreement (Canada)"@en ;
@@ -1042,9 +1215,11 @@ atns-subcat:011f1a86-2366-53c2-8f6d-a60006646e79
 
 atns-subcat:a8368baa-c7b2-5b8f-a071-57fe2a7ec152
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20140303160809/http://atns.net.au/subcategory.asp?subcategoryID=168> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Support Agreement (Canada)'."@en ;
+    skos:definition "A confidential agreement negotiated in the context of resource development between a company and the relevant provincial and territorial government, with the participation of local Aboriginal organisations. It contains provisions regarding the company’s commitment to support a local industry."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "168"^^xsd:token ;
     skos:prefLabel "Support Agreement (Canada)"@en ;
@@ -1053,9 +1228,11 @@ atns-subcat:a8368baa-c7b2-5b8f-a071-57fe2a7ec152
 
 atns-subcat:58e5a837-54f1-58e7-93cb-e780e6096ac2
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20140302103731/http://atns.net.au/subcategory.asp?subcategoryID=169> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Memorandum of Intent (MOI) (Canada)'."@en ;
+    skos:definition "An agreement which may constitute the first stage of the negotiation of a final agreement. An MOI sets out the objectives, principles, subject matter and process necessary to guide discussions. It reflects the commitment of the parties to proceed with negotiations."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "169"^^xsd:token ;
     skos:prefLabel "Memorandum of Intent (MOI) (Canada)"@en ;
@@ -1064,9 +1241,11 @@ atns-subcat:58e5a837-54f1-58e7-93cb-e780e6096ac2
 
 atns-subcat:0eb5fb8a-c7a0-5513-9544-e257fba66e8c
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20140303160744/http://atns.net.au/subcategory.asp?subcategoryID=170> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Partnership Agreement (Canada)'."@en ;
+    skos:definition "An agreement negotiated between a company and local Aboriginal organisations, reflecting the parties’ commitment to increased Aboriginal participation in resource development."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "170"^^xsd:token ;
     skos:prefLabel "Partnership Agreement (Canada)"@en ;
@@ -1075,9 +1254,11 @@ atns-subcat:0eb5fb8a-c7a0-5513-9544-e257fba66e8c
 
 atns-subcat:7cfbd20c-917a-5a6c-b2cc-9baa5762381b
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20140303160740/http://atns.net.au/subcategory.asp?subcategoryID=171> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Participation Agreement (Canada)'."@en ;
+    skos:definition "An agreement negotiated between a company and local Aboriginal organisations in the context of natural resource development projects. It may set out the principles to guide the working relationship of the parties, and establish the obligations of the parties regarding employment, training and business opportunities. It is otherwise be known as an Impact and Benefits Agreement."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "171"^^xsd:token ;
     skos:prefLabel "Participation Agreement (Canada)"@en ;
@@ -1086,9 +1267,11 @@ atns-subcat:7cfbd20c-917a-5a6c-b2cc-9baa5762381b
 
 atns-subcat:7b236814-e530-5bde-856c-b25535686470
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20140303160756/http://atns.net.au/subcategory.asp?subcategoryID=172> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Service Delivery Agreement (Canada)'."@en ;
+    skos:definition "An agreement between a First Nation or Aboriginal government or council and a municipal council for the provision of services to Aboriginal communities. May include services relating to emergency and rescue matters, waste and rubbish removal, regional and local parks, road maintenance, libraries, swimming pool operation, building inspection and dog control."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "172"^^xsd:token ;
     skos:prefLabel "Service Delivery Agreement (Canada)"@en ;
@@ -1097,9 +1280,11 @@ atns-subcat:7b236814-e530-5bde-856c-b25535686470
 
 atns-subcat:fa695837-692e-5ecd-954d-f00c369e7c2e
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20140126160508/http://atns.net.au/subcategory.asp?subcategoryID=173> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Inuit of Canada'."@en ;
+    skos:definition "Aboriginal peoples who reside in the eastern arctic and Arctic Ocean regions of the North West Territories, Northern Quebec and Labrador, formerly known as Eskimo."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "173"^^xsd:token ;
     skos:prefLabel "Inuit of Canada"@en ;
@@ -1108,9 +1293,11 @@ atns-subcat:fa695837-692e-5ecd-954d-f00c369e7c2e
 
 atns-subcat:f1e9e6d7-06bd-5773-bbb6-9d851c344924
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20140126160524/http://atns.net.au/subcategory.asp?subcategoryID=174> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Métis of Canada'."@en ;
+    skos:definition "The Métis Nation evolved in the historic north-west of Canada in the 18th and 19th centuries. Born of a mixture of French and Scottish fur traders and Cree, Ojibwa, Saulteaux, and Assiniboine women, the Métis in the north-west developed as a people, distinct from either Indian or European."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "174"^^xsd:token ;
     skos:prefLabel "Métis of Canada"@en ;
@@ -1119,9 +1306,11 @@ atns-subcat:f1e9e6d7-06bd-5773-bbb6-9d851c344924
 
 atns-subcat:7767aecc-ae64-5c1e-8fe6-b2b68c0cf7e4
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20140125204743/http://atns.net.au/subcategory.asp?subcategoryID=175> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Provincial/Territory Government (Canada)'."@en ;
+    skos:definition "A publicly elected government of a province or territory of Canada."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "175"^^xsd:token ;
     skos:prefLabel "Provincial/Territory Government (Canada)"@en ;
@@ -1130,9 +1319,11 @@ atns-subcat:7767aecc-ae64-5c1e-8fe6-b2b68c0cf7e4
 
 atns-subcat:a7cf88da-5009-583e-a88f-5323d27c417a
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20200921180638/https://atns.net.au/subcategory.asp?subcategoryID=176> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Conservation Agreement'."@en ;
+    skos:definition "A voluntary agreement between the Commonwealth Government and a landowner for the protection and conservation of biodiversity and Aboriginal cultural heritage values in Australia."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "176"^^xsd:token ;
     skos:prefLabel "Conservation Agreement"@en ;
@@ -1152,9 +1343,11 @@ atns-subcat:395827ef-ba33-5bcc-96ff-bc0f3bd5d47a
 
 atns-subcat:5fef068a-6a72-5e16-8885-194d2e021bfe
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20140319114201/http://www.atns.net.au/subcategory.asp?subcategoryid=302> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Regional Partnership Agreement (RPA)'."@en ;
+    skos:definition "An agreement designed to provide a mechanism for establishing a uniform Commonwealth Government investment strategy across a region with respect to Indigenous Affairs. Such agreements are intended to provide a coordinated response to priorities identified for the region, thus eliminating duplication or gaps. Regional Partnership Agreements (RPAs) form part of the Commonwealth Government's new arrangements for Indigenous Affairs and service delivery. Where States and Territories have agreed, RPAs may also include State and Territory investment. The terms of RPAs will comply with the 'Framework Principles for Government Service Delivery' agreed by the Council of Australian Government in June 2004."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "302"^^xsd:token ;
     skos:prefLabel "Regional Partnership Agreement (RPA)"@en ;
@@ -1174,9 +1367,11 @@ atns-subcat:28ea34b8-add0-5293-9708-7ff499b124b6
 
 atns-subcat:428c348f-cb02-5b4a-9f58-b6172ccba9f9
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20140126160512/http://atns.net.au/subcategory.asp?subcategoryID=307> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Local Community of South Africa'."@en ;
+    skos:definition "A community local to a South African area."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "307"^^xsd:token ;
     skos:prefLabel "Local Community of South Africa"@en ;
@@ -1196,9 +1391,11 @@ atns-subcat:cf3b9aee-3198-5049-bab0-fa15a46e1c06
 
 atns-subcat:73e7ea31-7278-515a-ad91-72314b50074c
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20140126160547/http://atns.net.au/subcategory.asp?subcategoryID=313> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Party to a Deed of Settlement (New Zealand)'."@en ;
+    skos:definition "A party to the final settlement of an historical claim under the Treaty of Waitangi Act 1975 ."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "313"^^xsd:token ;
     skos:prefLabel "Party to a Deed of Settlement (New Zealand)"@en ;
@@ -1207,9 +1404,11 @@ atns-subcat:73e7ea31-7278-515a-ad91-72314b50074c
 
 atns-subcat:fd0b443c-f78b-5840-926a-9b0080a9ebdb
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20110216115005/http://atns.net.au/subcategory.asp?subcategoryID=314> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Land Restitution Agreement (South Africa)'."@en ;
+    skos:definition "‘Land restitution agreement’ is a term which describes the subject matter of an agreement, rather than a specific category of agreement. A land restitution agreement is an agreement which includes the transfer of land to people or communities unfairly deprived of their land under under apartheid-era policies, whether or not that land transfer is associated with a claim under the Restitution of Land Rights Act 1994. Under s 14(3) of that Act, parties to a land restitution claim can reach agreement on the terms of their settlement, and that agreement may then be endorsed by the Land Claims Court as an order of the court."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "314"^^xsd:token ;
     skos:prefLabel "Land Restitution Agreement (South Africa)"@en ;
@@ -1218,9 +1417,11 @@ atns-subcat:fd0b443c-f78b-5840-926a-9b0080a9ebdb
 
 atns-subcat:53c4c72c-0c84-5487-b3b9-13134a218163
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20080724075416/http://atns.net.au/subcategory.asp?subcategoryID=316> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Joint Venture Agreement (South Africa)'."@en ;
+    skos:definition "A Joint Venture Agreement is a commercial agreement creating a business partnership whereby the two or more parties each take up part ownership of a commercial venture."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "316"^^xsd:token ;
     skos:prefLabel "Joint Venture Agreement (South Africa)"@en ;
@@ -1229,9 +1430,11 @@ atns-subcat:53c4c72c-0c84-5487-b3b9-13134a218163
 
 atns-subcat:a49a985c-aa37-5165-8e47-e59a724f040e
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20140126160629/http://atns.net.au/subcategory.asp?subcategoryID=320> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Policy/Strategy (South Africa)'."@en ;
+    skos:definition "South African national or local government policy or strategy."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "320"^^xsd:token ;
     skos:prefLabel "Policy/Strategy (South Africa)"@en ;
@@ -1240,9 +1443,11 @@ atns-subcat:a49a985c-aa37-5165-8e47-e59a724f040e
 
 atns-subcat:b6d2bb0f-4564-5bb9-b667-3700821f5a5b
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20150330235529/http://www.atns.net.au/subcategory.asp?subcategoryid=321> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Black Economic Empowerment Transaction (South Africa)'."@en ;
+    skos:definition "A Black Economic Empowerment transaction is the transfer of all or part of the ownership, management or benefits of an enterprise or productive asset to the control of ‘historically disadvantaged South Africans’ (HDSAs), a term which includes black, coloured and Indian South Africans, women and the disabled. These transactions are one aspect of Black Economic Empowerment, a policy designed to ‘increase broad-based and effective participation of black people in the economy’ ( Broad-Based Black Economic Empowerment Act , 2003)."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "321"^^xsd:token ;
     skos:prefLabel "Black Economic Empowerment Transaction (South Africa)"@en ;
@@ -1251,9 +1456,11 @@ atns-subcat:b6d2bb0f-4564-5bb9-b667-3700821f5a5b
 
 atns-subcat:ccad408c-37fe-5a36-a785-baf3b25cdce9
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20160425181655/http://atns.net.au/subcategory.asp?subcategoryid=324> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Indigenous Management Agreement (Aboriginal Land Act) (Queensland)'."@en ;
+    skos:definition "An agreement made in accordance with s 83G of the Aboriginal Land Act 1991 (Qld). It concerns the management of land that has been designated a \"national park (Cape York Peninsula Aboriginal land)\" under the Nature Conservation Act 1992 (Qld), as amended by the Cape York Peninsula Heritage Act 2007 (Qld)."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "324"^^xsd:token ;
     skos:prefLabel "Indigenous Management Agreement (Aboriginal Land Act) (Queensland)"@en ;
@@ -1262,9 +1469,11 @@ atns-subcat:ccad408c-37fe-5a36-a785-baf3b25cdce9
 
 atns-subcat:9dcbe1a3-5e12-5b7e-bf28-8badef099c68
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20160425152514/http://atns.net.au/subcategory.asp?subcategoryid=325> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'Traditional Use Marine Resource Agreement (TUMRA)'."@en ;
+    skos:definition "Traditional Use Marine Resource Agreements (TUMRAs) are formal agreements developed by Traditional Owners and the Great Barrier Reef Marine Park Authority to provide for cooperation in the conduct and monitoring of indigenous hunting activities within the Great Barrier Reef Marine Park."@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "325"^^xsd:token ;
     skos:prefLabel "Traditional Use Marine Resource Agreement (TUMRA)"@en ;
@@ -1273,9 +1482,11 @@ atns-subcat:9dcbe1a3-5e12-5b7e-bf28-8badef099c68
 
 atns-subcat:123a2199-09c1-53e0-9c4d-6ae2033ea91c
     a skos:Concept ;
+    dcterms:source <https://web.archive.org/web/20190823004400/https://www.atns.net.au/subcategory.asp?subcategoryid=330> ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The ATNS subcategory 'COAG Agreement'."@en ;
+    skos:definition "Includes health agreements: NPA, OBIP, and National Agreements"@en ;
     skos:historyNote "Derived from an ATNS database controlled-list value."@en ;
+    skos:historyNote "Definition published by the ATNS project and recovered from the archived ATNS website."@en ;
     skos:inScheme cs: ;
     skos:notation "330"^^xsd:token ;
     skos:prefLabel "COAG Agreement"@en ;
@@ -1500,6 +1711,7 @@ cs:
         atns-subcat:c868472d-2d34-594a-8479-8ab66eddde4e ,
         atns-subcat:0057a2c2-f2e6-5896-942d-c99eeaa42337 ;
     skos:historyNote "Derived manually from the ATNS subcategories.tsv report to support preservation and migration of the ATNS data. Source records 326, 334, 335, 338, 339, 340 were omitted because they have no label."@en ;
+    skos:historyNote "Subcategory definitions were recovered from archived ATNS website pages. Each enriched concept cites the capture used; these historical definitions have not been reconfirmed by the current ATNS custodians."@en ;
     skos:prefLabel "ATNS Subcategories"@en ;
     schema:creator <https://orcid.org/0000-0001-5640-3202> ;
     schema:dateCreated "2026-06-24"^^xsd:date ;

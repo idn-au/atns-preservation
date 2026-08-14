@@ -67,3 +67,17 @@ tasks:
     cmds:
       - uv run --frozen python scripts/apply_subject_matter_definitions.py
       - riot --validate vocabs/atns-sub.ttl
+
+  crawl-subcategory-definitions:
+    desc: Recover ATNS subcategory definitions from pinned Wayback captures
+    cmd: uv run --frozen python scripts/crawl_sub_category_definitions.py
+
+  retry-subcategory-definitions:
+    desc: Retry unresolved archived subcategory definitions conservatively
+    cmd: uv run --frozen python scripts/crawl_sub_category_definitions.py --retry-unresolved --workers 1
+
+  apply-subcategory-definitions:
+    desc: Apply reviewed archived definitions to the curated ATNS subcategory vocabulary
+    cmds:
+      - uv run --frozen python scripts/apply_subcategory_definitions.py
+      - riot --validate vocabs/atns-subcat.ttl

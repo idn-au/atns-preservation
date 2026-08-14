@@ -130,6 +130,16 @@ atns:country
     rdfs:range skos:Concept ;
 .
 
+atns:referenceCitationConvention
+    a dcterms:Standard ;
+    rdfs:label "ATNS reference citation convention"@en ;
+    dcterms:description """
+        References in the ATNS database were required to follow the
+        Australian Guide to Legal Citation, third or fourth edition.
+    """@en ;
+    dcterms:references <https://search.worldcat.org/title/1087497869>
+.
+
 atns:referenceType
     a owl:ObjectProperty ;
     rdfs:isDefinedBy atns: ;
