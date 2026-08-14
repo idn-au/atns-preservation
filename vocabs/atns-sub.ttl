@@ -7,6 +7,18 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
+<https://linked.data.gov.au/org/idn>
+    a schema:Organization ;
+    schema:name "Indigenous Data Network" ;
+    schema:url "https://mspgh.unimelb.edu.au/centres-institutes/onemda/research-group/indigenous-studies-unit/indigenous-data-network"^^xsd:anyURI ;
+.
+
+<https://orcid.org/0000-0001-5640-3202>
+    a schema:Person ;
+    schema:email "mailto:les@kurrawong.ai"^^xsd:anyURI ;
+    schema:name "Les Kneebone" ;
+.
+
 <https://data.idnau.org/pid/vocab/atns-sub/06f9cf03-2d66-5dfe-807c-b7632b2ea564>
     a skos:Concept ;
     dcterms:source <https://web.archive.org/web/20110216094955/http://atns.net.au/subjectmatter.asp?SubjectmatterID=28> ;
@@ -629,12 +641,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://orcid.org/0000-0001-5640-3202>
-    a schema:Person ;
-    schema:email "les@kurrawong.ai"^^xsd:anyURI ;
-    schema:name "Les Kneebone" ;
-.
-
 cs:
     a skos:ConceptScheme ;
     owl:versionIRI :None ;
@@ -694,14 +700,16 @@ cs:
         <https://data.idnau.org/pid/vocab/atns-sub/ffe61b3b-8b29-5264-89ac-758a03928ea5> ;
     skos:historyNote
         "Subject-matter definitions were recovered from archived ATNS website pages. Each enriched concept cites the capture used; these historical definitions have not been reconfirmed by the current ATNS custodians."@en ,
-        "To support migration of data from ATNS website to the Indigenous Data Commons"@en ,
-        "The SKOS mapping relationships to concepts in the IDN Thesaurus were added by the ATNS preservation project and have not been authorised by the ATNS source."@en ;
+        "To support preservation of data from ATNS website in the Indigenous Data Commons"@en ,
+        "The SKOS mapping relationships to concepts in the IDN Themes were added by the ATNS preservation project and have not been authorised by the ATNS source."@en ;
     skos:prefLabel "ATNS Subjects"@en ;
+    skos:altLabel "Agreements, Treaties and Negotiated Settlements Subjects"@en ;
     schema:creator <https://orcid.org/0000-0001-5640-3202> ;
     schema:dateCreated "2026-06-22"^^xsd:date ;
     schema:dateModified "2026-08-14"^^xsd:date ;
     schema:keywords "Treaties" ;
-    schema:publisher <https://idn.org.au> ;
+    schema:publisher <https://linked.data.gov.au/org/idn> ;
     schema:status <https://linked.data.gov.au/def/reg-statuses/experimental> ;
     schema:version "None" ;
+    schema:codeRepository "https://github.com/idn-au/atns-preservation"^^xsd:anyURI ;
 .

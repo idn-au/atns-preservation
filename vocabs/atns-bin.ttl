@@ -6,6 +6,18 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
+<https://linked.data.gov.au/org/idn>
+    a schema:Organization ;
+    schema:name "Indigenous Data Network" ;
+    schema:url "https://mspgh.unimelb.edu.au/centres-institutes/onemda/research-group/indigenous-studies-unit/indigenous-data-network"^^xsd:anyURI ;
+.
+
+<https://orcid.org/0000-0001-5640-3202>
+    a schema:Person ;
+    schema:email "les@kurrawong.ai"^^xsd:anyURI ;
+    schema:name "Les Kneebone" ;
+.
+
 atns-bin:0b750760-1974-52db-80e5-0b6a18e8118b
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
@@ -512,18 +524,6 @@ atns-bin:5d4d4f7d-81c5-5d97-9255-fd6eededa63c
     skos:topConceptOf cs: ;
 .
 
-<https://orcid.org/0000-0001-5640-3202>
-    a schema:Person ;
-    schema:email "mailto:les@kurrawong.ai"^^xsd:anyURI ;
-    schema:name "Les Kneebone" ;
-.
-
-<https://idn.org.au>
-    a schema:Organization ;
-    schema:name "Indigenous Data Network" ;
-    schema:url "https://idn.org.au"^^xsd:anyURI ;
-.
-
 cs:
     a skos:ConceptScheme ;
     owl:versionIRI <https://data.idnau.org/pid/vocab/atns-bin/1> ;
@@ -581,7 +581,7 @@ cs:
     schema:dateCreated "2026-06-24"^^xsd:date ;
     schema:dateModified "2026-08-14"^^xsd:date ;
     schema:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
-    schema:publisher <https://idn.org.au> ;
+    schema:publisher <https://linked.data.gov.au/org/idn> ;
     schema:status <https://linked.data.gov.au/def/reg-statuses/experimental> ;
     schema:version "1" ;
 .
