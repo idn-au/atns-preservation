@@ -182,12 +182,12 @@ schema:name "Target card shape" ;
         sh:message "At least one assigner and at least one assignee MUST be indicated for a Permission, Prohibition or Obligation arising from an Agreement"@en ; 
     sh:path [ 
             sh:alternativePath ( :permission :prohibition :obligation ) 
-        ] ;
+            ] ;
         sh:node :assignerMinShape ;
         sh:node :assigneeMinShape ;
     ] ;
 rdfs:isDefinedBy ont: ;
-schema:name "Agreement node shape"@en ;
+schema:name "Agreement shape"@en ;
 schema:description "Agreement shape"@en ;
 .
 
@@ -248,7 +248,7 @@ sh:message "At least one assignee" ;
     sh:targetClass :Rule ;
     sh:property 
         [ a sh:PropertyShape ; 
-        skos:prefLabel "action property constraint" ; 
+        skos:prefLabel "Action property constraint" ; 
         schema:description "Constraint on action property constraint."@en ;
         sh:path :action ;
         sh:minCount 1 ;
@@ -257,7 +257,7 @@ sh:message "At least one assignee" ;
         ] ;
     sh:property 
         [ a sh:PropertyShape ; 
-        skos:prefLabel "assignee property constraint" ; 
+        skos:prefLabel "Assignee property constraint" ; 
         schema:description "Constraint on assignee property constraint."@en ;
         sh:path :assignee ;
         sh:maxCount 1 ;
@@ -265,7 +265,7 @@ sh:message "At least one assignee" ;
         ] ;
     sh:property 
         [ a sh:PropertyShape ; 
-        skos:prefLabel "assigner property constraint" ; 
+        skos:prefLabel "Assigner property constraint" ; 
         schema:description "Constraint on assigner property constraint."@en ;
         sh:path :assigner ;
         sh:maxCount 1 ;
@@ -278,6 +278,7 @@ sh:message "A Rule MUST indicate at least one assigner, at least one assignee an
 .
 
 ## Prohibition
+
 :ProhibitionShape
     a sh:NodeShape ;
     sh:targetClass :Prohibition ;
@@ -305,11 +306,12 @@ schema:description " " ;
     sh:targetObjectsOf :xone ;       
     sh:property 
         [ a sh:PropertyShape ; 
-        skos:prefLabel "list-first property constraint" ; 
-        schema:description "Constraint on list-first property constraint."@en ;
+        skos:prefLabel "List-first property constraint" ; 
+        schema:description "Validates that each member of a logical constraint list is an ODRL Constraint."@en ;
         sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
         sh:class :Constraint ;
         ] ;
+        sh:message "For every RDF list used as the value of odrl:and, odrl:or, or odrl:xone, every member of that list MUST be an odrl:Constraint" ;
 rdfs:isDefinedBy ont: ;
 schema:name "Logic constraint shape" ;
 schema:description " " ;
