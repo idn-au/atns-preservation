@@ -48,6 +48,7 @@ schema:email "les@kurawong.ai"^^xsd:anyURI ;
     sh:targetObjectsOf :datatype ;
     sh:class rdfs:Datatype ;
 rdfs:isDefinedBy ont: ;
+schema:name "Datatype range shape" ;
 .
 
 
@@ -57,6 +58,7 @@ rdfs:isDefinedBy ont: ;
     sh:deactivated true ; # use only rdfs:domain/range?
     sh:class :Party ;
 rdfs:isDefinedBy ont: ;
+schema:name "Party range shape" ;
 .
 	
 :actionRangeShape
@@ -65,6 +67,7 @@ rdfs:isDefinedBy ont: ;
     sh:deactivated true ; # use only rdfs:domain/range?
     sh:class :Action ;
 rdfs:isDefinedBy ont: ;
+schema:name "Action range shape" ;
 .
 	
 :targetRangeShape
@@ -73,6 +76,7 @@ rdfs:isDefinedBy ont: ;
     sh:deactivated true ; # use only rdfs:domain/range?
     sh:class :Asset ;
 rdfs:isDefinedBy ont: ;
+schema:name "Target range shape" ;
 .
 
 :dutyRangeShape
@@ -81,6 +85,7 @@ rdfs:isDefinedBy ont: ;
     sh:deactivated true ; # use only rdfs:domain/range?
     sh:class :Duty ;
 rdfs:isDefinedBy ont: ;
+schema:name "Duty range shape" ;
 .	
 
 :rightOperandReferenceRangeShape
@@ -88,6 +93,7 @@ rdfs:isDefinedBy ont: ;
     sh:targetObjectsOf :rightOperandReference ;
     sh:nodeKind sh:IRI ;
 rdfs:isDefinedBy ont: ;
+schema:name "Right operand reference range shape" ;
 .
 	
 # Remedy
@@ -100,6 +106,7 @@ rdfs:isDefinedBy ont: ;
         sh:maxCount 0 ;
     ] ;
 rdfs:isDefinedBy ont: ;
+schema:name "Remedy shape" ;
 .
 
 # Policy
@@ -107,49 +114,72 @@ rdfs:isDefinedBy ont: ;
     a sh:NodeShape ;
     sh:targetClass :Policy ;
     sh:nodeKind sh:IRI ;
-    sh:property [ rdfs:isDefinedBy ont: ; skos:prefLabel "conflict property constraint" ; schema:description "Constraint on conflict property constraint."@en ;
-    sh:path :conflict ;
+    sh:property 
+        [ a sh:PropertyShape; 
+        skos:prefLabel "conflict property constraint" ; 
+        schema:description "Constraint on conflict property constraint."@en ;
+        sh:path :conflict ;
         sh:class :ConflictTerm ;
         sh:maxCount 1 ;
-    ] ;
-    sh:property [ rdfs:isDefinedBy ont: ; skos:prefLabel "profile property constraint" ; schema:description "Constraint on profile property constraint."@en ;
-    sh:path :profile ;
+        ] ;
+    sh:property 
+        [ a sh:PropertyShape;
+        skos:prefLabel "profile property constraint" ; 
+        schema:description "Constraint on profile property constraint."@en ;
+        sh:path :profile ;
         sh:nodeKind sh:IRI ;
-    ] ;
-    sh:property [ rdfs:isDefinedBy ont: ; skos:prefLabel "permission / prohibition alternative path" ; schema:description "Constraint on permission / prohibition alternative path."@en ;
-    sh:path [ 
+        ] ;
+    sh:property 
+        [ a sh:PropertyShape; 
+        skos:prefLabel "permission / prohibition alternative path" ; schema:description "Constraint on permission / prohibition alternative path."@en ;
+        sh:path [ 
             sh:alternativePath ( :permission :prohibition ) 
-        ] ;
+                ] ;
         sh:node :targetCardShape ;
-    ] ;
-    sh:property [ rdfs:isDefinedBy ont: ; skos:prefLabel "permission / prohibition / obligation alternative path" ; schema:description "Constraint on permission / prohibition / obligation alternative path."@en ;
-    sh:path [ 
-            sh:alternativePath ( :permission :prohibition :obligation ) 
         ] ;
+    sh:property 
+        [ a sh:PropertyShape; 
+        skos:prefLabel "permission / prohibition / obligation alternative path" ; schema:description "Constraint on permission / prohibition / obligation alternative path."@en ;
+        sh:path [ 
+            sh:alternativePath ( :permission :prohibition :obligation ) 
+                ] ;
         sh:minCount 1 ;
-    ] ;
-    sh:property [ rdfs:isDefinedBy ont: ; skos:prefLabel "property constraint" ; schema:description "Constraint on property constraint."@en ;
-    sh:path [ sh:oneOrMorePath [ sh:inversePath :inheritFrom ]] ;
+        ] ;
+    sh:property 
+        [ a sh:PropertyShape; 
+        skos:prefLabel "property constraint" ; 
+        schema:description "Constraint on property constraint."@en ;
+        sh:path [ sh:oneOrMorePath [ sh:inversePath :inheritFrom ]] ;
         sh:disjoint :inheritFrom
-    ] ;
+        ] ;
 rdfs:isDefinedBy ont: ;
+schema:name "Remedy node shape" ;
 .
  
 :targetCardShape 
     a sh:NodeShape ;
-    sh:property [ rdfs:isDefinedBy ont: ; skos:prefLabel "target property constraint" ; schema:description "Constraint on target property constraint."@en ;
-    sh:path :target ;
+    sh:property 
+        [ a sh:PropertyShape; 
+        skos:prefLabel "target property constraint" ; 
+        schema:description "Constraint on target property"@en ;
+        sh:path :target ;
         sh:minCount 1 ;
         sh:maxCount 1 ;
-    ] ;
+        ] ;
 rdfs:isDefinedBy ont: ;
+schema:name "Target card shape" ;
 .
 
 ## Agreement
+
 :AgreementShape
     a sh:NodeShape ;
     sh:targetClass :Agreement ;
-    sh:property [ rdfs:isDefinedBy ont: ; skos:prefLabel "permission / prohibition / obligation alternative path" ; schema:description "Constraint on permission / prohibition / obligation alternative path."@en ;
+    sh:property
+        [ a sh:PropertyShape; 
+        skos:prefLabel "Agreement assigner and assignee shape" ; 
+        schema:description "Constraint on permission, prohibition, obligation alternative path properties for Agreement class."@en ;
+        sh:message "At least one assigner and at least one assignee MUST be indicated for a Permission, Prohibition or Obligation arising from an Agreement"@en ; 
     sh:path [ 
             sh:alternativePath ( :permission :prohibition :obligation ) 
         ] ;
@@ -157,33 +187,39 @@ rdfs:isDefinedBy ont: ;
         sh:node :assigneeMinShape ;
     ] ;
 rdfs:isDefinedBy ont: ;
-schema:name "Agreement requirement shape"@en ;
-schema:description "Assigner and assignee minimum requirements shape for an Agreement"@en ;
-sh:message "At least one assigner and at least one assignee MUST be indicated for a Permission, Prohibition or Obligation arising from an Agreement"@en ;
+schema:name "Agreement node shape"@en ;
+schema:description "Agreement shape"@en ;
 .
 
 ## Offer
+
 :OfferShape
     a sh:NodeShape ;
     sh:targetClass :Offer ;
-    sh:property [ rdfs:isDefinedBy ont: ; skos:prefLabel "permission / prohibition / obligation alternative path" ; schema:description "Constraint on permission / prohibition / obligation alternative path."@en ;
+    sh:property 
+        [ a sh:PropertyShape ;
+        skos:prefLabel "Offer assigner shape" ; 
+        schema:description "Constraint on permission, prohibition and obligation properties for an Offer"@en ;
+        sh:message "At least one assigner MUST be indicated for a Permission, Prohibition or Obligation arising from an Agreement"@en ;
     sh:path [ 
             sh:alternativePath ( :permission :prohibition :obligation ) 
-        ] ;
+            ] ;
         sh:node :assignerMinShape ;
-    ] ;
+        ] ;
 rdfs:isDefinedBy ont: ;
-schema:name "Offer requirement shape" ;
+schema:name "Offer shape" ;
 schema:description "Assigner minimum requirements shape for an Offer"@en ;
-sh:message "At least one assigner MUST be indicated for an Offer"@en ;
 .
 	
 :assignerMinShape
     a sh:NodeShape ;
-    sh:property [ rdfs:isDefinedBy ont: ; skos:prefLabel "assigner property constraint" ; schema:description "Constraint on assigner property constraint."@en ;
-    sh:path :assigner ;
+    sh:property 
+        [ a sh:PropertyShape ; 
+        skos:prefLabel "Assigner property constraint" ; 
+        schema:description "Assigner property constraint."@en ;
+        sh:path :assigner ;
         sh:minCount 1 ;
-    ] ;
+        ] ;
 rdfs:isDefinedBy ont: ;
 schema:name "Assigner minimum shape" ;
 schema:description "Minimum count for an assigner shape" ;
@@ -192,10 +228,13 @@ sh:message "At least one assigner" ;
  
 :assigneeMinShape
     a sh:NodeShape ;
-    sh:property [ rdfs:isDefinedBy ont: ; skos:prefLabel "assignee property constraint" ; schema:description "Constraint on assignee property constraint."@en ;
-    sh:path :assignee ;
+    sh:property 
+        [ a sh:PropertyShape ; 
+        skos:prefLabel "Assignee property constraint" ; 
+        schema:description "Assignee property constraint."@en ;
+        sh:path :assignee ;
         sh:minCount 1 ;
-    ] ;
+        ] ;
 rdfs:isDefinedBy ont: ;
 schema:name "Assignee minimum shape" ;
 schema:description "Minimum count for an assignee shape" ;
@@ -207,23 +246,35 @@ sh:message "At least one assignee" ;
 :RuleShape
     a sh:NodeShape ;
     sh:targetClass :Rule ;
-    sh:property [ rdfs:isDefinedBy ont: ; skos:prefLabel "action property constraint" ; schema:description "Constraint on action property constraint."@en ;
-    sh:path :action ;
+    sh:property 
+        [ a sh:PropertyShape ; 
+        skos:prefLabel "action property constraint" ; 
+        schema:description "Constraint on action property constraint."@en ;
+        sh:path :action ;
         sh:minCount 1 ;
         sh:maxCount 1 ;
-    ] ;
-    sh:property [ rdfs:isDefinedBy ont: ; skos:prefLabel "assignee property constraint" ; schema:description "Constraint on assignee property constraint."@en ;
-    sh:path :assignee ;
+        sh:message "A Rule MUST indicate exactly one action" ;
+        ] ;
+    sh:property 
+        [ a sh:PropertyShape ; 
+        skos:prefLabel "assignee property constraint" ; 
+        schema:description "Constraint on assignee property constraint."@en ;
+        sh:path :assignee ;
         sh:maxCount 1 ;
-    ] ;
-    sh:property [ rdfs:isDefinedBy ont: ; skos:prefLabel "assigner property constraint" ; schema:description "Constraint on assigner property constraint."@en ;
-    sh:path :assigner ;
+        sh:message "A Rule MUST indicate at least one assignee" ;
+        ] ;
+    sh:property 
+        [ a sh:PropertyShape ; 
+        skos:prefLabel "assigner property constraint" ; 
+        schema:description "Constraint on assigner property constraint."@en ;
+        sh:path :assigner ;
         sh:maxCount 1 ;
-    ] ;
+        sh:message "A Rule MUST indicate at least one assigner" ;
+        ] ;
 rdfs:isDefinedBy ont: ;
 schema:name "Rule shape" ;
-schema:description "Rule requirements for indicating an assigner, assignee and action"@en ;
-schema:message "A Rule MUST indicated exactly one assigner, one assignee and one action" ;
+schema:description "Rule node shape for indicating an Assigner, Assignee and Action"@en ;
+sh:message "A Rule MUST indicate at least one assigner, at least one assignee and exactly one action" ;
 .
 
 ## Prohibition
@@ -233,12 +284,16 @@ schema:message "A Rule MUST indicated exactly one assigner, one assignee and one
     sh:not [
         a sh:NodeShape ;
         sh:class :Permission ;
+        sh:message "Prohibition is disjoint with Permission" ;
     ] ;
     sh:not [
         a sh:NodeShape ;
         sh:class :Duty ;
+        sh:message "Prohibition is disjoint with Duty" ;
     ] ;
 rdfs:isDefinedBy ont: ;
+schema:name "Prohibition shape" ;
+schema:description " " ;
 .
 
 # Constraint	
@@ -248,58 +303,97 @@ rdfs:isDefinedBy ont: ;
     sh:targetObjectsOf :and ;         
     sh:targetObjectsOf :or ;          
     sh:targetObjectsOf :xone ;       
-    sh:property [ rdfs:isDefinedBy ont: ; skos:prefLabel "list-first property constraint" ; schema:description "Constraint on list-first property constraint."@en ;
-    sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
+    sh:property 
+        [ a sh:PropertyShape ; 
+        skos:prefLabel "list-first property constraint" ; 
+        schema:description "Constraint on list-first property constraint."@en ;
+        sh:path ( [ sh:zeroOrMorePath rdf:rest ] rdf:first ) ;
         sh:class :Constraint ;
-    ] ;
+        ] ;
 rdfs:isDefinedBy ont: ;
+schema:name "Logic constraint shape" ;
+schema:description " " ;
 .
 
 :ConstraintShape
     a sh:NodeShape ;
     sh:targetClass :Constraint ;              
-    sh:property [ rdfs:isDefinedBy ont: ; skos:prefLabel "operator property constraint" ; schema:description "Constraint on operator property constraint."@en ;
-    sh:path :operator ;
+    sh:property 
+        [ a sh:PropertyShape ; 
+        skos:prefLabel "Operator property shape" ; 
+        schema:description "Constraint on operator property constraint."@en ;
+        sh:path :operator ;
         sh:minCount 1 ;
         sh:maxCount 1 ;
-    ] ;       
-    sh:property [ rdfs:isDefinedBy ont: ; skos:prefLabel "datatype property constraint" ; schema:description "Constraint on datatype property constraint."@en ;
-    sh:path :datatype ;
+        sh:message "A Constraint MUST indicate exactly one operator" ;
+        ] ;       
+    sh:property 
+        [ a sh:PropertyShape ; 
+        skos:prefLabel "Datatype property shape" ; 
+        schema:description "Constraint on datatype property constraint."@en ;
+        sh:path :datatype ;
         sh:maxCount 1 ;
+        sh:message "A Constraint MUST indicate one datatype at most" ;
     ] ;  
-    sh:property [ rdfs:isDefinedBy ont: ; skos:prefLabel "unit property constraint" ; schema:description "Constraint on unit property constraint."@en ;
-    sh:path :unit ;
+    sh:property 
+        [ a sh:PropertyShape ; 
+        skos:prefLabel "Unit property shape" ; 
+        schema:description "Constraint on unit property constraint."@en ;
+        sh:path :unit ;
         sh:maxCount 1 ;
+        sh:message "A Constraint MUST indicate one unit at most" ;
     ] ;  
-    sh:property [ rdfs:isDefinedBy ont: ; skos:prefLabel "status property constraint" ; schema:description "Constraint on status property constraint."@en ;
-    sh:path :status ;
+    sh:property 
+        [ a sh:PropertyShape ; 
+        skos:prefLabel "Status property shape" ; 
+        schema:description "Constraint on status property constraint."@en ;
+        sh:path :status ;
         sh:maxCount 1 ;
+        sh:message "A Constraint MUST indicate one status at most" ;
     ] ;  	
-    sh:property [ rdfs:isDefinedBy ont: ; skos:prefLabel "leftOperand property constraint" ; schema:description "Constraint on leftOperand property constraint."@en ;
-    sh:path :leftOperand ;
+    sh:property 
+        [ a sh:PropertyShape ; 
+        skos:prefLabel "leftOperand property constraint" ; 
+        schema:description "Constraint on leftOperand property constraint."@en ;
+        sh:path :leftOperand ;
         sh:minCount 1 ;
         sh:maxCount 1 ;
+        sh:message "A Constraint MUST indicate exactly one left operand" ;
     ] ;
     sh:xone ( :rightOperandSingleShape :rightOperandRefShape ) ;
 rdfs:isDefinedBy ont: ;
+schema:name "Constraint shape" ;
+schema:description "A Constraint shape indicating exclusive OR rules for right-operand and reference properties" ;
 .
  
 :rightOperandSingleShape
     a sh:NodeShape ;          
-    sh:property [ rdfs:isDefinedBy ont: ; skos:prefLabel "rightOperand property constraint" ; schema:description "Constraint on rightOperand property constraint."@en ;
-    sh:path :rightOperand ;
+    sh:property 
+        [ a sh:PropertyShape ; 
+        skos:prefLabel "rightOperand property constraint" ; 
+        schema:description "Constraint on rightOperand property."@en ;
+        sh:path :rightOperand ;
         sh:minCount 1 ;
-    ] ;
+        sh:message "At least one right operand reference" ; 
+        ] ;
 rdfs:isDefinedBy ont: ;
+schema:name "Right Operand Single Shape" ;
+schema:description "Right Operand Single Shape indicating counts for a Constraint " ;
 .
  
 :rightOperandRefShape 
     a sh:NodeShape ;          
-    sh:property [ rdfs:isDefinedBy ont: ; skos:prefLabel "rightOperandReference property constraint" ; schema:description "Constraint on rightOperandReference property constraint."@en ;
-    sh:path :rightOperandReference ;
+    sh:property 
+        [ a sh:PropertyShape ; 
+        skos:prefLabel "rightOperandReference property constraint" ; 
+        schema:description "Constraint on rightOperandReference property."@en ;
+        sh:path :rightOperandReference ;
         sh:minCount 1 ;
+        sh:message "At least one right operand reference" ; 
     ] ;
 rdfs:isDefinedBy ont: ;
+schema:name "Right Operand Reference Shape" ;
+schema:description "Right Operand Reference Shape indicating counts for a Constraint " ;
 .
 
 # Party
@@ -308,33 +402,56 @@ rdfs:isDefinedBy ont: ;
     sh:targetClass :PartyCollection ;
     sh:xone ( :WithRefinementShape :WithoutRefinementShape ) ;
 rdfs:isDefinedBy ont: ;
+schema:name "Party collection shape" ;
+schema:description " " ;
+
 .
  
 :WithRefinementShape
     a sh:NodeShape ;
-    sh:property [ rdfs:isDefinedBy ont: ; skos:prefLabel "source property constraint" ; schema:description "Constraint on source property constraint."@en ;
-    sh:path :source ;
+    sh:property 
+        [ a sh:PropertyShape ; 
+        skos:prefLabel "source property constraint" ; 
+        schema:description "Constraint on source property constraint."@en ;
+        sh:path :source ;
         sh:minCount 1 ;
         sh:maxCount 1 ;
-    ] ;
-    sh:property [ rdfs:isDefinedBy ont: ; skos:prefLabel "refinement property constraint" ; schema:description "Constraint on refinement property constraint."@en ;
-    sh:path :refinement ;
+        sh:message "At least one source" ;
+        ] ;
+    sh:property 
+        [ a sh:PropertyShape ; 
+        skos:prefLabel "refinement property constraint" ; 
+        schema:description "Minimum count on refinement property."@en ;
+        sh:path :refinement ;
         sh:minCount 1 ;
-    ] ;
+        sh:message "At least one refinement" ;
+        ] ;
 rdfs:isDefinedBy ont: ;
+schema:name "With refinement node sape" ;
+schema:description "Minimum counts for a source and refinement" ;
 .	
  
 :WithoutRefinementShape
     a sh:NodeShape ;
-    sh:property [ rdfs:isDefinedBy ont: ; skos:prefLabel "source property constraint" ; schema:description "Constraint on source property constraint."@en ;
-    sh:path :source ;
+    sh:property 
+        [ a sh:PropertyShape ; 
+        skos:prefLabel "source property constraint" ; 
+        schema:description "Constraint on source property constraint."@en ;
+        sh:path :source ;
         sh:maxCount 0 ;
-    ] ;
-    sh:property [ rdfs:isDefinedBy ont: ; skos:prefLabel "refinement property constraint" ; schema:description "Constraint on refinement property constraint."@en ;
+        sh:message "Exactly zero refinement" ;
+        ] ;
+        sh:property 
+        [ a sh:PropertyShape ; 
+        skos:prefLabel "refinement property constraint" ; 
+        schema:description "Constraint on refinement property constraint."@en ;
     sh:path :refinement ;
         sh:maxCount 0 ;
+        sh:message "Exactly zero source" ;
     ] ;
 rdfs:isDefinedBy ont: ;
+schema:name "Without refinement shape" ;
+schema:description "Without refinement or source shape" ;
 .
 
 # Asset
@@ -351,10 +468,14 @@ rdfs:isDefinedBy ont: ;
     a sh:NodeShape ;
     sh:targetClass :Action ;              
     sh:property [ rdfs:isDefinedBy ont: ; skos:prefLabel "includedIn property constraint" ; schema:description "Constraint on includedIn property constraint."@en ;
+    sh:message "An Action MUST indicate at least one includedIn object" ;
+
     sh:path :includedIn ;
         sh:minCount 1 ;
     ] ;
 rdfs:isDefinedBy ont: ;
+schema:name "Action includedIn shape" ;
+schema:description "Action node shape" ;
 .
 
 # End of odrl-idn.ttl
