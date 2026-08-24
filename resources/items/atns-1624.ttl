@@ -1,6 +1,7 @@
 PREFIX atns: <https://linked.data.gov.au/def/atns/model/>
 PREFIX atns-cat: <https://data.idnau.org/pid/vocab/atns-cat/>
 PREFIX atns-country: <https://data.idnau.org/pid/vocab/atns-country/>
+PREFIX catobjtyp: <https://data.idnau.org/pid/vocab/cat-obj-types/>
 PREFIX idn-resource: <https://data.idnau.org/pid/resource/>
 PREFIX atns-ref: <https://data.idnau.org/pid/vocab/atns-ref/>
 PREFIX atns-rel: <https://data.idnau.org/pid/vocab/atns-rel/>
@@ -12,9 +13,10 @@ PREFIX schema: <https://schema.org/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 idn-resource:c8122728-6e9f-597c-b4d9-68b8858e66c7
-    a atns:AgreementRecord, atns:Entity ;
+    a atns:Entity, schema:CreativeWork ;
     atns:category atns-cat:13e77fec-44fd-554f-a075-ec60788eb1b1 ;
     atns:deleted false ;
+    schema:additionalType catobjtyp:Agreement ;
     schema:conditionsOfAccess <https://linked.data.gov.au/def/data-access-rights/open> ;
     atns:sourceEntityId 1624 ;
     schema:isPartOf idn-resource:d23405b4-fc04-47e2-9e7a-9c5735ae3780 ;

@@ -49,7 +49,7 @@ The templates use `scripts/template_functions.py` only for stable resource looku
 
 Source-derived facts and project-authored publication decisions are kept distinct:
 
-- `specs/classification-rules.yaml` declares the project interpretation that source CategoryID `1` receives `atns:AgreementRecord` and CategoryID `3` receives `schema:Organization`. These classifications are not represented as authorised by the ATNS source owners.
+- `specs/classification-rules.yaml` declares the project interpretation that source CategoryID `1` receives the hard type `schema:CreativeWork` and soft type `catobjtyp:Agreement`, while CategoryID `3` receives `schema:Organization`. These classifications are not represented as authorised by the ATNS source owners.
 - `specs/editorial-overrides.yaml` contains the four concise public descriptions written for the preservation sample rather than copied mechanically from the XML.
 - `specs/subject-matter-definitions.tsv` records definitions recovered from timestamped Internet Archive captures of the public ATNS subject-matter pages, including the selected capture and review status.
 - `specs/sub-categories-definitions.tsv` records the equivalent archival evidence and review status for ATNS subcategories.
@@ -113,14 +113,14 @@ The golden graph check is expected to fail when an accepted source update legiti
 
 `tests/golden-baseline.yaml` freezes the approved graph characteristics:
 
-- 253 triples
+- 265 triples
 - no blank-node triples
-- every `atns:AgreementRecord` linked to the Keeping Place ATNS dataset with `schema:isPartOf`
-- canonical sorted N-Triples SHA-256 `62be4a20df05851c6766e29eebee383b214529e5247edc2a26db8e1d6aaad23c`
-- 26 split resource item files plus the catalogue wrapper
+- every entity soft-typed `catobjtyp:Agreement` is also typed `atns:Entity` and `schema:CreativeWork` and linked to the Keeping Place ATNS dataset with `schema:isPartOf`
+- canonical sorted N-Triples SHA-256 `b84aa5b581e591f665fa39f222bcaaf5a707b5044bb4af9fcce2039487f4822d`
+- 27 split resource item files plus the catalogue wrapper
 
 `scripts/check_rdf_equivalence.py` rejects a conversion if the golden baseline changes unexpectedly, if any generated triple is missing or extra, or if the published split files cease to represent the same graph. Turtle whitespace, prefix choice and triple ordering may differ because RDF graph identity—not byte identity—is the preservation requirement.
 
 ## Current scope and replacement decision
 
-The pipeline reproduces the complete current public sample exactly. It is safe to use as the maintenance path for that 235-triple sample after review. It is not yet a full-database publication converter: additional ATNS tables, publication filtering, sensitivity decisions and vocabulary-overlay rules must be designed and tested before expanding beyond the declared public resources.
+The pipeline reproduces the complete current public sample exactly. It is safe to use as the maintenance path for that 265-triple sample after review. It is not yet a full-database publication converter: additional ATNS tables, publication filtering, sensitivity decisions and vocabulary-overlay rules must be designed and tested before expanding beyond the declared public resources.

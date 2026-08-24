@@ -82,10 +82,16 @@ def entity_types(category_id: str) -> list[str]:
     )
 
 
+def entity_additional_types(category_id: str) -> list[str]:
+    return _classification_rules()["entity_category_additional_types"].get(
+        category_id.strip(), []
+    )
+
+
 def is_agreement(category_id: str) -> bool:
     return (
-        "https://linked.data.gov.au/def/atns/model/AgreementRecord"
-        in entity_types(category_id)
+        "https://data.idnau.org/pid/vocab/cat-obj-types/Agreement"
+        in entity_additional_types(category_id)
     )
 
 

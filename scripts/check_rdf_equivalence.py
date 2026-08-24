@@ -12,14 +12,17 @@ from rdflib.namespace import RDF
 
 ROOT = Path(__file__).resolve().parent.parent
 BASELINE_PATH = ROOT / "tests" / "golden-baseline.yaml"
-AGREEMENT_RECORD = URIRef(
-    "https://linked.data.gov.au/def/atns/model/AgreementRecord"
+ATNS_ENTITY = URIRef("https://linked.data.gov.au/def/atns/model/Entity")
+SCHEMA_CREATIVE_WORK = URIRef("https://schema.org/CreativeWork")
+CATOBJTYPE_AGREEMENT = URIRef(
+    "https://data.idnau.org/pid/vocab/cat-obj-types/Agreement"
 )
 ATNS_DATASET = URIRef(
     "https://data.idnau.org/pid/resource/"
     "d23405b4-fc04-47e2-9e7a-9c5735ae3780"
 )
 SCHEMA_IS_PART_OF = URIRef("https://schema.org/isPartOf")
+SCHEMA_ADDITIONAL_TYPE = URIRef("https://schema.org/additionalType")
 
 
 def load_graph(paths: list[Path]) -> Graph:
@@ -71,7 +74,21 @@ def assert_equal(label: str, expected: Graph, actual: Graph) -> None:
 
 
 def assert_agreement_dataset_membership(graph: Graph) -> None:
-    agreements = set(graph.subjects(RDF.type, AGREEMENT_RECORD))
+    agreements = set(
+        graph.subjects(SCHEMA_ADDITIONAL_TYPE, CATOBJTYPE_AGREEMENT)
+    )
+    incorrectly_typed = sorted(
+        agreement
+        for agreement in agreements
+        if (agreement, RDF.type, ATNS_ENTITY) not in graph
+        or (agreement, RDF.type, SCHEMA_CREATIVE_WORK) not in graph
+    )
+    if incorrectly_typed:
+        joined = "\n  ".join(str(value) for value in incorrectly_typed)
+        raise SystemExit(
+            "Soft-typed agreements missing atns:Entity or "
+            "schema:CreativeWork:\n  " + joined
+        )
     missing = sorted(
         agreement
         for agreement in agreements
@@ -82,7 +99,10 @@ def assert_agreement_dataset_membership(graph: Graph) -> None:
         raise SystemExit(
             "Agreement records missing ATNS dataset membership:\n  " + joined
         )
-    print(f"ATNS dataset membership: {len(agreements)} agreement records")
+    print(
+        "ATNS dataset membership and typing: "
+        f"{len(agreements)} agreement records"
+    )
 
 
 def main() -> None:

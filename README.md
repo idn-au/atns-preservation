@@ -16,7 +16,7 @@ The shaded box with the dashed border is external to the ATNS model.
 ```mermaid
 flowchart LR
     work["schema:CreativeWork"]
-    agreement["atns:AgreementRecord; schema:name"]
+    agreement["atns:Entity; schema:CreativeWork; additional type: Agreement; schema:name"]
 
     category["Category: e.g. Agreement"]
     country["Country: e.g. Australia"]
@@ -58,31 +58,33 @@ The subject and object directions are those recorded by ATNS; any source entity
 may occur in either position.
 
 Every record from the legacy ATNS `Entities` table is typed `atns:Entity`. Records
-with the source category `Agreement` are more specifically typed
-`atns:AgreementRecord`, a subclass of `atns:Entity`. The original ATNS category
-concept is retained alongside the class assertion. `atns:AgreementRecord` records
-the ATNS source-system type and does not entail `odrl:Agreement`. A published
-external class such as `schema:Organization` may also be asserted where the
-mapping is clear. Classification values such as `Category`, `Country` and
-`Relationship type` remain resources, allowing stable identifiers and labels to
-be reused across records.
+with the source category `Agreement` are also typed `schema:CreativeWork` and
+soft-typed `catobjtyp:Agreement` using `schema:additionalType`. The original
+`atns:category` Agreement concept is retained as source classification evidence.
+This publication pattern does not entail `odrl:Agreement`; generated ODRL policy
+expressions remain separate resources. A published external class such as
+`schema:Organization` may also be asserted where the mapping is clear.
+Classification values such as `Category`, `Country` and `Relationship type`
+remain resources, allowing stable identifiers and labels to be reused across
+records.
 
 ## Integration with IDN catalogues
 
-The complete [Agreements, Treaties and Negotiated Settlements dataset](https://data.idnau.org/pid/resource/d23405b4-fc04-47e2-9e7a-9c5735ae3780) is described in the IDN Keeping Place Catalogue and represented in this preservation graph as a `schema:Dataset`. The smaller preservation sample retains its own dataset PID and is linked to the complete dataset with `schema:isPartOf`. Every `atns:AgreementRecord` is also linked to that dataset with `schema:isPartOf`; supporting entities and references are not treated as dataset members merely because they occur in the preservation graph.
+The complete [Agreements, Treaties and Negotiated Settlements dataset](https://data.idnau.org/pid/resource/d23405b4-fc04-47e2-9e7a-9c5735ae3780) is described in the IDN Keeping Place Catalogue and represented in this preservation graph as a `schema:Dataset`. The smaller preservation sample retains its own dataset PID and is linked to the complete dataset with `schema:isPartOf`. Every ATNS entity soft-typed `catobjtyp:Agreement` is also linked to that dataset with `schema:isPartOf`; supporting entities and references are not treated as dataset members merely because they occur in the preservation graph.
 
 The resource model supports linking and navigation between:
 
-- Creative works that cite an `atns:Agreement`
+- Creative works that cite an ATNS agreement entity
 - Agreements referring to other creative works
 - Agreements formalised with [ODRL](https://www.w3.org/ns/odrl/2/) data model
 
 ## Examples 
 
 * [‘Changing the Mix’](https://data.idnau.org/pid/resource/f73b42cf-d39b-406c-a8c5-10a01ae0594e
-) which links a `schema:CreativeWork` to an `atns:AgreementRecord`.
+) which links an external `schema:CreativeWork` to an ATNS entity that is itself
+typed `schema:CreativeWork` and soft-typed `catobjtyp:Agreement`.
 
-* [Telstra Ngaanyatjarra Indigenous Land Use Agreement (ILUA)](https://data.idnau.org/pid/resource/dd9b004b-1c22-5b53-8381-bd93760ee922), an `atns:AgreementRecord` that links to [ODRL](https://www.w3.org/ns/odrl/2/) `Agreement` > `Permission` > `Assigner` | `Use` | `Assignee` | `Target` > `Asset`, a semantic-web-friendly formalisation of the agreement.
+* [Telstra Ngaanyatjarra Indigenous Land Use Agreement (ILUA)](https://data.idnau.org/pid/resource/dd9b004b-1c22-5b53-8381-bd93760ee922), an `atns:Entity` and `schema:CreativeWork`, soft-typed `catobjtyp:Agreement`, that links to [ODRL](https://www.w3.org/ns/odrl/2/) `Agreement` > `Permission` > `Assigner` | `Use` | `Assignee` | `Target` > `Asset`, a semantic-web-friendly formalisation of the agreement.
 
 Copyright ATNS 2020.  ATNS is maintained by the Indigenous Studies Unit at The University of Melbourne. 
 This work is licensed under a Creative Commons Attribution-Non Commercial-No Derivatives 4.0 International License.

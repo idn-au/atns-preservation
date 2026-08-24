@@ -7,6 +7,9 @@ template: |-
   <{{ resource["resource_iri"] }}>
     a atns:Entity{% for type in entity_types(r["CategoryID"]) %}, <{{ type }}>{% endfor %} ;
     atns:category <{{ concept_iri("category", r["CategoryID"]) }}> ;
+    {% for additional_type in entity_additional_types(r["CategoryID"]) %}
+    schema:additionalType <{{ additional_type }}> ;
+    {% endfor %}
     atns:deleted {{ source_boolean(r["Deleted"]) }} ;
     {% if access_iri(r["Public"]) %}
     schema:conditionsOfAccess <{{ access_iri(r["Public"]) }}> ;
