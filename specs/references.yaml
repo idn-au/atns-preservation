@@ -5,13 +5,13 @@ template: |-
   {% set resource = sample_resource("reference", r["RefID"]) %}
   {% if resource %}
   <{{ resource["resource_iri"] }}>
-    a atns:Reference ;
+    a atns:Reference, schema:CreativeWork ;
     atns:deleted {{ source_boolean(r["Deleted"]) }} ;
     {% if access_iri(r["Public"]) %}
     schema:conditionsOfAccess <{{ access_iri(r["Public"]) }}> ;
     {% endif %}
     atns:referenceType <{{ concept_iri("reference_type", r["TypeID"]) }}> ;
-    atns:sourceReferenceId {{ r["RefID"] }} ;
+    atns:sourceReferenceId {{ literal(r["RefID"], datatype="http://www.w3.org/2001/XMLSchema#token") }} ;
     {% if r["Author"] %}
     schema:author {{ literal(r["Author"], lang="en") }} ;
     {% endif %}

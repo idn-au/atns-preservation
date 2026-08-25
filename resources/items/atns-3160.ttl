@@ -14,9 +14,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 idn-resource:d689a611-e0e8-5972-bcbe-3cd0ebe94f0f
     a atns:Entity, schema:Organization ;
     atns:category atns-cat:1dad59ae-4020-598a-b5df-d9e0eae7f9c6 ;
-    atns:deleted false ;
+    atns:deleted "false"^^xsd:boolean ;
     schema:conditionsOfAccess <https://linked.data.gov.au/def/data-access-rights/open> ;
-    atns:sourceEntityId 3160 ;
+    atns:sourceEntityId "3160"^^xsd:token ;
     schema:keywords atns-sub:c74e76ef-701f-5784-8223-5fcd87a7641c ;
     schema:name "Yarnangu Ngaanyatjarraku Parna Aboriginal Corporation"@en ;
 .

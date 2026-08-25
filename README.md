@@ -23,7 +23,7 @@ flowchart LR
     subject["Subject: e.g. Agriculture"]
     subcategory["Subcategory: e.g. Litigated Determination"]
 
-    reference["Reference: schema:name; schema:url"]
+    reference["atns:Reference; schema:CreativeWork; schema:name; schema:url"]
     referenceType["Reference type: e.g. Journal Article"]
 
     relationship["Relationship record: atns:EntityRelationship"]

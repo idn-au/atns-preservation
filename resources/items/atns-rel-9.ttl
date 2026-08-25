@@ -14,6 +14,6 @@ idn-resource:19c443c8-9105-5c31-b602-fcc5242ad212
     a atns:EntityRelationship ;
     atns:objectEntity idn-resource:050308f6-67e6-52f6-82c9-56c20413cac6 ;
     atns:relationshipType atns-rel:a00a860d-f0b0cea-6aacab6d119903c ;
-    atns:sourceRelationshipId 9 ;
+    atns:sourceRelationshipId "9"^^xsd:token ;
     atns:subjectEntity idn-resource:34524ede-2abc-50f1-af30-8493753c928e ;
 .

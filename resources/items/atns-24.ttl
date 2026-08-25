@@ -16,11 +16,11 @@ idn-resource:34524ede-2abc-50f1-af30-8493753c928e
     a atns:Entity, schema:CreativeWork ;
     atns:category atns-cat:13e77fec-44fd-554f-a075-ec60788eb1b1 ;
     atns:country atns-country:244f6961-729f-5b21-8fc9-baff9dd9af7e ;
-    atns:deleted false ;
+    atns:deleted "false"^^xsd:boolean ;
     atns:eid "A003259"^^xsd:token ;
     schema:additionalType catobjtyp:Agreement ;
     schema:conditionsOfAccess <https://linked.data.gov.au/def/data-access-rights/open> ;
-    atns:sourceEntityId 24 ;
+    atns:sourceEntityId "24"^^xsd:token ;
     schema:isPartOf idn-resource:d23405b4-fc04-47e2-9e7a-9c5735ae3780 ;
     atns:subcategory atns-subcat:6ffe90c2-95c9-51b5-a083-8c7d83b975ef ;
     schema:keywords

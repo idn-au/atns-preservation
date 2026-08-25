@@ -45,6 +45,11 @@ The RDF model is visible in these `rdfcon` specifications:
 
 The templates use `scripts/template_functions.py` only for stable resource lookup, controlled-vocabulary lookup, relational joins, source boolean and date normalization, and safe Turtle literal creation. RDF predicates and classes remain in the YAML.
 
+ATNS references are explicitly typed both `atns:Reference` and
+`schema:CreativeWork`, without `dcat:Resource`. Source-table identifiers are
+serialized as `xsd:token` values, and source deleted flags are serialized as
+explicit `xsd:boolean` values.
+
 ### Editorial decisions
 
 Source-derived facts and project-authored publication decisions are kept distinct:
@@ -113,14 +118,14 @@ The golden graph check is expected to fail when an accepted source update legiti
 
 `tests/golden-baseline.yaml` freezes the approved graph characteristics:
 
-- 265 triples
+- 269 triples
 - no blank-node triples
 - every entity soft-typed `catobjtyp:Agreement` is also typed `atns:Entity` and `schema:CreativeWork` and linked to the Keeping Place ATNS dataset with `schema:isPartOf`
-- canonical sorted N-Triples SHA-256 `b84aa5b581e591f665fa39f222bcaaf5a707b5044bb4af9fcce2039487f4822d`
+- canonical sorted N-Triples SHA-256 `b0789ca5a7d5600f57e036092b568023d03917c82876b646d9d0abe1e1e35661`
 - 27 split resource item files plus the catalogue wrapper
 
 `scripts/check_rdf_equivalence.py` rejects a conversion if the golden baseline changes unexpectedly, if any generated triple is missing or extra, or if the published split files cease to represent the same graph. Turtle whitespace, prefix choice and triple ordering may differ because RDF graph identity—not byte identity—is the preservation requirement.
 
 ## Current scope and replacement decision
 
-The pipeline reproduces the complete current public sample exactly. It is safe to use as the maintenance path for that 265-triple sample after review. It is not yet a full-database publication converter: additional ATNS tables, publication filtering, sensitivity decisions and vocabulary-overlay rules must be designed and tested before expanding beyond the declared public resources.
+The pipeline reproduces the complete current public sample exactly. It is safe to use as the maintenance path for that 269-triple sample after review. It is not yet a full-database publication converter: additional ATNS tables, publication filtering, sensitivity decisions and vocabulary-overlay rules must be designed and tested before expanding beyond the declared public resources.

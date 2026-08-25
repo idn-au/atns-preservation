@@ -123,7 +123,8 @@ Type records with Agreement CategoryID 1 as `schema:CreativeWork`, add
 `schema:additionalType catobjtyp:Agreement`, and retain the source category
 concept. Do not transform this hard or soft type into `odrl:Agreement`.
 
-Model Reference as a separate first-class class.
+Model Reference as a separate first-class ATNS class and explicitly type each
+instance as `schema:CreativeWork`; do not type references as `dcat:Resource`.
 
 Keep author, publisher and preparedBy as literals initially.
 

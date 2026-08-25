@@ -158,7 +158,7 @@ def subjects_for_entity(entity_id: str) -> list[str]:
     return _subjects_by_entity().get(entity_id.strip(), [])
 
 
-def source_boolean(value: str) -> str:
+def _boolean_lexical(value: str) -> str:
     normalized = value.strip().lower()
     if normalized in {"0", "false", "no"}:
         return "false"
@@ -167,10 +167,14 @@ def source_boolean(value: str) -> str:
     raise ValueError(f"Unrecognized source boolean: {value!r}")
 
 
+def source_boolean(value: str) -> str:
+    return f'"{_boolean_lexical(value)}"^^xsd:boolean'
+
+
 def access_iri(public: str) -> str:
     return (
         "https://linked.data.gov.au/def/data-access-rights/open"
-        if source_boolean(public) == "true"
+        if _boolean_lexical(public) == "true"
         else ""
     )
 
