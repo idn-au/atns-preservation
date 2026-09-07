@@ -1,0 +1,30 @@
+imports:
+  - base.yaml
+infile: sandbox-catalogue.csv
+outdir: ../build/sandbox/rdf
+template: |-
+  <{catalogue_iri}>
+    a schema:DataCatalog ;
+    dcterms:source <https://www.atns.net.au> ;
+    schema:citation <https://www.atns.net.au> ;
+    schema:dateCreated "2026-09-03"^^xsd:date ;
+    schema:description "Local sandbox catalogue of usable public, non-deleted records preserved from the Agreements, Treaties and Negotiated Settlements database."@en ;
+    schema:hasPart <{dataset_iri}> ;
+    schema:name "ATNS Preservation Sandbox"@en ;
+  .
+
+  <{dataset_iri}>
+    a schema:Dataset ;
+    dcterms:source
+      "ATNS_XML_05Apr22 export; public, non-deleted records with usable display labels."@en ,
+      <https://www.atns.net.au> ;
+    owl:imports <https://linked.data.gov.au/def/atns/model/> ;
+    schema:citation <https://www.atns.net.au> ;
+    schema:conditionsOfAccess <https://linked.data.gov.au/def/data-access-rights/open> ;
+    schema:dateCreated "2026-09-03"^^xsd:date ;
+    schema:dateModified "2026-09-03"^^xsd:date ;
+    schema:description "The locally generated public ATNS preservation dataset. Records without a source display label and classifications backed only by blank source lookup entries are reported under build/sandbox/reports."@en ;
+    schema:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
+    schema:name "Agreements, Treaties and Negotiated Settlements — public preservation sandbox"@en ;
+    schema:publisher <https://linked.data.gov.au/org/isu> ;
+  .
