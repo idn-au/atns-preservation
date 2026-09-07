@@ -1,0 +1,124 @@
+PREFIX altr-ext: <http://www.w3.org/ns/dx/connegp/altr-ext#>
+PREFIX atns: <https://linked.data.gov.au/def/atns/model/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+PREFIX prez: <https://prez.dev/>
+PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX schema: <https://schema.org/>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX shext: <http://example.com/shacl-extension#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+prez:CustomIndexProfile
+    a prof:Profile, prez:IndexProfile ;
+    dcterms:identifier "atns"^^xsd:token ;
+    dcterms:title "ATNS Index Profile"@en ;
+    dcterms:description "Selects the local ATNS entity and ODRL Agreement presentation profiles."@en ;
+    altr-ext:constrainsClass prez:CatPrez ;
+    altr-ext:hasDefaultResourceFormat "text/anot+turtle" ;
+    altr-ext:hasNodeShape
+        [
+            a sh:NodeShape ;
+            sh:targetClass atns:Entity ;
+            altr-ext:hasDefaultProfile prez:AtnsEntityProfile
+        ],
+        [
+            a sh:NodeShape ;
+            sh:targetClass odrl:Agreement ;
+            altr-ext:hasDefaultProfile prez:OdrlAgreementProfile
+        ] ;
+    altr-ext:hasResourceFormat
+        "application/json",
+        "application/ld+json",
+        "application/rdf+xml",
+        "text/anot+turtle",
+        "text/turtle" ;
+.
+
+prez:AtnsEntityProfile
+    a prof:Profile, prez:ObjectProfile ;
+    dcterms:identifier "atns-entity"^^xsd:token ;
+    dcterms:title "ATNS Entity presentation profile"@en ;
+    dcterms:description "Presents an ATNS entity with embedded reference metadata and preserved incoming and outgoing relationship rows, while omitting source deletion flags."@en ;
+    altr-ext:constrainsClass atns:Entity ;
+    altr-ext:hasDefaultResourceFormat "text/anot+turtle" ;
+    altr-ext:hasResourceFormat
+        "application/anot+ld+json",
+        "application/ld+json",
+        "text/anot+turtle",
+        "text/turtle" ;
+    sh:property [
+        sh:path [
+            sh:union (
+                rdf:type
+                dcterms:references
+                atns:category
+                atns:country
+                atns:eid
+                atns:sourceEntityId
+                atns:subcategory
+                schema:additionalType
+                schema:conditionsOfAccess
+                schema:description
+                schema:endDate
+                schema:isPartOf
+                schema:keywords
+                schema:location
+                schema:name
+                schema:startDate
+                schema:url
+                ( dcterms:references rdf:type )
+                ( dcterms:references atns:referenceType )
+                ( dcterms:references atns:sourceReferenceId )
+                ( dcterms:references schema:author )
+                ( dcterms:references schema:conditionsOfAccess )
+                ( dcterms:references schema:contributor )
+                ( dcterms:references schema:datePublished )
+                ( dcterms:references schema:name )
+                ( dcterms:references schema:url )
+                ( [ sh:inversePath atns:subjectEntity ] rdf:type )
+                ( [ sh:inversePath atns:subjectEntity ] atns:relationshipType )
+                ( [ sh:inversePath atns:subjectEntity ] atns:objectEntity )
+                ( [ sh:inversePath atns:objectEntity ] rdf:type )
+                ( [ sh:inversePath atns:objectEntity ] atns:relationshipType )
+                ( [ sh:inversePath atns:objectEntity ] atns:subjectEntity )
+            )
+        ]
+    ] ;
+.
+
+prez:OdrlAgreementProfile
+    a prof:Profile, prez:ObjectProfile ;
+    dcterms:identifier "odrl-agreement"^^xsd:token ;
+    dcterms:title "ODRL Agreement presentation profile"@en ;
+    dcterms:description "Presents an ODRL Agreement with its named Permission rules, actions, parties, targets and available target geometry."@en ;
+    altr-ext:constrainsClass odrl:Agreement ;
+    altr-ext:hasDefaultResourceFormat "text/anot+turtle" ;
+    altr-ext:hasResourceFormat
+        "application/anot+ld+json",
+        "application/ld+json",
+        "text/anot+turtle",
+        "text/turtle" ;
+    sh:property [
+        sh:path [
+            sh:union (
+                shext:allPredicateValues
+                ( odrl:permission rdf:type )
+                ( odrl:permission dcterms:title )
+                ( odrl:permission schema:name )
+                ( odrl:permission schema:description )
+                ( odrl:permission odrl:action )
+                ( odrl:permission odrl:assigner )
+                ( odrl:permission odrl:assignee )
+                ( odrl:permission odrl:target )
+                ( odrl:permission odrl:target rdf:type )
+                ( odrl:permission odrl:target schema:name )
+                ( odrl:permission odrl:target schema:description )
+                ( odrl:permission odrl:target geo:hasGeometry )
+                ( odrl:permission odrl:target geo:hasGeometry geo:asWKT )
+            )
+        ]
+    ] ;
+.
