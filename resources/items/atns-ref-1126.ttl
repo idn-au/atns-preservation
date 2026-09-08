@@ -1,21 +1,21 @@
 PREFIX atns: <https://linked.data.gov.au/def/atns/model/>
-PREFIX atns-cat: <https://data.idnau.org/pid/atns-cat/>
-PREFIX atns-country: <https://linked.data.gov.au/def/atns/country/>
+PREFIX atns-cat: <https://data.idnau.org/pid/vocab/atns-cat/>
+PREFIX atns-country: <https://data.idnau.org/pid/vocab/atns-country/>
 PREFIX idn-resource: <https://data.idnau.org/pid/resource/>
-PREFIX atns-ref: <https://linked.data.gov.au/def/atns/ref/>
-PREFIX atns-rel: <https://linked.data.gov.au/def/atns/rel/>
-PREFIX atns-subcat: <https://linked.data.gov.au/def/atns/subcat/>
+PREFIX atns-ref: <https://data.idnau.org/pid/vocab/atns-ref/>
+PREFIX atns-rel: <https://data.idnau.org/pid/vocab/atns-rel/>
+PREFIX atns-subcat: <https://data.idnau.org/pid/vocab/atns-subcat/>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX schema: <https://schema.org/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 idn-resource:ca68a358-3931-5011-adfd-0a695adc4812
-    a atns:Reference ;
-    atns:deleted false ;
+    a atns:Reference, schema:CreativeWork ;
+    atns:deleted "false"^^xsd:boolean ;
     schema:conditionsOfAccess <https://linked.data.gov.au/def/data-access-rights/open> ;
     atns:referenceType atns-ref:5f376307-9421-5ed8-aad9-7d12cb7b7fb6 ;
-    atns:sourceReferenceId 1126 ;
+    atns:sourceReferenceId "1126"^^xsd:token ;
     schema:author "Queensland Government"@en ;
     schema:datePublished "2005" ;
     schema:name "Strategic Policy for Aboriginal and Torres Strait Islander Children and Young People's Health 2005-2010: Implementation Guide"@en ;

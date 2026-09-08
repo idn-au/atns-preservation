@@ -1,0 +1,4 @@
+imports:
+  - references.yaml
+infile: ../build/sandbox/csv/Refs.csv
+outdir: ../build/sandbox/rdf

@@ -4,11 +4,14 @@ infile: ../build/sample/Entity_Entity.csv
 template: |-
   {% set resource = sample_resource("relationship", r["Entity_EntityID"]) %}
   {% if resource %}
+  {% set relationship_type = concept_iri_if_known("relationship_type", r["RelationshipTypeID"]) %}
   <{{ resource["resource_iri"] }}>
     a atns:EntityRelationship ;
     atns:objectEntity <{{ resource_iri("entity", r["RelatedEntityID"]) }}> ;
-    atns:relationshipType <{{ concept_iri("relationship_type", r["RelationshipTypeID"]) }}> ;
-    atns:sourceRelationshipId {{ r["Entity_EntityID"] }} ;
+    {% if relationship_type %}
+    atns:relationshipType <{{ relationship_type }}> ;
+    {% endif %}
+    atns:sourceRelationshipId {{ literal(r["Entity_EntityID"], datatype="http://www.w3.org/2001/XMLSchema#token") }} ;
     atns:subjectEntity <{{ resource_iri("entity", r["EntityID"]) }}> ;
   .
   {% endif %}

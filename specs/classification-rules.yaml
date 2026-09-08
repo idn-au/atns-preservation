@@ -3,6 +3,12 @@
 # the ATNS source owners.
 entity_category_types:
   "1":
-    - https://linked.data.gov.au/def/atns/model/AgreementRecord
+    - https://schema.org/CreativeWork
   "3":
     - https://schema.org/Organization
+
+# These IDN catalogue classifications are deliberately soft types. They retain
+# the ATNS category separately while supporting discovery across IDN catalogues.
+entity_category_additional_types:
+  "1":
+    - https://data.idnau.org/pid/vocab/cat-obj-types/Agreement

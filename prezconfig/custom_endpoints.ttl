@@ -1,0 +1,61 @@
+@prefix atns: <https://linked.data.gov.au/def/atns/model/> .
+@prefix ex: <http://example.org/atns-prez/> .
+@prefix ont: <https://prez.dev/ont/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+
+ex:catalogs-listing a ont:DynamicEndpoint, ont:ListingEndpoint ;
+    rdfs:label "Catalogs Listing" ;
+    ont:apiPath "/catalogs" ;
+    ont:relevantShapes ex:catalog-shape .
+
+ex:catalogs-object a ont:DynamicEndpoint, ont:ObjectEndpoint ;
+    rdfs:label "Catalog Object" ;
+    ont:apiPath "/catalogs/{catalogId}" ;
+    ont:relevantShapes ex:catalog-shape .
+
+ex:collections-listing a ont:DynamicEndpoint, ont:ListingEndpoint ;
+    rdfs:label "Collections Listing" ;
+    ont:apiPath "/catalogs/{catalogId}/collections" ;
+    ont:relevantShapes ex:dataset-shape .
+
+ex:collections-object a ont:DynamicEndpoint, ont:ObjectEndpoint ;
+    rdfs:label "Collection Object" ;
+    ont:apiPath "/catalogs/{catalogId}/collections/{datasetId}" ;
+    ont:relevantShapes ex:dataset-shape .
+
+ex:items-listing a ont:DynamicEndpoint, ont:ListingEndpoint ;
+    rdfs:label "Items Listing" ;
+    ont:apiPath "/catalogs/{catalogId}/collections/{datasetId}/items" ;
+    ont:relevantShapes ex:agreement-record-shape .
+
+ex:items-object a ont:DynamicEndpoint, ont:ObjectEndpoint ;
+    rdfs:label "Item Object" ;
+    ont:apiPath "/catalogs/{catalogId}/collections/{datasetId}/items/{itemId}" ;
+    ont:relevantShapes ex:agreement-record-shape .
+
+ex:catalog-shape a sh:NodeShape ;
+    sh:targetClass schema:DataCatalog ;
+    ont:hierarchyLevel 1 .
+
+ex:dataset-shape a sh:NodeShape ;
+    sh:property [
+        sh:class schema:DataCatalog ;
+        sh:path [ sh:inversePath schema:hasPart ]
+    ] ;
+    sh:targetClass schema:Dataset ;
+    ont:hierarchyLevel 2 .
+
+ex:agreement-record-shape a sh:NodeShape ;
+    sh:property
+        [
+            sh:class schema:DataCatalog ;
+            sh:path ( schema:isPartOf [ sh:inversePath schema:hasPart ] )
+        ],
+        [
+            sh:class schema:Dataset ;
+            sh:path schema:isPartOf
+        ] ;
+    sh:targetClass atns:Entity ;
+    ont:hierarchyLevel 3 .

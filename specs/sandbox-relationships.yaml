@@ -1,0 +1,4 @@
+imports:
+  - relationships.yaml
+infile: ../build/sandbox/csv/Entity_Entity.csv
+outdir: ../build/sandbox/rdf

@@ -1,21 +1,21 @@
 PREFIX atns: <https://linked.data.gov.au/def/atns/model/>
-PREFIX atns-cat: <https://data.idnau.org/pid/atns-cat/>
-PREFIX atns-country: <https://linked.data.gov.au/def/atns/country/>
+PREFIX atns-cat: <https://data.idnau.org/pid/vocab/atns-cat/>
+PREFIX atns-country: <https://data.idnau.org/pid/vocab/atns-country/>
 PREFIX idn-resource: <https://data.idnau.org/pid/resource/>
-PREFIX atns-ref: <https://linked.data.gov.au/def/atns/ref/>
-PREFIX atns-rel: <https://linked.data.gov.au/def/atns/rel/>
-PREFIX atns-subcat: <https://linked.data.gov.au/def/atns/subcat/>
+PREFIX atns-ref: <https://data.idnau.org/pid/vocab/atns-ref/>
+PREFIX atns-rel: <https://data.idnau.org/pid/vocab/atns-rel/>
+PREFIX atns-subcat: <https://data.idnau.org/pid/vocab/atns-subcat/>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX schema: <https://schema.org/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 idn-resource:180b6fcc-dcc6-5592-a390-5179366066fd
-    a atns:Reference ;
-    atns:deleted false ;
+    a atns:Reference, schema:CreativeWork ;
+    atns:deleted "false"^^xsd:boolean ;
     schema:conditionsOfAccess <https://linked.data.gov.au/def/data-access-rights/open> ;
     atns:referenceType atns-ref:5f376307-9421-5ed8-aad9-7d12cb7b7fb6 ;
-    atns:sourceReferenceId 1134 ;
+    atns:sourceReferenceId "1134"^^xsd:token ;
     schema:author "ACT Department of Disability, Housing and Community Services (DHCS)"@en ;
     schema:datePublished "2006" ;
     schema:name "Information Paper No 1: The Social Housing System in Context"@en ;

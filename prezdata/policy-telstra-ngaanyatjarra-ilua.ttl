@@ -1,0 +1,82 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX idn-policy: <https://data.idnau.org/pid/policy/>
+PREFIX idn-resource: <https://data.idnau.org/pid/resource/>
+PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+PREFIX schema: <https://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+idn-policy:telstra-ngaanyatjarra-ilua
+    a
+        odrl:Agreement ,
+        schema:CreativeWork ;
+    dcterms:conformsTo <https://www.w3.org/TR/odrl-model/> ;
+    dcterms:created "2026-07-30"^^xsd:date ;
+    dcterms:relation idn-resource:dd9b004b-1c22-5b53-8381-bd93760ee922 ;
+    odrl:permission idn-policy:telstra-ngaanyatjarra-ilua-permission-access ;
+    odrl:uid idn-policy:telstra-ngaanyatjarra-ilua ;
+    schema:citation
+        <https://data.idnau.org/pid/nntt/WI2004-006> ,
+        idn-resource:dd9b004b-1c22-5b53-8381-bd93760ee922 ;
+    schema:conditionsOfAccess "Public"@en ;
+    schema:dateCreated "2026-07-30"^^xsd:date ;
+    schema:description "A demonstration ODRL interpretation of the Telstra Ngaanyatjarra Indigenous Land Use Agreement. It uses public ATNS and IDN reference data to demonstrate navigation between an agreement record, a policy expression, signatory parties and the registered agreement area. It is not an authoritative transcription of the legal agreement."@en ;
+    schema:keywords "Demo" ;
+    schema:dateModified "2026-08-13"^^xsd:date ;
+    schema:name "Telstra Ngaanyatjarra ILUA — demonstration ODRL Agreement"@en ;
+.
+
+idn-resource:dd9b004b-1c22-5b53-8381-bd93760ee922
+    dcterms:relation idn-policy:telstra-ngaanyatjarra-ilua ;
+.
+
+idn-policy:telstra-ngaanyatjarra-ilua-permission-access
+    a odrl:Permission ;
+    odrl:action odrl:use ;
+    odrl:assignee idn-resource:9c0487c1-a143-57e0-874f-d3566a1b71e3 ;
+    odrl:assigner idn-policy:telstra-ngaanyatjarra-ilua-party-ngaanyatjarra-signatories ;
+    odrl:target <https://data.idnau.org/pid/nntt/WI2004-006> ;
+    odrl:uid idn-policy:telstra-ngaanyatjarra-ilua-permission-access ;
+    schema:description "Demonstration interpretation of a permission for Telstra to use the registered agreement area. The general ODRL use action is provisional because the public reference data identifies the subject matter as access but does not reproduce the operative legal terms."@en ;
+    schema:name "Use of the Telstra Ngaanyatjarra ILUA agreement area"@en ;
+.
+
+idn-resource:9c0487c1-a143-57e0-874f-d3566a1b71e3
+    a odrl:Party ;
+    odrl:uid idn-resource:9c0487c1-a143-57e0-874f-d3566a1b71e3 ;
+    schema:sameAs <https://ror.org/04g047260> ;
+    schema:url
+        <https://ror.org/04g047260> ,
+        <https://www.telstra.com.au/> ;
+.
+
+idn-resource:b2d9f12b-163c-5975-a491-4989fae9ef78
+    a odrl:Party ;
+    odrl:partOf idn-policy:telstra-ngaanyatjarra-ilua-party-ngaanyatjarra-signatories ;
+    odrl:uid idn-resource:b2d9f12b-163c-5975-a491-4989fae9ef78 ;
+    schema:sameAs <https://data.idnau.org/pid/org/oric/ngaanyatjarraLandCouncilAboriginalCorporation> ;
+    schema:url <https://data.idnau.org/pid/org/oric/ngaanyatjarraLandCouncilAboriginalCorporation> ;
+.
+
+idn-resource:d689a611-e0e8-5972-bcbe-3cd0ebe94f0f
+    a odrl:Party ;
+    odrl:partOf idn-policy:telstra-ngaanyatjarra-ilua-party-ngaanyatjarra-signatories ;
+    odrl:uid idn-resource:d689a611-e0e8-5972-bcbe-3cd0ebe94f0f ;
+    schema:sameAs <https://data.idnau.org/pid/org/oric/yarnanguNgaanyatjarrakuParnaAboriginalCorporationRntbc> ;
+    schema:url <https://data.idnau.org/pid/org/oric/yarnanguNgaanyatjarrakuParnaAboriginalCorporationRntbc> ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2004-006>
+    a odrl:Asset ;
+    odrl:uid <https://data.idnau.org/pid/nntt/WI2004-006> ;
+.
+
+idn-policy:telstra-ngaanyatjarra-ilua-party-ngaanyatjarra-signatories
+    a odrl:PartyCollection ;
+    odrl:uid idn-policy:telstra-ngaanyatjarra-ilua-party-ngaanyatjarra-signatories ;
+    schema:citation idn-resource:dd9b004b-1c22-5b53-8381-bd93760ee922 ;
+    schema:description "A demonstration ODRL party collection containing the two Ngaanyatjarra organizations represented as signatories in the preserved ATNS relationships."@en ;
+    schema:hasPart
+        idn-resource:b2d9f12b-163c-5975-a491-4989fae9ef78 ,
+        idn-resource:d689a611-e0e8-5972-bcbe-3cd0ebe94f0f ;
+    schema:name "Ngaanyatjarra signatory parties"@en ;
+.

@@ -2,10 +2,10 @@ Core source record and categories
 ---------------------------------
 
 Every row from the source `Entities` table is represented as an `atns:Entity`.
-Rows with source CategoryID 1 are also represented as `atns:AgreementRecord`, a
-subclass of `atns:Entity`. The corresponding Agreement category concept is
-retained as source classification evidence. This ATNS record class does not
-entail `odrl:Agreement`.
+Rows with source CategoryID 1 are also represented as `schema:CreativeWork` and
+soft-typed `catobjtyp:Agreement` using `schema:additionalType`. The corresponding
+ATNS Agreement category concept is retained as source classification evidence.
+This publication classification does not entail `odrl:Agreement`.
 
 The following controlled category values are retained:
 
@@ -119,11 +119,12 @@ Current modelling principle
 
 Treat Entity as the fundamental record class.
 
-Use `atns:AgreementRecord` for records with Agreement CategoryID 1 while retaining
-the source category concept. Do not transform this class or category into
-`odrl:Agreement`.
+Type records with Agreement CategoryID 1 as `schema:CreativeWork`, add
+`schema:additionalType catobjtyp:Agreement`, and retain the source category
+concept. Do not transform this hard or soft type into `odrl:Agreement`.
 
-Model Reference as a separate first-class class.
+Model Reference as a separate first-class ATNS class and explicitly type each
+instance as `schema:CreativeWork`; do not type references as `dcat:Resource`.
 
 Keep author, publisher and preparedBy as literals initially.
 

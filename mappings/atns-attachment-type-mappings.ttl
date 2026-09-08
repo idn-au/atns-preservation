@@ -1,4 +1,4 @@
-PREFIX atns-att: <https://linked.data.gov.au/def/atns/att/>
+PREFIX atns-att: <https://data.idnau.org/pid/vocab/atns-att/>
 PREFIX coar-resource-type: <http://purl.org/coar/resource_type/>
 PREFIX dbo: <http://dbpedia.org/ontology/>
 PREFIX dcterms: <http://purl.org/dc/terms/>

@@ -1,4 +1,5 @@
 PREFIX atns: <https://linked.data.gov.au/def/atns/model/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
@@ -10,7 +11,7 @@ atns:
     rdfs:label "ATNS preservation model"@en ;
     rdfs:comment "Minimal draft terms used by ATNS instance data. These terms are intentionally conservative: controlled-list values remain SKOS concepts and source row identifiers are retained for traceability."@en ;
     schema:dateCreated "2026-07-14"^^xsd:date ;
-    schema:dateModified "2026-07-29"^^xsd:date ;
+    schema:dateModified "2026-08-25"^^xsd:date ;
     schema:description "A minimal preservation-oriented model for data recovered from the Agreements, Treaties and Negotiated Settlements database. The model keeps ATNS entities, references, controlled-list classifications and source relationship rows explicit so that legacy semantics can be migrated toward Prez-compatible RDF without prematurely imposing a full domain ontology."@en ;
     schema:codeRespository "https://github.com/idn-au/atns-preservation/"^^xsd:anyURI ;
     schema:copyrightHolder <https://linked.data.gov.au/org/idn> ;
@@ -34,11 +35,12 @@ atns:Entity
 
 atns:AgreementRecord
     a owl:Class ;
+    owl:deprecated true ;
     rdfs:isDefinedBy atns: ;
     rdfs:label "ATNS Agreement Record"@en ;
-    rdfs:comment "A preserved record classified as an Agreement in the ATNS Entities table."@en ;
+    rdfs:comment "Deprecated class formerly used for records classified as Agreement in the ATNS Entities table."@en ;
     rdfs:subClassOf atns:Entity ;
-    schema:description "A preserved ATNS entity record whose source category is Agreement. This class records the ATNS source-system type and does not entail that the resource is an odrl:Agreement or otherwise constitute an ODRL policy expression."@en ;
+    schema:description "Deprecated in favour of typing the record as atns:Entity and schema:CreativeWork, with the IDN Catalogued Object Type Agreement supplied using schema:additionalType. This class did not entail odrl:Agreement."@en ;
     schema:name "ATNS Agreement Record"@en ;
 .
 
@@ -47,7 +49,7 @@ atns:Reference
     rdfs:isDefinedBy atns: ;
     rdfs:label "ATNS Reference"@en ;
     rdfs:comment "A bibliographic or web reference from the ATNS Refs table."@en ;
-    schema:description "A bibliographic, web or documentary reference preserved from the ATNS Refs table. References are modelled as first-class resources so they can be linked to entities and typed with ATNS reference-type concepts."@en ;
+    schema:description "A bibliographic, web or documentary reference preserved from the ATNS Refs table. Reference instances are also typed schema:CreativeWork so they can be consumed using a broadly published class while retaining their ATNS source semantics."@en ;
     schema:name "ATNS Reference"@en ;
 .
 
@@ -77,7 +79,7 @@ atns:sourceEntityId
     schema:description "The numeric primary key of the source row in the ATNS Entities table."@en ;
     schema:name "Source Entity Identifier"@en ;
     rdfs:domain atns:Entity ;
-    rdfs:range xsd:integer ;
+    rdfs:range xsd:token ;
 .
 
 atns:sourceReferenceId
@@ -87,7 +89,7 @@ atns:sourceReferenceId
     schema:description "The numeric primary key of the source row in the ATNS Refs table."@en ;
     schema:name "Source Reference Identifier"@en ;
     rdfs:domain atns:Reference ;
-    rdfs:range xsd:integer ;
+    rdfs:range xsd:token ;
 .
 
 atns:sourceRelationshipId
@@ -97,7 +99,7 @@ atns:sourceRelationshipId
     schema:description "The numeric primary key of the source row in the ATNS Entity_Entity relationship table."@en ;
     schema:name "Source Entity Relationship Identifier"@en ;
     rdfs:domain atns:EntityRelationship ;
-    rdfs:range xsd:integer ;
+    rdfs:range xsd:token ;
 .
 
 atns:category
@@ -128,6 +130,16 @@ atns:country
     schema:name "ATNS Country Classification"@en ;
     rdfs:domain atns:Entity ;
     rdfs:range skos:Concept ;
+.
+
+atns:referenceCitationConvention
+    a dcterms:Standard ;
+    rdfs:label "ATNS reference citation convention"@en ;
+    dcterms:description """
+        References in the ATNS database were required to follow the
+        Australian Guide to Legal Citation, third or fourth edition.
+    """@en ;
+    dcterms:references <https://search.worldcat.org/title/1087497869>
 .
 
 atns:referenceType

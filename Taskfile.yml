@@ -53,3 +53,101 @@ tasks:
     desc: Run extraction, conversion, validation, and graph-equivalence checks
     cmds:
       - task: check
+
+  sandbox-prepare:
+    desc: Select all usable public, non-deleted rows for the local Prez sandbox
+    deps: [extract]
+    cmd: ATNS_CONVERSION_PROFILE=sandbox uv run --frozen python scripts/prepare_public_sandbox.py
+
+  sandbox-convert:
+    desc: Generate the complete public ATNS sandbox RDF
+    deps: [sandbox-prepare]
+    cmds:
+      - ATNS_CONVERSION_PROFILE=sandbox uv run --frozen rdfcon --processes 1 specs/sandbox-catalogue.yaml
+      - ATNS_CONVERSION_PROFILE=sandbox uv run --frozen rdfcon --processes 4 specs/sandbox-entities.yaml
+      - uv run --frozen python scripts/enrich_agreement_text.py --profile sandbox
+      - ATNS_CONVERSION_PROFILE=sandbox uv run --frozen rdfcon --processes 4 specs/sandbox-references.yaml
+      - ATNS_CONVERSION_PROFILE=sandbox uv run --frozen rdfcon --processes 4 specs/sandbox-relationships.yaml
+      - cp enrichments/agent-attributions.ttl build/sandbox/rdf/agent-attributions.ttl
+      - cp enrichments/spatial-coverage.ttl build/sandbox/rdf/spatial-coverage.ttl
+
+  sandbox-validate:
+    desc: Validate the generated sandbox RDF and its supporting model and vocabularies
+    deps: [sandbox-convert]
+    cmd: riot --validate build/sandbox/rdf/*.ttl model.ttl prezdata/*.ttl vocabs/*.ttl prezconfig/*.ttl
+
+  sandbox:
+    desc: Generate and validate the complete public ATNS local sandbox
+    cmds:
+      - task: sandbox-validate
+
+  audit-odrl-candidates:
+    desc: Report evidence available for reviewed ODRL enrichment of ATNS agreements
+    deps: [sandbox]
+    cmd: uv run --frozen python scripts/audit_odrl_candidates.py
+
+  audit-spatial-target-candidates:
+    desc: Report existing spatial features that may be ODRL Agreement targets
+    deps: [sandbox]
+    cmd: uv run --frozen python scripts/audit_spatial_targets.py
+
+  generate-spatial-coverage-review:
+    desc: Generate and locally load 25 exact NNTT spatialCoverage candidates for review
+    deps: [audit-spatial-target-candidates]
+    cmd: uv run --frozen python scripts/generate_spatial_coverage_review.py
+
+  audit-agent-mention-candidates:
+    desc: Report known IDN agents mentioned in ATNS Agreement text
+    deps: [sandbox]
+    cmd: uv run --frozen python scripts/audit_agent_mentions.py
+
+  generate-agent-enrichment-candidates:
+    desc: Generate a review batch of new organisation candidates and Agreement attributions
+    deps: [sandbox]
+    cmd: uv run --frozen python scripts/generate_agent_enrichment_candidates.py
+
+  audit-odrl-direction-candidates:
+    desc: Report sentence-level evidence for ODRL assigner and assignee roles
+    deps: [audit-agent-mention-candidates, audit-spatial-target-candidates]
+    cmd: uv run --frozen python scripts/audit_odrl_direction.py
+
+  prez-up:
+    desc: Generate the sandbox and start its Prez API (port 8001 by default)
+    deps: [sandbox]
+    cmd: docker compose up -d
+
+  prez-down:
+    desc: Stop the local ATNS Prez API
+    cmd: docker compose down
+
+  prez-logs:
+    desc: Follow the local ATNS Prez API logs
+    cmd: docker compose logs -f prez
+
+  crawl-subject-definitions:
+    desc: Recover ATNS subject-matter definitions from pinned Wayback captures
+    cmd: uv run --frozen python scripts/crawl_subject_matter_definitions.py
+
+  retry-subject-definitions:
+    desc: Retry unresolved archived subject-matter definitions conservatively
+    cmd: uv run --frozen python scripts/crawl_subject_matter_definitions.py --retry-unresolved --workers 1
+
+  apply-subject-definitions:
+    desc: Apply reviewed archived definitions to the curated ATNS subject vocabulary
+    cmds:
+      - uv run --frozen python scripts/apply_subject_matter_definitions.py
+      - riot --validate vocabs/atns-sub.ttl
+
+  crawl-subcategory-definitions:
+    desc: Recover ATNS subcategory definitions from pinned Wayback captures
+    cmd: uv run --frozen python scripts/crawl_sub_category_definitions.py
+
+  retry-subcategory-definitions:
+    desc: Retry unresolved archived subcategory definitions conservatively
+    cmd: uv run --frozen python scripts/crawl_sub_category_definitions.py --retry-unresolved --workers 1
+
+  apply-subcategory-definitions:
+    desc: Apply reviewed archived definitions to the curated ATNS subcategory vocabulary
+    cmds:
+      - uv run --frozen python scripts/apply_subcategory_definitions.py
+      - riot --validate vocabs/atns-subcat.ttl

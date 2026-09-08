@@ -1,5 +1,5 @@
-PREFIX atns-link: <https://linked.data.gov.au/def/atns/link/>
-PREFIX cs: <https://linked.data.gov.au/def/atns/link>
+PREFIX atns-link: <https://data.idnau.org/pid/vocab/atns-link/>
+PREFIX cs: <https://data.idnau.org/pid/vocab/atns-link>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
@@ -64,7 +64,7 @@ atns-link:59eb95a0-0ea8-589a-9128-470d74fb78f3
 
 cs:
     a skos:ConceptScheme ;
-    owl:versionIRI <https://linked.data.gov.au/def/atns/link/1> ;
+    owl:versionIRI <https://data.idnau.org/pid/vocab/atns-link/1> ;
     skos:definition "Types used to classify links in the Agreements, Treaties and Negotiated Settlements database."@en ;
     skos:hasTopConcept
         atns-link:4033402c-46f3-54f2-b516-6d3deb866ef4 ,
@@ -75,7 +75,7 @@ cs:
     skos:prefLabel "ATNS Link Types"@en ;
     schema:creator <https://orcid.org/0000-0001-5640-3202> ;
     schema:dateCreated "2026-06-24"^^xsd:date ;
-    schema:dateModified "2026-06-24"^^xsd:date ;
+    schema:dateModified "2026-08-14"^^xsd:date ;
     schema:license <https://creativecommons.org/licenses/by-nc-nd/4.0/> ;
     schema:publisher <https://idn.org.au> ;
     schema:status <https://linked.data.gov.au/def/reg-statuses/experimental> ;

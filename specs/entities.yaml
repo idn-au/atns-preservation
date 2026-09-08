@@ -4,14 +4,20 @@ infile: ../build/sample/Entities.csv
 template: |-
   {% set resource = sample_resource("entity", r["EntityID"]) %}
   {% if resource %}
+  {% set category = concept_iri_if_known("category", r["CategoryID"]) %}
   <{{ resource["resource_iri"] }}>
     a atns:Entity{% for type in entity_types(r["CategoryID"]) %}, <{{ type }}>{% endfor %} ;
-    atns:category <{{ concept_iri("category", r["CategoryID"]) }}> ;
+    {% if category %}
+    atns:category <{{ category }}> ;
+    {% endif %}
+    {% for additional_type in entity_additional_types(r["CategoryID"]) %}
+    schema:additionalType <{{ additional_type }}> ;
+    {% endfor %}
     atns:deleted {{ source_boolean(r["Deleted"]) }} ;
     {% if access_iri(r["Public"]) %}
     schema:conditionsOfAccess <{{ access_iri(r["Public"]) }}> ;
     {% endif %}
-    atns:sourceEntityId {{ r["EntityID"] }} ;
+    atns:sourceEntityId {{ literal(r["EntityID"], datatype="http://www.w3.org/2001/XMLSchema#token") }} ;
     {% if is_agreement(r["CategoryID"]) %}
     schema:isPartOf <https://data.idnau.org/pid/resource/d23405b4-fc04-47e2-9e7a-9c5735ae3780> ;
     {% endif %}
@@ -25,8 +31,8 @@ template: |-
     {% for subcategory in subcategories_for_entity(r["EntityID"]) %}
     atns:subcategory <{{ subcategory }}> ;
     {% endfor %}
-    {% if r["Country"] and r["CountryID"] %}
-    atns:country <{{ concept_iri("country", r["CountryID"]) }}> ;
+    {% if r["Country"] and concept_iri_if_known("country", r["CountryID"]) %}
+    atns:country <{{ concept_iri_if_known("country", r["CountryID"]) }}> ;
     {% endif %}
     {% if r["EID"] %}
     atns:eid {{ literal(r["EID"], datatype="http://www.w3.org/2001/XMLSchema#token") }} ;
@@ -43,8 +49,8 @@ template: |-
     {% if r["DateTo"] %}
     schema:endDate {{ literal(iso_date(r["DateTo"]), datatype="http://www.w3.org/2001/XMLSchema#date") }} ;
     {% endif %}
-    {% if r["URL"] %}
-    schema:url {{ literal(r["URL"], datatype="http://www.w3.org/2001/XMLSchema#anyURI") }} ;
+    {% if http_url(r["URL"]) %}
+    schema:url {{ literal(http_url(r["URL"]), datatype="http://www.w3.org/2001/XMLSchema#anyURI") }} ;
     {% endif %}
     {% endif %}
     schema:name {{ literal(r["Name"], lang="en") }} ;

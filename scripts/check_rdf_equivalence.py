@@ -6,20 +6,32 @@ import hashlib
 from pathlib import Path
 
 import yaml
-from rdflib import BNode, Graph, URIRef
-from rdflib.namespace import RDF
+from rdflib import BNode, Graph, Literal, URIRef
+from rdflib.namespace import RDF, XSD
 
 
 ROOT = Path(__file__).resolve().parent.parent
 BASELINE_PATH = ROOT / "tests" / "golden-baseline.yaml"
-AGREEMENT_RECORD = URIRef(
-    "https://linked.data.gov.au/def/atns/model/AgreementRecord"
+ATNS_ENTITY = URIRef("https://linked.data.gov.au/def/atns/model/Entity")
+ATNS_REFERENCE = URIRef("https://linked.data.gov.au/def/atns/model/Reference")
+SCHEMA_CREATIVE_WORK = URIRef("https://schema.org/CreativeWork")
+DCAT_RESOURCE = URIRef("http://www.w3.org/ns/dcat#Resource")
+CATOBJTYPE_AGREEMENT = URIRef(
+    "https://data.idnau.org/pid/vocab/cat-obj-types/Agreement"
 )
 ATNS_DATASET = URIRef(
     "https://data.idnau.org/pid/resource/"
     "d23405b4-fc04-47e2-9e7a-9c5735ae3780"
 )
 SCHEMA_IS_PART_OF = URIRef("https://schema.org/isPartOf")
+SCHEMA_ADDITIONAL_TYPE = URIRef("https://schema.org/additionalType")
+ATNS_DELETED = URIRef("https://linked.data.gov.au/def/atns/model/deleted")
+ATNS_IDENTIFIER_PROPERTIES = (
+    URIRef("https://linked.data.gov.au/def/atns/model/eid"),
+    URIRef("https://linked.data.gov.au/def/atns/model/sourceEntityId"),
+    URIRef("https://linked.data.gov.au/def/atns/model/sourceReferenceId"),
+    URIRef("https://linked.data.gov.au/def/atns/model/sourceRelationshipId"),
+)
 
 
 def load_graph(paths: list[Path]) -> Graph:
@@ -71,7 +83,21 @@ def assert_equal(label: str, expected: Graph, actual: Graph) -> None:
 
 
 def assert_agreement_dataset_membership(graph: Graph) -> None:
-    agreements = set(graph.subjects(RDF.type, AGREEMENT_RECORD))
+    agreements = set(
+        graph.subjects(SCHEMA_ADDITIONAL_TYPE, CATOBJTYPE_AGREEMENT)
+    )
+    incorrectly_typed = sorted(
+        agreement
+        for agreement in agreements
+        if (agreement, RDF.type, ATNS_ENTITY) not in graph
+        or (agreement, RDF.type, SCHEMA_CREATIVE_WORK) not in graph
+    )
+    if incorrectly_typed:
+        joined = "\n  ".join(str(value) for value in incorrectly_typed)
+        raise SystemExit(
+            "Soft-typed agreements missing atns:Entity or "
+            "schema:CreativeWork:\n  " + joined
+        )
     missing = sorted(
         agreement
         for agreement in agreements
@@ -82,7 +108,57 @@ def assert_agreement_dataset_membership(graph: Graph) -> None:
         raise SystemExit(
             "Agreement records missing ATNS dataset membership:\n  " + joined
         )
-    print(f"ATNS dataset membership: {len(agreements)} agreement records")
+    print(
+        "ATNS dataset membership and typing: "
+        f"{len(agreements)} agreement records"
+    )
+
+
+def assert_reference_types_and_literal_datatypes(graph: Graph) -> None:
+    references = set(graph.subjects(RDF.type, ATNS_REFERENCE))
+    invalid_references = sorted(
+        reference
+        for reference in references
+        if (reference, RDF.type, SCHEMA_CREATIVE_WORK) not in graph
+        or (reference, RDF.type, DCAT_RESOURCE) in graph
+    )
+    if invalid_references:
+        joined = "\n  ".join(str(value) for value in invalid_references)
+        raise SystemExit(
+            "ATNS references must be schema:CreativeWork and not "
+            "dcat:Resource:\n  " + joined
+        )
+
+    invalid_identifiers: list[tuple] = []
+    identifier_count = 0
+    for predicate in ATNS_IDENTIFIER_PROPERTIES:
+        for subject, value in graph.subject_objects(predicate):
+            identifier_count += 1
+            if not isinstance(value, Literal) or value.datatype != XSD.token:
+                invalid_identifiers.append((subject, predicate, value))
+    if invalid_identifiers:
+        joined = "\n  ".join(
+            " ".join(term.n3() for term in triple)
+            for triple in invalid_identifiers
+        )
+        raise SystemExit("ATNS identifiers must use xsd:token:\n  " + joined)
+
+    invalid_deleted = [
+        (subject, ATNS_DELETED, value)
+        for subject, value in graph.subject_objects(ATNS_DELETED)
+        if not isinstance(value, Literal) or value.datatype != XSD.boolean
+    ]
+    if invalid_deleted:
+        joined = "\n  ".join(
+            " ".join(term.n3() for term in triple)
+            for triple in invalid_deleted
+        )
+        raise SystemExit("ATNS deleted flags must use xsd:boolean:\n  " + joined)
+
+    print(
+        "ATNS reference and literal typing: "
+        f"{len(references)} references, {identifier_count} identifiers"
+    )
 
 
 def main() -> None:
@@ -90,6 +166,7 @@ def main() -> None:
     aggregate_path = ROOT / baseline["aggregate"]
     aggregate = load_graph([aggregate_path])
     assert_agreement_dataset_membership(aggregate)
+    assert_reference_types_and_literal_datatypes(aggregate)
 
     if len(aggregate) != baseline["triple_count"]:
         raise SystemExit(

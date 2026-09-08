@@ -1,5 +1,6 @@
 prefixes:
   atns: <https://linked.data.gov.au/def/atns/model/>
+  catobjtyp: <https://data.idnau.org/pid/vocab/cat-obj-types/>
   dcterms: <http://purl.org/dc/terms/>
   owl: <http://www.w3.org/2002/07/owl#>
   schema: <https://schema.org/>
