@@ -1,7 +1,7 @@
 aggregate: samples/public-agreements.ttl
-triple_count: 269
+triple_count: 284
 blank_node_triple_count: 0
-canonical_ntriples_sha256: b0789ca5a7d5600f57e036092b568023d03917c82876b646d9d0abe1e1e35661
+canonical_ntriples_sha256: 4896440aae5899618ed621c964f849e0e36ce8ae1bf3ea8d8130ce73adb8231f
 split_catalogue: resources/catalogue.ttl
 split_items_glob: resources/items/*.ttl
 split_item_file_count: 27

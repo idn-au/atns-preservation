@@ -37,6 +37,12 @@ Reviewed organisation identities and Agreement subject-agent attributions are cu
 
 Reviewed Agreement spatial coverage links and the corresponding NNTT feature names are curated in `enrichments/spatial-coverage.ttl`. These links use `schema:spatialCoverage` after an exact NNTT file-number join was manually sanity-checked; name-only and ambiguous spatial candidates remain unasserted. Full feature geometry remains in its authoritative spatial dataset and is not duplicated into this enrichment graph.
 
+Agreement-classified CreativeWorks also retain a deterministic historical link
+to their legacy ATNS database page using `schema:mainEntityOfPage`. The linked
+resource is explicitly typed `schema:WebPage`. These links are retained in RDF
+but are not requested by the current Prez presentation profile while the legacy
+website remains unavailable.
+
 ## Resource model
 
 The preserved ATNS data is a graph rather than a set of isolated records. The diagram below shows the principal connections, including how an external

@@ -22,6 +22,7 @@ idn-resource:dd9b004b-1c22-5b53-8381-bd93760ee922
     schema:conditionsOfAccess <https://linked.data.gov.au/def/data-access-rights/open> ;
     atns:sourceEntityId "27"^^xsd:token ;
     schema:isPartOf idn-resource:d23405b4-fc04-47e2-9e7a-9c5735ae3780 ;
+    schema:mainEntityOfPage <https://database.atns.net.au/agreement.asp?EntityID=27> ;
     atns:subcategory atns-subcat:09f0a068-ce65-5c11-8dec-f081d1a81ec2 ;
     schema:keywords
         atns-sub:9335b2f1-4915-55cc-9736-2ded7c4a2008 ,
@@ -30,4 +31,9 @@ idn-resource:dd9b004b-1c22-5b53-8381-bd93760ee922
     schema:location "Shire of Laverton and Shire of Ngaanyatjarra, West, Western Australia, Australia"@en ;
     schema:name "Telstra Ngaanyatjarra Indigenous Land Use Agreement (ILUA)"@en ;
     schema:startDate "2006-08-11"^^xsd:date ;
+.
+
+<https://database.atns.net.au/agreement.asp?EntityID=27>
+    a schema:WebPage ;
+    schema:name "Legacy ATNS page for Telstra Ngaanyatjarra Indigenous Land Use Agreement (ILUA)"@en ;
 .

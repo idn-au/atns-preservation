@@ -20,6 +20,7 @@ template: |-
     atns:sourceEntityId {{ literal(r["EntityID"], datatype="http://www.w3.org/2001/XMLSchema#token") }} ;
     {% if is_agreement(r["CategoryID"]) %}
     schema:isPartOf <https://data.idnau.org/pid/resource/d23405b4-fc04-47e2-9e7a-9c5735ae3780> ;
+    schema:mainEntityOfPage <{{ legacy_atns_page_iri(r["EntityID"]) }}> ;
     {% endif %}
     {% for subject in subjects_for_entity(r["EntityID"]) %}
     schema:keywords <{{ subject }}> ;
@@ -55,4 +56,10 @@ template: |-
     {% endif %}
     schema:name {{ literal(r["Name"], lang="en") }} ;
   .
+  {% if is_agreement(r["CategoryID"]) %}
+  <{{ legacy_atns_page_iri(r["EntityID"]) }}>
+    a schema:WebPage ;
+    schema:name {{ literal("Legacy ATNS page for " + r["Name"], lang="en") }} ;
+  .
+  {% endif %}
   {% endif %}

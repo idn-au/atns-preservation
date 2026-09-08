@@ -118,6 +118,14 @@ def is_agreement(category_id: str) -> bool:
     )
 
 
+def legacy_atns_page_iri(source_id: str) -> str:
+    """Return the deterministic legacy public ATNS page for a source entity."""
+    return (
+        "https://database.atns.net.au/agreement.asp?EntityID="
+        + source_id.strip()
+    )
+
+
 @lru_cache(maxsize=1)
 def _editorial_overrides() -> dict:
     return yaml.safe_load(

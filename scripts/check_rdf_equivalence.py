@@ -25,6 +25,8 @@ ATNS_DATASET = URIRef(
 )
 SCHEMA_IS_PART_OF = URIRef("https://schema.org/isPartOf")
 SCHEMA_ADDITIONAL_TYPE = URIRef("https://schema.org/additionalType")
+SCHEMA_MAIN_ENTITY_OF_PAGE = URIRef("https://schema.org/mainEntityOfPage")
+SCHEMA_WEB_PAGE = URIRef("https://schema.org/WebPage")
 ATNS_DELETED = URIRef("https://linked.data.gov.au/def/atns/model/deleted")
 ATNS_IDENTIFIER_PROPERTIES = (
     URIRef("https://linked.data.gov.au/def/atns/model/eid"),
@@ -108,9 +110,29 @@ def assert_agreement_dataset_membership(graph: Graph) -> None:
         raise SystemExit(
             "Agreement records missing ATNS dataset membership:\n  " + joined
         )
+    invalid_pages: list[tuple[URIRef, URIRef]] = []
+    for agreement in agreements:
+        expected_page = URIRef(
+            "https://database.atns.net.au/agreement.asp?EntityID="
+            + str(next(graph.objects(agreement, ATNS_IDENTIFIER_PROPERTIES[1])))
+        )
+        if (
+            agreement,
+            SCHEMA_MAIN_ENTITY_OF_PAGE,
+            expected_page,
+        ) not in graph or (expected_page, RDF.type, SCHEMA_WEB_PAGE) not in graph:
+            invalid_pages.append((agreement, expected_page))
+    if invalid_pages:
+        joined = "\n  ".join(
+            f"{agreement} -> {page}" for agreement, page in invalid_pages
+        )
+        raise SystemExit(
+            "Agreement records missing their typed legacy ATNS WebPage:\n  "
+            + joined
+        )
     print(
         "ATNS dataset membership and typing: "
-        f"{len(agreements)} agreement records"
+        f"{len(agreements)} agreement records with legacy WebPages"
     )
 
 

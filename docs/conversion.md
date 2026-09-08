@@ -59,6 +59,13 @@ escaped line-break markers are restored as line breaks. This enrichment runs as
 an RDFLib post-processing stage after `rdfcon`, because the latter interprets
 embedded source HTML in template literals as RDF syntax.
 
+Each published `schema:CreativeWork` soft-typed as an Agreement also receives a
+deterministic `schema:mainEntityOfPage` link to its legacy ATNS database page,
+constructed from the preserved source `EntityID`. The target is explicitly
+typed `schema:WebPage` and labelled. This historical metadata is generated even
+while the legacy site is unavailable, but `schema:mainEntityOfPage` is
+deliberately omitted from the current Prez presentation profile.
+
 ### Editorial decisions
 
 Source-derived facts and project-authored publication decisions are kept distinct:

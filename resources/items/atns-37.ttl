@@ -25,6 +25,7 @@ idn-resource:7c1def57-546e-5389-bde5-24d566944930
     schema:conditionsOfAccess <https://linked.data.gov.au/def/data-access-rights/open> ;
     atns:sourceEntityId "37"^^xsd:token ;
     schema:isPartOf idn-resource:d23405b4-fc04-47e2-9e7a-9c5735ae3780 ;
+    schema:mainEntityOfPage <https://database.atns.net.au/agreement.asp?EntityID=37> ;
     atns:subcategory
         atns-subcat:6ffe90c2-95c9-51b5-a083-8c7d83b975ef ,
         atns-subcat:f0427812-61d1-5004-b577-ac236a9c5c18 ;
@@ -36,4 +37,9 @@ idn-resource:7c1def57-546e-5389-bde5-24d566944930
     schema:name "Commonwealth State Housing Agreement 2003-2008"@en ;
     schema:startDate "2003-07-01"^^xsd:date ;
     schema:url "https://www.dss.gov.au/sites/default/files/documents/07_2015/csha.pdf"^^xsd:anyURI ;
+.
+
+<https://database.atns.net.au/agreement.asp?EntityID=37>
+    a schema:WebPage ;
+    schema:name "Legacy ATNS page for Commonwealth State Housing Agreement 2003-2008"@en ;
 .

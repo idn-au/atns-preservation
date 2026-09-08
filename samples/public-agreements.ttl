@@ -71,6 +71,7 @@ idn-resource:34524ede-2abc-50f1-af30-8493753c928e
     schema:conditionsOfAccess <https://linked.data.gov.au/def/data-access-rights/open> ;
     atns:sourceEntityId "24"^^xsd:token ;
     schema:isPartOf idn-resource:d23405b4-fc04-47e2-9e7a-9c5735ae3780 ;
+    schema:mainEntityOfPage <https://database.atns.net.au/agreement.asp?EntityID=24> ;
     atns:subcategory atns-subcat:6ffe90c2-95c9-51b5-a083-8c7d83b975ef ;
     schema:keywords
         atns-sub:5996de0c-8cc6-5f14-8901-d839af36a4d4 ,
@@ -93,6 +94,7 @@ idn-resource:dd9b004b-1c22-5b53-8381-bd93760ee922
     schema:conditionsOfAccess <https://linked.data.gov.au/def/data-access-rights/open> ;
     atns:sourceEntityId "27"^^xsd:token ;
     schema:isPartOf idn-resource:d23405b4-fc04-47e2-9e7a-9c5735ae3780 ;
+    schema:mainEntityOfPage <https://database.atns.net.au/agreement.asp?EntityID=27> ;
     atns:subcategory atns-subcat:09f0a068-ce65-5c11-8dec-f081d1a81ec2 ;
     schema:keywords
         atns-sub:9335b2f1-4915-55cc-9736-2ded7c4a2008 ,
@@ -116,6 +118,7 @@ idn-resource:3c2b10f8-eb83-5de4-b54d-28f7ed058109
     schema:conditionsOfAccess <https://linked.data.gov.au/def/data-access-rights/open> ;
     atns:sourceEntityId "30"^^xsd:token ;
     schema:isPartOf idn-resource:d23405b4-fc04-47e2-9e7a-9c5735ae3780 ;
+    schema:mainEntityOfPage <https://database.atns.net.au/agreement.asp?EntityID=30> ;
     atns:subcategory
         atns-subcat:6ffe90c2-95c9-51b5-a083-8c7d83b975ef ,
         atns-subcat:f0427812-61d1-5004-b577-ac236a9c5c18 ;
@@ -141,6 +144,7 @@ idn-resource:7c1def57-546e-5389-bde5-24d566944930
     schema:conditionsOfAccess <https://linked.data.gov.au/def/data-access-rights/open> ;
     atns:sourceEntityId "37"^^xsd:token ;
     schema:isPartOf idn-resource:d23405b4-fc04-47e2-9e7a-9c5735ae3780 ;
+    schema:mainEntityOfPage <https://database.atns.net.au/agreement.asp?EntityID=37> ;
     atns:subcategory
         atns-subcat:6ffe90c2-95c9-51b5-a083-8c7d83b975ef ,
         atns-subcat:f0427812-61d1-5004-b577-ac236a9c5c18 ;
@@ -231,6 +235,7 @@ idn-resource:c8122728-6e9f-597c-b4d9-68b8858e66c7
     schema:conditionsOfAccess <https://linked.data.gov.au/def/data-access-rights/open> ;
     atns:sourceEntityId "1624"^^xsd:token ;
     schema:isPartOf idn-resource:d23405b4-fc04-47e2-9e7a-9c5735ae3780 ;
+    schema:mainEntityOfPage <https://database.atns.net.au/agreement.asp?EntityID=1624> ;
     schema:keywords
         atns-sub:d15dd1de-4696-50c8-9f10-2e95eea88e6f ,
         atns-sub:ffe61b3b-8b29-5264-89ac-758a03928ea5 ;
@@ -247,6 +252,31 @@ idn-resource:ca68a358-3931-5011-adfd-0a695adc4812
     schema:datePublished "2005" ;
     schema:name "Strategic Policy for Aboriginal and Torres Strait Islander Children and Young People's Health 2005-2010: Implementation Guide"@en ;
     schema:url "http://foodsafetymatters.gov.au/publications/corporate/strategicpolicies/2005imp.pdf"^^xsd:anyURI ;
+.
+
+<https://database.atns.net.au/agreement.asp?EntityID=24>
+    a schema:WebPage ;
+    schema:name "Legacy ATNS page for Agreement on Queensland Aboriginal and Torres Strait Islander Health"@en ;
+.
+
+<https://database.atns.net.au/agreement.asp?EntityID=27>
+    a schema:WebPage ;
+    schema:name "Legacy ATNS page for Telstra Ngaanyatjarra Indigenous Land Use Agreement (ILUA)"@en ;
+.
+
+<https://database.atns.net.au/agreement.asp?EntityID=30>
+    a schema:WebPage ;
+    schema:name "Legacy ATNS page for Agreement for the Provision of Housing for Indigenous People (ACT)"@en ;
+.
+
+<https://database.atns.net.au/agreement.asp?EntityID=37>
+    a schema:WebPage ;
+    schema:name "Legacy ATNS page for Commonwealth State Housing Agreement 2003-2008"@en ;
+.
+
+<https://database.atns.net.au/agreement.asp?EntityID=1624>
+    a schema:WebPage ;
+    schema:name "Legacy ATNS page for Commonwealth State Housing Agreement 1999-2003"@en ;
 .
 
 idn-resource:180b6fcc-dcc6-5592-a390-5179366066fd
