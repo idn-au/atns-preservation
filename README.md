@@ -7,6 +7,36 @@ Data extracted from the Agreements, Treaties and Negotiated Settlements [website
 
 The current public preservation sample can be regenerated from the private ATNS XML export through a checksum-verified XML-to-CSV extraction stage and declarative `rdfcon` YAML specifications. The generated RDF is accepted only when it is graph-identical to both the curated aggregate sample and the split publication files. Manual source updates are fail-closed: duplicate identities are rejected and missing, deleted or private published records are reported for removal review. See [Conversion process](docs/conversion.md) for the security boundary, update procedure, editorial inputs, commands and equivalence checks.
 
+## Local Prez sandbox
+
+The repository can also generate all usable public, non-deleted records from the currently mapped ATNS tables and load them into a local Prez API. The sandbox is deliberately separate from the small curated publication sample: its generated CSV, resource registry, reports and RDF remain under ignored `build/sandbox/` paths.
+
+Run:
+
+```bash
+task sandbox
+task prez-up
+```
+
+`task prez-up` uses the same prebuilt Prez 4.23.7 Docker image as the Briscoe Smith project and exposes its API at `http://localhost:8001` by default, allowing the Briscoe Smith API to remain on port 8000. In plain language, the Docker image is the packaged Prez software; Docker starts a disposable running copy of that package, called a container, and mounts this repository's generated RDF and Prez configuration into it.
+
+The existing PrezUI at port 3000 normally talks to an API at port 8000. To use that UI unchanged for ATNS, first stop the Briscoe Smith Prez container, then start this one on port 8000:
+
+```bash
+cd /Users/leskneebone/Projects/IDN/briscoesmith
+docker compose down
+cd /Users/leskneebone/Projects/IDN/atns-preservation
+PREZ_PORT=8000 task prez-up
+```
+
+The local catalogue path is then `/catalogs/resource:atns-sandbox-catalogue/collections`. Use `task prez-down` to stop the ATNS API and `task prez-logs` to inspect its logs.
+
+The sandbox includes a local copy of the existing Telstra Ngaanyatjarra demonstration ODRL graph so the custom ODRL presentation profile can be exercised. It remains a hand-authored demonstration fixture, not output generated from every source agreement. The profile also requests target geometry when that geometry is present in the local graph; it does not fetch the NNTT feature over the network.
+
+Reviewed organisation identities and Agreement subject-agent attributions are curated in `enrichments/agent-attributions.ttl`. The sandbox build copies that graph into its generated RDF directory so manual curation survives regeneration. Candidate reports under `build/sandbox/reports` remain disposable review outputs and are not loaded directly.
+
+Reviewed Agreement spatial coverage links and the corresponding NNTT feature names are curated in `enrichments/spatial-coverage.ttl`. These links use `schema:spatialCoverage` after an exact NNTT file-number join was manually sanity-checked; name-only and ambiguous spatial candidates remain unasserted. Full feature geometry remains in its authoritative spatial dataset and is not duplicated into this enrichment graph.
+
 ## Resource model
 
 The preserved ATNS data is a graph rather than a set of isolated records. The diagram below shows the principal connections, including how an external
@@ -67,6 +97,12 @@ expressions remain separate resources. A published external class such as
 Classification values such as `Category`, `Country` and `Relationship type`
 remain resources, allowing stable identifiers and labels to be reused across
 records.
+
+Reviewed ODRL enrichments are linked bidirectionally to their corresponding
+ATNS CreativeWork with `dcterms:relation`. Run `task audit-odrl-candidates` to
+report which Agreement-classified records contain signatory relationship
+evidence. The audit never generates a Permission: source signatory rows do not
+by themselves establish ODRL roles, actions, targets, duties or constraints.
 
 ## Integration with IDN catalogues
 

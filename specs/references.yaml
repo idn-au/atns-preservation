@@ -4,13 +4,16 @@ infile: ../build/sample/Refs.csv
 template: |-
   {% set resource = sample_resource("reference", r["RefID"]) %}
   {% if resource %}
+  {% set reference_type = concept_iri_if_known("reference_type", r["TypeID"]) %}
   <{{ resource["resource_iri"] }}>
     a atns:Reference, schema:CreativeWork ;
     atns:deleted {{ source_boolean(r["Deleted"]) }} ;
     {% if access_iri(r["Public"]) %}
     schema:conditionsOfAccess <{{ access_iri(r["Public"]) }}> ;
     {% endif %}
-    atns:referenceType <{{ concept_iri("reference_type", r["TypeID"]) }}> ;
+    {% if reference_type %}
+    atns:referenceType <{{ reference_type }}> ;
+    {% endif %}
     atns:sourceReferenceId {{ literal(r["RefID"], datatype="http://www.w3.org/2001/XMLSchema#token") }} ;
     {% if r["Author"] %}
     schema:author {{ literal(r["Author"], lang="en") }} ;
@@ -22,8 +25,8 @@ template: |-
     schema:datePublished {{ literal(r["Year"]) }} ;
     {% endif %}
     schema:name {{ literal(r["Title"], lang="en") }} ;
-    {% if r["URL"] %}
-    schema:url {{ literal(r["URL"], datatype="http://www.w3.org/2001/XMLSchema#anyURI") }} ;
+    {% if http_url(r["URL"]) %}
+    schema:url {{ literal(http_url(r["URL"]), datatype="http://www.w3.org/2001/XMLSchema#anyURI") }} ;
     {% endif %}
   .
   {% endif %}

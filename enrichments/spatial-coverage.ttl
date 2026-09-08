@@ -1,0 +1,3728 @@
+# REVIEWED DATA: spatialCoverage assertions established by exact NNTT identifier matches.
+# The matching rule was accepted after manual sanity checking of the initial batch.
+
+PREFIX sdo: <https://schema.org/>
+
+<https://data.idnau.org/pid/resource/00129161-6f7d-5a0c-b270-2238ccaf75e5>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2011-008> ;
+.
+
+<https://data.idnau.org/pid/resource/00b1a1d2-631f-509d-971e-b39e5adb60a4>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-026> ;
+.
+
+<https://data.idnau.org/pid/resource/01216b30-9767-5045-9b39-e5eed910fd60>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2015-021> ;
+.
+
+<https://data.idnau.org/pid/resource/017bac05-ca68-5f26-ae75-2f76630f05d5>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2011-026> ;
+.
+
+<https://data.idnau.org/pid/resource/018a8a09-17ec-52ed-803b-b080115ecc7d>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2017-012> ;
+.
+
+<https://data.idnau.org/pid/resource/023f7c71-2100-5c6a-bd90-8a18f4bbf79f>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2019-011> ;
+.
+
+<https://data.idnau.org/pid/resource/02644ced-3a91-5e22-bf81-ec3fe3d8eac2>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-066> ;
+.
+
+<https://data.idnau.org/pid/resource/02a66554-e4d1-5e7b-ae23-79371d47a660>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-074> ;
+.
+
+<https://data.idnau.org/pid/resource/04135c24-d9bf-5167-a4d1-e2a3aae60845>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2020-012> ;
+.
+
+<https://data.idnau.org/pid/resource/042518aa-ccff-5a8d-a8fc-abef0f4d6549>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-036> ;
+.
+
+<https://data.idnau.org/pid/resource/0488233b-b4e8-575e-a7bd-cc04aa685189>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2020-008> ;
+.
+
+<https://data.idnau.org/pid/resource/04885b25-3bdb-5560-b702-f2cd1452bdf8>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2019-027> ;
+.
+
+<https://data.idnau.org/pid/resource/04a3dd92-4da3-5bd1-a7a2-d9ce255ec1db>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2017-015> ;
+.
+
+<https://data.idnau.org/pid/resource/04af2abc-7969-5766-9374-616867a19c66>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-072> ;
+.
+
+<https://data.idnau.org/pid/resource/04cc51ae-6e84-579e-8ebb-113bcfef1d54>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2016-027> ;
+.
+
+<https://data.idnau.org/pid/resource/04df58a1-ae7d-5508-95e5-6e0eb0d686f3>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2015-005> ;
+.
+
+<https://data.idnau.org/pid/resource/04fb9197-938d-56d3-9bd1-bd67a9aaf79a>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2016-014> ;
+.
+
+<https://data.idnau.org/pid/resource/067d978f-eaec-5514-a7eb-523153b1341a>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2016-045> ;
+.
+
+<https://data.idnau.org/pid/resource/0748607d-65b8-5cff-9984-a222f1628f33>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2019-010> ;
+.
+
+<https://data.idnau.org/pid/resource/08e85b02-cd1b-5995-b840-4ba7cb64a618>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2018-030> ;
+.
+
+<https://data.idnau.org/pid/resource/09e26397-0509-5452-82e9-daed17ff6478>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-068> ;
+.
+
+<https://data.idnau.org/pid/resource/0a1978da-477a-5dfe-9f44-aa7ebcededb2>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2020-017> ;
+.
+
+<https://data.idnau.org/pid/resource/0a7cac59-7aeb-5b19-ba1e-0588cfc4b20d>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2016-002> ;
+.
+
+<https://data.idnau.org/pid/resource/0bd78113-b21c-5e3c-b5cd-1087dbb8a48b>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-076> ;
+.
+
+<https://data.idnau.org/pid/resource/0c5416f0-4edb-539c-b2f8-9dabfa115255>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-085> ;
+.
+
+<https://data.idnau.org/pid/resource/0c80d038-95a7-5eee-b9f0-54f01d41d92b>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2016-009> ;
+.
+
+<https://data.idnau.org/pid/resource/0cdbe8ee-c3e0-57e4-9b5a-1a3346b6e9be>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/VI2018-001> ;
+.
+
+<https://data.idnau.org/pid/resource/0d1a458c-b63d-5967-a93c-c3e5134d8be4>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/VI2018-002> ;
+.
+
+<https://data.idnau.org/pid/resource/0e91fff5-ab32-546d-94c0-1eb3af9a4ea3>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2018-020> ;
+.
+
+<https://data.idnau.org/pid/resource/0e9cd291-00f4-5e0b-8122-f48d3212db76>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-063> ;
+.
+
+<https://data.idnau.org/pid/resource/0ebbab0b-5057-5a29-86c3-1f667c7a5e1a>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2020-006> ;
+.
+
+<https://data.idnau.org/pid/resource/0f44339e-1f82-52f0-b661-b2d38de337eb>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-068> ;
+.
+
+<https://data.idnau.org/pid/resource/0f467f6b-75f9-55a7-a44b-3f2cfec0f774>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/DI2008-002> ;
+.
+
+<https://data.idnau.org/pid/resource/0fe766bd-1ed2-5b04-ba50-f19f1af038f8>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2017-010> ;
+.
+
+<https://data.idnau.org/pid/resource/10604762-7ead-53fd-814d-eae310edd547>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/SI2019-001> ;
+.
+
+<https://data.idnau.org/pid/resource/11038cc7-9105-5ddc-8467-053ff01af9a5>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/VI2015-002> ;
+.
+
+<https://data.idnau.org/pid/resource/11a46f58-7bcf-5009-aca2-37c30b66064d>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-089> ;
+.
+
+<https://data.idnau.org/pid/resource/1206f328-d2aa-565e-b133-c988767629d2>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2019-002> ;
+.
+
+<https://data.idnau.org/pid/resource/123252fa-685e-52df-938d-23b03e5693e6>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2019-031> ;
+.
+
+<https://data.idnau.org/pid/resource/1242af30-210e-567e-bf29-5534a36afb8e>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2017-002> ;
+.
+
+<https://data.idnau.org/pid/resource/139560ea-462d-52a0-a1d1-bf01742b8013>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2020-014> ;
+.
+
+<https://data.idnau.org/pid/resource/14adcc59-85d0-5294-bb25-0e2df68cc656>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-078> ;
+.
+
+<https://data.idnau.org/pid/resource/151744d5-b0dc-53c1-85aa-2129df030572>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2018-027> ;
+.
+
+<https://data.idnau.org/pid/resource/155edf91-9bd7-50df-a717-ad9cf48a87c3>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2014-001> ;
+.
+
+<https://data.idnau.org/pid/resource/166c2d34-1168-5c66-b14a-5147a98a98c1>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2018-029> ;
+.
+
+<https://data.idnau.org/pid/resource/16d373b2-aecf-556e-84bd-991427302990>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-083> ;
+.
+
+<https://data.idnau.org/pid/resource/16f43ef8-f691-5656-8be8-1af4ba78b9d2>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-008> ;
+.
+
+<https://data.idnau.org/pid/resource/17299677-e89a-5989-b0ad-eb3159c0f3a1>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2016-019> ;
+.
+
+<https://data.idnau.org/pid/resource/173e68a5-255d-55e1-b015-6d2c732ce06b>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2015-010> ;
+.
+
+<https://data.idnau.org/pid/resource/173fba01-ab05-56e6-9550-07489ac7f959>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2016-021> ;
+.
+
+<https://data.idnau.org/pid/resource/175f665c-da5f-54d8-8c21-08851dc08408>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2020-009> ;
+.
+
+<https://data.idnau.org/pid/resource/19423198-4535-5c09-8d4d-6f8047cca2ec>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2016-001> ;
+.
+
+<https://data.idnau.org/pid/resource/1950cc58-3912-50ca-89ef-9712ead8b13b>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2020-020> ;
+.
+
+<https://data.idnau.org/pid/resource/19e69e94-7b8a-538d-b248-c35548c69ad0>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-077> ;
+.
+
+<https://data.idnau.org/pid/resource/1a8a7bc3-6d99-5a22-a1be-0d0ecc1efbfa>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2013-057> ;
+.
+
+<https://data.idnau.org/pid/resource/1b744b8f-0e15-5433-b1a3-d0f008bc849c>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/DI2014-003> ;
+.
+
+<https://data.idnau.org/pid/resource/1b92ae11-92af-5804-91b3-35c30c2b5392>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2013-060> ;
+.
+
+<https://data.idnau.org/pid/resource/1c663e84-f558-5a3a-81c6-07ae43d9d0bb>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2016-061> ;
+.
+
+<https://data.idnau.org/pid/resource/1e7cc91b-bfd3-5a86-a0a4-269e762efdd6>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2020-007> ;
+.
+
+<https://data.idnau.org/pid/resource/201005de-46f6-564e-b7ca-5b37cc1bd38d>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-069> ;
+.
+
+<https://data.idnau.org/pid/resource/207b1313-df21-5f9d-be8d-c5ccc9d6f560>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/SI2013-001> ;
+.
+
+<https://data.idnau.org/pid/resource/209ca6c4-edee-5126-9071-d5c62d7769be>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-079> ;
+.
+
+<https://data.idnau.org/pid/resource/20ffd5a9-3072-5ad8-a0ed-aedee59ee06b>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-012> ;
+.
+
+<https://data.idnau.org/pid/resource/218c5fbc-71e0-5d35-a74d-8c827ad7f110>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2017-013> ;
+.
+
+<https://data.idnau.org/pid/resource/21a32d5b-295a-57f8-979c-552c05e011ae>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2016-017> ;
+.
+
+<https://data.idnau.org/pid/resource/21f277c0-6261-5588-9e5e-e89459d2b658>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-084> ;
+.
+
+<https://data.idnau.org/pid/resource/22711ba4-ecbd-5830-bb77-9058ad8f97da>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2016-020> ;
+.
+
+<https://data.idnau.org/pid/resource/23119731-30f4-539d-b012-385bd8f26378>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-071> ;
+.
+
+<https://data.idnau.org/pid/resource/23b1c3d6-51fd-5dd8-9bbb-b68c9e45c02e>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2016-004> ;
+.
+
+<https://data.idnau.org/pid/resource/23d141af-f7d6-541f-89c3-7251e232ba55>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2018-026> ;
+.
+
+<https://data.idnau.org/pid/resource/23f8b5dd-76f1-58e9-9992-594f942844c0>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/SI2014-013> ;
+.
+
+<https://data.idnau.org/pid/resource/247d1cd0-e143-524d-b6c4-4ce5c03aab33>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2017-015> ;
+.
+
+<https://data.idnau.org/pid/resource/248b4472-43ec-5d5e-9597-10e39b060cdc>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-081> ;
+.
+
+<https://data.idnau.org/pid/resource/24b3ae9a-2052-526e-97a7-e07385de18b6>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/NI2018-003> ;
+.
+
+<https://data.idnau.org/pid/resource/2646a0ca-d497-5291-81ae-67d19deaa037>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2016-022> ;
+.
+
+<https://data.idnau.org/pid/resource/29571c32-088d-5c02-acad-220f2e19ee20>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2014-016> ;
+.
+
+<https://data.idnau.org/pid/resource/29fdb55c-e3f3-5a07-8f0a-3bed6d879b8e>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-086> ;
+.
+
+<https://data.idnau.org/pid/resource/2accbcf4-fb84-5dc2-a6a6-0510ca33738c>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2019-025> ;
+.
+
+<https://data.idnau.org/pid/resource/2adf6dc5-f27d-55ba-ac52-35b9f51dc442>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2016-004> ;
+.
+
+<https://data.idnau.org/pid/resource/2ae4c797-6304-589a-b6e8-e5c3f9528911>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2020-005> ;
+.
+
+<https://data.idnau.org/pid/resource/2b7445bb-a61e-5c85-b5bc-a5eb72bae242>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2019-005> ;
+.
+
+<https://data.idnau.org/pid/resource/2d52a4c7-7097-5c07-8a34-b36018de3e78>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-033> ;
+.
+
+<https://data.idnau.org/pid/resource/2de427d4-1982-50b3-9916-a9c9a29d72da>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2016-058> ;
+.
+
+<https://data.idnau.org/pid/resource/2e17ee42-3ee7-51bf-b690-331a107a3cd7>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-043> ;
+.
+
+<https://data.idnau.org/pid/resource/2e4f8b06-2298-5918-b8f5-93721fdce333>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2016-029> ;
+.
+
+<https://data.idnau.org/pid/resource/2e89c742-6d25-5bbe-ada8-523579c004d9>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-014> ;
+.
+
+<https://data.idnau.org/pid/resource/2eb51da9-5168-5df5-8578-51dc6aa3a328>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-075> ;
+.
+
+<https://data.idnau.org/pid/resource/2f269da9-3318-51ae-9a73-c7d5fe1f4751>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-035> ;
+.
+
+<https://data.idnau.org/pid/resource/2f90602f-5bae-5be5-a90a-7d34e882efe0>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2019-018> ;
+.
+
+<https://data.idnau.org/pid/resource/2f9b3348-d146-504a-90ad-482f9815355f>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2020-019> ;
+.
+
+<https://data.idnau.org/pid/resource/30a9bbe2-fe0a-5d6e-a16e-15047b72af63>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/DI2018-008> ;
+.
+
+<https://data.idnau.org/pid/resource/30efea63-854d-5bd4-bfe5-f865f308177e>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-066> ;
+.
+
+<https://data.idnau.org/pid/resource/31aeb1fd-43d2-5a1f-a0ee-37ceca9289aa>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-011> ;
+.
+
+<https://data.idnau.org/pid/resource/32243401-65b4-5caa-8875-2db35d187427>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2013-030> ;
+.
+
+<https://data.idnau.org/pid/resource/32361ef3-43ea-5919-9a9d-1e28b4a21e31>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-057> ;
+.
+
+<https://data.idnau.org/pid/resource/32a0cd05-599d-5ed2-aba9-4bfd73dc50b2>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-082> ;
+.
+
+<https://data.idnau.org/pid/resource/3389c1f5-1fbd-595b-9878-4964147348f6>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2018-001> ;
+.
+
+<https://data.idnau.org/pid/resource/339b8dc5-3233-5a73-b9ee-09d8c315cd2b>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-027> ;
+.
+
+<https://data.idnau.org/pid/resource/34de4d4f-0723-5bd8-a3be-e441c2861cea>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2016-056> ;
+.
+
+<https://data.idnau.org/pid/resource/35033b47-45d0-5fd2-9818-61c7abf9f734>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2016-053> ;
+.
+
+<https://data.idnau.org/pid/resource/351b0650-22d9-5dca-8edf-62293b66797e>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2017-020> ;
+.
+
+<https://data.idnau.org/pid/resource/3534edae-a9dc-5a04-9786-45a0591849fe>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-009> ;
+.
+
+<https://data.idnau.org/pid/resource/3704b194-a511-52a0-9652-e276fa14eaf4>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2016-023> ;
+.
+
+<https://data.idnau.org/pid/resource/380396ff-77c5-5247-9b71-5f76f5d8c623>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2019-008> ;
+.
+
+<https://data.idnau.org/pid/resource/3a0c2193-8bf7-5b7a-a5e4-4f2c90c2f9d7>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2018-024> ;
+.
+
+<https://data.idnau.org/pid/resource/3a743224-1889-5ce0-a296-3ed7f89b6d3d>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-018> ;
+.
+
+<https://data.idnau.org/pid/resource/3afcb71e-054b-5138-ac01-2f9ff9038eae>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2019-023> ;
+.
+
+<https://data.idnau.org/pid/resource/3ba43a7c-e955-5697-a842-2adf44be4f62>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2016-010> ;
+.
+
+<https://data.idnau.org/pid/resource/3bd9bab4-81b3-542d-b5e3-ecb34dc6ba26>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2016-024> ;
+.
+
+<https://data.idnau.org/pid/resource/3cff0190-6dd8-56aa-b674-ec335f52b5a6>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2016-048> ;
+.
+
+<https://data.idnau.org/pid/resource/3d52366d-66c7-51e4-99b0-5b5d046f584f>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2016-003> ;
+.
+
+<https://data.idnau.org/pid/resource/3e213645-1aca-5354-98d8-602cb4ef7af6>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2020-021> ;
+.
+
+<https://data.idnau.org/pid/resource/3ed8aa2e-7b6a-56c9-9638-1407209003da>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2013-067> ;
+.
+
+<https://data.idnau.org/pid/resource/3ed96e07-9b01-5474-adcd-d53d33c06bb0>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-044> ;
+.
+
+<https://data.idnau.org/pid/resource/3f5024ee-9624-5d39-bfc6-c101e149f46a>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-021> ;
+.
+
+<https://data.idnau.org/pid/resource/4075af8e-305e-57b3-a13d-72a0ab97c173>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2020-014> ;
+.
+
+<https://data.idnau.org/pid/resource/410b6eb6-abab-552d-8b1b-f47590d9c7c0>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/SI2014-011> ;
+.
+
+<https://data.idnau.org/pid/resource/411c4ece-a280-5392-99c7-6674e77d1baf>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2019-001> ;
+.
+
+<https://data.idnau.org/pid/resource/413aa4ad-aff4-5eb0-b36e-196445c63f3d>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2015-020> ;
+.
+
+<https://data.idnau.org/pid/resource/416e2a88-1fe9-54c2-8575-eea807789ab0>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/DI2014-001> ;
+.
+
+<https://data.idnau.org/pid/resource/427aa9dc-2bde-5e7f-b88a-84b3adede5dd>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-011> ;
+.
+
+<https://data.idnau.org/pid/resource/4291472e-e618-5550-844e-5930d754cde2>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2019-003> ;
+.
+
+<https://data.idnau.org/pid/resource/42bb483a-d50b-5277-85b9-a0b99484a24a>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2020-010> ;
+.
+
+<https://data.idnau.org/pid/resource/42f562ca-8a05-521f-ae60-dcd931d086dc>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/NI2018-002> ;
+.
+
+<https://data.idnau.org/pid/resource/457c0de8-2985-5d87-ae9e-aeb378968caf>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2016-018> ;
+.
+
+<https://data.idnau.org/pid/resource/468335de-9892-5d8b-910a-777b2279cfc1>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2013-061> ;
+.
+
+<https://data.idnau.org/pid/resource/48a781b2-fcb1-5edc-843a-47bcc4f386c8>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/DI2017-002> ;
+.
+
+<https://data.idnau.org/pid/resource/4ab76cfb-55e7-512a-8457-b9acfa48bff0>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2018-023> ;
+.
+
+<https://data.idnau.org/pid/resource/4bf2a1fa-49c8-5d91-8996-74d88222a98c>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-021> ;
+.
+
+<https://data.idnau.org/pid/resource/4bf63c05-094b-5834-b3d8-fb9bf5ab47cb>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/DI2017-004> ;
+.
+
+<https://data.idnau.org/pid/resource/4bf667be-9816-5c2b-97f3-f649ca8fad31>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-030> ;
+.
+
+<https://data.idnau.org/pid/resource/4c4475e4-9c70-54ab-95b2-22eccac20726>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/SI2014-017> ;
+.
+
+<https://data.idnau.org/pid/resource/4e765b1f-d0ad-59ab-966c-4abebe2f152e>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2019-012> ;
+.
+
+<https://data.idnau.org/pid/resource/4eade75e-3d80-5820-9056-7793f031ad72>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-075> ;
+.
+
+<https://data.idnau.org/pid/resource/4f3ce158-e5fc-54ee-abc8-2f4fd37d3cdb>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2017-007> ;
+.
+
+<https://data.idnau.org/pid/resource/4fc3d244-cb4e-5fcf-974d-b77e841b0ba3>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2016-041> ;
+.
+
+<https://data.idnau.org/pid/resource/505104e6-b310-5715-8a4c-3a4ec2e4b373>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2013-063> ;
+.
+
+<https://data.idnau.org/pid/resource/50da9c64-86ca-5821-8725-7b25ba136ddf>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2017-007> ;
+.
+
+<https://data.idnau.org/pid/resource/51098917-914f-5137-a913-cea6c8b81724>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-055> ;
+.
+
+<https://data.idnau.org/pid/resource/51ff4f02-cb82-545b-9687-7d5321516231>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2015-013> ;
+.
+
+<https://data.idnau.org/pid/resource/52156f1a-9454-56ac-954f-dab391cc5893>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-039> ;
+.
+
+<https://data.idnau.org/pid/resource/52f5dc6e-93d0-557a-8bd3-6fc42563970a>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2016-011> ;
+.
+
+<https://data.idnau.org/pid/resource/5326774d-e490-56db-b52d-3ba591329472>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-071> ;
+.
+
+<https://data.idnau.org/pid/resource/5358420c-de69-5728-8c71-013c6aaf810d>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2018-012> ;
+.
+
+<https://data.idnau.org/pid/resource/55b4fef1-e462-53f0-aa75-76955fc0973f>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2020-011> ;
+.
+
+<https://data.idnau.org/pid/resource/55c915d2-80e2-5468-b63b-ed0331e84734>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2016-046> ;
+.
+
+<https://data.idnau.org/pid/resource/5618bca8-47da-5dcb-8ac1-aaaff06637f7>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2013-062> ;
+.
+
+<https://data.idnau.org/pid/resource/5765b37e-100f-530c-84a7-3baf3fd5f322>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-025> ;
+.
+
+<https://data.idnau.org/pid/resource/58e92024-4432-5d53-89cf-01243796058a>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-015> ;
+.
+
+<https://data.idnau.org/pid/resource/5958d43d-cb6a-5a6c-83ba-29846955439d>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-083> ;
+.
+
+<https://data.idnau.org/pid/resource/59baffe7-e3f8-530c-942f-d46575351d31>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2014-002> ;
+.
+
+<https://data.idnau.org/pid/resource/59c59906-1a55-5553-9de5-6c08e48718ba>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2013-051> ;
+.
+
+<https://data.idnau.org/pid/resource/5a04df81-b2b7-5982-b6a9-ff0f6ba9a56f>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2016-018> ;
+.
+
+<https://data.idnau.org/pid/resource/5a864957-d2ba-57cd-b62e-295d74d1ff45>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-086> ;
+.
+
+<https://data.idnau.org/pid/resource/5b1f9c6f-a3e3-582f-8e83-48e4ba4f3949>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2015-022> ;
+.
+
+<https://data.idnau.org/pid/resource/5c2cccac-1254-58d4-b1e1-e5805c1f755d>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2016-026> ;
+.
+
+<https://data.idnau.org/pid/resource/5ce90ff7-91f9-5b0c-acdc-4bef8a683ef3>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-061> ;
+.
+
+<https://data.idnau.org/pid/resource/5d3a9394-a125-5dc4-8076-f8e80ae8acbb>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-003> ;
+.
+
+<https://data.idnau.org/pid/resource/5d4fb37a-87aa-5245-88f5-cf9f7da95a6b>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/DI2013-002> ;
+.
+
+<https://data.idnau.org/pid/resource/5d8ea1b8-1623-5af1-bbd2-fefee0d04616>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2018-001> ;
+.
+
+<https://data.idnau.org/pid/resource/5dd209c7-ac97-57ac-aec6-680f5d811e71>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-080> ;
+.
+
+<https://data.idnau.org/pid/resource/5e38b646-2bc6-54d6-b98a-959fe093534e>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2014-005> ;
+.
+
+<https://data.idnau.org/pid/resource/5ef38e36-6b40-5ee9-b7be-f5ee973a708a>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/DI2016-003> ;
+.
+
+<https://data.idnau.org/pid/resource/602f1e65-e6fe-5d2e-8098-ef99ece803f2>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2016-013> ;
+.
+
+<https://data.idnau.org/pid/resource/604d83f9-ef8f-5c5d-93aa-571bdb2cdf4e>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-007> ;
+.
+
+<https://data.idnau.org/pid/resource/60536efc-6856-53aa-ab6a-8d8556843874>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2016-042> ;
+.
+
+<https://data.idnau.org/pid/resource/609e3c38-6b2f-5810-83b0-46897d9bee41>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-047> ;
+.
+
+<https://data.idnau.org/pid/resource/619f354b-0aa2-5140-aa5a-90db7670b3e2>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-081> ;
+.
+
+<https://data.idnau.org/pid/resource/61c4e736-0537-5200-a28b-e100c22361ee>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-010> ;
+.
+
+<https://data.idnau.org/pid/resource/6216408b-56d2-5ada-bacc-531e80142676>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/SI2016-001> ;
+.
+
+<https://data.idnau.org/pid/resource/62e30274-9977-5239-b61a-40960470037d>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2016-019> ;
+.
+
+<https://data.idnau.org/pid/resource/637610b5-eed7-5bd0-ad21-c2a76e3911d1>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2016-009> ;
+.
+
+<https://data.idnau.org/pid/resource/64218a72-7623-578a-93ff-280c9e839724>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2018-019> ;
+.
+
+<https://data.idnau.org/pid/resource/645d1fb1-19c5-5341-957e-770878083007>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2016-047> ;
+.
+
+<https://data.idnau.org/pid/resource/64655a83-13db-5d37-9449-7ace87e707cf>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-037> ;
+.
+
+<https://data.idnau.org/pid/resource/64a837c5-5044-545b-802b-0837dfb766fd>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-036> ;
+.
+
+<https://data.idnau.org/pid/resource/64e9b12e-02d1-5b73-a0f5-5e8d514aa659>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2013-064> ;
+.
+
+<https://data.idnau.org/pid/resource/65185ad2-79d9-527f-8384-eae56388a75a>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2012-075> ;
+.
+
+<https://data.idnau.org/pid/resource/6550aa70-fbc6-5ac4-b63b-85dd492b66bc>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2017-006> ;
+.
+
+<https://data.idnau.org/pid/resource/659c09e3-da9f-5978-962f-7865809f9e2b>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2017-001> ;
+.
+
+<https://data.idnau.org/pid/resource/65a4610d-86cb-5931-9fb3-e57ae154d9ff>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-029> ;
+.
+
+<https://data.idnau.org/pid/resource/65e34242-aa8d-5ed6-b7a3-99296e4431ae>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2012-011> ;
+.
+
+<https://data.idnau.org/pid/resource/6631128f-197d-58ed-8cde-1c1a411646ad>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2019-017> ;
+.
+
+<https://data.idnau.org/pid/resource/665f0dcb-454e-5abb-9da5-a6de9c4ac0eb>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/SI2016-003> ;
+.
+
+<https://data.idnau.org/pid/resource/666fc6d2-882f-539e-9c67-c41e869da840>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2017-016> ;
+.
+
+<https://data.idnau.org/pid/resource/694989ba-095e-5626-af53-e976e0ce3d40>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-040> ;
+.
+
+<https://data.idnau.org/pid/resource/6a05a8f2-e20a-58c0-b7e5-6825f2a24319>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2019-029> ;
+.
+
+<https://data.idnau.org/pid/resource/6b354b2f-e3f6-574a-9441-cd1c347e405b>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-048> ;
+.
+
+<https://data.idnau.org/pid/resource/6b4758d4-906f-5082-8035-75a68cc7b70c>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-084> ;
+.
+
+<https://data.idnau.org/pid/resource/6bc7b52c-cf77-55ff-a6af-4efe32df0eea>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2020-018> ;
+.
+
+<https://data.idnau.org/pid/resource/6ccd99ff-1a7f-57ba-b205-4646cd4bcd9b>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2020-003> ;
+.
+
+<https://data.idnau.org/pid/resource/6d1be95f-ff68-543c-8805-960bc26207f5>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-014> ;
+.
+
+<https://data.idnau.org/pid/resource/6dde14b4-0c4c-537b-a166-fb1710cb8490>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2017-008> ;
+.
+
+<https://data.idnau.org/pid/resource/6e4ce6f5-6da3-5435-ac89-d65e8f1eb2eb>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2015-002> ;
+.
+
+<https://data.idnau.org/pid/resource/6e57e3f4-ff8f-5416-b800-0ddbc946991f>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-019> ;
+.
+
+<https://data.idnau.org/pid/resource/6eebc9bd-9f8a-5ad9-b24a-da4d486c5267>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2017-011> ;
+.
+
+<https://data.idnau.org/pid/resource/6f2a757e-f4b3-5abf-b933-55842a193306>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/SI2014-015> ;
+.
+
+<https://data.idnau.org/pid/resource/705bc638-4931-5fa7-8b25-a66db6ce12ca>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/SI2020-001> ;
+.
+
+<https://data.idnau.org/pid/resource/711dc4db-4413-518e-a7e1-da0791c81ae4>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-013> ;
+.
+
+<https://data.idnau.org/pid/resource/72104b63-e5bd-5c63-a280-0902c05d7e4f>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2019-022> ;
+.
+
+<https://data.idnau.org/pid/resource/72b74fe9-2558-5a38-830b-656b4ca54234>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-088> ;
+.
+
+<https://data.idnau.org/pid/resource/7500cca5-2335-5ee9-82fd-b6acbcc71913>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-031> ;
+.
+
+<https://data.idnau.org/pid/resource/75f5c42b-0361-5824-9401-4975601d4b82>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2013-056> ;
+.
+
+<https://data.idnau.org/pid/resource/76b0d5b0-c5e5-5c1f-8b65-ebc41e4030fe>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2008-005> ;
+.
+
+<https://data.idnau.org/pid/resource/77e31dc9-d48c-594f-a7a1-972c88a1c792>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/NI2020-001> ;
+.
+
+<https://data.idnau.org/pid/resource/77fb818a-4316-5b3e-91f5-fd82a0c68e96>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2017-014> ;
+.
+
+<https://data.idnau.org/pid/resource/7aa1e9ef-ad88-5567-b314-cbbacf27cb1d>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2016-030> ;
+.
+
+<https://data.idnau.org/pid/resource/7abf66cd-4440-5bb0-be52-9eb7f5b8c337>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-049> ;
+.
+
+<https://data.idnau.org/pid/resource/7ae7bdd3-e350-5078-b748-ab9ccd44ea5f>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-015> ;
+.
+
+<https://data.idnau.org/pid/resource/7b091acc-2576-5058-8ab0-7212dea6749a>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2018-017> ;
+.
+
+<https://data.idnau.org/pid/resource/7b89acda-7bfb-5247-8db5-ac83760639f6>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2020-005> ;
+.
+
+<https://data.idnau.org/pid/resource/7ba7d48a-c41d-571a-b352-00c36ae012df>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-067> ;
+.
+
+<https://data.idnau.org/pid/resource/7ba91f54-c966-517b-adb4-84ce9ed6ad7a>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-073> ;
+.
+
+<https://data.idnau.org/pid/resource/7d2ec51f-49c0-5f6a-842e-223d55cee5bf>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2013-001> ;
+.
+
+<https://data.idnau.org/pid/resource/7d6c4435-4fd8-5ff9-abcc-7d23be59f417>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2014-010> ;
+.
+
+<https://data.idnau.org/pid/resource/7da83e47-4b88-5f14-81e3-983a5ab166a8>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/SI2015-001> ;
+.
+
+<https://data.idnau.org/pid/resource/7e66fb24-d6af-517e-84be-ffa7c01375f3>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2016-005> ;
+.
+
+<https://data.idnau.org/pid/resource/7ee67f49-780d-57c2-b1d8-9a090556fcb7>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2019-030> ;
+.
+
+<https://data.idnau.org/pid/resource/7fba5b4a-84a5-5c4f-8b70-7bda401d3a7d>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2019-001> ;
+.
+
+<https://data.idnau.org/pid/resource/8067e464-92db-5673-b9a2-f50ef6e9269a>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/NI2018-006> ;
+.
+
+<https://data.idnau.org/pid/resource/80ab2f4a-58c0-5bc8-b1c1-72ba3be59627>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2013-052> ;
+.
+
+<https://data.idnau.org/pid/resource/8116d439-1000-52a8-8771-c548965629e3>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-010> ;
+.
+
+<https://data.idnau.org/pid/resource/826e0908-d3ad-5722-9b1b-917fe5aa04b8>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/NI2018-005> ;
+.
+
+<https://data.idnau.org/pid/resource/8317c11a-50b5-524e-bbf2-4ac2aed874f2>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2020-006> ;
+.
+
+<https://data.idnau.org/pid/resource/834f9eeb-84f6-5578-8cb1-be3a548b2f2b>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/DI2018-006> ;
+.
+
+<https://data.idnau.org/pid/resource/837e911e-87c8-5971-a466-761904443d4e>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2020-001> ;
+.
+
+<https://data.idnau.org/pid/resource/84a2aa20-d0ec-55d2-8023-0e26d05e28b0>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2016-002> ;
+.
+
+<https://data.idnau.org/pid/resource/85b8918c-1642-5ab8-8b8b-2908744c4cff>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2014-006> ;
+.
+
+<https://data.idnau.org/pid/resource/85d113db-652f-508f-a6e3-cb462508d5af>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2016-034> ;
+.
+
+<https://data.idnau.org/pid/resource/8602feba-bb14-5708-802f-52193a5d5a6c>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/DI2018-001> ;
+.
+
+<https://data.idnau.org/pid/resource/86e12f05-e08e-5dfa-9fb4-977f90a89820>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-032> ;
+.
+
+<https://data.idnau.org/pid/resource/87690413-f434-52d7-a292-ee00566e4d91>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/DI2016-001> ;
+.
+
+<https://data.idnau.org/pid/resource/88aa06bc-8927-5e51-b35b-e5c79a3eeeae>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/SI2017-002> ;
+.
+
+<https://data.idnau.org/pid/resource/898b29ad-cd5a-558b-a296-531491f68114>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2019-013> ;
+.
+
+<https://data.idnau.org/pid/resource/8a1425db-557a-538f-a4f4-18f6d7040240>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2016-033> ;
+.
+
+<https://data.idnau.org/pid/resource/8a3cb6e8-9231-50fd-ae9c-a4fed1777df0>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2016-051> ;
+.
+
+<https://data.idnau.org/pid/resource/8ad08f82-595f-5728-917c-324c70d9044b>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2019-015> ;
+.
+
+<https://data.idnau.org/pid/resource/8ad50b0d-943d-5f0a-ba1f-d4330c5b0ee3>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2020-015> ;
+.
+
+<https://data.idnau.org/pid/resource/8b0c7012-7608-5aed-a74d-74aeccc846de>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2020-010> ;
+.
+
+<https://data.idnau.org/pid/resource/8ccbc11e-f0eb-5779-9f92-880fd039bbfa>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-040> ;
+.
+
+<https://data.idnau.org/pid/resource/8cff45c4-c22e-5536-8009-83449ca1b64e>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-070> ;
+.
+
+<https://data.idnau.org/pid/resource/8db9628f-8d20-5c3d-a3c0-a221800d698a>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/SI2016-003> ;
+.
+
+<https://data.idnau.org/pid/resource/8e5eea6b-bd19-5823-944d-f2f6e3b8b735>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2017-005> ;
+.
+
+<https://data.idnau.org/pid/resource/90605747-5b80-582b-81e9-05eb8dc7d2ac>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-087> ;
+.
+
+<https://data.idnau.org/pid/resource/90922198-2fba-5d72-a698-e5d01e84c6c0>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2019-019> ;
+.
+
+<https://data.idnau.org/pid/resource/91a6aa6e-e1c0-59ee-abe1-9d2e52152f7f>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2017-008> ;
+.
+
+<https://data.idnau.org/pid/resource/91f4899a-acb4-56ee-a9b3-c0692f0eddbe>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2017-003> ;
+.
+
+<https://data.idnau.org/pid/resource/9214d64b-52e9-5fd9-9bb7-4a1a7d226239>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/DI2019-001> ;
+.
+
+<https://data.idnau.org/pid/resource/92b65307-390d-5708-84ac-dcaa9b85e1d0>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-042> ;
+.
+
+<https://data.idnau.org/pid/resource/92e550d9-11d3-5b67-82d2-dd1a62b3abf6>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2017-013> ;
+.
+
+<https://data.idnau.org/pid/resource/930865fb-736d-5871-820c-4019e9035fdc>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2014-011> ;
+.
+
+<https://data.idnau.org/pid/resource/933bafa2-17be-543b-9874-178148de0190>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2016-021> ;
+.
+
+<https://data.idnau.org/pid/resource/936657b9-d8dd-5851-928b-eb968e20c990>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-017> ;
+.
+
+<https://data.idnau.org/pid/resource/953bce22-a927-549a-8fb1-490e878ca2f5>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2020-013> ;
+.
+
+<https://data.idnau.org/pid/resource/956b1d6b-ab02-51b3-b530-81bc4727c6f1>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2016-060> ;
+.
+
+<https://data.idnau.org/pid/resource/959280fb-d1ae-5e18-ad0d-e65b72d85ece>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/NI2019-005> ;
+.
+
+<https://data.idnau.org/pid/resource/95ac6e1b-c5f3-5723-9f0d-d8489b5cc741>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/SI2019-002> ;
+.
+
+<https://data.idnau.org/pid/resource/9664f0d7-f436-5cf7-856f-50cdde03002e>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2019-007> ;
+.
+
+<https://data.idnau.org/pid/resource/966ba994-eff1-578e-bd49-aff4c5b2c055>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2016-007> ;
+.
+
+<https://data.idnau.org/pid/resource/96b89a0b-dcce-5929-b01c-b914530b4c80>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2016-028> ;
+.
+
+<https://data.idnau.org/pid/resource/97385cf0-745c-5c3c-b8c9-3083dc7420b6>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2019-003> ;
+.
+
+<https://data.idnau.org/pid/resource/98a6f912-ebe9-5f89-8f70-9b2f88a6b720>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2019-014> ;
+.
+
+<https://data.idnau.org/pid/resource/99732e74-45b1-5347-854e-a135423ba289>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-038> ;
+.
+
+<https://data.idnau.org/pid/resource/9a57f242-8f66-5c96-91b5-afab26b9f46c>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-078> ;
+.
+
+<https://data.idnau.org/pid/resource/9b7baeab-5c78-5e82-a672-0883bb47c6fb>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2020-004> ;
+.
+
+<https://data.idnau.org/pid/resource/9b7cd914-202c-5cd2-aefb-40e5ce385089>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2014-014> ;
+.
+
+<https://data.idnau.org/pid/resource/9bbd8b0b-e989-5d6f-bbdf-c2ea4bf5d389>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2016-013> ;
+.
+
+<https://data.idnau.org/pid/resource/9bde9ca9-5d70-59ab-8d5c-c2615d438a16>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/NI2019-006> ;
+.
+
+<https://data.idnau.org/pid/resource/9c2b12d5-6d79-5ab0-bb94-9bc50a7eeff5>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2015-009> ;
+.
+
+<https://data.idnau.org/pid/resource/9c81cbd2-ee65-5880-8626-4a3180bfb3bc>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-067> ;
+.
+
+<https://data.idnau.org/pid/resource/9c828738-78b9-5784-b664-fa1154fd95db>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-085> ;
+.
+
+<https://data.idnau.org/pid/resource/9de5f7b7-7a89-568f-b161-0dbb7f749811>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/VI2016-001> ;
+.
+
+<https://data.idnau.org/pid/resource/9e9984d9-6c28-56ec-a1cf-4171b016365d>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-027> ;
+.
+
+<https://data.idnau.org/pid/resource/9edce952-6e70-5609-a53a-e41be5f7766c>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-020> ;
+.
+
+<https://data.idnau.org/pid/resource/a08d5ada-8555-5e56-ae74-5232ce9186c6>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-030> ;
+.
+
+<https://data.idnau.org/pid/resource/a0c18a20-16b5-5e19-ada2-32b80c48e9b2>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-050> ;
+.
+
+<https://data.idnau.org/pid/resource/a2451175-e914-53e2-8919-0df49c6a51ec>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-041> ;
+.
+
+<https://data.idnau.org/pid/resource/a292558e-0e77-5d93-86f0-4de33822fb35>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2016-015> ;
+.
+
+<https://data.idnau.org/pid/resource/a36c5c90-2a0a-5ad9-8077-f35aa0359f44>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/DI2017-003> ;
+.
+
+<https://data.idnau.org/pid/resource/a3938b73-ffd6-5ca7-a4c8-ad191d68dd73>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2017-002> ;
+.
+
+<https://data.idnau.org/pid/resource/a3e5a485-66e2-53a3-98b4-0909da5a42aa>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-005> ;
+.
+
+<https://data.idnau.org/pid/resource/a4eca2ca-62de-5623-8a46-5acb378cb468>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/DI2020-003> ;
+.
+
+<https://data.idnau.org/pid/resource/a4ed8e53-582b-5a1e-adb7-db232a0254cc>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2016-001> ;
+.
+
+<https://data.idnau.org/pid/resource/a5eee185-254a-5a8c-9fdb-44ada80554b1>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-060> ;
+.
+
+<https://data.idnau.org/pid/resource/a6ee6e63-9e56-5f64-85a5-39889461726c>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/SI2017-001> ;
+.
+
+<https://data.idnau.org/pid/resource/a7486556-14db-5b23-9b32-bb88cff4aa2d>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2017-012> ;
+.
+
+<https://data.idnau.org/pid/resource/a7d8a80e-ce94-5644-9c56-356684c16a5d>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2013-068> ;
+.
+
+<https://data.idnau.org/pid/resource/a856257c-480f-5dc4-a0e1-4393286a9c8d>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2018-028> ;
+.
+
+<https://data.idnau.org/pid/resource/a9db9dd5-07de-57ad-9137-7ebc6c866490>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/SI2015-003> ;
+.
+
+<https://data.idnau.org/pid/resource/aad41d40-e97c-5486-9011-0d58839fc434>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2020-005> ;
+.
+
+<https://data.idnau.org/pid/resource/ab448c1c-dbb0-5c07-98e6-b3c3cca27a2d>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-045> ;
+.
+
+<https://data.idnau.org/pid/resource/ab69349f-3299-5678-ac97-c5d6d4c16096>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2020-002> ;
+.
+
+<https://data.idnau.org/pid/resource/ab793ce2-56c9-5ae1-b9e1-7dcfa2f7a8d3>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2020-016> ;
+.
+
+<https://data.idnau.org/pid/resource/ab7f6908-fb9c-5426-bdbc-5a842830df34>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2013-070> ;
+.
+
+<https://data.idnau.org/pid/resource/aba62f70-336e-5825-a67c-609687b59d3e>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2017-017> ;
+.
+
+<https://data.idnau.org/pid/resource/ac56bda9-3f5f-59c5-916b-d0dfcbb07f8e>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2016-044> ;
+.
+
+<https://data.idnau.org/pid/resource/aca9a27b-c257-5603-b4be-9afe4986acff>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-052> ;
+.
+
+<https://data.idnau.org/pid/resource/acdf7f88-f7b6-558d-9fb4-a09d09e7243f>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2016-024> ;
+.
+
+<https://data.idnau.org/pid/resource/adb0b24f-ac4f-518a-a280-845d39bd4987>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2014-007> ;
+.
+
+<https://data.idnau.org/pid/resource/ade30803-188d-5674-b07d-e94df0a45d4b>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2016-010> ;
+.
+
+<https://data.idnau.org/pid/resource/ae782ebc-ae31-53b8-a512-38d5cf586b24>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2018-018> ;
+.
+
+<https://data.idnau.org/pid/resource/aec35ba5-729d-54c5-b635-68ddbbdc5577>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2016-055> ;
+.
+
+<https://data.idnau.org/pid/resource/aec84f56-efcb-5d6f-8e8a-e9e97a23d754>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-004> ;
+.
+
+<https://data.idnau.org/pid/resource/af6ae0d0-c1fd-583d-84b8-12c4701581c4>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2016-006> ;
+.
+
+<https://data.idnau.org/pid/resource/b05ea554-4855-5dc1-9b8b-9ecec65fea83>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2019-024> ;
+.
+
+<https://data.idnau.org/pid/resource/b078a1a0-a620-57b9-a9bc-502fa2cda283>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-047> ;
+.
+
+<https://data.idnau.org/pid/resource/b07ed4be-c898-5433-b8d8-1d6a003fad8f>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-016> ;
+.
+
+<https://data.idnau.org/pid/resource/b19b676d-3cbb-5914-90fe-756d2574d901>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-034> ;
+.
+
+<https://data.idnau.org/pid/resource/b1b07809-4aab-557d-900d-a1cbba059668>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/VI2013-001> ;
+.
+
+<https://data.idnau.org/pid/resource/b27a0fc0-993c-53c7-8575-ad8ad174894c>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2018-009> ;
+.
+
+<https://data.idnau.org/pid/resource/b2af6b95-662b-5c41-89d5-6d820feeaab8>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-051> ;
+.
+
+<https://data.idnau.org/pid/resource/b2e7d705-cb9e-5777-b7f0-d990caed2e37>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/SI2014-014> ;
+.
+
+<https://data.idnau.org/pid/resource/b40fda8f-7491-51e9-8bc0-3f925a179e70>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-022> ;
+.
+
+<https://data.idnau.org/pid/resource/b433d4f9-e1d0-5691-afad-388220876765>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-046> ;
+.
+
+<https://data.idnau.org/pid/resource/b447c100-6513-5e74-b60d-7090c63b0512>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-032> ;
+.
+
+<https://data.idnau.org/pid/resource/b590bc5e-2e5f-510c-97d8-bb929e5247c0>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2016-006> ;
+.
+
+<https://data.idnau.org/pid/resource/b64bdeeb-a698-5135-be62-e0603e5fd6ff>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-058> ;
+.
+
+<https://data.idnau.org/pid/resource/b6d2be53-9413-5cd9-ad76-656dfc05f3e2>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-020> ;
+.
+
+<https://data.idnau.org/pid/resource/b6ed8acb-db2f-5598-be98-80f36a31fb6e>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2018-022> ;
+.
+
+<https://data.idnau.org/pid/resource/b75d8f15-f23d-5935-9d69-b9d9de40eb81>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2016-007> ;
+.
+
+<https://data.idnau.org/pid/resource/b7b76c30-702e-5ecb-83ca-5acd5d6deb63>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2016-032> ;
+.
+
+<https://data.idnau.org/pid/resource/b9b1f2d6-eb48-5a70-b66c-7e09ad760f0f>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2013-049> ;
+.
+
+<https://data.idnau.org/pid/resource/bae5dc7c-2222-5aea-a5a3-f4f6eb332ffd>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2014-015> ;
+.
+
+<https://data.idnau.org/pid/resource/bb92ed8d-a794-53ce-8d3f-40dcc55d1ae7>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/DI2020-002> ;
+.
+
+<https://data.idnau.org/pid/resource/bbb98696-6576-58b8-8b23-7a93d830af35>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2016-037> ;
+.
+
+<https://data.idnau.org/pid/resource/bc184083-dd28-5ee5-a6e3-dbe17fda2f41>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2017-010> ;
+.
+
+<https://data.idnau.org/pid/resource/bc8ffdfc-13b6-5d2f-bdc4-a670bc818226>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/VI2019-001> ;
+.
+
+<https://data.idnau.org/pid/resource/bceb7619-929d-5d20-8117-d843476b5d7a>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-033> ;
+.
+
+<https://data.idnau.org/pid/resource/bd6038a3-5d82-55cf-9651-191876a4a9fb>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2013-058> ;
+.
+
+<https://data.idnau.org/pid/resource/bddb6bb1-d843-5a9c-a135-7dd016739283>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-087> ;
+.
+
+<https://data.idnau.org/pid/resource/bf1fe042-10e1-557d-888a-aa7de5359e6a>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2011-048> ;
+.
+
+<https://data.idnau.org/pid/resource/bf213d58-9d77-5ee5-89db-03cf36e5a4da>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-054> ;
+.
+
+<https://data.idnau.org/pid/resource/c0113038-40bc-5fa8-930b-8670c90e4b25>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2018-004> ;
+.
+
+<https://data.idnau.org/pid/resource/c022bff8-db56-5510-9871-e8856c0712a3>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2016-020> ;
+.
+
+<https://data.idnau.org/pid/resource/c0d866be-4d63-5701-ae27-d9fa9f409f0c>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-029> ;
+.
+
+<https://data.idnau.org/pid/resource/c116fa55-0a66-509c-ab04-d9b116d7374f>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/VI2013-005> ;
+.
+
+<https://data.idnau.org/pid/resource/c140f857-3e7e-5b00-b718-6e787add310a>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2015-001> ;
+.
+
+<https://data.idnau.org/pid/resource/c1953534-2c56-506d-8d5f-7d70107c75fb>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/NI2018-007> ;
+.
+
+<https://data.idnau.org/pid/resource/c24d87c5-e57b-578f-90c0-8636fa73b910>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2018-025> ;
+.
+
+<https://data.idnau.org/pid/resource/c2d5ba9b-465b-5a8e-bfa8-5919f363d863>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-088> ;
+.
+
+<https://data.idnau.org/pid/resource/c34f80d0-d2e7-5737-81cc-6c1c7d957eac>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2017-006> ;
+.
+
+<https://data.idnau.org/pid/resource/c40227d9-bb76-506c-a27f-f38a113103e7>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2018-006> ;
+.
+
+<https://data.idnau.org/pid/resource/c4144ebd-a4a6-5288-9e15-0faa7d3dbcd5>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2017-004> ;
+.
+
+<https://data.idnau.org/pid/resource/c4432287-50a6-5e55-b035-7d7c91ed52aa>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-031> ;
+.
+
+<https://data.idnau.org/pid/resource/c4f4a681-7a1e-5477-b0e4-7a7cba8e253c>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-026> ;
+.
+
+<https://data.idnau.org/pid/resource/c5ff8f90-5bcc-5744-97a8-35b0da363861>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2014-013> ;
+.
+
+<https://data.idnau.org/pid/resource/c61ae590-c055-55f9-83ec-9ff214be8a30>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-035> ;
+.
+
+<https://data.idnau.org/pid/resource/c6a76489-b1f3-5700-8304-62e9069ca438>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2017-014> ;
+.
+
+<https://data.idnau.org/pid/resource/c7245831-4432-57a0-b545-3b9aa44113c0>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-090> ;
+.
+
+<https://data.idnau.org/pid/resource/c7f87471-acdd-5434-a359-5bb8e63f3eb2>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-034> ;
+.
+
+<https://data.idnau.org/pid/resource/c7f9c23d-73b8-59b8-adb2-1cb1c5cef4d0>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2017-016> ;
+.
+
+<https://data.idnau.org/pid/resource/c8241f99-959c-5bc9-9490-1d3699fb9a4a>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2020-012> ;
+.
+
+<https://data.idnau.org/pid/resource/c82d542c-aeb3-5ac3-a0e6-63d5ee6ab90b>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2013-069> ;
+.
+
+<https://data.idnau.org/pid/resource/c86de287-8eff-54c6-80e6-fa1ade32dabe>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/SI2003-004> ;
+.
+
+<https://data.idnau.org/pid/resource/c8df4cec-b8f6-5e98-a76e-1d598be6a59a>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2017-004> ;
+.
+
+<https://data.idnau.org/pid/resource/c9956cfe-ec9f-5328-a6c2-64bd570a3559>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-059> ;
+.
+
+<https://data.idnau.org/pid/resource/c9f1134c-d618-5cdc-9708-aa841a717461>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2016-012> ;
+.
+
+<https://data.idnau.org/pid/resource/ca00f931-d641-536a-85de-b0da16b4bd61>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-037> ;
+.
+
+<https://data.idnau.org/pid/resource/cb115741-b4db-5989-956c-fd19b57855d4>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2020-013> ;
+.
+
+<https://data.idnau.org/pid/resource/cb5743f3-cbbd-5b1e-b16b-b75acb8000e7>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2020-008> ;
+.
+
+<https://data.idnau.org/pid/resource/cc361841-4d2e-5319-a21c-d4972d80706f>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/NI2019-004> ;
+.
+
+<https://data.idnau.org/pid/resource/cc514c0c-3634-53ec-9cc7-56fd550d00f5>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-074> ;
+.
+
+<https://data.idnau.org/pid/resource/cca89f00-03a5-5468-9af4-1574d47e2121>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2019-005> ;
+.
+
+<https://data.idnau.org/pid/resource/cd10a06e-416c-54ec-86df-d83078dd0f5f>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-018> ;
+.
+
+<https://data.idnau.org/pid/resource/cd62d5af-4259-5f6e-a835-dae01cecda4e>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/SI2016-004> ;
+.
+
+<https://data.idnau.org/pid/resource/cdaaceba-675f-55e0-a0fa-e0dfcf65d2e7>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2018-021> ;
+.
+
+<https://data.idnau.org/pid/resource/cde6199d-7f54-5656-9778-094c93ddaabc>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-023> ;
+.
+
+<https://data.idnau.org/pid/resource/ce3c1ce4-615b-56ed-93fa-c787bdc76282>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-002> ;
+.
+
+<https://data.idnau.org/pid/resource/ce94c142-f9c9-59e0-9b0d-e972369c2e3b>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2016-011> ;
+.
+
+<https://data.idnau.org/pid/resource/cedbbaee-f435-53ca-ae82-bfeafb28f032>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-065> ;
+.
+
+<https://data.idnau.org/pid/resource/cee618af-d803-566b-bf0f-7c5de06547e3>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2016-012> ;
+.
+
+<https://data.idnau.org/pid/resource/cf53f183-816b-5272-9f23-1d15802f85c6>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2020-015> ;
+.
+
+<https://data.idnau.org/pid/resource/cf665494-c34f-53fa-a7b2-dd607fa8b2ab>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2019-026> ;
+.
+
+<https://data.idnau.org/pid/resource/cfa873fd-34de-50e6-9d78-701c81ca24c3>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/SI2016-003> ;
+.
+
+<https://data.idnau.org/pid/resource/d0c8ac43-ba43-5f46-b69a-d941ecaf1268>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2018-002> ;
+.
+
+<https://data.idnau.org/pid/resource/d0fdb8d4-f127-5350-a1fe-562a730b9bb0>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-070> ;
+.
+
+<https://data.idnau.org/pid/resource/d1f2a166-64d6-5a63-a2b1-7d817c366049>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2016-005> ;
+.
+
+<https://data.idnau.org/pid/resource/d26d860e-3462-5d69-be2f-ab5114d8752e>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/SI2016-003> ;
+.
+
+<https://data.idnau.org/pid/resource/d26fea3e-c57a-5c32-80bc-623f1cc541ea>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-092> ;
+.
+
+<https://data.idnau.org/pid/resource/d2a98623-47c7-502f-a4a5-63940169177b>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2016-020> ;
+.
+
+<https://data.idnau.org/pid/resource/d2e23597-c83e-5ae9-b8c6-f3cc0d8f3f0b>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/SI2014-012> ;
+.
+
+<https://data.idnau.org/pid/resource/d2ee586d-ba95-5adb-99d9-ca4d393a92bc>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-017> ;
+.
+
+<https://data.idnau.org/pid/resource/d3bfc412-119e-5862-ac7d-2138d5a03c61>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2016-008> ;
+.
+
+<https://data.idnau.org/pid/resource/d3d72711-dc8e-5ef2-9539-1d905c380963>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/DI2004-017> ;
+.
+
+<https://data.idnau.org/pid/resource/d3f66b19-4625-58ae-b5c1-7cfab5b4bc55>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2020-007> ;
+.
+
+<https://data.idnau.org/pid/resource/d4cbdf44-59f1-53ca-823a-ba7f3cb1cefe>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2015-003> ;
+.
+
+<https://data.idnau.org/pid/resource/d4ce9f24-a76b-5b2b-825f-5f1f9bff4b0e>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2014-012> ;
+.
+
+<https://data.idnau.org/pid/resource/d533ad95-cee5-50f9-998b-212e7794e5a2>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/DI2015-001> ;
+.
+
+<https://data.idnau.org/pid/resource/d71dc584-0be4-504c-b8ed-3b36038c5533>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/DI2017-005> ;
+.
+
+<https://data.idnau.org/pid/resource/d7945e25-c6d5-5816-af76-07fc0ead91b2>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2016-016> ;
+.
+
+<https://data.idnau.org/pid/resource/d84c53a7-6e90-50b3-a25c-a19ede46a04c>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-001> ;
+.
+
+<https://data.idnau.org/pid/resource/d8acf48a-2455-5732-a853-ba7cb416b859>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-069> ;
+.
+
+<https://data.idnau.org/pid/resource/d9a5bef8-cad7-5c29-9006-6503e3ad26ce>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-080> ;
+.
+
+<https://data.idnau.org/pid/resource/db0ec244-f454-560b-a1e5-d32ce740705e>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2016-052> ;
+.
+
+<https://data.idnau.org/pid/resource/dbacac51-222e-543a-bfdc-25d3cfdef5e5>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-064> ;
+.
+
+<https://data.idnau.org/pid/resource/dc18284b-7fb6-5943-8f73-cddc82dfb82d>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-019> ;
+.
+
+<https://data.idnau.org/pid/resource/dc20e946-76f6-54bf-b871-ec3cd265f0cd>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/SI2020-002> ;
+.
+
+<https://data.idnau.org/pid/resource/dcaeffa0-a915-5e7a-99b6-e5811c76c613>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2016-050> ;
+.
+
+<https://data.idnau.org/pid/resource/dcff469d-8e84-5cbb-b888-cfd7fc64b930>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2016-022> ;
+.
+
+<https://data.idnau.org/pid/resource/dd1ba6fb-89fd-52df-80c7-fd502b772669>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/NI2019-002> ;
+.
+
+<https://data.idnau.org/pid/resource/dd2a32aa-a53f-526d-9866-e7d696b06c37>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/NI2018-008> ;
+.
+
+<https://data.idnau.org/pid/resource/dd9d0d08-0289-59fa-8578-20b82397855e>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2013-055> ;
+.
+
+<https://data.idnau.org/pid/resource/df73302d-fd79-50a7-9f46-5e4b047215b9>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2019-004> ;
+.
+
+<https://data.idnau.org/pid/resource/dfdd7435-fde0-5a23-b9fb-77eafb78947d>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2016-035> ;
+.
+
+<https://data.idnau.org/pid/resource/e067d656-3ee5-51b4-bebd-0be13d0afd06>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/DI2018-007> ;
+.
+
+<https://data.idnau.org/pid/resource/e099ae49-d1b8-560b-9d55-6c771012e44a>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2016-059> ;
+.
+
+<https://data.idnau.org/pid/resource/e0d1890a-4a6c-5a14-af61-292dfccbd93f>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-007> ;
+.
+
+<https://data.idnau.org/pid/resource/e0fc427d-ea9e-508c-8eaf-f2f18bc27cd3>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2020-001> ;
+.
+
+<https://data.idnau.org/pid/resource/e0ffe295-ac9b-5201-ba14-1e2133cba3d5>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-004> ;
+.
+
+<https://data.idnau.org/pid/resource/e21586c5-5cf6-567a-a1f5-e908dc8c2809>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2016-015> ;
+.
+
+<https://data.idnau.org/pid/resource/e2cfb29e-e273-5b16-b246-063658fedb83>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2019-020> ;
+.
+
+<https://data.idnau.org/pid/resource/e3048035-bcc3-5e76-a043-2872de45544e>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2014-009> ;
+.
+
+<https://data.idnau.org/pid/resource/e30a332c-9a7b-50dd-93ab-05c0a4b2b23a>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2018-014> ;
+.
+
+<https://data.idnau.org/pid/resource/e31a13c0-a507-59d6-bb8d-d1313c01b081>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-076> ;
+.
+
+<https://data.idnau.org/pid/resource/e39c1b78-116f-5fc5-907a-917584f5db1b>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2019-016> ;
+.
+
+<https://data.idnau.org/pid/resource/e3e6a84e-c6b1-53db-bf41-cd29ac30de97>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2016-008> ;
+.
+
+<https://data.idnau.org/pid/resource/e450e34e-9806-5ed5-ba85-37a01c121064>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2020-002> ;
+.
+
+<https://data.idnau.org/pid/resource/e4cab702-77cf-5020-8a40-6900b67abe66>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2014-004> ;
+.
+
+<https://data.idnau.org/pid/resource/e53f0dce-01b6-55cb-965b-123f7496b3af>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2019-028> ;
+.
+
+<https://data.idnau.org/pid/resource/e56b3ed0-4cc8-5adf-8208-c15b5a543f57>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2013-065> ;
+.
+
+<https://data.idnau.org/pid/resource/e5e673cf-1468-58e9-8a7b-d980446faf82>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2016-017> ;
+.
+
+<https://data.idnau.org/pid/resource/e6e08f36-9ac8-58ed-b65b-c0098faa2b61>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2016-049> ;
+.
+
+<https://data.idnau.org/pid/resource/e7660da4-8ea2-561a-8262-5af21e20ce63>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2016-003> ;
+.
+
+<https://data.idnau.org/pid/resource/e7e1102e-5827-58e3-ad2b-37707821e0ef>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2018-005> ;
+.
+
+<https://data.idnau.org/pid/resource/e812ef52-1669-5d30-90d5-4c187d8e3786>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/DI2020-001> ;
+.
+
+<https://data.idnau.org/pid/resource/e81ed582-6eee-54ea-b43b-27744a0afc84>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2013-047> ;
+.
+
+<https://data.idnau.org/pid/resource/e869aba8-b3e3-5f18-9a09-7cec50759288>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2016-054> ;
+.
+
+<https://data.idnau.org/pid/resource/e88d6a6f-0195-58f5-81b3-08f9cd40c4d4>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2017-009> ;
+.
+
+<https://data.idnau.org/pid/resource/e960df18-5565-50cf-b3b9-003c73a56773>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-056> ;
+.
+
+<https://data.idnau.org/pid/resource/ea41512a-a206-5d36-92cb-7ad76c0d7c2c>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2019-009> ;
+.
+
+<https://data.idnau.org/pid/resource/eae2ad02-8bec-5e79-9198-b082107f6ff6>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2020-011> ;
+.
+
+<https://data.idnau.org/pid/resource/eae936fb-9e52-584e-bcca-00e0a0c6e1ef>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2018-008> ;
+.
+
+<https://data.idnau.org/pid/resource/eb4b9730-7429-5115-887e-1d29494e5a1b>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2018-003> ;
+.
+
+<https://data.idnau.org/pid/resource/ec90b0a4-8a63-5fac-9682-813bb8426194>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2013-059> ;
+.
+
+<https://data.idnau.org/pid/resource/ec9bf922-69c2-5737-acde-949bb36b8ef1>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2017-011> ;
+.
+
+<https://data.idnau.org/pid/resource/eca5401f-b120-5121-8ecc-b4b61a0c15c6>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2020-003> ;
+.
+
+<https://data.idnau.org/pid/resource/ed2fb8ee-67ba-57ea-b1ec-ad7320783b6b>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/SI2015-002> ;
+.
+
+<https://data.idnau.org/pid/resource/ed538cfc-462e-5067-b47d-2ed33ff8f87b>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/SI2014-016> ;
+.
+
+<https://data.idnau.org/pid/resource/edba5b0e-aec5-510e-afaa-3ac8e6f4bae7>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-028> ;
+.
+
+<https://data.idnau.org/pid/resource/ef866cf1-f800-5339-943c-ae20639988ff>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-039> ;
+.
+
+<https://data.idnau.org/pid/resource/f0536e17-19d0-5ebe-8225-60ae2ff67ed8>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2013-053> ;
+.
+
+<https://data.idnau.org/pid/resource/f204f34b-9e87-55c9-b94f-9faeac8b1963>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-073> ;
+.
+
+<https://data.idnau.org/pid/resource/f25208a4-1044-5769-9f66-a67b1517a9b9>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2014-004> ;
+.
+
+<https://data.idnau.org/pid/resource/f25ab29c-f575-58af-865b-f413e616a6a8>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/NI2018-004> ;
+.
+
+<https://data.idnau.org/pid/resource/f280fb25-13a9-590a-bed0-f1747cf98118>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/NI2014-001> ;
+.
+
+<https://data.idnau.org/pid/resource/f340382f-f5c6-5d33-b758-f54f99f184a7>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-024> ;
+.
+
+<https://data.idnau.org/pid/resource/f369334d-61c6-57ff-a077-46fdf8f2b2be>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/DI2018-005> ;
+.
+
+<https://data.idnau.org/pid/resource/f370809f-93a7-55c3-8de7-7f5c8ad01513>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2017-018> ;
+.
+
+<https://data.idnau.org/pid/resource/f4487cde-51ab-586b-b2e7-e7c7b36c58da>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-046> ;
+.
+
+<https://data.idnau.org/pid/resource/f49f40a0-7600-5686-8231-7d7f9acf34b4>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2016-031> ;
+.
+
+<https://data.idnau.org/pid/resource/f5182ec0-d681-5ff4-9020-2c936becbebe>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2013-009> ;
+.
+
+<https://data.idnau.org/pid/resource/f542b1b2-dc65-5855-98bc-8f7a8ea105cf>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/SI2014-005> ;
+.
+
+<https://data.idnau.org/pid/resource/f578de9a-24b7-5948-86c3-16f337f636c6>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2016-036> ;
+.
+
+<https://data.idnau.org/pid/resource/f607dd46-9bfb-5b6b-a75b-1fe13857372c>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/SI2018-004> ;
+.
+
+<https://data.idnau.org/pid/resource/f62c795e-c60e-5697-a413-62ea6a772134>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-025> ;
+.
+
+<https://data.idnau.org/pid/resource/f66c67dc-fd7c-52ec-9ef8-50246c121070>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2017-021> ;
+.
+
+<https://data.idnau.org/pid/resource/f69b74f0-4cdd-59fb-9ea6-29580e8e266a>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-041> ;
+.
+
+<https://data.idnau.org/pid/resource/f6ea6b75-de70-568e-992a-6d0d324507ac>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2016-038> ;
+.
+
+<https://data.idnau.org/pid/resource/f90a2bb5-40fb-5c78-bfed-6d1e1fb3b753>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-038> ;
+.
+
+<https://data.idnau.org/pid/resource/f91da402-acb8-54ff-bd82-275eced95fc6>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/NI2019-001> ;
+.
+
+<https://data.idnau.org/pid/resource/f9a622db-7e8f-5cb9-a631-be90410b26ac>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2014-062> ;
+.
+
+<https://data.idnau.org/pid/resource/fbdd8d70-8986-588f-b8da-c80298d49b86>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2019-021> ;
+.
+
+<https://data.idnau.org/pid/resource/fbe534f0-2dfa-5500-8ac1-edab916b7d6f>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2015-016> ;
+.
+
+<https://data.idnau.org/pid/resource/fc555b64-a91f-5d5e-9bae-0bcecdf74097>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/DI2020-004> ;
+.
+
+<https://data.idnau.org/pid/resource/fd063731-c06d-5616-9f4c-584741006907>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2019-006> ;
+.
+
+<https://data.idnau.org/pid/resource/fd11567e-288e-574f-8c01-d7a5df6ddf54>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2013-050> ;
+.
+
+<https://data.idnau.org/pid/resource/fd7af090-19ba-5759-9d0b-32a52a736b8e>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/DI2014-002> ;
+.
+
+<https://data.idnau.org/pid/resource/fde01498-fca5-5e13-8cbc-f567fd324c64>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2018-015> ;
+.
+
+<https://data.idnau.org/pid/resource/feda04d7-0225-5c37-aced-7375ef208496>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/QI2016-014> ;
+.
+
+<https://data.idnau.org/pid/nntt/DI2004-017>
+    sdo:name "Mataranka Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/DI2008-002>
+    sdo:name "Kalkarindji Indigenous Land Use Agreement" ;
+.
+
+<https://data.idnau.org/pid/nntt/DI2013-002>
+    sdo:name "Lot 6, Town Of Hart Range" ;
+.
+
+<https://data.idnau.org/pid/nntt/DI2014-001>
+    sdo:name "Lots 112(A), 113(A) And 114(A) Town Of Hart Range" ;
+.
+
+<https://data.idnau.org/pid/nntt/DI2014-002>
+    sdo:name "Kalkarindji Township Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/DI2014-003>
+    sdo:name "Ammaroo Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/DI2015-001>
+    sdo:name "Batchelor Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/DI2016-001>
+    sdo:name "Neutral Junction Locality Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/DI2016-003>
+    sdo:name "Jervois Project Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/DI2017-002>
+    sdo:name "Red Gum Store Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/DI2017-003>
+    sdo:name "Northern Gas Pipeline: Phillip Creek Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/DI2017-004>
+    sdo:name "Northern Gas Pipeline: Clc Ucl Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/DI2017-005>
+    sdo:name "Northern Gas Pipeline: Clc Tennant Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/DI2018-001>
+    sdo:name "Doojum Cla Nt Portion 4984 Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/DI2018-005>
+    sdo:name "Tanami Gas Pipeline: Napperby Perpetual Pastoral Lease Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/DI2018-006>
+    sdo:name "Tanami Gas Pipeline: Narwietooma Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/DI2018-007>
+    sdo:name "Tanami Gas Pipeline: Mt Doreen Perpetual Pastoral Lease Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/DI2018-008>
+    sdo:name "Project Sea Dragon Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/DI2019-001>
+    sdo:name "Canteen Creek Area Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/DI2020-001>
+    sdo:name "Dingo Gas Pipeline Agreement Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/DI2020-002>
+    sdo:name "Dingo Gas Production Agreement Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/DI2020-003>
+    sdo:name "Defence Commercial Power Project Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/DI2020-004>
+    sdo:name "Mount Riddock Cla Ntp 6326(A)" ;
+.
+
+<https://data.idnau.org/pid/nntt/NI2014-001>
+    sdo:name "Gundungurra Area Agreement" ;
+.
+
+<https://data.idnau.org/pid/nntt/NI2018-002>
+    sdo:name "Barkandji Appin Station Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/NI2018-003>
+    sdo:name "Barkandji Weinteriga And Yobel Station Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/NI2018-004>
+    sdo:name "Gumbaynggirr (Boney) Settlement Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/NI2018-005>
+    sdo:name "Gumbaynggirr Wenonah Head Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/NI2018-006>
+    sdo:name "Yaegl Interim Licences Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/NI2018-007>
+    sdo:name "Barkandji Interim Licences Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/NI2018-008>
+    sdo:name "Bandjalang Interim Licences Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/NI2019-001>
+    sdo:name "Copmanhurst Projects Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/NI2019-002>
+    sdo:name "Barkandji Rntbc Keltren Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/NI2019-004>
+    sdo:name "Barkandji Single Dealings Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/NI2019-005>
+    sdo:name "Cavanbah (Byron Bay) Arakwal Indigenous Land Use Agreement" ;
+.
+
+<https://data.idnau.org/pid/nntt/NI2019-006>
+    sdo:name "Buronga Healthone Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/NI2020-001>
+    sdo:name "St Ives Pistol Club And Awabakal And Guringai People And Ors Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2008-005>
+    sdo:name "Yarrabah Primary Health Care Centre Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2011-026>
+    sdo:name "Woorabinda Rehabilitation Facility Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2011-048>
+    sdo:name "Combined Gunggandji And Cairns Regional Council Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2012-075>
+    sdo:name "Poruma Island Sewerage Scheme Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2013-009>
+    sdo:name "Nathan Dam, Glebe Weir Raising And Pipelines Project Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2013-030>
+    sdo:name "Croydon Shire Council - Tagalaka People Determination Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2013-047>
+    sdo:name "Jangga People/Kenilworth Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2013-049>
+    sdo:name "Jangga People/Mcgregor Creek Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2013-050>
+    sdo:name "Jangga People/Moonlight Creek Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2013-051>
+    sdo:name "Jangga People/Mount Mcconnell Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2013-052>
+    sdo:name "Jangga People/Panitya And Startlemere Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2013-053>
+    sdo:name "Jangga People/Pinang Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2013-055>
+    sdo:name "Jangga People/Ukalunda Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2013-056>
+    sdo:name "Jangga People/Warrigal Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2013-057>
+    sdo:name "Jangga People/Wyarra (Aka Why Not) Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2013-058>
+    sdo:name "Jangga People/Avon Downs Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2013-059>
+    sdo:name "Jangga People/Bulliwallah Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2013-060>
+    sdo:name "Jangga People/Disney Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2013-061>
+    sdo:name "Jangga People/Dooyne Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2013-062>
+    sdo:name "Jangga People/Durdham Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2013-063>
+    sdo:name "Jangga People/Frankfield Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2013-064>
+    sdo:name "Jangga People/Goodoawada, Old Twin Hills And Waminda Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2013-065>
+    sdo:name "Jangga People/Gunjulla Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2013-067>
+    sdo:name "Jangga People/Larne Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2013-068>
+    sdo:name "Jangga People/Teviot Brook Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2013-069>
+    sdo:name "Jangga People/Urella Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2013-070>
+    sdo:name "Jangga People/Wilandspey Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-004>
+    sdo:name "Yulluna People And Starcross Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-007>
+    sdo:name "Badu Island Transfer Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-008>
+    sdo:name "Yulluna People And Local Government Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-009>
+    sdo:name "Yulluna People And Ergon Energy Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-010>
+    sdo:name "Juru People And Ergon Energy Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-011>
+    sdo:name "Juru People And Local Government Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-012>
+    sdo:name "Saibai Island (Torres Strait) Social Housing Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-014>
+    sdo:name "Yulluna People/Buckingham Downs Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-015>
+    sdo:name "Yulluna People/ Burnham (Aka Chatsworth), Chatsworth And Stanbroke (Aka Stradbroke) Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-016>
+    sdo:name "Yulluna People/ Cannington Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-017>
+    sdo:name "Yulluna People/Cukadoo Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-018>
+    sdo:name "Yulluna People/Fort William Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-019>
+    sdo:name "Yulluna People/Kheri Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-020>
+    sdo:name "Yulluna People/Lurnea (Aka Two Rivers) Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-021>
+    sdo:name "Yulluna People/Pilgrim Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-025>
+    sdo:name "Ewamian Protected Areas Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-026>
+    sdo:name "Gladstone, Rockhampton And Bundaberg Ports Project Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-027>
+    sdo:name "Hopevale Congress Aboriginal Corporation - Social Housing Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-029>
+    sdo:name "Kullilli People And Ergon Energy Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-030>
+    sdo:name "Kullilli People And Local Government Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-031>
+    sdo:name "Gudjala People And Local Government Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-032>
+    sdo:name "Gudjala Protected Areas Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-033>
+    sdo:name "Yulluna People/Toolebuc Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-034>
+    sdo:name "Yulluna People/Corrie Downs, Digby Peaks And Windsor Park (Aka Willsdown) Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-035>
+    sdo:name "Hope Vale #2 Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-036>
+    sdo:name "Northern Cape York Group #2 And Ergon Energy Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-037>
+    sdo:name "Northern Cape York Group #2 Napranum Aboriginal Shire Council Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-038>
+    sdo:name "Mapoon Aboriginal Shire Council Northern Cape York Group #2 Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-039>
+    sdo:name "Kullilli People/Zenoni Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-040>
+    sdo:name "Kullilli People/Wiralla Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-041>
+    sdo:name "Kullilli People/Tickalara Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-042>
+    sdo:name "Kullilli People/Thargo Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-043>
+    sdo:name "Kullilli People/Autumnvale And The Pioneers Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-044>
+    sdo:name "Kullilli People/Congie Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-045>
+    sdo:name "Kullilli People/Kulki Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-046>
+    sdo:name "Kullilli People/Narylico Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-047>
+    sdo:name "Kullilli People/Clyde (Aka Picarilli Downs) And Wongetta Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-048>
+    sdo:name "Kullilli People/Norley, Orient And Pinidary Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-049>
+    sdo:name "Kullilli People/Kuging And Orinya Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-050>
+    sdo:name "Kullilli People/Talgeberry Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-051>
+    sdo:name "Kullilli People/Mirintu Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-052>
+    sdo:name "Kullilli People/Bellera, Bulloo Downs And Molesworth Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-054>
+    sdo:name "Warrungu People/Oak Hills Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-055>
+    sdo:name "Kullilli People/Ardoch Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-056>
+    sdo:name "Warrungu People/Lamonds Lagoon Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-057>
+    sdo:name "Warrungu People/Kent (Aka Wombino) Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-058>
+    sdo:name "Warrungu People/Glendhu (Aka New Farm) Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-059>
+    sdo:name "Warrungu People/Yourka Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-060>
+    sdo:name "Kullilli People/Mulianna Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-061>
+    sdo:name "Kullilli People/Moombidary Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-062>
+    sdo:name "Kullilli People/Kyeenee Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-063>
+    sdo:name "Kullilli People/Nockatunga Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-064>
+    sdo:name "Kullilli People/Pyampah (Aka Wompa) Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-065>
+    sdo:name "Bulganunna Aboriginal Corporation And Adani Mining Carmichael North Galilee Basin Rail Project Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-066>
+    sdo:name "Juru People Boundary Creek Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-067>
+    sdo:name "Juru People Pretty Bend Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-068>
+    sdo:name "Juru People Mt Aberdeen Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-069>
+    sdo:name "Juru People Greentop Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-070>
+    sdo:name "Juru People Weston Vale Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-071>
+    sdo:name "Thingalkal (Mary Valley) Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-072>
+    sdo:name "Kyburra Munda Yalga Aboriginal Corporation Rntbc And Adani Mining North Galilee Basin Rail Project Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-073>
+    sdo:name "Ewamian - Alexander Parcel Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-074>
+    sdo:name "Juru Protected Area Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-075>
+    sdo:name "Northern Peninsula Area Regional Council Northern Cape York Group #1 Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-076>
+    sdo:name "Ergon Energy And Northern Cape York Group #1 Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-077>
+    sdo:name "St Andrew'S Anglican Church, Torres Strait Island Regional Council And Porumalgal (Torres Strait Islanders) Corporation Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-078>
+    sdo:name "Northern Cape York Group #1 State Protected Areas Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-079>
+    sdo:name "Carpentaria Shire Council Kowanyama People Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-080>
+    sdo:name "Birriah People And Adani Mining North Galilee Basin Rail Project Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-081>
+    sdo:name "Gunggari People #3 And Ergon Energy Corporation Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-082>
+    sdo:name "Gunggari People #3 And Maranoa Regional Council Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-083>
+    sdo:name "Gunggari People #3/Drysdale Ponds Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-084>
+    sdo:name "Gunggari People #3/Cedarvale Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-085>
+    sdo:name "Olkola Land Transfer Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-086>
+    sdo:name "Juru People And Kookaburra Terrace Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-087>
+    sdo:name "Aurukun Bauxite Development Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-088>
+    sdo:name "Fraser Island, Great Sandy National Park / K’Gari Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-089>
+    sdo:name "Tagalaka People/Alehvale And Mooremount Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-090>
+    sdo:name "Birriah People And Local Government Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2014-092>
+    sdo:name "Gangalidda People Finucane Island Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-001>
+    sdo:name "Old May Downs Quarry Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-002>
+    sdo:name "Gangalidda & Garawa People #2 And Burketown Land Exchange Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-003>
+    sdo:name "Birriah People And Res Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-004>
+    sdo:name "Wik Timber Project Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-005>
+    sdo:name "Saibai Island Flood Works Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-007>
+    sdo:name "Gangalidda And Garawa People Westmoreland Pastoral Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-010>
+    sdo:name "Garawa People Wentworth Pastoral Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-011>
+    sdo:name "Gangalidda People Punjaub Pastoral Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-013>
+    sdo:name "Warraber (Sue Island) Torres Strait Social Housing Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-014>
+    sdo:name "Moa (St Pauls Island) Torres Strait Social Housing Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-015>
+    sdo:name "Mer Torres Strait Social Housing Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-016>
+    sdo:name "Poruma (Coconut Island) Torres Strait Social Housing Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-017>
+    sdo:name "Badu Torres Strait Social Housing Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-018>
+    sdo:name "Arrow Darumbal Lng Project Ilua No. 2" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-019>
+    sdo:name "Ergon Energy And Boonthamurra People Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-020>
+    sdo:name "Wuthathi People #2 And Cook Shire Council Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-021>
+    sdo:name "Boonthamurra People And Local Government Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-022>
+    sdo:name "Ergon Energy And Budjiti People Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-023>
+    sdo:name "Budjiti People And Local Government Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-024>
+    sdo:name "Budjiti People/ Boodgherree Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-025>
+    sdo:name "Budjiti People/Bulloo Downs Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-026>
+    sdo:name "Masig (Yorke Island) Torres Strait Social Housing Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-027>
+    sdo:name "Budjiti People/Bundoona Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-028>
+    sdo:name "Budjiti People/Dynevor Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-029>
+    sdo:name "Budjiti People/Humeburn Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-030>
+    sdo:name "Budjiti People/Jandell And Kyeenee Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-031>
+    sdo:name "Budjiti People/Wathopa Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-032>
+    sdo:name "Budjiti People/Kilcowera And Zenoni Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-033>
+    sdo:name "Budjiti People/Wiralla Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-034>
+    sdo:name "Budjiti People/Moombidary Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-035>
+    sdo:name "Budjiti People/Wombula And Yenloora Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-036>
+    sdo:name "Budjiti People/Thargo Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-037>
+    sdo:name "Budjiti People/Yakara Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-038>
+    sdo:name "Budjiti People/Merimo Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-039>
+    sdo:name "Ugar (Stephen Island) Torres Strait Social Housing Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-040>
+    sdo:name "Djungan Small Scale Miners Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-041>
+    sdo:name "Saibai Island Additional Staff Accommodation Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-046>
+    sdo:name "Ewamian - Etheridge Shire Council (Charleston Dam Project) Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-047>
+    sdo:name "Boonthamurra People/Nockatunga Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-066>
+    sdo:name "Boonthamurra People/Burkobulla Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-067>
+    sdo:name "Boonthamurra People/Araluen And Budgerygar Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-068>
+    sdo:name "Boonthamurra People/Coomo Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-069>
+    sdo:name "Boonthamurra People/Gummomo Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-070>
+    sdo:name "Wulli Wulli People/Gyranda Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-071>
+    sdo:name "Wulli Wulli People/Onkaparinga Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-073>
+    sdo:name "Boonthamurra People/Ray Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-074>
+    sdo:name "Boonthamurra People/Kalabra Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-075>
+    sdo:name "Boonthamurra People/Nerrigundah Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-076>
+    sdo:name "Currawinya & Lake Bindegolly National Parks Agreement Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-078>
+    sdo:name "Munga-Thirri National Park Protected Areas Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-080>
+    sdo:name "Mabuiag (No 2) Torres Strait Social Housing Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-081>
+    sdo:name "Wulli Wulli People/Dawson Vale East Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-083>
+    sdo:name "Erub Torres Strait Social Housing Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-084>
+    sdo:name "Warraber (No 2) Torres Strait Social Housing Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-085>
+    sdo:name "Masig (Yorke Island) Defence Facilities Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-086>
+    sdo:name "Moranbah Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-087>
+    sdo:name "Wandoan And Taroom Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2015-088>
+    sdo:name "Blackwater Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2016-001>
+    sdo:name "Ergon Energy Corporation Limited And Iman People #2 Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2016-002>
+    sdo:name "Rta Weipa Pty Ltd And Ngan Aak-Kunch Aboriginal Corporation Rntbc Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2016-003>
+    sdo:name "Mapoon Township Community Development Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2016-004>
+    sdo:name "Pormpuraaw Township Community Development Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2016-005>
+    sdo:name "Rainbow Beach Ambulance Station Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2016-006>
+    sdo:name "Ergon Energy And Darumbal People Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2016-007>
+    sdo:name "Barada Barna People And Local Government Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2016-008>
+    sdo:name "Barada Barna And Ergon Energy Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2016-009>
+    sdo:name "Widi People Of The Nebo Estate #2, Barada Barna And Ergon Energy Shared Country Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2016-010>
+    sdo:name "Barada Barna People/Killarney Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2016-011>
+    sdo:name "Barada Barna People/Logan Creek And Cherwell Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2016-012>
+    sdo:name "Barada Barna People/Oben Park (Aka Harrybrandt West) Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2016-013>
+    sdo:name "Dipperu National Park Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2016-014>
+    sdo:name "Barada Barna People, Widi People And Local Government Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2016-015>
+    sdo:name "Wangan & Jagalingou People And Adani Mining Carmichael Project Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2016-017>
+    sdo:name "Sandstone East Land Transfer Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2016-018>
+    sdo:name "Lockhart River Defence Facilities Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2016-019>
+    sdo:name "Iman People #2 Comely And Mapala Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2016-021>
+    sdo:name "Iman People #2 Woodine Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2016-022>
+    sdo:name "Iman People #2 Korcha Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2016-023>
+    sdo:name "Gkuthaarn And Kukatj People Commercial Fishers Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2016-026>
+    sdo:name "Aacap (Laura) Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2016-027>
+    sdo:name "Iman People #2 Glenleigh Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2016-028>
+    sdo:name "Birriah People/Spurdle Family Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2016-029>
+    sdo:name "Darumbal People/Goolara Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2016-030>
+    sdo:name "Darumbal People/Moah Creek Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2016-031>
+    sdo:name "Darumbal People/Oombah And Ten Mile Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2016-032>
+    sdo:name "Darumbal People/Templeton Creek Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2016-033>
+    sdo:name "Birriah People And Betteridge Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2016-034>
+    sdo:name "Birriah People Protected Areas Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2016-035>
+    sdo:name "Birriah People Tenure Resolution Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2016-036>
+    sdo:name "Darumbal People Protected Areas Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2016-037>
+    sdo:name "Darumbal People Tenure Resolution Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2016-038>
+    sdo:name "Kwokkunum Access Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2016-041>
+    sdo:name "Birriah People And S Wilkie Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2016-042>
+    sdo:name "Darumbal People/Baven Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2016-044>
+    sdo:name "Bollon Township Land Exchange Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2016-045>
+    sdo:name "Port Curtis Coral Coast People And Local Government Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2016-046>
+    sdo:name "Birriah People And Castle Hill Exotics Pty Ltd Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2016-047>
+    sdo:name "Sandstone Western Land Transfer Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2016-048>
+    sdo:name "Melsonby Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2016-049>
+    sdo:name "Peninsula Developmental Road Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2016-050>
+    sdo:name "Dinah Island Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2016-051>
+    sdo:name "Erub Island Multi Purpose Facility Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2016-052>
+    sdo:name "Eromanga Township Tenure Resolution Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2016-053>
+    sdo:name "Bigambul People And Local Governments Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2016-054>
+    sdo:name "Bigambul People And Ergon Energy Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2016-055>
+    sdo:name "Bigambul Protected Areas Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2016-056>
+    sdo:name "Bigambul People Revenue Sharing Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2016-058>
+    sdo:name "Kalkadoon And Jemena Northern Gas Pipeline Project Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2016-059>
+    sdo:name "Mount Isa Cemetery Indigenous Land Agreement" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2016-060>
+    sdo:name "Investigator Road Mooring Buoy Removal Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2016-061>
+    sdo:name "Wuthathi Land Transfer Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2017-001>
+    sdo:name "Indjalandji-Dhidhanu And Jemena Northern Gas Pipeline Project Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2017-002>
+    sdo:name "Jemena Northern Gas Pipeline Project Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2017-003>
+    sdo:name "Waanyi - Burke Shire Council (Gregory Solar Farm Project) Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2017-004>
+    sdo:name "Jinibara-Cedar Hill Plant Harvesting Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2017-005>
+    sdo:name "Juru People Land Exchange Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2017-006>
+    sdo:name "Dauan Island Torres Strait Social Housing Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2017-007>
+    sdo:name "Ergon Energy And Ankamuthi People Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2017-008>
+    sdo:name "Badu Island Supermarket And Cafe/Storage Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2017-010>
+    sdo:name "Mabuiag Torres Strait Primary Health Care Centre And Staff Accommodation Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2017-011>
+    sdo:name "Ugar Community Hall Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2017-012>
+    sdo:name "Bailai, Gurang, Gooreng Gooreng And Taribelang Bunda People/Monte Christo Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2017-013>
+    sdo:name "Port Curtis Coral Coast Tenure Resolution Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2017-014>
+    sdo:name "Port Curtis Coral Coast Protected Areas Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2017-015>
+    sdo:name "Bromley Land Transfer Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2017-016>
+    sdo:name "Mitakoodi & Mayi People #5 Rail Load Out Facility Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2018-001>
+    sdo:name "Topsy Creek Barge Ramp Project Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2018-003>
+    sdo:name "Saibai Island Torres Strait Social Housing Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2018-004>
+    sdo:name "Iama (Yam Island) Torres Strait Social Housing Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2018-005>
+    sdo:name "Erub (Darnley Island) Torres Strait Social Housing Ilua #2" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2018-006>
+    sdo:name "Warraber (Sue Island) Torres Strait Social Housing Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2018-008>
+    sdo:name "Wulli Wulli People Revenue Sharing Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2018-015>
+    sdo:name "Djiru Cassowary Coast Regional Council Dunk Island Recreational Reserve Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2018-017>
+    sdo:name "Girramay People #2 And Cassowary Coast Regional Council Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2018-018>
+    sdo:name "Girramay People Tenure Resolution Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2018-019>
+    sdo:name "Wakka Wakka People #3 And Gympie Regional Council Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2018-020>
+    sdo:name "Tablelands Regional Council Girramay People #2 Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2018-021>
+    sdo:name "Masig Health Care Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2018-022>
+    sdo:name "Saibai Infrastructure And Housing Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2018-023>
+    sdo:name "Mer (Murray Island) Torres Strait Social Housing Ilua #2" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2018-024>
+    sdo:name "Nywaigi People Tenure Resolution Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2018-025>
+    sdo:name "Sarum Project Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2018-026>
+    sdo:name "Dauan Health Care Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2018-027>
+    sdo:name "Gkuthaarn, Kukatj And Stanbroke Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2018-028>
+    sdo:name "Sand Quarry Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2018-029>
+    sdo:name "Yougro Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2018-030>
+    sdo:name "Badu Infrastructure And Housing Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2019-001>
+    sdo:name "Birriah People And Collinsville, Scottsville And District Historical Society Inc Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2019-002>
+    sdo:name "Ugar Infrastructure And Housing Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2019-003>
+    sdo:name "Widi People And Local Government Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2019-005>
+    sdo:name "Mer Island Department Of Home Affairs Lease Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2019-006>
+    sdo:name "Aureed Island Department Of Home Affairs Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2019-007>
+    sdo:name "Erub Landfill Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2019-008>
+    sdo:name "Erub Island Department Of Home Affairs Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2019-009>
+    sdo:name "Shoalwater Bay Training Area Expansion Project Agreement" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2019-010>
+    sdo:name "Burketown Wharf Upgrade Project Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2019-011>
+    sdo:name "Mardigan People Claim Resolution Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2019-012>
+    sdo:name "Dauan Island Department Of Home Affairs Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2019-013>
+    sdo:name "Toolka Land Trust Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2019-014>
+    sdo:name "Jubilee Quarry Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2019-015>
+    sdo:name "Boulia Airport Runway Extension Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2019-016>
+    sdo:name "Birriah People Protected Areas Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2019-017>
+    sdo:name "Birriah People Tenure Resolution Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2019-018>
+    sdo:name "Gulngay People Tenure Resolution Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2019-019>
+    sdo:name "Widi People And Exe Creek (Turrawulla) Pastoral Holding Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2019-020>
+    sdo:name "The Rocks Quarry Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2019-021>
+    sdo:name "Redford Station Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2019-022>
+    sdo:name "Gunggari People/Hillside Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2019-023>
+    sdo:name "Gunggari People/Mt Maria North Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2019-024>
+    sdo:name "Gunggari People/Mount Owen Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2019-025>
+    sdo:name "Gunggari People/Myrtleville Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2019-026>
+    sdo:name "Gunggari People #4 & Maranoa Regional Council Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2019-027>
+    sdo:name "Quandamooka Tenure Resolution Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2019-028>
+    sdo:name "Tangalooma Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2019-029>
+    sdo:name "Gunggari People #4 And Ergon Energy Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2019-030>
+    sdo:name "Gudjala People And State Of Queensland And Dianne Rose Patterson Indigenous Land Use Agreement" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2019-031>
+    sdo:name "Woorabinda Independent High School Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2020-001>
+    sdo:name "Gkuthaarn And Kukatj People And Ergon Energy Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2020-002>
+    sdo:name "Gkuthaarn And Kukatj People Tenure Resolution Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2020-003>
+    sdo:name "Carpentaria Shire Council Gkuthaarn And Kukatj Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2020-004>
+    sdo:name "Yuwibara People Interim Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2020-005>
+    sdo:name "Mithaka People Land Exchange Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2020-006>
+    sdo:name "Vitrinite And Barada Barna Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2020-007>
+    sdo:name "Gurambilbarra Wulgurukaba People And J & Mm Lowth Pty Ltd Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2020-008>
+    sdo:name "Isis Central Sugar Mill Rail Agreement" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2020-010>
+    sdo:name "Warraber Infrastructure And Housing Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2020-011>
+    sdo:name "Erub Infrastructure And Housing Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2020-012>
+    sdo:name "Mabuiag Infrastructure And Housing Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2020-013>
+    sdo:name "Iama Infrastructure And Housing Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2020-014>
+    sdo:name "Moa Infrastructure And Housing Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2020-015>
+    sdo:name "Masig Infrastructure And Housing Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2020-017>
+    sdo:name "Specimen Hill Wind Farm Project Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/SI2003-004>
+    sdo:name "Narungga Local Government" ;
+.
+
+<https://data.idnau.org/pid/nntt/SI2013-001>
+    sdo:name "Cultana Expansion Area Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/SI2014-005>
+    sdo:name "Adnyamathanha Settlement Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/SI2014-011>
+    sdo:name "Kokatha Native Title Claim Settlement Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/SI2014-012>
+    sdo:name "Wangkangurru Yarluyandi Native Title Claim Settlement Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/SI2014-013>
+    sdo:name "Wangkangurru Yarluyandi Parks Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/SI2014-014>
+    sdo:name "Wangkangurru Yarluyandi Pastoral Ilua - Kalamurina" ;
+.
+
+<https://data.idnau.org/pid/nntt/SI2014-015>
+    sdo:name "Wangkangurru Yarluyandi Alton Downs Pastoral Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/SI2014-016>
+    sdo:name "Wangkangurru Yarluyandi Pastoral Ilua - Macumba" ;
+.
+
+<https://data.idnau.org/pid/nntt/SI2014-017>
+    sdo:name "Wangkangurru Yarluyandi Pastoral Ilua - Cowarie" ;
+.
+
+<https://data.idnau.org/pid/nntt/SI2015-001>
+    sdo:name "Wangkangurru Yarluyandi Pastoral Ilua - Pandie Pandie" ;
+.
+
+<https://data.idnau.org/pid/nntt/SI2015-002>
+    sdo:name "Wangkangurru Yarluyandi Pastorial Ilua - Clifton Hills" ;
+.
+
+<https://data.idnau.org/pid/nntt/SI2015-003>
+    sdo:name "Coober Pedy Precious Stones Field Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/SI2016-001>
+    sdo:name "Yandruwandha/Yawarrawarrka Claim Settlement Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/SI2016-004>
+    sdo:name "Irrwanyere Settlement Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/SI2017-001>
+    sdo:name "Dieri Geokinetics Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/SI2017-002>
+    sdo:name "Barngarla And Lucky Bay Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/SI2018-004>
+    sdo:name "Kaurna People Native Title Settlement Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/SI2019-001>
+    sdo:name "Andamooka Precious Stones Field Agreement" ;
+.
+
+<https://data.idnau.org/pid/nntt/SI2019-002>
+    sdo:name "Nukunu Area 1 Settlement Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/SI2020-001>
+    sdo:name "Port Spencer Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/SI2020-002>
+    sdo:name "Cultana Industrial Estate Crown Land Transfer (No. 1) Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/VI2013-001>
+    sdo:name "Dja Dja Wurrung And Fiddlers Creek Gold Mining Company (Min5510) Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/VI2013-005>
+    sdo:name "Dja Dja Wurrung And Chum Street Car Park Sale Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/VI2015-002>
+    sdo:name "Gunditjmara - Seagas Port Campbell Vic To Torrens Island Sa Pipeline Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/VI2016-001>
+    sdo:name "Gunaikurnai Land And Waters Aboriginal Corporation, Peter D Howson And Thomas A Howson And State Of Victoria Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/VI2018-001>
+    sdo:name "Gariwerd Non-Extinguishment Principle Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/VI2018-002>
+    sdo:name "Taungurung Settlement  Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/VI2019-001>
+    sdo:name "All Abilities Playspace Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2011-008>
+    sdo:name "Wickham Motorcross Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2012-011>
+    sdo:name "Rtio And Pkkp People Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2013-001>
+    sdo:name "Rtio And Yinhawangka People Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2014-001>
+    sdo:name "Kuruma Marthudunera And Yaburara And Coastal Mardudhunera Indigenous Land Use Agreement" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2014-002>
+    sdo:name "Ellendale Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2014-005>
+    sdo:name "Yindjibarndi People And Rtio Indigenous Land Use Agreement (Initial Ilua)" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2014-006>
+    sdo:name "Esperance Nyungar Government Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2014-007>
+    sdo:name "Esperance Nyungar - Fqm Mining Validation Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2014-009>
+    sdo:name "Nyangumarta Pbc Kscs Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2014-010>
+    sdo:name "Blina Station And Nyikina Mangala Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2014-011>
+    sdo:name "Kalyeeda Station And Nyikina Mangala Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2014-012>
+    sdo:name "Meda Station And Nyikina Mangala Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2014-013>
+    sdo:name "Yakka Munga Station And Nyikina Mangala Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2014-014>
+    sdo:name "Dampier Downs Station And Nyikina Mangala Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2014-015>
+    sdo:name "Yeeda Station And Nyikina Mangala Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2014-016>
+    sdo:name "Ngarla Pbc Kscs Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2015-001>
+    sdo:name "Nyikina Mangala Ungani Project Infrastructure Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2015-002>
+    sdo:name "Yawuru Ungani Project Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2015-003>
+    sdo:name "Cape Preston Project Deed (Ym Mardie Ilua)" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2015-005>
+    sdo:name "Gnaala Karla Booja Indigenous Land Use Agreement" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2015-009>
+    sdo:name "Yued Indigenous Land Use Agreement" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2015-010>
+    sdo:name "Karajarri Traditional Lands Association Kscs Eighty Mile Beach Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2015-013>
+    sdo:name "Rtio And Nyiyaparli People Additional Ilua (Area Agreement) For Nyiyaparli People'S Native Title Claim #3" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2015-020>
+    sdo:name "Balla Balla Port Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2015-021>
+    sdo:name "Initial Indigenous Land Use Agreement - Banjima And Bhp Billiton Comprehensive Agreement (Body Corporate Agreement)" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2015-022>
+    sdo:name "Newcrest Mining Project Area Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2016-001>
+    sdo:name "Yinhawangka And Bhp Billiton Project Agreement Initial Ilua (Area Agreement)" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2016-002>
+    sdo:name "Banjima & Rtio Participation Agreement Ilua (Body Corporate Agreement)" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2016-003>
+    sdo:name "Fmg-Nyiyaparli Land Access Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2016-004>
+    sdo:name "Yawuru Nagulagun / Roebuck Bay Marine Park Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2016-005>
+    sdo:name "Pkkp And Kooline Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2016-006>
+    sdo:name "Pkkp And Ashburton Downs Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2016-007>
+    sdo:name "Pkkp And Cheela Plains Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2016-008>
+    sdo:name "Pkkp And Glenflorrie Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2016-009>
+    sdo:name "Pkkp And Nanutarra Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2016-010>
+    sdo:name "Wanparta Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2016-011>
+    sdo:name "Yungngora Aboriginal Corporation Rntbc, Buru Energy Limited And Diamond Resources (Canning) Pty Ltd Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2016-012>
+    sdo:name "Dambimangari Kscs Marine Parks Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2016-013>
+    sdo:name "Fmg - Kariyarra Land Access Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2016-014>
+    sdo:name "Fossil Downs Station Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2016-015>
+    sdo:name "Mt House Station Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2016-016>
+    sdo:name "Napier Downs Station Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2016-017>
+    sdo:name "Brooking Springs Station Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2016-018>
+    sdo:name "Jubilee Downs Station Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2016-019>
+    sdo:name "Quanbun Downs Station Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2016-020>
+    sdo:name "Kimberley Downs Station Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2016-021>
+    sdo:name "Blina Station Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2016-022>
+    sdo:name "Glenroy Station Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2017-002>
+    sdo:name "Nkac Kscs Eighty Mile Beach Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2017-004>
+    sdo:name "Fmg - Palyku Land Access Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2017-006>
+    sdo:name "Bunuba Conservation Parks Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2017-007>
+    sdo:name "Bac Kscs Indigenous Land Use Agreement" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2017-008>
+    sdo:name "Kurungal And Christmas Creek Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2017-009>
+    sdo:name "Ngarlawangga And Bulloo Downs Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2017-010>
+    sdo:name "Ngarlawangga And Prairie Downs Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2017-011>
+    sdo:name "Ngarlawangga And Turee Creek Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2017-012>
+    sdo:name "Ballardong People Indigenous Land Use Agreement" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2017-013>
+    sdo:name "South West Boojarah #2 Indigenous Land Use Agreement" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2017-014>
+    sdo:name "Wagyl Kaip & Southern Noongar Indigenous Land Use Agreement" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2017-015>
+    sdo:name "Whadjuk People Indigenous Land Use Agreement" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2017-016>
+    sdo:name "Kariyarra And State Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2017-017>
+    sdo:name "Yi-Martuwarra Ngurrara And Christmas Creek Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2017-018>
+    sdo:name "Budina And Emu Creek Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2017-020>
+    sdo:name "Budina And Middalya Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2017-021>
+    sdo:name "Budina And Towera Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2018-001>
+    sdo:name "Kooline Pastoral Lease Land Addition Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2018-002>
+    sdo:name "Birriliburu Sandalwood Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2018-009>
+    sdo:name "Alinta-Kariyarra Electricity Infrastructure Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2018-012>
+    sdo:name "Bellary Springs Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2018-014>
+    sdo:name "Initial Ilua Tjiwarl And Nickel West Comprehensive Agreement" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2019-001>
+    sdo:name "Km & Ym Indigenous Land Use Agreement 2018" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2019-003>
+    sdo:name "Nyiyaparli And Bhp Billiton Comprehensive Agreement Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2019-004>
+    sdo:name "Balanggarra #3 Indigenous Land Use Agreement" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2019-005>
+    sdo:name "Fmg - Nyiyaparli Land Access Agreement Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2020-001>
+    sdo:name "Rtio And Nyiyaparli People Indigenous Land Use Agreement (Body Corporate Agreement)" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2020-002>
+    sdo:name "Yamatji Nation Agreement" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2020-003>
+    sdo:name "Glen Florrie And Combined Thiin-Mah, Warriyangka,Tharrkari, Jiwarli Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2020-006>
+    sdo:name "Williambury And Combined Thiin-Mah, Warriyangka, Tharrkari, Jiwarli Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2020-007>
+    sdo:name "Minnie Creek And Combined Thiin-Mah, Warriyangka, Tharrkari, Jiwarli Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2020-008>
+    sdo:name "Edmund And Combined Thiin-Mah, Warriyangka, Tharrkari, Jiwarli Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2020-009>
+    sdo:name "Wanna And Combined Thiin-Mah, Warriyangka, Tharrkari, Jiwarli Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2020-010>
+    sdo:name "Yi-Martuwarra Ngurrara Larrawa Pastoral Access Agreement" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2020-011>
+    sdo:name "Ningaloo Conservation Estate Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2020-012>
+    sdo:name "Strelley Nyamal Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2020-013>
+    sdo:name "Great Sandy Desert Project Ilua - Exploration And Production" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2020-014>
+    sdo:name "Great Sandy Desert Project Ilua - Infrastructure" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2020-015>
+    sdo:name "Malgana Talisker Pastoral Lease Agreement" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2020-016>
+    sdo:name "Malgana Carey Downs Pastoral Lease Agreement" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2020-018>
+    sdo:name "Malgana Woodleigh Carbla Pastoral Lease Agreement" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2020-019>
+    sdo:name "Malgana Wooramel Pastoral Lease Agreement" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2020-020>
+    sdo:name "Malgana Yaringa Pastoral Lease Agreement" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2020-021>
+    sdo:name "Mirning People Part B Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2016-020>
+    sdo:name "Iman People #2 Coorada Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/QI2016-024>
+    sdo:name "Darumbal People, Livingstone Shire Council And Rockhampton Regional Council Local Government Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2014-004>
+    sdo:name "Anketell Port, Infrastruture Corridor And Industrial Estates Agreement" ;
+.
+
+<https://data.idnau.org/pid/nntt/WI2020-005>
+    sdo:name "Mt. Augustus And Combined Thiin-Mah, Warriyangka, Tharrkari, Jiwarli Ilua" ;
+.
+
+<https://data.idnau.org/pid/nntt/SI2016-003>
+    sdo:name "Walka Wani Settlement Ilua" ;
+.

@@ -5,10 +5,12 @@ PREFIX geo: <http://www.opengis.net/ont/geosparql#>
 PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
 PREFIX prez: <https://prez.dev/>
 PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX schema: <https://schema.org/>
 PREFIX sh: <http://www.w3.org/ns/shacl#>
 PREFIX shext: <http://example.com/shacl-extension#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 prez:CustomIndexProfile
@@ -53,6 +55,7 @@ prez:AtnsEntityProfile
         sh:path [
             sh:union (
                 rdf:type
+                dcterms:relation
                 dcterms:references
                 atns:category
                 atns:country
@@ -67,8 +70,35 @@ prez:AtnsEntityProfile
                 schema:keywords
                 schema:location
                 schema:name
+                schema:spatialCoverage
                 schema:startDate
                 schema:url
+                ( schema:spatialCoverage schema:name )
+                prov:qualifiedAttribution
+                ( prov:qualifiedAttribution rdf:type )
+                ( prov:qualifiedAttribution schema:agent )
+                ( prov:qualifiedAttribution schema:roleName )
+                ( prov:qualifiedAttribution schema:agent rdf:type )
+                ( prov:qualifiedAttribution schema:agent schema:additionalType )
+                ( prov:qualifiedAttribution schema:agent schema:alternateName )
+                ( prov:qualifiedAttribution schema:agent schema:identifier )
+                ( prov:qualifiedAttribution schema:agent schema:memberOf )
+                ( prov:qualifiedAttribution schema:agent schema:name )
+                ( prov:qualifiedAttribution schema:agent schema:url )
+                ( prov:qualifiedAttribution schema:agent skos:historyNote )
+                ( dcterms:relation rdf:type )
+                ( dcterms:relation dcterms:created )
+                ( dcterms:relation odrl:permission )
+                ( dcterms:relation odrl:uid )
+                ( dcterms:relation schema:description )
+                ( dcterms:relation schema:name )
+                ( dcterms:relation odrl:permission rdf:type )
+                ( dcterms:relation odrl:permission odrl:action )
+                ( dcterms:relation odrl:permission odrl:assignee )
+                ( dcterms:relation odrl:permission odrl:assigner )
+                ( dcterms:relation odrl:permission odrl:target )
+                ( dcterms:relation odrl:permission schema:description )
+                ( dcterms:relation odrl:permission schema:name )
                 ( dcterms:references rdf:type )
                 ( dcterms:references atns:referenceType )
                 ( dcterms:references atns:sourceReferenceId )

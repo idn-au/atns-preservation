@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 import csv
+import os
+import re
 from collections import defaultdict
 from functools import lru_cache
 from pathlib import Path
@@ -14,7 +16,20 @@ from rdflib.namespace import SKOS
 
 ROOT = Path(__file__).resolve().parent.parent
 SPECS = ROOT / "specs"
-SAMPLE = ROOT / "build" / "sample"
+CONVERSION_PROFILE = os.environ.get("ATNS_CONVERSION_PROFILE", "sample")
+if CONVERSION_PROFILE not in {"sample", "sandbox"}:
+    raise ValueError(
+        "ATNS_CONVERSION_PROFILE must be either 'sample' or 'sandbox'"
+    )
+
+SOURCE_ROWS = ROOT / "build" / (
+    "sample" if CONVERSION_PROFILE == "sample" else "sandbox/csv"
+)
+RESOURCE_REGISTRY = (
+    SPECS / "public-sample-resources.csv"
+    if CONVERSION_PROFILE == "sample"
+    else ROOT / "build" / "sandbox" / "resources.csv"
+)
 
 VOCAB_FILES = {
     "category": ROOT / "vocabs" / "atns-cat.ttl",
@@ -35,7 +50,7 @@ def _read_csv(path: Path) -> list[dict[str, str]]:
 def _sample_resources() -> dict[tuple[str, str], dict[str, str]]:
     return {
         (row["kind"], row["source_id"]): row
-        for row in _read_csv(SPECS / "public-sample-resources.csv")
+        for row in _read_csv(RESOURCE_REGISTRY)
     }
 
 
@@ -67,6 +82,14 @@ def concept_iri(vocabulary: str, notation: str) -> str:
         raise KeyError(
             f"No {vocabulary} concept has source notation {notation!r}"
         ) from error
+
+
+def concept_iri_if_known(vocabulary: str, notation: str) -> str:
+    """Return a concept IRI, or an empty value for a blank source list entry."""
+    notation = notation.strip()
+    if not notation:
+        return ""
+    return _concepts(vocabulary).get(notation, "")
 
 
 @lru_cache(maxsize=1)
@@ -113,7 +136,7 @@ def entity_description(source_id: str) -> str:
 
 @lru_cache(maxsize=None)
 def _rows(table: str) -> list[dict[str, str]]:
-    return _read_csv(SAMPLE / f"{table}.csv")
+    return _read_csv(SOURCE_ROWS / f"{table}.csv")
 
 
 @lru_cache(maxsize=1)
@@ -134,9 +157,9 @@ def references_for_entity(entity_id: str) -> list[str]:
 def _subcategories_by_entity() -> dict[str, list[str]]:
     values: dict[str, list[str]] = defaultdict(list)
     for row in _rows("Entity_SubCategory"):
-        values[row["EntityID"]].append(
-            concept_iri("subcategory", row["SubCategoryID"])
-        )
+        iri = concept_iri_if_known("subcategory", row["SubCategoryID"])
+        if iri:
+            values[row["EntityID"]].append(iri)
     return values
 
 
@@ -177,6 +200,12 @@ def access_iri(public: str) -> str:
         if _boolean_lexical(public) == "true"
         else ""
     )
+
+
+def http_url(value: str) -> str:
+    """Return a complete HTTP(S) URL, or empty for source notes/relative text."""
+    value = value.strip()
+    return value if re.fullmatch(r"https?://\S+", value) else ""
 
 
 def iso_date(value: str) -> str:

@@ -10,6 +10,9 @@ from __future__ import annotations
 import argparse
 import csv
 import hashlib
+import html
+import re
+from collections import Counter
 from pathlib import Path
 
 import yaml
@@ -38,6 +41,42 @@ def columns_sha256(headers: list[str]) -> str:
     return hashlib.sha256(("\n".join(headers) + "\n").encode("utf-8")).hexdigest()
 
 
+def raw_rich_text(
+    source: Path,
+    table: str,
+    primary_key: str,
+) -> tuple[dict[str, dict[str, str]], Counter[str]]:
+    """Recover encoded rich text before the fault-tolerant XML parser alters it."""
+    values: dict[str, dict[str, str]] = {}
+    duplicates: Counter[str] = Counter()
+    source_text = source.read_text(encoding="utf-8")
+    for match in re.finditer(
+        rf"<{re.escape(table)}>(.*?)</{re.escape(table)}>",
+        source_text,
+        flags=re.DOTALL,
+    ):
+        block = match.group(1)
+        key_match = re.search(
+            rf"<{re.escape(primary_key)}>(.*?)</{re.escape(primary_key)}>",
+            block,
+            flags=re.DOTALL,
+        )
+        if key_match is None:
+            continue
+        key = html.unescape(key_match.group(1)).strip()
+        row: dict[str, str] = {}
+        for field in ("Summary", "Body"):
+            field_values = re.findall(
+                rf"<{field}>(.*?)</{field}>", block, flags=re.DOTALL
+            )
+            if len(field_values) > 1:
+                duplicates[field] += len(field_values) - 1
+            if field_values:
+                row[field] = html.unescape(field_values[-1]).strip()
+        values[key] = row
+    return values, duplicates
+
+
 def extract_table(
     table: str,
     details: dict,
@@ -60,6 +99,7 @@ def extract_table(
     rows: list[dict[str, str]] = []
     headers: list[str] = []
     known_headers: set[str] = set()
+    rich_text, duplicate_fields = raw_rich_text(source, table, details["primary_key"])
     parser = etree.iterparse(
         str(source),
         events=("end",),
@@ -75,10 +115,13 @@ def extract_table(
         row: dict[str, str] = {}
         for child in element:
             field = local_name(child.tag)
+            if field in row:
+                duplicate_fields[field] += 1
             if field not in known_headers:
                 known_headers.add(field)
                 headers.append(field)
             row[field] = (child.text or "").strip()
+        row.update(rich_text.get(row.get(details["primary_key"], ""), {}))
         rows.append(row)
         element.clear()
         while element.getprevious() is not None:
@@ -124,6 +167,11 @@ def extract_table(
         writer = csv.DictWriter(stream, fieldnames=headers)
         writer.writeheader()
         writer.writerows(rows)
+    for field in ("Summary", "Body"):
+        print(
+            f"{table}: rows with additional {field} elements: "
+            f"{duplicate_fields[field]}"
+        )
     return len(rows), actual_sha256, actual_columns_sha256, output
 
 

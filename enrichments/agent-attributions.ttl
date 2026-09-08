@@ -1,0 +1,489 @@
+@prefix droles: <https://linked.data.gov.au/def/data-roles/> .
+@prefix ids: <https://linked.data.gov.au/def/identifiers/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sdo: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# REVIEWED DATA: curated organisations and Agreement subject-agent associations.
+
+############################################################
+# Candidate: Aboriginal and Islander Affairs Corporation
+# Source ATNS entity: https://data.idnau.org/pid/resource/4789d7b6-af01-5174-8e9b-e1c5d5d40f98
+############################################################
+
+# Agreement: IBIS/Mer Gedkem le Corporation/Aboriginal and Islander Affairs Corporation Indigenous Land Use Agreement (ILUA)
+<https://data.idnau.org/pid/resource/bfac1b34-d61f-5b22-b44a-916ab3b28a12>
+    prov:qualifiedAttribution [
+        a prov:Attribution ;
+        sdo:agent <https://data.idnau.org/pid/organization/20c4b805-5c2d-5682-b322-aa0d94744f66> ;
+        sdo:roleName droles:subjectAgent
+    ] .
+
+<https://data.idnau.org/pid/organization/20c4b805-5c2d-5682-b322-aa0d94744f66>
+    a sdo:Organization ;
+    sdo:name "Aboriginal and Islander Affairs Corporation" ;
+    sdo:citation "https://www.legislation.qld.gov.au/view/whole/html/inforce/2023-12-13/act-1984-051"^^xsd:anyURI .
+
+############################################################
+# Candidate: Aboriginal and Torres Strait Islander Land Services
+# Source ATNS entity: https://data.idnau.org/pid/resource/279a8db4-2a3b-58c7-a2b1-302ee3d87c9c
+############################################################
+
+# Agreement: Bulganunna Aboriginal Corporation and Adani Mining Carmichael Coal Mine and Rail Project Indigenous Land Use Agreement (ILUA)
+<https://data.idnau.org/pid/resource/60094bde-026e-5bc7-b7c4-87f11b261d62>
+    prov:qualifiedAttribution [
+        a prov:Attribution ;
+        sdo:agent <https://data.idnau.org/pid/organization/5993d0b8-dc5d-560d-95b5-725052f8f873> ;
+        sdo:roleName droles:subjectAgent
+    ] .
+
+<https://data.idnau.org/pid/organization/5993d0b8-dc5d-560d-95b5-725052f8f873>
+    a sdo:Organization ;
+    sdo:name "Aboriginal and Torres Strait Islander Land Services" ;
+    sdo:url <http://www.dnrm.qld.gov.au/land/indigenous-land/indigenous-land-services-contacts> .
+
+############################################################
+# Candidate: Aboriginal Housing Company Ltd
+# Source ATNS entity: https://data.idnau.org/pid/resource/fdb86d4b-0f14-59c7-a92d-0cec2e6a0695
+############################################################
+
+<https://data.idnau.org/pid/organization/1488fa72-eefc-529d-9f88-13cbd6846d6e>
+    a sdo:Organization ;
+sdo:name "Aboriginal Housing Company Ltd" ;
+sdo:additionalType <https://data.idnau.org/pid/vocab/org-indigeneity/indigenous-persons-organisation> ;
+sdo:url "https://www.ahc.org.au"^^xsd:anyURI .
+
+# Agreement: Memorandum of Understanding between the NSW Government, South Sydney City Council, the University of Sydney and the Aboriginal Housing Company Ltd
+<https://data.idnau.org/pid/resource/a19dec61-a117-5aaf-b4d1-4fb29433b747>
+    prov:qualifiedAttribution [
+        a prov:Attribution ;
+        sdo:agent <https://data.idnau.org/pid/organization/1488fa72-eefc-529d-9f88-13cbd6846d6e> ;
+        sdo:roleName droles:subjectAgent
+    ] .
+
+<https://data.idnau.org/pid/organization/1488fa72-eefc-529d-9f88-13cbd6846d6e>
+    a sdo:Organization ;
+    sdo:name "Aboriginal Housing Company Ltd" ;
+    sdo:url <http://www.ahc.org.au/> .
+
+############################################################
+# Candidate: Aboriginal Medical Service Western Sydney
+# Source ATNS entity: https://data.idnau.org/pid/resource/a57c762d-4f62-5f1c-ae60-fbc134f9034d
+############################################################
+
+# Agreement: Memorandum of Understanding between the Sydney West Area Health Service and the Aboriginal Medical Service Western Sydney
+<https://data.idnau.org/pid/resource/976c7e8f-d0d2-5237-9656-f6ed6c8122d6>
+    prov:qualifiedAttribution [
+        a prov:Attribution ;
+        sdo:agent <https://data.idnau.org/pid/organization/5e083a92-7c8e-5f53-be84-3de8b44ba5a8> ;
+        sdo:roleName droles:subjectAgent
+    ] .
+
+<https://data.idnau.org/pid/organization/5e083a92-7c8e-5f53-be84-3de8b44ba5a8>
+    a sdo:Organization ;
+    sdo:name "Aboriginal Medical Service Western Sydney" ;
+    sdo:url <http://www.amsws.org.au/> .
+
+############################################################
+# Candidate: ACT Corrective Services
+# Source ATNS entity: https://data.idnau.org/pid/resource/0e6039e9-50a4-5e64-ba3a-4599da3009be
+############################################################
+
+# Agreement: Memorandum of Understanding between Winnunga Nimmityjah Aboriginal Health Services and ACT Corrective Services
+<https://data.idnau.org/pid/resource/76d91328-a2fc-5283-978a-cf9184df044c>
+    prov:qualifiedAttribution [
+        a prov:Attribution ;
+        sdo:agent <https://data.idnau.org/pid/organization/5d537507-5c22-5bd1-8c61-2fa715e211c8> ;
+        sdo:roleName droles:subjectAgent
+    ] .
+
+<https://data.idnau.org/pid/organization/5d537507-5c22-5bd1-8c61-2fa715e211c8>
+    a sdo:Organization ;
+    sdo:name "ACT Corrective Services" ;
+    sdo:url "https://www.act.gov.au/directorates-and-agencies/justice-and-community-safety-directorate/act-corrective-services"^^xsd:anyURI .
+
+############################################################
+# Candidate: AKD Limited
+# Source ATNS entity: https://data.idnau.org/pid/resource/c9d6938f-a7fb-5eaf-903b-f4fd448824d4
+############################################################
+
+# Agreement: Balangarra Agreement
+<https://data.idnau.org/pid/resource/fde370eb-cd10-5792-9140-25771b84b1f9>
+    prov:qualifiedAttribution [
+        a prov:Attribution ;
+        sdo:agent <https://data.idnau.org/pid/organization/2c1c5f25-c214-58d5-a928-ca9635f0a3c9> ;
+        sdo:roleName droles:subjectAgent
+    ] .
+
+<https://data.idnau.org/pid/organization/2c1c5f25-c214-58d5-a928-ca9635f0a3c9>
+    a sdo:Organization ;
+    sdo:name "Indo Mines Limited" ;
+    sdo:alternateName "AKD Limited" ;
+    skos:historyNote "Changed name from AKD Limited to Indo Mines Limited on 2012-11-30" ;
+    sdo:url "https://www.delisted.com.au/company/indo-mines-limited/"^^xsd:anyURI .
+
+############################################################
+# Candidate: Albatross Hire Pty Ltd trading as Weipa Houseboats
+# Source ATNS entity: https://data.idnau.org/pid/resource/982bc157-2ff1-55d9-8b93-17435ed4ce71
+############################################################
+
+# Agreement: Wik and Wik Way Native Title Group v State of Queensland [2009] FCA 789 (29 July 2009) (Determination No. 4)
+<https://data.idnau.org/pid/resource/86d93d30-258c-56c5-91a5-11cdc29f360b>
+    prov:qualifiedAttribution [
+        a prov:Attribution ;
+        sdo:agent <https://data.idnau.org/pid/organization/6bf44bb7-f6ea-5a5a-94d8-17c05c09c305> ;
+        sdo:roleName droles:subjectAgent
+    ] .
+
+<https://data.idnau.org/pid/organization/6bf44bb7-f6ea-5a5a-94d8-17c05c09c305>
+    a sdo:Organization ;
+    sdo:name "Albatross Hire Pty Ltd trading as Weipa Houseboats" ;
+    sdo:url "http://www.weipahouseboats.com/"^^xsd:anyURI .
+
+############################################################
+# Candidate: Aluminium Corporation of China Limited
+# Source ATNS entity: https://data.idnau.org/pid/resource/9ce75b85-3fcf-5293-bc57-3ca7d7466de7
+############################################################
+
+# Agreement: Aurukun Bauxite Project Indigenous Land Use Agreement (ILUA)
+<https://data.idnau.org/pid/resource/cb527025-9e2e-53b2-8ebb-48350f34421c>
+    prov:qualifiedAttribution [
+        a prov:Attribution ;
+        sdo:agent <https://data.idnau.org/pid/organization/a18f61c0-3545-5454-bd90-5621d2029d44> ;
+        sdo:roleName droles:subjectAgent
+    ] .
+
+<https://data.idnau.org/pid/organization/a18f61c0-3545-5454-bd90-5621d2029d44>
+    a sdo:Organization ;
+    sdo:name "Aluminium Corporation of China Limited" ;
+    sdo:url "https://en.wikipedia.org/wiki/Aluminum_Corporation_of_China_Limited"^^xsd:anyURI .
+
+############################################################
+# Candidate: Amalgamated Prospectors and Leaseholders Association
+# Source ATNS entity: https://data.idnau.org/pid/resource/7e0cf7e7-5ac0-5311-aed5-d6b59c28c3c6
+############################################################
+
+# Agreement: Goldfields Heritage Protection Protocol
+<https://data.idnau.org/pid/resource/3cbf9555-1382-5fd3-b6cf-a920a05adaff>
+    prov:qualifiedAttribution [
+        a prov:Attribution ;
+        sdo:agent <https://data.idnau.org/pid/organization/781ea127-4893-51b5-893d-dd18b6ebdba3> ;
+        sdo:roleName droles:subjectAgent
+    ] .
+
+<https://data.idnau.org/pid/organization/781ea127-4893-51b5-893d-dd18b6ebdba3>
+    a sdo:Organization ;
+    sdo:name "Amalgamated Prospectors and Leaseholders Association" ;
+    sdo:url "https://www.apla.com.au"^^xsd:anyURI .
+
+############################################################
+# Candidate: Amity Oil Limited
+# Source ATNS entity: https://data.idnau.org/pid/resource/2221731f-65a5-5602-9a30-998cfb5e09d2
+############################################################
+
+# Agreement: Amity Oil Limited and the Nyoongar Community Agreement
+<https://data.idnau.org/pid/resource/a9c43512-72c9-5cbc-b617-0adcb1759003>
+    prov:qualifiedAttribution [
+        a prov:Attribution ;
+        sdo:agent <https://data.idnau.org/pid/organization/8a6ae51a-ab1e-5138-ad17-651f5802bb60> ;
+        sdo:roleName droles:subjectAgent
+    ] .
+
+<https://data.idnau.org/pid/organization/8a6ae51a-ab1e-5138-ad17-651f5802bb60>
+    a sdo:Organization ;
+    sdo:alternateName "Amity Oil Limited" ;
+    sdo:name "Blue Star Helium Limited" ;
+    sdo:url "https://www.bluestarhelium.com"^^xsd:anyURI .
+
+############################################################
+# Candidate: AngloGold Australia Ltd
+# Source ATNS entity: https://data.idnau.org/pid/resource/25f9bd38-185b-5f5b-856c-a2af099ac084
+############################################################
+
+# Agreement: Ngalpil v State of Western Australia [2001] FCA 1140 (20 August 2001)
+<https://data.idnau.org/pid/resource/a66e3abc-fffc-5e99-ba70-ee43fdf00ca0>
+    prov:qualifiedAttribution [
+        a prov:Attribution ;
+        sdo:agent <https://data.idnau.org/pid/organization/c6db1b9f-0002-5e71-93d1-555d0b13b3a7> ;
+        sdo:roleName droles:subjectAgent
+    ] .
+
+<https://data.idnau.org/pid/organization/c6db1b9f-0002-5e71-93d1-555d0b13b3a7>
+    a sdo:Organization ;
+    sdo:name "AngloGold Australia Ltd" ;
+    sdo:url "https://www.anglogoldashanti.com/portfolio/australia/"^^xsd:anyURI .
+
+############################################################
+# Candidate: Anooraq Resources Corporation
+# Source ATNS entity: https://data.idnau.org/pid/resource/bfb98fd8-4883-57c1-8c47-11e77ae6e1ef
+############################################################
+
+# Agreement: Anglo Platinum, Anooraq Resources Corporation and Mvelaphanda Resources Ltd Black Economic Empowerment Transaction
+<https://data.idnau.org/pid/resource/1ff39d8c-8341-5d67-95d5-6a5f4f35b2c8>
+    prov:qualifiedAttribution [
+        a prov:Attribution ;
+        sdo:agent <https://data.idnau.org/pid/organization/fc8ca7c0-b52b-5930-ae46-86099596fab1> ;
+        sdo:roleName droles:subjectAgent
+    ] .
+
+<https://data.idnau.org/pid/organization/fc8ca7c0-b52b-5930-ae46-86099596fab1>
+    a sdo:Organization ;
+    sdo:alternateName "Anooraq Resources Corporation" ;
+    sdo:name "Atlatsa Resources Corporation" ;
+    sdo:url "https://www.atlatsa.com/content/Group_Structure%2014_10_19.pdf"^^xsd:anyURI .
+
+############################################################
+# Candidate: Apex Minerals
+# Source ATNS entity: https://data.idnau.org/pid/resource/ad904c10-f6e3-50a5-921d-dad676801553
+############################################################
+
+# Agreement: Wiluna Regional Partnership Agreement (RPA)
+<https://data.idnau.org/pid/resource/dbe7716b-99ca-53c7-9c0c-a8724d35dceb>
+    prov:qualifiedAttribution [
+        a prov:Attribution ;
+        sdo:agent <https://data.idnau.org/pid/organization/4564c493-6a40-50b0-a097-c41c7155c38e> ;
+        sdo:roleName droles:subjectAgent
+    ] .
+
+<https://data.idnau.org/pid/organization/4564c493-6a40-50b0-a097-c41c7155c38e>
+    a sdo:Organization ;
+    sdo:name "Apex Minerals" ;
+    sdo:url "https://www.delisted.com.au/company/apex-minerals-nl/"^^xsd:anyURI .
+
+############################################################
+# Candidate: API Management Pty Ltd
+# Source ATNS entity: https://data.idnau.org/pid/resource/ebba3f3a-22f7-5a9c-8301-c03ae84934b4
+############################################################
+
+# Agreement: Chubby on behalf of the Puutu Kunti Kurrama People and the Pinikura People #1 and #2 [2015] FCA 940
+<https://data.idnau.org/pid/resource/6917a05a-830c-54af-8930-3158ef017c4a>
+    prov:qualifiedAttribution [
+        a prov:Attribution ;
+        sdo:agent <https://data.idnau.org/pid/organization/867834f1-ea77-502a-8b2a-a13f06962997> ;
+        sdo:roleName droles:subjectAgent
+    ] .
+
+<https://data.idnau.org/pid/organization/867834f1-ea77-502a-8b2a-a13f06962997>
+    a sdo:Organization ;
+    sdo:name "API Management Pty Ltd" ;
+    sdo:alternateName "West Pilbara Iron Joint Venture" ;
+    sdo:identifier "66112677595"^^ids:ausbn ;
+    sdo:url "https://connectonline.asic.gov.au/RegistrySearch/faces/landing/bySearchId.jspx?searchIdType=BUSN&searchId=152026983"^^xsd:anyURI .
+
+############################################################
+# Candidate: Apudthama Land Trust
+# Source ATNS entity: https://data.idnau.org/pid/resource/55d0808d-d1a5-552c-825c-cc58bc194639
+############################################################
+
+# Agreement: Woosup on behalf of the Northern Cape York Group #1 v State of Queensland (No 3) [2014] FCA 1148
+<https://data.idnau.org/pid/resource/dc6c4cd3-e020-5e5a-9242-029649b0de77>
+    prov:qualifiedAttribution [
+        a prov:Attribution ;
+        sdo:agent <https://data.idnau.org/pid/organization/72387ee2-17fb-52e0-88ec-b5cc16348601> ;
+        sdo:roleName droles:subjectAgent
+    ] .
+
+<https://data.idnau.org/pid/organization/72387ee2-17fb-52e0-88ec-b5cc16348601>
+    a sdo:Organization ;
+    sdo:name "Apudthama Land Trust" ;
+    sdo:url "https://www.apudthamalandtrust.com.au"^^xsd:anyURI .
+
+############################################################
+# Candidate: Arts Queensland
+# Source ATNS entity: https://data.idnau.org/pid/resource/81ba53ea-e4d7-56c0-8907-99c78cc79d2a
+############################################################
+
+# Agreement: Hope Vale Arts 'Interpretative Centre' Shared Responsibility Agreement
+<https://data.idnau.org/pid/resource/7058fae5-ceb6-5110-83f2-89c86d3898c7>
+    prov:qualifiedAttribution [
+        a prov:Attribution ;
+        sdo:agent <https://data.idnau.org/pid/organization/98b70e2a-ae8e-5a10-ba61-d7aa58da5047> ;
+        sdo:roleName droles:subjectAgent
+    ] .
+
+<https://data.idnau.org/pid/organization/98b70e2a-ae8e-5a10-ba61-d7aa58da5047>
+    a sdo:Organization ;
+    sdo:name "Arts Queensland" ;
+    sdo:url "http://www.arts.qld.gov.au/"^^xsd:anyURI .
+
+############################################################
+# Candidate: Ashley Youth Detention Centre
+# Source ATNS entity: https://data.idnau.org/pid/resource/24db7ccf-8040-5972-a928-7e81c2dddb39
+############################################################
+
+# Agreement: Meenah Mienne Shared Responsibility Agreement (SRA)
+<https://data.idnau.org/pid/resource/6cf29908-60ba-5e01-997f-898374e63df4>
+    prov:qualifiedAttribution [
+        a prov:Attribution ;
+        sdo:agent <https://data.idnau.org/pid/organization/8f496d60-4668-593f-a501-532bc7911975> ;
+        sdo:roleName droles:subjectAgent
+    ] .
+
+<https://data.idnau.org/pid/organization/8f496d60-4668-593f-a501-532bc7911975>
+    a sdo:Organization ;
+    sdo:name "Ashley Youth Detention Centre" ;
+    sdo:url "https://www.health.tas.gov.au/service-finder/ashley-youth-detention-centre"^^xsd:anyURI .
+
+############################################################
+# Candidate: Association of Mining and Exploration Companies
+# Source ATNS entity: https://data.idnau.org/pid/resource/aab6ff6e-dd27-5b80-97ff-679da85e7aec
+############################################################
+
+# Agreement: Goldfields Heritage Protection Protocol
+<https://data.idnau.org/pid/resource/3cbf9555-1382-5fd3-b6cf-a920a05adaff>
+    prov:qualifiedAttribution [
+        a prov:Attribution ;
+        sdo:agent <https://data.idnau.org/pid/organization/15d8de7f-b05a-5fb4-98b1-d278e5a9ae17> ;
+        sdo:roleName droles:subjectAgent
+    ] .
+
+<https://data.idnau.org/pid/organization/15d8de7f-b05a-5fb4-98b1-d278e5a9ae17>
+    a sdo:Organization ;
+    sdo:name "Association of Mining and Exploration Companies" ;
+    sdo:url "https://amec.org.au"^^xsd:anyURI .
+
+############################################################
+# Candidate: AuDAX Resources Ltd
+# Source ATNS entity: https://data.idnau.org/pid/resource/9c1190ff-0c1b-5c59-9918-57157e54d460
+############################################################
+
+# Agreement: AuDAX Resources NL and the Mirriwung Gajerrong People Agreement
+<https://data.idnau.org/pid/resource/7f1ad070-c15c-5e92-b542-3500def78f13>
+    prov:qualifiedAttribution [
+        a prov:Attribution ;
+        sdo:agent <https://data.idnau.org/pid/organization/6d41d7e1-98d3-5cdd-b1a3-623f9099978c> ;
+        sdo:roleName droles:subjectAgent
+    ] .
+
+<https://data.idnau.org/pid/organization/6d41d7e1-98d3-5cdd-b1a3-623f9099978c>
+    a sdo:Organization ;
+    sdo:name "AuDAX Resources Ltd" ;
+    sdo:url "https://adx-energy.com"^^xsd:anyURI .
+
+############################################################
+# Candidate: Aurora Gold (WA) Pty Ltd
+# Source ATNS entity: https://data.idnau.org/pid/resource/fa0d4f00-c5e8-5707-8a7f-ea88d71b75eb
+############################################################
+
+# Agreement: Brown v State of Western Australia [2001] FCA 1462 (19 October 2001)
+<https://data.idnau.org/pid/resource/1b68b81b-5201-583b-a6d2-e6902b1a5863>
+    prov:qualifiedAttribution [
+        a prov:Attribution ;
+        sdo:agent <https://data.idnau.org/pid/organization/511f5661-ce55-5b07-9620-7351f2bc3143> ;
+        sdo:roleName droles:subjectAgent
+    ] .
+
+<https://data.idnau.org/pid/organization/511f5661-ce55-5b07-9620-7351f2bc3143>
+    a sdo:Organization ;
+    sdo:name "Aurora Gold (WA) Pty Ltd" ;
+    sdo:url "https://www.delisted.com.au/company/aurora-gold-limited"^^xsd:anyURI .
+
+############################################################
+# Candidate: Austone Pty Ltd
+# Source ATNS entity: https://data.idnau.org/pid/resource/f11b6640-0cbd-5fcb-a42a-5cd4c0891338
+############################################################
+
+# Agreement: Williams on behalf of the Gumbaynggirr People and Attorney General of New South Wales [2019] FCA 1915
+<https://data.idnau.org/pid/resource/1bd2e100-cdee-59b1-b8c7-f8a298307a95>
+    prov:qualifiedAttribution [
+        a prov:Attribution ;
+        sdo:agent <https://data.idnau.org/pid/organization/2fbdd938-ce10-534f-a439-cd6e62e974b8> ;
+        sdo:roleName droles:subjectAgent
+    ] .
+
+<https://data.idnau.org/pid/organization/2fbdd938-ce10-534f-a439-cd6e62e974b8>
+    a sdo:Organization ;
+    sdo:name "Austone Pty Ltd" ;
+    sdo:identifier "61009834244"^^ids:ausbn ;
+    sdo:url "https://austone.au"^^xsd:anyURI .
+
+############################################################
+# Candidate: Australian Army
+# Source ATNS entity: https://data.idnau.org/pid/resource/4168fd07-40f3-5c33-82f3-27978e9457d5
+############################################################
+
+# Agreement: Borroloola 'Working Side by Side - Borroloola and AACAP' Shared Responsibility Agreement (SRA)
+<https://data.idnau.org/pid/resource/463aeb71-f66a-5c85-a6e2-6c0320fa0ae0>
+    prov:qualifiedAttribution [
+        a prov:Attribution ;
+        sdo:agent <https://linked.data.gov.au/org/army> ;
+        sdo:roleName droles:subjectAgent
+    ] .
+
+<https://linked.data.gov.au/org/army>
+    a sdo:Organization ;
+    sdo:memberOf <https://linked.data.gov.au/org/defence> ;
+    sdo:name "Australian Army" ;
+    sdo:url "http://www.army.gov.au/"^^xsd:anyURI .
+
+############################################################
+# Candidate: Australian Broadcasting Corporation
+# Source ATNS entity: https://data.idnau.org/pid/resource/fade1f89-b8fe-5882-9f0a-0e5c2bec6828
+############################################################
+
+# Agreement: Circular Head 'Community Garden Project' Shared Responsibility Agreement (SRA)
+<https://data.idnau.org/pid/resource/b614bba5-8456-5bdd-a1c9-e161b5b1e35a>
+    prov:qualifiedAttribution [
+        a prov:Attribution ;
+        sdo:agent <https://linked.data.gov.au/org/abc> ;
+        sdo:roleName droles:subjectAgent
+    ] .
+
+<https://linked.data.gov.au/org/abc>
+    a sdo:Organization ;
+    sdo:name "Australian Broadcasting Corporation" ;
+    sdo:url "http://www.abc.net.au/default_800.htm"^^xsd:anyURI .
+
+############################################################
+# Candidate: Australian Bush Heritage Fund
+# Source ATNS entity: https://data.idnau.org/pid/resource/cd73eefd-00cc-5e58-bd59-5b32ef1cd19e
+############################################################
+
+# Agreement: Warrungu People/Yourka Indigenous Land Use Agreement (ILUA)
+<https://data.idnau.org/pid/resource/c9956cfe-ec9f-5328-a6c2-64bd570a3559>
+    prov:qualifiedAttribution [
+        a prov:Attribution ;
+        sdo:agent <https://data.idnau.org/pid/organization/6e7fe1c9-bf6f-5dd7-b802-3e03e42cbc29> ;
+        sdo:roleName droles:subjectAgent
+    ] .
+
+<https://data.idnau.org/pid/organization/6e7fe1c9-bf6f-5dd7-b802-3e03e42cbc29>
+    a sdo:Organization ;
+    sdo:name "Australian Bush Heritage Fund" ;
+    sdo:identifier "78053639115"^^ids:ausbn ;
+    sdo:url "http://www.bushheritage.org.au/"^^xsd:anyURI .
+
+############################################################
+# Candidate: Australian College of Rural and Remote Medicine (ACRRM)
+# Source ATNS entity: https://data.idnau.org/pid/resource/484ab5b8-be50-5323-82c2-c451556a8af1
+############################################################
+
+# Agreement: National Partnership Agreement on Closing the Gap in Indigenous Health Outcomes
+<https://data.idnau.org/pid/resource/1316fbf7-54a7-56f6-9de0-0da9f7b4e642>
+    prov:qualifiedAttribution [
+        a prov:Attribution ;
+        sdo:agent <https://data.idnau.org/pid/organization/e841d8fa-7674-5ec4-94e7-eb1039f7c49e> ;
+        sdo:roleName droles:subjectAgent
+    ] .
+
+<https://data.idnau.org/pid/organization/e841d8fa-7674-5ec4-94e7-eb1039f7c49e>
+    a sdo:Organization ;
+    sdo:name "Australian College of Rural and Remote Medicine (ACRRM)" ;
+    sdo:identifier "712078081848"^^ids:ausbn ;
+    sdo:url "http://www.acrrm.org.au/"^^xsd:anyURI .
+
+############################################################
+# Reviewed showcase attribution: Torres Strait Regional Authority
+############################################################
+
+<https://data.idnau.org/pid/resource/8a3cb6e8-9231-50fd-ae9c-a4fed1777df0>
+    prov:qualifiedAttribution [
+        a prov:Attribution ;
+        sdo:agent <https://linked.data.gov.au/org/capad-TSRA> ;
+        sdo:roleName droles:subjectAgent
+    ] .
+
+<https://linked.data.gov.au/org/capad-TSRA>
+    a sdo:Organization ;
+    sdo:name "Torres Strait Regional Authority" .

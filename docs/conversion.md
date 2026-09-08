@@ -50,6 +50,15 @@ ATNS references are explicitly typed both `atns:Reference` and
 serialized as `xsd:token` values, and source deleted flags are serialized as
 explicit `xsd:boolean` values.
 
+For Agreement-classified entities, the source `Summary` is emitted as
+`schema:description` and the source `Body` as `schema:text`. Empty values are
+omitted. Extraction reports repeated `Summary` or `Body` elements so that a
+malformed source row cannot be silently collapsed without review. Source HTML
+fragments (including nested elements) and Unicode are preserved at this stage for later cleanup; legacy
+escaped line-break markers are restored as line breaks. This enrichment runs as
+an RDFLib post-processing stage after `rdfcon`, because the latter interprets
+embedded source HTML in template literals as RDF syntax.
+
 ### Editorial decisions
 
 Source-derived facts and project-authored publication decisions are kept distinct:
@@ -96,6 +105,22 @@ task pipeline
 
 Individual stages are also available through `task extract`, `task prepare`, `task convert`, `task validate` and `task check`.
 
+## Full public sandbox
+
+The curated sample remains the acceptance baseline for published RDF. A separate local sandbox path expands the same mappings across all usable public, non-deleted rows in the mapped source tables:
+
+```bash
+task sandbox
+```
+
+`scripts/prepare_public_sandbox.py` selects public, non-deleted entities and references with usable source display labels, then retains relationship and entity-reference rows only when both endpoints are published. It writes the complete selection to `build/sandbox/csv`, a resource registry to `build/sandbox/resources.csv`, and review reports to `build/sandbox/reports`. No private source values are written to tracked files.
+
+Existing sample IRIs are retained. Every other resource IRI is generated deterministically as a UUIDv5 from its source table kind and source primary key using a fixed, documented namespace. Repeated runs therefore produce the same IRI instead of duplicates. This algorithm preserves source-row identity; it does not assert that two distinct source IDs describe different real-world things.
+
+Blank source lookup entries are not turned into invented vocabulary concepts. The affected resource is retained while that classification triple is omitted and reported. Public entities or references without any source display label are omitted and reported because loading them would recreate unlabeled resources in Prez.
+
+The sandbox currently covers `Entities`, `Refs`, `Entity_Entity`, `Entity_Refs`, `Entity_SubCategory` and `Entity_SubjectMatter`. It is not an assertion that every table in the original ATNS database is publication-ready.
+
 ## Manual source updates
 
 An updated export with the same columns and additional or changed rows is handled deliberately:
@@ -128,4 +153,4 @@ The golden graph check is expected to fail when an accepted source update legiti
 
 ## Current scope and replacement decision
 
-The pipeline reproduces the complete current public sample exactly. It is safe to use as the maintenance path for that 269-triple sample after review. It is not yet a full-database publication converter: additional ATNS tables, publication filtering, sensitivity decisions and vocabulary-overlay rules must be designed and tested before expanding beyond the declared public resources.
+The sample pipeline reproduces the complete current public sample exactly and remains the maintenance path for that 269-triple graph after review. The sandbox pipeline exercises the current mappings over the complete usable public subset of the six mapped tables, but it is not yet a production full-database publication converter. Additional ATNS tables, source-owner confirmation of publication filtering and sensitivity decisions, and vocabulary-overlay rules still require review before a production release.

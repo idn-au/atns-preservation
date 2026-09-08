@@ -1,0 +1,28 @@
+services:
+  prez:
+    image: ghcr.io/rdflib/prez:4.23.7
+    ports:
+      - "${PREZ_PORT:-8001}:8000"
+    volumes:
+      - ./build/sandbox/rdf:/rdf/outputs:ro
+      - ./vocabs:/rdf/vocabs:ro
+      - ./model.ttl:/rdf/model.ttl:ro
+      - ./prezdata:/rdf/prezdata:ro
+      - ./prezconfig/custom_endpoints.ttl:/app/reference_data/endpoints/data_endpoints_custom/custom_endpoints.ttl:ro
+      - ./prezconfig/custom_profiles.ttl:/app/reference_data/profiles/custom_profiles.ttl:ro
+    environment:
+      - CUSTOM_ENDPOINTS=true
+      - SPARQL_REPO_TYPE=pyoxigraph_memory
+      - PYOXIGRAPH_DATA_DIR=/rdf
+    develop:
+      watch:
+        - action: restart
+          path: ./build/sandbox/rdf
+        - action: restart
+          path: ./vocabs
+        - action: restart
+          path: ./model.ttl
+        - action: restart
+          path: ./prezdata
+        - action: restart
+          path: ./prezconfig
