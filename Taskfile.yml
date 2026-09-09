@@ -66,10 +66,9 @@ tasks:
       - ATNS_CONVERSION_PROFILE=sandbox uv run --frozen rdfcon --processes 1 specs/sandbox-catalogue.yaml
       - ATNS_CONVERSION_PROFILE=sandbox uv run --frozen rdfcon --processes 4 specs/sandbox-entities.yaml
       - uv run --frozen python scripts/enrich_agreement_text.py --profile sandbox
+      - uv run --frozen python scripts/merge_curated_enrichments.py
       - ATNS_CONVERSION_PROFILE=sandbox uv run --frozen rdfcon --processes 4 specs/sandbox-references.yaml
       - ATNS_CONVERSION_PROFILE=sandbox uv run --frozen rdfcon --processes 4 specs/sandbox-relationships.yaml
-      - cp enrichments/agent-attributions.ttl build/sandbox/rdf/agent-attributions.ttl
-      - cp enrichments/spatial-coverage.ttl build/sandbox/rdf/spatial-coverage.ttl
 
   sandbox-validate:
     desc: Validate the generated sandbox RDF and its supporting model and vocabularies
@@ -100,6 +99,11 @@ tasks:
     desc: Report known IDN agents mentioned in ATNS Agreement text
     deps: [sandbox]
     cmd: uv run --frozen python scripts/audit_agent_mentions.py
+
+  audit-schema-urls:
+    desc: Audit entity and reference schema:url targets and report broken-link patterns
+    deps: [sandbox]
+    cmd: uv run --frozen python scripts/audit_schema_urls.py
 
   generate-agent-enrichment-candidates:
     desc: Generate a review batch of new organisation candidates and Agreement attributions
