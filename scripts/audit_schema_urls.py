@@ -12,7 +12,7 @@ from dataclasses import dataclass
 from datetime import UTC, datetime
 from pathlib import Path
 from urllib.error import HTTPError, URLError
-from urllib.parse import urlparse
+from urllib.parse import parse_qs, quote, urlparse
 from urllib.request import Request, urlopen
 
 from rdflib import Graph, URIRef
@@ -41,6 +41,23 @@ class Target:
 def normalised_host(url: str) -> str:
     host = (urlparse(url).hostname or "").lower()
     return host.removeprefix("www.")
+
+
+def unverified_candidate(original_url: str) -> tuple[str, str]:
+    """Return a deterministic replacement candidate that still needs browser validation."""
+    parsed = urlparse(original_url)
+    if (
+        normalised_host(original_url) == "nntt.gov.au"
+        and parsed.path.lower().endswith("/nntr_details.aspx")
+    ):
+        file_numbers = parse_qs(parsed.query).get("NNTT_Fileno", [])
+        if len(file_numbers) == 1 and file_numbers[0]:
+            encoded = quote(file_numbers[0], safe="")
+            return (
+                f"https://www.nntt.gov.au/search-the-registers/native-title-register#/{encoded}",
+                "candidate_unverified",
+            )
+    return "", ""
 
 
 def classify_status(status: int, content_length: str) -> tuple[str, str]:
@@ -75,6 +92,7 @@ def refine_redirect(classification: str, assessment: str, original_url: str, fin
 
 def audit(target: Target) -> dict[str, str]:
     parsed = urlparse(target.original_url)
+    candidate_url, candidate_status = unverified_candidate(target.original_url)
     base = {
         "resource_iri": target.resource_iri,
         "resource_name": target.resource_name,
@@ -83,6 +101,8 @@ def audit(target: Target) -> dict[str, str]:
         "last_url_reached": "",
         "last_domain_reached": "",
         "possible_updated_url": "",
+        "candidate_url": candidate_url,
+        "candidate_status": candidate_status,
         "http_status": "",
         "classification": "",
         "assessment": "confirmed_broken",
@@ -184,7 +204,7 @@ def targets(path: Path) -> list[Target]:
 
 FIELDS = [
     "resource_iri", "resource_name", "original_url", "last_url_reached",
-    "possible_updated_url", "http_status", "classification", "assessment", "broken", "same_domain_redirect",
+    "possible_updated_url", "candidate_url", "candidate_status", "http_status", "classification", "assessment", "broken", "same_domain_redirect",
     "path_changed", "content_type", "content_length", "error",
 ]
 
@@ -209,7 +229,7 @@ def write_summary(groups: list[tuple[str, list[dict[str, str]], str]]) -> None:
         "",
         f"Checked: `{checked}`",
         "",
-        "`last_url_reached` records where redirect handling ended; it is diagnostic evidence, not a recommended replacement. `possible_updated_url` is populated only when a same-domain changed path returned usable content. `assessment` distinguishes working links, confirmed or likely breakage, and results requiring review. Access restrictions, timeouts and server errors are not automatically called broken. HTTP 204, explicit zero-length responses, 404/410, invalid URLs and detected soft-404 pages are confirmed broken.",
+        "`last_url_reached` records where redirect handling ended; it is diagnostic evidence, not a recommended replacement. `possible_updated_url` is populated only when a same-domain changed path returned usable content. `candidate_url` records a predictable mapping that has not been validated inside the destination browser application; these rows have `candidate_status` `candidate_unverified`. `assessment` describes the original URL check and is independent of candidate status. Access restrictions, timeouts and server errors are not automatically called broken. HTTP 204, explicit zero-length responses, 404/410, invalid URLs and detected soft-404 pages are confirmed broken.",
     ]
     for title, rows, csv_name in groups:
         counts = Counter(row["classification"] for row in rows)
@@ -247,6 +267,15 @@ def write_summary(groups: list[tuple[str, list[dict[str, str]], str]]) -> None:
                 ["Domain", "Original path", "Final path", "Examples"],
                 [[domain, old or "/", new or "/", str(count)] for (domain, old, new), count in pattern_counts.most_common(15)],
             ) if pattern_counts else "No successful same-domain path migrations were observed.",
+        ])
+        candidates = [row for row in rows if row.get("candidate_status") == "candidate_unverified"]
+        sections.extend([
+            "", "### Unverified candidate URLs", "",
+            f"{len(candidates):,} deterministic candidate mappings were generated. They require browser-level validation before the source RDF is changed.", "",
+            markdown_table(
+                ["Resource", "Name", "Original URL", "Candidate URL", "Status"],
+                [[row["resource_iri"], row["resource_name"], row["original_url"], row["candidate_url"], row["candidate_status"]] for row in candidates],
+            ) if candidates else "No deterministic candidate mappings were generated.",
         ])
     (REPORT_DIR / "broken-link-report.md").write_text("\n".join(sections) + "\n", encoding="utf-8")
 
