@@ -80,8 +80,9 @@ def audit(target: Target) -> dict[str, str]:
         "resource_name": target.resource_name,
         "original_url": target.original_url,
         "original_domain": normalised_host(target.original_url),
-        "final_url": "",
-        "final_domain": "",
+        "last_url_reached": "",
+        "last_domain_reached": "",
+        "possible_updated_url": "",
         "http_status": "",
         "classification": "",
         "assessment": "confirmed_broken",
@@ -112,8 +113,16 @@ def audit(target: Target) -> dict[str, str]:
                 final_parsed = urlparse(final_url)
                 return {
                     **base,
-                    "final_url": final_url,
-                    "final_domain": normalised_host(final_url),
+                    "last_url_reached": final_url,
+                    "last_domain_reached": normalised_host(final_url),
+                    "possible_updated_url": (
+                        final_url
+                        if assessment == "working"
+                        and final_url != target.original_url
+                        and normalised_host(final_url) == normalised_host(target.original_url)
+                        and final_parsed.path != parsed.path
+                        else ""
+                    ),
                     "http_status": str(status),
                     "classification": classification,
                     "assessment": assessment,
@@ -134,8 +143,8 @@ def audit(target: Target) -> dict[str, str]:
         classification, assessment = classify_status(error.code, error.headers.get("Content-Length", ""))
         return {
             **base,
-            "final_url": final_url,
-            "final_domain": normalised_host(final_url),
+            "last_url_reached": final_url,
+            "last_domain_reached": normalised_host(final_url),
             "http_status": str(error.code),
             "classification": classification,
             "assessment": assessment,
@@ -174,15 +183,15 @@ def targets(path: Path) -> list[Target]:
 
 
 FIELDS = [
-    "resource_iri", "resource_name", "original_url", "original_domain", "final_url",
-    "final_domain", "http_status", "classification", "assessment", "broken", "same_domain_redirect",
+    "resource_iri", "resource_name", "original_url", "last_url_reached",
+    "possible_updated_url", "http_status", "classification", "assessment", "broken", "same_domain_redirect",
     "path_changed", "content_type", "content_length", "error",
 ]
 
 
 def write_csv(path: Path, rows: list[dict[str, str]]) -> None:
     with path.open("w", encoding="utf-8", newline="") as stream:
-        writer = csv.DictWriter(stream, fieldnames=FIELDS)
+        writer = csv.DictWriter(stream, fieldnames=FIELDS, extrasaction="ignore", lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
 
@@ -200,7 +209,7 @@ def write_summary(groups: list[tuple[str, list[dict[str, str]], str]]) -> None:
         "",
         f"Checked: `{checked}`",
         "",
-        "`assessment` distinguishes working links, confirmed or likely breakage, and results requiring review. Access restrictions, timeouts and server errors are not automatically called broken. HTTP 204, explicit zero-length responses, 404/410, invalid URLs and detected soft-404 pages are confirmed broken.",
+        "`last_url_reached` records where redirect handling ended; it is diagnostic evidence, not a recommended replacement. `possible_updated_url` is populated only when a same-domain changed path returned usable content. `assessment` distinguishes working links, confirmed or likely breakage, and results requiring review. Access restrictions, timeouts and server errors are not automatically called broken. HTTP 204, explicit zero-length responses, 404/410, invalid URLs and detected soft-404 pages are confirmed broken.",
     ]
     for title, rows, csv_name in groups:
         counts = Counter(row["classification"] for row in rows)
@@ -231,7 +240,7 @@ def write_summary(groups: list[tuple[str, list[dict[str, str]], str]]) -> None:
             row for row in rows
             if row["broken"] == "false" and row["same_domain_redirect"] == "true" and row["path_changed"] == "true"
         ]
-        pattern_counts = Counter((row["original_domain"], urlparse(row["original_url"]).path, urlparse(row["final_url"]).path) for row in repairable)
+        pattern_counts = Counter((row["original_domain"], urlparse(row["original_url"]).path, urlparse(row["last_url_reached"]).path) for row in repairable)
         sections.extend([
             "", "### Observed same-domain path migrations", "",
             markdown_table(

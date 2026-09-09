@@ -1,31 +1,31 @@
 # ATNS `schema:url` link audit
 
-Checked: `2026-09-09T05:23:01+00:00`
+Checked: `2026-09-09T05:50:59+00:00`
 
-`assessment` distinguishes working links, confirmed or likely breakage, and results requiring review. Access restrictions, timeouts and server errors are not automatically called broken. HTTP 204, explicit zero-length responses, 404/410, invalid URLs and detected soft-404 pages are confirmed broken.
+`last_url_reached` records where redirect handling ended; it is diagnostic evidence, not a recommended replacement. `possible_updated_url` is populated only when a same-domain changed path returned usable content. `assessment` distinguishes working links, confirmed or likely breakage, and results requiring review. Access restrictions, timeouts and server errors are not automatically called broken. HTTP 204, explicit zero-length responses, 404/410, invalid URLs and detected soft-404 pages are confirmed broken.
 
 ## Entity URLs
 
-Full table: `entity-url-audit.csv` (4,031 URL assertions; 1,821 confirmed or likely broken).
+Full table: `entity-url-audit.csv` (4,031 URL assertions; 1,762 confirmed or likely broken).
 
 | Assessment | Count |
 | --- | --- |
-| review_required | 1,356 |
-| confirmed_broken | 1,262 |
-| working | 854 |
-| likely_broken | 559 |
+| review_required | 1,400 |
+| confirmed_broken | 1,187 |
+| working | 869 |
+| likely_broken | 575 |
 
 | Classification | Count |
 | --- | --- |
-| access_restricted | 1,123 |
-| ok | 854 |
-| not_found | 810 |
-| dns_error | 540 |
-| no_content | 445 |
-| timeout | 118 |
-| redirect_to_home | 53 |
-| connection_error | 39 |
-| server_error | 17 |
+| access_restricted | 1,184 |
+| ok | 869 |
+| not_found | 764 |
+| dns_error | 556 |
+| no_content | 416 |
+| timeout | 107 |
+| redirect_to_home | 51 |
+| connection_error | 36 |
+| server_error | 16 |
 | tls_error | 10 |
 | client_error | 9 |
 | soft_404 | 7 |
@@ -36,7 +36,7 @@ Full table: `entity-url-audit.csv` (4,031 URL assertions; 1,821 confirmed or lik
 
 | Domain | Broken URLs |
 | --- | --- |
-| nntt.gov.au | 951 |
+| nntt.gov.au | 878 |
 | apps.indigenous.gov.au | 114 |
 | ainc-inac.gc.ca | 33 |
 | indigenous.gov.au | 24 |
@@ -44,13 +44,13 @@ Full table: `entity-url-audit.csv` (4,031 URL assertions; 1,821 confirmed or lik
 | federalfinancialrelations.gov.au | 16 |
 | health.gov.au | 7 |
 | iluasa.com | 6 |
+| info.gov.za | 5 |
+| legislation.sa.gov.au | 5 |
 | nationalparks.nsw.gov.au | 5 |
 | dme.gov.za | 4 |
 | ozminerals.com | 4 |
 | laws.justice.gc.ca | 4 |
-| legislation.sa.gov.au | 4 |
 | aiatsis.gov.au | 3 |
-| au.mycompanydetails.com | 3 |
 
 ### Observed same-domain path migrations
 
@@ -74,26 +74,26 @@ Full table: `entity-url-audit.csv` (4,031 URL assertions; 1,821 confirmed or lik
 
 ## Reference URLs
 
-Full table: `reference-url-audit.csv` (1,597 URL assertions; 723 confirmed or likely broken).
+Full table: `reference-url-audit.csv` (1,597 URL assertions; 711 confirmed or likely broken).
 
 | Assessment | Count |
 | --- | --- |
-| review_required | 457 |
-| confirmed_broken | 434 |
-| working | 417 |
-| likely_broken | 289 |
+| review_required | 470 |
+| confirmed_broken | 421 |
+| working | 416 |
+| likely_broken | 290 |
 
 | Classification | Count |
 | --- | --- |
-| not_found | 418 |
-| ok | 417 |
-| access_restricted | 316 |
-| dns_error | 278 |
-| timeout | 79 |
-| redirect_to_home | 37 |
+| ok | 416 |
+| not_found | 405 |
+| access_restricted | 331 |
+| dns_error | 279 |
+| timeout | 77 |
+| redirect_to_home | 35 |
 | server_error | 13 |
 | soft_404 | 10 |
-| connection_error | 6 |
+| connection_error | 8 |
 | no_content | 6 |
 | tls_error | 6 |
 | client_error | 5 |
@@ -104,7 +104,7 @@ Full table: `reference-url-audit.csv` (1,597 URL assertions; 723 confirmed or li
 
 | Domain | Broken URLs |
 | --- | --- |
-| nntt.gov.au | 116 |
+| nntt.gov.au | 106 |
 | ainc-inac.gc.ca | 68 |
 | indigenous.gov.au | 18 |
 | abc.net.au | 17 |
