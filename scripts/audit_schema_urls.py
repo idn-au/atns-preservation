@@ -46,15 +46,19 @@ def normalised_host(url: str) -> str:
 def unverified_candidate(original_url: str) -> tuple[str, str]:
     """Return a deterministic replacement candidate that still needs browser validation."""
     parsed = urlparse(original_url)
-    if (
-        normalised_host(original_url) == "nntt.gov.au"
-        and parsed.path.lower().endswith("/nntr_details.aspx")
-    ):
+    if normalised_host(original_url) == "nntt.gov.au":
+        path = parsed.path.lower()
+        if path.endswith("/ilua_details.aspx"):
+            register = "indigenous-land-use-agreements"
+        elif path.endswith(("/nntr_details.aspx", "/determination_details.aspx")):
+            register = "native-title-register"
+        else:
+            return "", ""
         file_numbers = parse_qs(parsed.query).get("NNTT_Fileno", [])
         if len(file_numbers) == 1 and file_numbers[0]:
             encoded = quote(file_numbers[0], safe="")
             return (
-                f"https://www.nntt.gov.au/search-the-registers/native-title-register#/{encoded}",
+                f"https://www.nntt.gov.au/search-the-registers/{register}#/{encoded}",
                 "candidate_unverified",
             )
     return "", ""
