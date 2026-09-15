@@ -43,7 +43,7 @@ prez:AtnsEntityProfile
     a prof:Profile, prez:ObjectProfile ;
     dcterms:identifier "atns-entity"^^xsd:token ;
     dcterms:title "ATNS Entity presentation profile"@en ;
-    dcterms:description "Presents an ATNS entity with embedded reference metadata and preserved incoming and outgoing relationship rows, while omitting source deletion flags."@en ;
+    dcterms:description "Presents an ATNS entity with embedded reference metadata, preserved incoming and outgoing relationship rows, and spatial feature details for an on-demand map, while omitting source deletion flags."@en ;
     altr-ext:constrainsClass atns:Entity ;
     altr-ext:hasDefaultResourceFormat "text/anot+turtle" ;
     altr-ext:hasResourceFormat
@@ -73,7 +73,13 @@ prez:AtnsEntityProfile
                 schema:spatialCoverage
                 schema:startDate
                 schema:url
+                ( schema:spatialCoverage rdf:type )
                 ( schema:spatialCoverage schema:name )
+                ( schema:spatialCoverage schema:description )
+                ( schema:spatialCoverage geo:hasGeometry )
+                ( schema:spatialCoverage geo:hasGeometry geo:asWKT )
+                ( schema:spatialCoverage geo:hasBoundingBox )
+                ( schema:spatialCoverage geo:hasBoundingBox geo:asWKT )
                 prov:qualifiedAttribution
                 ( prov:qualifiedAttribution rdf:type )
                 ( prov:qualifiedAttribution schema:agent )
