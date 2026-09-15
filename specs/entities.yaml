@@ -25,6 +25,9 @@ template: |-
     {% for subject in subjects_for_entity(r["EntityID"]) %}
     schema:keywords <{{ subject }}> ;
     {% endfor %}
+    {% if publication_status_keyword() %}
+    schema:keywords {{ literal(publication_status_keyword()) }} ;
+    {% endif %}
     {% for reference in references_for_entity(r["EntityID"]) %}
     dcterms:references <{{ reference }}> ;
     {% endfor %}

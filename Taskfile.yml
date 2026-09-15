@@ -15,13 +15,24 @@ tasks:
       - uv python install
       - uv sync --frozen
 
+  test-text-normalization:
+    desc: Test conservative conversion of legacy ATNS HTML to structured plain text
+    cmd: uv run --frozen python -m unittest tests/test_normalize_source_xml.py
+
+  normalize-source:
+    desc: Create a strictly valid, text-normalized working copy of the preserved XML
+    deps: [test-text-normalization]
+    cmd: uv run --frozen python scripts/normalize_source_xml.py
+
   extract:
     desc: Extract the required private XML tables to ignored normalized CSV files
+    deps: [normalize-source]
     cmd: uv run --frozen python scripts/extract_xml.py
 
   accept-source:
     desc: Validate and checksum-pin a reviewed row-only replacement XML export
     cmds:
+      - uv run --frozen python scripts/normalize_source_xml.py --allow-source-update
       - uv run --frozen python scripts/extract_xml.py --update-manifest
       - uv run --frozen python scripts/prepare_public_sample.py
 

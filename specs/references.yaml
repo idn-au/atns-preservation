@@ -24,6 +24,9 @@ template: |-
     {% if r["Year"] %}
     schema:datePublished {{ literal(r["Year"]) }} ;
     {% endif %}
+    {% if publication_status_keyword() %}
+    schema:keywords {{ literal(publication_status_keyword()) }} ;
+    {% endif %}
     schema:name {{ literal(r["Title"], lang="en") }} ;
     {% if http_url(r["URL"]) %}
     schema:url {{ literal(http_url(r["URL"]), datatype="http://www.w3.org/2001/XMLSchema#anyURI") }} ;

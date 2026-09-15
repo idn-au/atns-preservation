@@ -1,7 +1,14 @@
 prefixes:
   atns: <https://linked.data.gov.au/def/atns/model/>
-  catobjtyp: <https://data.idnau.org/pid/vocab/cat-obj-types/>
+  atns-cat: <https://data.idnau.org/pid/vocab/atns-cat/>
+  atns-country: <https://data.idnau.org/pid/vocab/atns-country/>
+  atns-ref: <https://data.idnau.org/pid/vocab/atns-ref/>
+  atns-rel: <https://data.idnau.org/pid/vocab/atns-rel/>
+  atns-sub: <https://data.idnau.org/pid/vocab/atns-sub/>
+  atns-subcat: <https://data.idnau.org/pid/vocab/atns-subcat/>
+  cat-obj-types: <https://data.idnau.org/pid/vocab/cat-obj-types/>
   dcterms: <http://purl.org/dc/terms/>
+  idn-resource: <https://data.idnau.org/pid/resource/>
   owl: <http://www.w3.org/2002/07/owl#>
   schema: <https://schema.org/>
   xsd: <http://www.w3.org/2001/XMLSchema#>
