@@ -5,7 +5,7 @@ Data extracted from the Agreements, Treaties and Negotiated Settlements [website
 
 ## Reproducible conversion
 
-The current public preservation sample can be regenerated from the private ATNS XML export through a checksum-verified XML-to-CSV extraction stage and declarative `rdfcon` YAML specifications. The generated RDF is accepted only when it is graph-identical to both the curated aggregate sample and the split publication files. Manual source updates are fail-closed: duplicate identities are rejected and missing, deleted or private published records are reported for removal review. See [Conversion process](docs/conversion.md) for the security boundary, update procedure, editorial inputs, commands and equivalence checks.
+The current public preservation sample can be regenerated from the private ATNS XML export through a checksum-verified XML normalization and CSV extraction stage and declarative `rdfcon` YAML specifications. The supplied XML remains unchanged; an ignored derived copy is made strictly valid and legacy HTML in descriptive fields is converted conservatively to structured plain text, with an audit report for difficult cases. The generated RDF is accepted only when it is graph-identical to both the curated aggregate sample and the split publication files. Manual source updates are fail-closed: duplicate identities are rejected and missing, deleted or private published records are reported for removal review. See [Conversion process](docs/conversion.md) for the security boundary, update procedure, editorial inputs, commands and equivalence checks.
 
 ## Local Prez sandbox
 

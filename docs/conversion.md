@@ -8,6 +8,7 @@ The conversion follows this boundary:
 
 ```text
 private checksum-verified XML
+    -> ignored, strictly valid and text-normalized XML working copy
     -> generic normalized CSV extraction
     -> declared public sample selection
     -> rdfcon YAML templates and documented editorial inputs
@@ -21,13 +22,19 @@ The XML export and source archive remain ignored because they may contain legal 
 
 The extractor refuses to continue if any required XML table differs from the tracked checksum. It reports table names and row counts only; it does not print source records.
 
+The supplied export is never repaired in place. `scripts/normalize_source_xml.py` duplicates it under the ignored `build/normalized-xml/` directory, removes XML 1.0-forbidden control characters, and verifies that every required derived table parses as strict XML. Each derived XML file contains a document-level comment identifying its preserved source checksum and the normalization script.
+
 Each table also declares its primary key, row count and ordered-column signature. Routine source updates may add rows, but they cannot introduce blank or duplicate primary keys or change the column structure without stopping for review.
 
 ## Responsibilities by layer
 
 ### Generic XML extraction
 
-`scripts/extract_xml.py` verifies and converts the required Microsoft Access XML table exports to normalized CSV. It preserves every source column and contains no RDF vocabulary, class or property decisions.
+`scripts/normalize_source_xml.py` converts legacy HTML in Entity `Summary` and `Body` fields to structured plain text before extraction. Paragraph and line breaks are retained, list items become bullets, heading-like emphasis retains its text on a separate line, and simple tables become readable rows. Styling markup and Microsoft Word debris are removed. Source spelling, grammar and factual wording are not corrected automatically.
+
+Every changed field is recorded without its private content in `build/reports/text-normalization.csv`, using the source identifier, resource IRI where published, item title, publication status, field, before-and-after hashes, character counts, encountered tags and review reasons. Unknown tags, flattened tables, parser fallbacks and empty results are explicitly flagged for later manual review and copied into the shorter `build/reports/text-normalization-review.csv` queue. These identifiers allow reviewed corrections to be applied directly to generated Turtle without requiring the client to inspect the private XML.
+
+`scripts/extract_xml.py` verifies the preserved files and converts the derived working XML tables to normalized CSV. It preserves every source column and contains no RDF vocabulary, class or property decisions.
 
 ### Public sample selection
 
@@ -53,9 +60,10 @@ explicit `xsd:boolean` values.
 For Agreement-classified entities, the source `Summary` is emitted as
 `schema:description` and the source `Body` as `schema:text`. Empty values are
 omitted. Extraction reports repeated `Summary` or `Body` elements so that a
-malformed source row cannot be silently collapsed without review. Source HTML
-fragments (including nested elements) and Unicode are preserved at this stage for later cleanup; legacy
-escaped line-break markers are restored as line breaks. This enrichment runs as
+malformed source row cannot be silently collapsed without review. Legacy HTML
+fragments are converted conservatively to structured plain text in the derived
+XML stage; Unicode and useful paragraph, heading and list structure are retained.
+Legacy escaped line-break markers are restored as line breaks. This enrichment runs as
 an RDFLib post-processing stage after `rdfcon`, because the latter interprets
 embedded source HTML in template literals as RDF syntax.
 
@@ -111,6 +119,8 @@ task pipeline
 ```
 
 Individual stages are also available through `task extract`, `task prepare`, `task convert`, `task validate` and `task check`.
+
+Run `task normalize-source` to regenerate only the ignored working XML and its audit report. `task extract`, and therefore both full pipelines, runs this stage automatically. `task test-text-normalization` exercises regression fixtures based on the contrasting legacy structures in source entities 3814 and 7744.
 
 ## Full public sandbox
 
