@@ -63,6 +63,11 @@ def resource_iri(kind: str, source_id: str) -> str:
     return resource["resource_iri"] if resource else ""
 
 
+def publication_status_keyword() -> str:
+    """Return the temporary catalogue status tag for full sandbox records."""
+    return "Demo" if CONVERSION_PROFILE == "sandbox" else ""
+
+
 @lru_cache(maxsize=None)
 def _concepts(vocabulary: str) -> dict[str, str]:
     graph = Graph().parse(VOCAB_FILES[vocabulary])

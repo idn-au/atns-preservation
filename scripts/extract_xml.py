@@ -22,6 +22,7 @@ from lxml import etree
 ROOT = Path(__file__).resolve().parent.parent
 MANIFEST_PATH = ROOT / "specs" / "source-manifest.yaml"
 SOURCE_DIR = ROOT / "raw" / "xml" / "ATNS_XML_05Apr22"
+NORMALIZED_SOURCE_DIR = ROOT / "build" / "normalized-xml" / "ATNS_XML_05Apr22"
 OUTPUT_DIR = ROOT / "build" / "csv"
 
 
@@ -83,9 +84,14 @@ def extract_table(
     update_manifest: bool,
 ) -> tuple[int, str, str, Path]:
     source = SOURCE_DIR / f"{table}.xml"
+    normalized_source = NORMALIZED_SOURCE_DIR / f"{table}.xml"
     if not source.exists():
         raise FileNotFoundError(
             f"Private source table is missing: {source.relative_to(ROOT)}"
+        )
+    if not normalized_source.exists():
+        raise FileNotFoundError(
+            "Normalized working XML is missing. Run 'task normalize-source' first."
         )
 
     actual_sha256 = sha256(source)
@@ -99,12 +105,14 @@ def extract_table(
     rows: list[dict[str, str]] = []
     headers: list[str] = []
     known_headers: set[str] = set()
-    rich_text, duplicate_fields = raw_rich_text(source, table, details["primary_key"])
+    rich_text, duplicate_fields = raw_rich_text(
+        normalized_source, table, details["primary_key"]
+    )
     parser = etree.iterparse(
-        str(source),
+        str(normalized_source),
         events=("end",),
         tag=table,
-        recover=True,
+        recover=False,
         huge_tree=True,
         encoding="utf-8",
     )
