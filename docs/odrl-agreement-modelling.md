@@ -2,109 +2,141 @@
 
 ## Status
 
-This is an exploratory design note, not an authoritative conversion specification. It records a possible path from preserved ATNS agreement records to richer `odrl:Agreement` interpretations, a provisional vocabulary of agreement-related actions, and the Prez profile behaviour needed to present the resulting graph coherently.
+This is an exploratory design note, not an authoritative conversion specification. It records a proposed path for enriching selected ATNS agreement records as ODRL policy expressions, a provisional vocabulary of agreement-related actions, and the Prez behaviour needed to present the resulting graph coherently.
 
-The ODRL statements proposed here are project-authored interpretations. They are not part of the recovered ATNS source model, are not authorised transcriptions of operative legal agreements, and should not be generated indiscriminately from ambiguous text.
+The central modelling proposal is that a sufficiently enriched ATNS record may use one stable IRI and be typed both `schema:CreativeWork` and `odrl:Agreement`. A separate ODRL policy resource is no longer the preferred design.
 
-The action IRIs use `https://example.org/odrl/action/` deliberately. They are placeholders for discussion and must not be treated as published IDN vocabulary terms.
+The ODRL statements proposed here are project-authored interpretations. They are not part of the recovered ATNS source model, are not authorised transcriptions of operative legal agreements, and must not be generated indiscriminately from ambiguous text.
 
-## Motivation
+The action IRIs use `https://example.org/odrl/action/` deliberately. They are placeholders for discussion and must not be treated as published IDN or W3C vocabulary terms.
+
+## Decision hypothesis
+
+An ATNS agreement record begins as a preserved information resource:
+
+```turtle
+<ATNS-record-IRI>
+    a
+        atns:Entity ,
+        schema:CreativeWork ;
+    schema:additionalType catobjtyp:Agreement ;
+.
+```
+
+After reviewed enrichment establishes at least one ODRL rule, its parties, action and any applicable target, the same resource may additionally become an ODRL Agreement:
+
+```turtle
+<ATNS-record-IRI>
+    a
+        atns:Entity ,
+        schema:CreativeWork ,
+        odrl:Agreement ;
+    schema:additionalType catobjtyp:Agreement ;
+    odrl:obligation <reviewed-duty-IRI> ;
+.
+```
+
+This is semantically defensible only when the resource is understood as an enriched, machine-readable information object that now carries an ODRL policy expression. The `odrl:Agreement` type is not another loose classification for every agreement-like ATNS record.
+
+The [ODRL Information Model 2.2](https://www.w3.org/TR/odrl-model/) defines an Agreement as a Policy containing Rules granted from assigner to assignee Parties. A Policy must contain at least one Permission, Prohibition or Obligation. Accordingly, an ATNS record must not be typed `odrl:Agreement` until the minimum supported rule structure exists.
+
+## Source, interpretation and authority
+
+Multiple RDF types do not remove the distinction between recovered evidence and later interpretation. The graph must preserve that distinction through maintained source and enrichment files, named graphs, provenance, review metadata or another explicit project convention.
+
+The proposed lifecycle is:
+
+```text
+preserved ATNS XML
+    └── reproducible migration
+        └── ATNS RDF CreativeWork
+            └── reviewed enrichment on the same resource IRI
+                ├── odrl:Agreement
+                ├── ODRL Rules
+                ├── resolved Parties
+                ├── governed Actions
+                └── supported Targets and Constraints
+```
+
+The preserved XML remains immutable evidence of the legacy system. If canonical authority moves to curated RDF, subsequent ODRL assertions become part of the governed RDF record and must not be erased by rerunning the legacy converter. The proposed authority transition is addressed separately in [ADR-0001: Adopt curated RDF as the operational source of truth](adr/0001-curated-rdf-operational-source-of-truth.md).
+
+## Identity and common metadata
+
+The combined resource should retain one canonical `schema:name` and `schema:description`. ODRL does not require a competing title or description for the Policy.
+
+In ODRL JSON-LD, `uid` supplies the resource identity. In RDF/Turtle, the subject IRI already performs that role; a duplicate `odrl:uid` statement should not be added merely because the resource acquires an ODRL type.
+
+Names and descriptions may be supplied for individual Rules, Party Collections and locally governed Actions when they help people understand the graph. They should not compete with the canonical title of the root ATNS resource.
+
+## Reciprocal parties
 
 An agreement commonly has multiple parties, and the direction of an individual permission or obligation may be unclear in the ATNS summary and body text. Earlier ATNS analysis found many candidate directional sentences but very few cases in which an assigner, assignee, action and target could all be identified confidently.
 
-A potentially useful distinction is that an agreement may represent reciprocal commitments: the parties collectively confer and assume responsibilities. For a deliberately general mutual obligation, the same `odrl:PartyCollection` could therefore occupy both the `odrl:assigner` and `odrl:assignee` roles. This avoids inventing unsupported directionality while preserving the fact that identified parties participate on both sides of the agreement relationship.
+A potentially useful hypothesis is that many agreements contain reciprocal commitments: the parties collectively confer and assume responsibilities - an agreement is 'reached' between parties. For a deliberately general mutual obligation, the same `odrl:PartyCollection` could occupy both the `odrl:assigner` and `odrl:assignee` roles. This avoids inventing unsupported directionality while preserving the proposition that identified parties participate on both sides of the agreement relationship.
 
-This compact pattern does not necessarily entail that every member assigns every action to every other member under current ODRL processor semantics. That question should be tested as a use case in the ODRL refresh work. Where clause-level direction is known, separate directional rules may remain preferable.
+This compact pattern does not necessarily entail that every member assigns every action to every other member under current ODRL processor semantics. It remains a use case for the ODRL refresh work. Where clause-level direction is known, separate directional Rules are preferable.
 
-## Preservation and interpretation boundary
+Every resolved party should be typed `odrl:Party` and, where supported, also `schema:Person` or `schema:Organization`. Where the kind of agent cannot yet be distinguished, use `prov:Agent` rather than guessing.
 
-The preserved ATNS entity remains a `schema:CreativeWork` and `atns:Entity`, soft-typed as an Agreement using the IDN Catalogued Object Types vocabulary. A separately minted policy resource represents the interpretive ODRL graph.
+## Spatial coverage and ODRL targets
 
-The boundary is:
+`schema:spatialCoverage` and `odrl:target` express different relationships and may both be retained when both are true.
 
-```text
-preserved ATNS record
-    └── dcterms:source of
-        provisional odrl:Agreement
-            └── odrl:obligation
-                ├── odrl:action
-                ├── odrl:assigner ─┐
-                ├── odrl:assignee ─┴── same PartyCollection
-                └── odrl:target
-```
+- `schema:spatialCoverage` means that the CreativeWork concerns or applies to a place.
+- `odrl:target` means that an identifiable Asset is governed by a particular ODRL Rule.
 
+A mapped agreement area should remain `schema:spatialCoverage` even when it cannot safely be treated as a Rule target. Add `odrl:target` only when the evidence supports the stronger assertion that the Rule operates on that area or another identified Asset.
 
+Prefer placing `odrl:target` on the applicable Permission, Prohibition or Duty. A compact Policy-level target is appropriate only when it is deliberately shared by every Rule and can be expanded according to the ODRL compact-policy rules.
 
-
-
-
-
-
-
-
-
-An `odrl:Agreement` may not need to be also typed as`schema:CreativeWork`
-
- The preserved
- record is evidence for the interpretation; it is not automatically the asset governed by the ODRL rule. A geographic feature can be a target where the rule genuinely concerns the agreement area. If an authoritative agreement document later receives an IRI, it may become another source or target depending on the action being expressed.
-
-A general reciprocal commitment is represented here with `odrl:obligation`. A duty nested under an `odrl:permission` would instead operate as a condition attached to that permission and should only be used when that is what the source means.
+A target area may be typed both `geo:Feature` and `odrl:Asset` when the governed asset is genuinely the identified real-world area. If the Rule instead governs a legal interest, activity, document or service associated with that area, model that asset rather than treating the map feature as a convenient substitute.
 
 ## Wickham Motorcross ILUA example
 
-The preserved source record is [Wickham Motorcross Indigenous Land Use Agreement (ILUA)](https://data.idnau.org/pid/resource/00129161-6f7d-5a0c-b270-2238ccaf75e5). Its mapped spatial coverage is [NNTT feature WI2011-008](https://data.idnau.org/pid/nntt/WI2011-008).
+The public source record is [Wickham Motorcross Indigenous Land Use Agreement (ILUA)](https://data.idnau.org/pid/resource/00129161-6f7d-5a0c-b270-2238ccaf75e5). Its reviewed spatial coverage is [NNTT feature WI2011-008](https://data.idnau.org/pid/nntt/WI2011-008).
 
-The current structured ATNS relationships identify these entities as Signatories:
+The structured ATNS relationships identify Ngarluma Aboriginal Corporation RNTBC and the State of Western Australia as Signatories. The descriptive text names other participants, demonstrating that the structured party set may be incomplete. No Party Collection should be represented as complete until that discrepancy has been reviewed.
 
-- [Ngarluma Aboriginal Corporation RNTBC](https://data.idnau.org/pid/resource/317d807c-63df-5f9f-8218-6498ba52c192)
-- [State of Western Australia](https://data.idnau.org/pid/resource/eb6b6bc9-ee8f-53f9-aecb-c53787816cc9)
-
-The descriptive text also names the Minister for Lands and the Shire of Roebourne. Those mentions show that the structured party set may be incomplete. They should not be silently added to the ODRL party collection until their identities and roles have been reviewed.
-
-### Provisional agreement graph
+### Combined resource sketch
 
 ```turtle
-PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX idn-policy: <https://data.idnau.org/pid/policy/>
+PREFIX atns: <https://linked.data.gov.au/def/atns/model/>
+PREFIX catobjtyp: <https://data.idnau.org/pid/vocab/cat-obj-types/>
 PREFIX idn-resource: <https://data.idnau.org/pid/resource/>
 PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
 PREFIX odrl-action: <https://example.org/odrl/action/>
 PREFIX schema: <https://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-idn-policy:wickham-motorcross-ilua
+idn-resource:00129161-6f7d-5a0c-b270-2238ccaf75e5
     a
+        atns:Entity ,
         odrl:Agreement ,
-        schema:CreativeWork ;   # not needed if odrl:Agreement added as a main class
-    dcterms:source
-        idn-resource:00129161-6f7d-5a0c-b270-2238ccaf75e5 ;
-    odrl:obligation
-        idn-policy:wickham-motorcross-ilua-mutual-obligation ;
-    odrl:uid idn-policy:wickham-motorcross-ilua ;
-    schema:conditionsOfAccess "Public"@en ;
+        schema:CreativeWork ;
+    atns:sourceEntityId "5618"^^xsd:token ;
+    schema:additionalType catobjtyp:Agreement ;
     schema:description
-        "A provisional ODRL interpretation derived from the preserved ATNS record. It represents the currently identified signatories as jointly assigning and assuming a general obligation. It is not an authoritative transcription of the operative agreement."@en ;
-    schema:keywords "Demo" ;
-    schema:name
-        "Wickham Motorcross Indigenous Land Use Agreement — provisional ODRL interpretation"@en ;
+        "Public ATNS description of the agreement. The ODRL statements on this resource are a reviewed interpretation and not an authoritative transcription of the operative agreement."@en ;
+    schema:name "Wickham Motorcross Indigenous Land Use Agreement (ILUA)"@en ;
+    schema:spatialCoverage <https://data.idnau.org/pid/nntt/WI2011-008> ;
+    odrl:obligation idn-resource:wickham-motorcross-mutual-obligation ;
 .
 
-idn-policy:wickham-motorcross-ilua-mutual-obligation
+idn-resource:wickham-motorcross-mutual-obligation
     a odrl:Duty ;
     odrl:action odrl-action:fulfil-agreement-commitments ;
-    odrl:assigner idn-policy:wickham-motorcross-ilua-parties ;
-    odrl:assignee idn-policy:wickham-motorcross-ilua-parties ;
+    odrl:assigner idn-resource:wickham-motorcross-parties ;
+    odrl:assignee idn-resource:wickham-motorcross-parties ;
     odrl:target <https://data.idnau.org/pid/nntt/WI2011-008> ;
-    odrl:uid idn-policy:wickham-motorcross-ilua-mutual-obligation ;
     schema:description
-        "The parties are mutually responsible for fulfilling their respective commitments concerning the registered agreement area."@en ;
+        "The identified parties are provisionally represented as mutually responsible for fulfilling their respective commitments concerning the agreement area."@en ;
     schema:name "Mutual obligation to fulfil the agreement"@en ;
 .
 
-idn-policy:wickham-motorcross-ilua-parties
+idn-resource:wickham-motorcross-parties
     a odrl:PartyCollection ;
-    odrl:uid idn-policy:wickham-motorcross-ilua-parties ;
     schema:description
-        "The parties represented by structured ATNS Signatory relationships. Other parties mentioned in the descriptive text require further identity resolution."@en ;
+        "A provisional collection of parties established from reviewed ATNS Signatory relationships; completeness must be assessed against the public text and supporting sources."@en ;
     schema:hasPart
         idn-resource:317d807c-63df-5f9f-8218-6498ba52c192 ,
         idn-resource:eb6b6bc9-ee8f-53f9-aecb-c53787816cc9 ;
@@ -115,8 +147,7 @@ idn-resource:317d807c-63df-5f9f-8218-6498ba52c192
     a
         odrl:Party ,
         schema:Organization ;
-    odrl:partOf idn-policy:wickham-motorcross-ilua-parties ;
-    odrl:uid idn-resource:317d807c-63df-5f9f-8218-6498ba52c192 ;
+    odrl:partOf idn-resource:wickham-motorcross-parties ;
     schema:name "Ngarluma Aboriginal Corporation RNTBC"@en ;
 .
 
@@ -124,52 +155,32 @@ idn-resource:eb6b6bc9-ee8f-53f9-aecb-c53787816cc9
     a
         odrl:Party ,
         schema:Organization ;
-    odrl:partOf idn-policy:wickham-motorcross-ilua-parties ;
-    odrl:uid idn-resource:eb6b6bc9-ee8f-53f9-aecb-c53787816cc9 ;
+    odrl:partOf idn-resource:wickham-motorcross-parties ;
     schema:name "State of Western Australia"@en ;
 .
 ```
 
-### Party typing
+The readable child IRIs in this sketch are placeholders. Production Rules and Party Collections require stable reviewed IRIs following the adopted IDN identifier policy.
 
-Every party should be typed `odrl:Party` and, where supported by reviewed source data or identity reconciliation, also typed `schema:Person` or `schema:Organization`.
-
-Where the party category cannot yet be distinguished, use the broader `prov:Agent` rather than guessing:
-
-```turtle
-PREFIX idn-policy: <https://data.idnau.org/pid/policy/>
-PREFIX idn-resource: <https://data.idnau.org/pid/resource/>
-PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
-PREFIX prov: <http://www.w3.org/ns/prov#>
-PREFIX schema: <https://schema.org/>
-
-idn-resource:unresolved-party
-    a
-        odrl:Party ,
-        prov:Agent ;
-    odrl:partOf idn-policy:wickham-motorcross-ilua-parties ;
-    odrl:uid idn-resource:unresolved-party ;
-    schema:name "Party name as recorded by ATNS"@en ;
-.
-```
-
-The placeholder IRI above is illustrative only. Production data must use a stable reviewed IRI and preserve the relevant ATNS source identifier.
+A general reciprocal commitment is represented here with `odrl:obligation`. A Duty nested under an `odrl:permission` instead acts as a condition that must be fulfilled for that Permission and should be used only when the source supports that meaning.
 
 ## Provisional agreement-related action vocabulary
 
-The following scheme is a design hypothesis, not a vocabulary extracted directly from the ATNS database. Its initial concepts have different evidentiary bases:
+The action scheme remains a strong design proposal. It gives recurring agreement actions stable identifiers, human-readable definitions and governance independently of any particular ATNS record. It may ultimately support domains beyond ATNS, but that scope should be decided through vocabulary governance rather than assumed from the examples.
+
+The scheme is not extracted directly from an ATNS database table. Its initial concepts have different evidentiary bases:
 
 | Action | Basis | Current status |
 | --- | --- | --- |
-| `fulfil-agreement-commitments` | Derived from the proposed reciprocal-party model | Cross-domain proposal |
-| `manage-asset` | Grounded in the Wickham agreement's reserve and management provisions | ATNS-evidenced candidate |
-| `provide-resources` | Suggested by ATNS records describing funding, personnel and service delivery | ATNS-inferred candidate |
-| `report-performance` | Suggested by ATNS records containing reporting, milestones and performance requirements | ATNS-inferred candidate |
-| `protect-cultural-heritage` | Strongly characteristic of the ATNS domain but not yet systematically extracted | ATNS-oriented proposal |
-| `consult` | Applicable across many agreement domains | Cross-domain proposal |
-| `cooperate` | Applicable across many agreement domains | Cross-domain proposal |
+| `fulfil-agreement-commitments` | Derived from the reciprocal-party model | Cross-domain proposal |
+| `manage-asset` | Grounded in reserve and management provisions | ATNS-evidenced candidate |
+| `provide-resources` | Suggested by records concerning funding, personnel and services | ATNS-inferred candidate |
+| `report-performance` | Suggested by reporting, milestone and performance provisions | ATNS-inferred candidate |
+| `protect-cultural-heritage` | Strongly characteristic of ATNS subject matter | ATNS-oriented proposal |
+| `consult` | Common in agreements and other policy domains | Cross-domain proposal |
+| `cooperate` | Common in agreements and other policy domains | Cross-domain proposal |
 
-Before publication, candidate actions can be tested by mining public Agreement summaries and bodies for recurring verb phrases and recording occurrence counts and example resource IRIs. Existing ODRL actions should also be reviewed before minting overlapping terms.
+Before publication, public ATNS summaries and bodies should be analysed for recurring action phrases and reviewed examples. Existing ODRL actions must also be considered before minting terms with overlapping meanings.
 
 ### Concept scheme sketch
 
@@ -178,16 +189,18 @@ PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
 PREFIX odrl-action: <https://example.org/odrl/action/>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 odrl-action:
     a skos:ConceptScheme ;
+    schema:dateCreated "2026-09-15"^^xsd:date ;
+    schema:dateModified "2026-09-16"^^xsd:date ;
     skos:definition
         "Provisional actions used to express responsibilities and permissions arising from negotiated agreements."@en ;
     skos:hasTopConcept odrl-action:fulfil-agreement-commitments ;
     skos:historyNote
-        "Created as an exploratory vocabulary for modelling preserved ATNS agreement records with ODRL. Its terms are not assertions by the ATNS source owners and are not currently part of the normative ODRL vocabulary."@en ;
+        "Created as an exploratory vocabulary for reviewed ODRL enrichment. Its terms are not assertions by the ATNS source owners and are not part of the normative ODRL vocabulary."@en ;
     skos:prefLabel "Agreement-related ODRL actions"@en ;
-    schema:name "Agreement-related ODRL actions"@en ;
 .
 
 odrl-action:fulfil-agreement-commitments
@@ -209,281 +222,166 @@ odrl-action:fulfil-agreement-commitments
 .
 
 odrl-action:cooperate
-    a
-        odrl:Action ,
-        skos:Concept ;
+    a odrl:Action, skos:Concept ;
     skos:broader odrl-action:fulfil-agreement-commitments ;
-    skos:definition
-        "Cooperate with other parties in carrying out an agreement."@en ;
+    skos:definition "Cooperate with other parties in carrying out an agreement."@en ;
     skos:inScheme odrl-action: ;
     skos:prefLabel "cooperate"@en ;
 .
 
 odrl-action:consult
-    a
-        odrl:Action ,
-        skos:Concept ;
+    a odrl:Action, skos:Concept ;
     skos:broader odrl-action:fulfil-agreement-commitments ;
-    skos:definition
-        "Consult the parties or communities identified by an agreement."@en ;
+    skos:definition "Consult the parties or communities identified by an agreement."@en ;
     skos:inScheme odrl-action: ;
     skos:prefLabel "consult"@en ;
 .
 
 odrl-action:manage-asset
-    a
-        odrl:Action ,
-        skos:Concept ;
+    a odrl:Action, skos:Concept ;
     skos:broader odrl-action:fulfil-agreement-commitments ;
-    skos:definition
-        "Manage land, infrastructure or another asset in accordance with an agreement."@en ;
+    skos:definition "Manage land, infrastructure or another asset in accordance with an agreement."@en ;
     skos:inScheme odrl-action: ;
     skos:prefLabel "manage asset"@en ;
 .
 
 odrl-action:provide-resources
-    a
-        odrl:Action ,
-        skos:Concept ;
+    a odrl:Action, skos:Concept ;
     skos:broader odrl-action:fulfil-agreement-commitments ;
-    skos:definition
-        "Provide funding, personnel, services or other resources required by an agreement."@en ;
+    skos:definition "Provide funding, personnel, services or other resources required by an agreement."@en ;
     skos:inScheme odrl-action: ;
     skos:prefLabel "provide resources"@en ;
 .
 
 odrl-action:protect-cultural-heritage
-    a
-        odrl:Action ,
-        skos:Concept ;
+    a odrl:Action, skos:Concept ;
     skos:broader odrl-action:fulfil-agreement-commitments ;
-    skos:definition
-        "Protect cultural heritage, places, knowledge or objects in accordance with an agreement."@en ;
+    skos:definition "Protect cultural heritage, places, knowledge or objects in accordance with an agreement."@en ;
     skos:inScheme odrl-action: ;
     skos:prefLabel "protect cultural heritage"@en ;
 .
 
 odrl-action:report-performance
-    a
-        odrl:Action ,
-        skos:Concept ;
+    a odrl:Action, skos:Concept ;
     skos:broader odrl-action:fulfil-agreement-commitments ;
-    skos:definition
-        "Report progress, performance or outcomes required by an agreement."@en ;
+    skos:definition "Report progress, performance or outcomes required by an agreement."@en ;
     skos:inScheme odrl-action: ;
     skos:prefLabel "report performance"@en ;
 .
 ```
 
-The SKOS hierarchy supports human navigation and vocabulary presentation. It must not be assumed to provide formal action-subsumption semantics to an ODRL evaluator. If the ODRL refresh requires machine-operational relationships among actions, their semantics should be defined separately and tested against `odrl:includedIn` and other ODRL mechanisms.
+The SKOS hierarchy supports human navigation and vocabulary presentation. It does not by itself provide formal action-subsumption semantics to an ODRL evaluator. If machine-operational relationships among Actions are required, their semantics must be defined separately and tested against `odrl:includedIn`, `odrl:implies` and the future ODRL model.
 
-## Prez presentation
+## Prez presentation hypothesis
 
-The desired Agreement page should bring the `odrl:Agreement`, its `odrl:Duty`, its `odrl:PartyCollection`, the individual `odrl:Party` resources, the action and the target into one response graph. A possible page structure is:
+The combined resource should render as one coherent page. ODRL detail should appear in a visually separate card so readers can distinguish preserved descriptive metadata from the reviewed policy interpretation.
 
 ```text
-ODRL Agreement
-├── description and source ATNS record
-├── permissions, where present
-├── obligations
-│   └── mutual obligation
-│       ├── action: fulfil agreement commitments
-│       ├── assigner: identified signatory parties
-│       │   ├── Ngarluma Aboriginal Corporation RNTBC
-│       │   └── State of Western Australia
-│       ├── assignee: the same identified signatory parties
-│       └── target: WI2011-008 agreement area
-└── link to full target details and on-demand map, where available
+ATNS agreement page
+├── Overview
+│   ├── canonical name and description
+│   ├── dates, access status and source identifiers
+│   └── interpretation status and provenance
+├── ATNS classification
+│   ├── category and subcategory
+│   └── subject keywords
+├── ODRL interpretation                 [separate card]
+│   ├── obligations, permissions and prohibitions
+│   ├── action definitions
+│   ├── assigners and assignees
+│   ├── targets and constraints
+│   └── interpretation warning
+├── Agreement area
+│   ├── on-demand map from schema:spatialCoverage
+│   └── indication when the same feature is a Rule target
+└── References and provenance
 ```
 
-The profile determines which triples Prez returns. The PrezUI component still determines layout, headings, collapsible sections and map behaviour.
+The profile determines which triples Prez returns. PrezUI determines ordering, cards, headings, collapsible sections, warnings and map behaviour.
 
-### Expanded Agreement profile sketch
+The current profile reflects the earlier separate-policy design: the ATNS profile traverses `dcterms:relation` to an ODRL resource, while another profile constrains `odrl:Agreement`. Before implementation, these should be replaced or consolidated into a combined-resource profile that:
 
-```turtle
-PREFIX altr-ext: <http://www.w3.org/ns/dx/connegp/altr-ext#>
-PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
-PREFIX prez: <https://prez.dev/>
-PREFIX prof: <http://www.w3.org/ns/dx/prof/>
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX schema: <https://schema.org/>
-PREFIX sh: <http://www.w3.org/ns/shacl#>
-PREFIX shext: <http://example.com/shacl-extension#>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+- returns ordinary ATNS and schema.org predicates from the root resource;
+- traverses its direct `odrl:permission`, `odrl:prohibition` and `odrl:obligation` Rules;
+- returns Action labels and definitions;
+- returns Party Collections, their members and useful agent labels;
+- returns target labels and sufficient geometry for the on-demand map;
+- avoids returning the complete coordinate detail in the initial human-readable view;
+- gives PrezUI enough information to separate ODRL assertions visually from source-derived metadata.
 
-prez:OdrlAgreement
-    a
-        prof:Profile ,
-        prez:ObjectProfile ,
-        sh:NodeShape ;
-    schema:identifier "odrl-agreement"^^xsd:token ;
-    schema:name "ODRL Agreement presentation profile"@en ;
-    schema:description
-        "Presents an ODRL Agreement with its permissions, obligations, actions, party collections, parties and targets."@en ;
-    altr-ext:constrainsClass odrl:Agreement ;
-    altr-ext:hasDefaultResourceFormat "text/anot+turtle" ;
-    altr-ext:hasResourceFormat
-        "application/anot+ld+json" ,
-        "application/ld+json" ,
-        "text/anot+turtle" ,
-        "text/turtle" ;
-    sh:property [
-        sh:path [
-            sh:union (
-                shext:allPredicateValues
+Because the same node matches both `atns:Entity` and `odrl:Agreement`, profile selection and precedence must be tested in Prez before replacing the deployed configuration. `shext:allPredicateValues` may continue to provide common root metadata, while explicit property paths bring the nested ODRL subgraph into the response.
 
-                odrl:permission
-                ( odrl:permission rdf:type )
-                ( odrl:permission schema:name )
-                ( odrl:permission schema:description )
-                ( odrl:permission odrl:action )
-                ( odrl:permission odrl:assigner )
-                ( odrl:permission odrl:assignee )
-                ( odrl:permission odrl:target )
+## Publishing and rendering ODRL Actions
 
-                odrl:obligation
-                ( odrl:obligation rdf:type )
-                ( odrl:obligation schema:name )
-                ( odrl:obligation schema:description )
-                ( odrl:obligation odrl:action )
-                ( odrl:obligation odrl:action rdf:type )
-                ( odrl:obligation odrl:action skos:prefLabel )
-                ( odrl:obligation odrl:action skos:definition )
-
-                ( odrl:obligation odrl:assigner )
-                ( odrl:obligation odrl:assigner rdf:type )
-                ( odrl:obligation odrl:assigner schema:name )
-                ( odrl:obligation odrl:assigner schema:description )
-                ( odrl:obligation odrl:assigner schema:hasPart )
-                ( odrl:obligation odrl:assigner schema:hasPart rdf:type )
-                ( odrl:obligation odrl:assigner schema:hasPart schema:name )
-
-                ( odrl:obligation odrl:assignee )
-                ( odrl:obligation odrl:assignee rdf:type )
-                ( odrl:obligation odrl:assignee schema:name )
-                ( odrl:obligation odrl:assignee schema:description )
-                ( odrl:obligation odrl:assignee schema:hasPart )
-                ( odrl:obligation odrl:assignee schema:hasPart rdf:type )
-                ( odrl:obligation odrl:assignee schema:hasPart schema:name )
-
-                ( odrl:obligation odrl:target )
-                ( odrl:obligation odrl:target rdf:type )
-                ( odrl:obligation odrl:target schema:name )
-                ( odrl:obligation odrl:target schema:description )
-            )
-        ]
-    ] ;
-.
-```
-
-The current `idn-prez4/prez-profiles.trig` appears to contain both `prez:odrl-agreement` and `prez:OdrlAgreement` with the same `dcterms:identifier`. Those definitions should be consolidated before this expanded profile is implemented.
-
-## Publishing and rendering ODRL actions
-
-An action does not need to be typed `schema:CreativeWork`. The preferred publication pattern is:
+The proposed publication pattern is:
 
 - the vocabulary file has one `skos:ConceptScheme` main entity;
-- each action is typed both `odrl:Action` and `skos:Concept`;
-- the action is linked to the scheme with `skos:inScheme`;
+- each Action is typed both `odrl:Action` and `skos:Concept`;
+- each Action is linked to the scheme with `skos:inScheme`;
 - the catalogue manifest declares `skos:ConceptScheme` as the artifact's main-entity class;
-- Prez can render the actions through its vocabulary/concept support.
+- Prez renders Actions through vocabulary/concept support;
+- a dedicated `odrl:Action` object profile is added only if direct Action pages require behaviour beyond the normal concept presentation.
 
-If direct object-profile rendering of `odrl:Action` resources is also wanted, the IDN index profile can select a dedicated action profile:
-
-```turtle
-PREFIX altr-ext: <http://www.w3.org/ns/dx/connegp/altr-ext#>
-PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
-PREFIX prez: <https://prez.dev/>
-PREFIX prof: <http://www.w3.org/ns/dx/prof/>
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX schema: <https://schema.org/>
-PREFIX sh: <http://www.w3.org/ns/shacl#>
-PREFIX shext: <http://example.com/shacl-extension#>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-
-prez:CustomIndexProfile
-    altr-ext:hasNodeShape [
-        a sh:NodeShape ;
-        sh:targetClass odrl:Action ;
-        altr-ext:hasDefaultProfile prez:OdrlActionProfile ;
-    ] ;
-.
-
-prez:OdrlActionProfile
-    a
-        prof:Profile ,
-        prez:ObjectProfile ,
-        sh:NodeShape ;
-    schema:identifier "odrl-action"^^xsd:token ;
-    schema:name "ODRL Action presentation profile"@en ;
-    schema:description
-        "Presents an ODRL Action and its vocabulary relationships."@en ;
-    altr-ext:constrainsClass odrl:Action ;
-    altr-ext:hasDefaultResourceFormat "text/anot+turtle" ;
-    sh:property [
-        sh:path [
-            sh:union (
-                shext:allPredicateValues
-                rdf:type
-                skos:prefLabel
-                skos:definition
-                skos:broader
-                skos:narrower
-                skos:inScheme
-            )
-        ]
-    ] ;
-.
-```
-
-Ingestion and presentation are separate concerns. The catalogue manifest identifies the main entity in an artifact for KGM/Prez loading; `idn-prez4` profiles determine what is returned and how a class is profiled. For this vocabulary, the Concept Scheme should normally be the manifest main entity even though the member concepts are also `odrl:Action` resources.
+Ingestion and presentation remain separate concerns. The catalogue manifest identifies the main entity in the vocabulary artifact; the Prez profile determines what is returned and how individual resources are presented.
 
 ## Alternative directional expansion
 
-If a source clause clearly identifies direction, the compact mutual-duty pattern should be expanded into separate rules. For two parties A and B, that could mean one duty assigned by A to B and another assigned by B to A. The rules may use different actions and targets because reciprocal agreements do not imply that every party has identical commitments.
+If a source clause clearly identifies direction, the compact mutual-duty hypothesis should be expanded into separate Rules. For parties A and B, one Duty may be assigned by A to B and another by B to A. The Rules may use different Actions and Targets because reciprocal agreements do not imply identical commitments.
 
-The dual-role PartyCollection is therefore most defensible when all of the following hold:
+The dual-role Party Collection is most defensible when all of the following hold:
 
-1. The source establishes that the identified entities are parties or signatories.
+1. The evidence establishes that the identified entities are parties or signatories.
 2. The statement being represented is intentionally general and reciprocal.
 3. Clause-level direction cannot be established reliably or is deliberately outside scope.
-4. The resource is labelled as an interpretation rather than an authoritative transcription.
+4. The resource is labelled as a reviewed interpretation rather than an authoritative transcription.
 
-## Candidate workflow for ATNS enrichment
+## Candidate enrichment workflow
 
-1. Select a public Agreement-classified ATNS record.
-2. Identify structured Signatory relationships and reconcile the related entities with stable organization or person IRIs.
-3. Compare structured parties with names appearing in the public summary and body; flag missing or ambiguous parties.
-4. Extract candidate action phrases from public text without asserting ODRL rules automatically.
-5. Map a candidate phrase to an existing ODRL action where the semantics match exactly; otherwise propose a documented profile action.
-6. Identify whether the statement is a permission, prohibition, standalone obligation or duty attached to a permission.
-7. Assert direction only when supported. Use the reciprocal PartyCollection pattern only for genuinely mutual general commitments.
-8. Link the ODRL interpretation to the preserved ATNS record with `dcterms:source`.
-9. Use `odrl:target` only for the asset governed by that rule, not merely for any resource associated with the ATNS record.
-10. Record reviewer, evidence, confidence and interpretation status before publication.
+1. Select a public ATNS CreativeWork soft-typed as an Agreement.
+2. Confirm that the record is eligible for enrichment and carries no unresolved access or confidentiality concern.
+3. Identify structured Signatory relationships and reconcile related entities with stable organization or person IRIs.
+4. Compare structured parties with names in the public summary, body and supporting sources; flag incomplete or ambiguous party sets.
+5. Extract candidate action phrases without asserting ODRL Rules automatically.
+6. Reuse an existing ODRL Action where the semantics fit; otherwise propose a governed Action concept with evidence.
+7. Determine whether each statement is a Permission, Prohibition, standalone Obligation, or Duty attached to a Permission.
+8. Assert assigner and assignee direction only when supported. Use the reciprocal Party Collection hypothesis only for genuinely mutual general commitments.
+9. Add `odrl:target` only for the Asset governed by the Rule; retain `schema:spatialCoverage` independently.
+10. rdf:Type the object of odrl:Target as odrl:Asset, if not already typed this way.
+10. Record evidence, reviewer, confidence, interpretation status and derivation provenance.
+11. Add `odrl:Agreement` to the existing CreativeWork only after the minimum ODRL structure passes review and validation.
+
+## Minimum publication gate
+
+An ATNS record should not be published as `odrl:Agreement` unless it has:
+
+- at least one reviewed Permission, Prohibition or Obligation;
+- an identified Action for every Rule;
+- an assigner and assignee supported for the Agreement's Rules;
+- a target wherever the Action requires an identifiable Asset;
+- stable IRIs for Rules, Parties, Party Collections, Actions and Targets;
+- recorded evidence and reviewer responsibility;
+- an explicit indication that the ODRL layer is an interpretation unless it is an authoritative transcription;
+- successful RDF and applicable SHACL validation.
 
 ## Open questions
 
-- Does using the same PartyCollection as both assigner and assignee entail the intended all-party reciprocity in ODRL, or is an explicit collection or pairwise semantic rule required?
-- Should a reciprocal agreement use one general Duty, mirrored directional Duties, or a distinct agreement-level construct in a future ODRL model?
-- Which candidate actions recur often enough in ATNS to justify controlled terms?
-- Which candidates can reuse normative ODRL actions without changing the source meaning?
-- Should the action scheme remain agreement-specific, become a broader IDN policy-action vocabulary, or become input to a future ODRL community vocabulary?
-- What provenance pattern should connect each generated rule to the supporting ATNS text or source relationship rows?
-- How should incomplete party sets be presented without implying that identified structured Signatories are the complete legal party list?
-- When the target is a spatial feature, does its IRI identify the governed real-world area closely enough, or should a separate asset representing the agreement area be minted?
-- Which parts of this pattern belong in an ATNS-specific ODRL profile and which are general ODRL requirements or best practices?
+- Does the same Party Collection as assigner and assignee express the intended reciprocity, or is pairwise expansion or a future ODRL construct required?
+- Should the first ATNS prototype use a general Obligation, clause-level Rules, or both at different confidence levels?
+- Which candidate Actions recur often enough to justify governed vocabulary terms?
+- Should the Action scheme remain agreement-specific, become a broader IDN policy-action vocabulary, or be proposed to the ODRL community?
+- What provenance granularity is needed for individual Rules and their supporting text?
+- How should incomplete party sets appear without implying that known Signatories are the complete legal party list?
+- When does a spatial feature identify the governed Asset closely enough to be an `odrl:target`?
+- How should Prez choose one combined profile when the root resource matches multiple classes?
+- Which validation rules belong to an ATNS-specific ODRL profile and which belong to general ODRL conformance?
 
-## Potential GitHub work items
+## Proposed next work
 
-This note can be refined before implementation and then divided into focused issues:
+1. Select one public, well-evidenced agreement as the combined-resource prototype.
+2. Review the provisional Action scheme with ATNS, IDN and ODRL stakeholders.
+3. Define a small ATNS ODRL application profile and SHACL publication gate.
+4. Prototype the combined Prez response graph and visually separate ODRL card.
+5. Compare the prototype with the current separate-policy demonstration before changing production data or profiles.
+6. Submit the reciprocal-party scenario and action-vocabulary experience as use cases for the ODRL refresh.
 
-1. **ATNS modelling:** test reciprocal party roles and action candidates against a reviewed set of public ATNS agreements.
-2. **IDN vocabulary:** decide whether to govern and publish an agreement or policy action vocabulary.
-3. **IDN Prez:** consolidate and expand the ODRL Agreement profile, then design the Agreement page sections in PrezUI.
-4. **ODRL refresh:** submit the reciprocal assigner/assignee Agreement scenario as a use case, including its compact and directional alternatives.
-
-The detailed examples and evidence should remain version-controlled here. GitHub issues can then record decisions, implementation scope and responsibility without becoming the only copy of the evolving model.
+The examples and rationale should remain version-controlled here. GitHub issues can record implementation scope and responsibility without becoming the only copy of the evolving model.

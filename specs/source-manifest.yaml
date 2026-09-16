@@ -5,6 +5,11 @@ export:
   sensitivity: private-source
 
 tables:
+  Additional:
+    sha256: 1cded52632e295a8ede7039019a9ea5e8071a2c398a2bf22168033bba729c5e8
+    primary_key: AdditionalID
+    row_count: 1393
+    columns_sha256: 6b6218c30e49101ea016c3ccb94d2fbf94e48d2b376bd4986145c50f085cf81c
   Entities:
     sha256: ca68c29da9a7f33cd1a1c7ce144289e6c84a7cfec8e9ce969d4d507d3febeb34
     primary_key: EntityID

@@ -8,6 +8,8 @@ import uuid
 from collections import Counter
 from pathlib import Path
 
+from publication_filters import confidential_entity_ids, is_public
+
 
 ROOT = Path(__file__).resolve().parent.parent
 SOURCE_DIR = ROOT / "build" / "csv"
@@ -60,10 +62,6 @@ def resource_iri(
         (kind, source_id),
         f"{PID_BASE}{uuid.uuid5(UUID_NAMESPACE, f'{kind}:{source_id}')}",
     )
-
-
-def is_public(row: dict[str, str]) -> bool:
-    return row["Public"].strip() == "1" and row["Deleted"].strip() == "0"
 
 
 def write_registry(
@@ -128,8 +126,20 @@ def main() -> None:
     entity_headers, all_entities = read_rows("Entities")
     reference_headers, all_references = read_rows("Refs")
     relationship_headers, all_relationships = read_rows("Entity_Entity")
+    _, all_additional = read_rows("Additional")
 
-    public_entities = [row for row in all_entities if is_public(row)]
+    confidential_ids = confidential_entity_ids(all_additional)
+    confidential_public_entities = [
+        row
+        for row in all_entities
+        if is_public(row) and row["EntityID"] in confidential_ids
+    ]
+
+    public_entities = [
+        row
+        for row in all_entities
+        if is_public(row) and row["EntityID"] not in confidential_ids
+    ]
     entities = [row for row in public_entities if row["Name"].strip()]
     entity_ids = {row["EntityID"] for row in entities}
 
@@ -165,6 +175,16 @@ def main() -> None:
     write_registry(entity_ids, reference_ids, relationship_ids)
 
     omissions = [
+        *(
+            {
+                "table": "Entities",
+                "source_id": row["EntityID"],
+                "field": "Additional.Confidential",
+                "value": "1",
+                "reason": "parent entity withheld pending source-owner clarification",
+            }
+            for row in confidential_public_entities
+        ),
         *(
             {
                 "table": "Entities",
@@ -223,6 +243,9 @@ def main() -> None:
 
     counts = {
         "source entities": len(all_entities),
+        "confidential-linked public entities withheld": len(
+            confidential_public_entities
+        ),
         "public non-deleted entities": len(public_entities),
         "published named entities": len(entities),
         "source references": len(all_references),

@@ -130,13 +130,13 @@ The curated sample remains the acceptance baseline for published RDF. A separate
 task sandbox
 ```
 
-`scripts/prepare_public_sandbox.py` selects public, non-deleted entities and references with usable source display labels, then retains relationship and entity-reference rows only when both endpoints are published. It writes the complete selection to `build/sandbox/csv`, a resource registry to `build/sandbox/resources.csv`, and review reports to `build/sandbox/reports`. No private source values are written to tracked files.
+`scripts/prepare_public_sandbox.py` selects public, non-deleted entities and references with usable source display labels, then retains relationship and entity-reference rows only when both endpoints are published. As a conservative safeguard, it also withholds any entity linked to an `Additional` row whose `Confidential` flag is true; the resulting relationship and reference links are filtered with the entity. It writes the complete selection to `build/sandbox/csv`, a resource registry to `build/sandbox/resources.csv`, and review reports to `build/sandbox/reports`. No private source values are written to tracked files.
 
 Existing sample IRIs are retained. Every other resource IRI is generated deterministically as a UUIDv5 from its source table kind and source primary key using a fixed, documented namespace. Repeated runs therefore produce the same IRI instead of duplicates. This algorithm preserves source-row identity; it does not assert that two distinct source IDs describe different real-world things.
 
 Blank source lookup entries are not turned into invented vocabulary concepts. The affected resource is retained while that classification triple is omitted and reported. Public entities or references without any source display label are omitted and reported because loading them would recreate unlabeled resources in Prez.
 
-The sandbox currently covers `Entities`, `Refs`, `Entity_Entity`, `Entity_Refs`, `Entity_SubCategory` and `Entity_SubjectMatter`. It is not an assertion that every table in the original ATNS database is publication-ready.
+The sandbox currently publishes `Entities`, `Refs`, `Entity_Entity`, `Entity_Refs`, `Entity_SubCategory` and `Entity_SubjectMatter`. It reads `Additional` only to apply the confidential-record safeguard; no `Additional` content is published. This is not an assertion that every table in the original ATNS database is publication-ready.
 
 ## Manual source updates
 

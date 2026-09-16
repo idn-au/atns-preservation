@@ -9,7 +9,7 @@ The current public preservation sample can be regenerated from the private ATNS 
 
 ## Local Prez sandbox
 
-The repository can also generate all usable public, non-deleted records from the currently mapped ATNS tables and load them into a local Prez API. The sandbox is deliberately separate from the small curated publication sample: its generated CSV, resource registry, reports and RDF remain under ignored `build/sandbox/` paths.
+The repository can also generate all usable public, non-deleted records from the currently mapped ATNS tables and load them into a local Prez API. An entity linked to an `Additional` source row marked confidential is withheld pending source-owner clarification, even when the entity itself is marked public. The sandbox is deliberately separate from the small curated publication sample: its generated CSV, resource registry, reports and RDF remain under ignored `build/sandbox/` paths.
 
 Run:
 
@@ -97,18 +97,12 @@ Every record from the legacy ATNS `Entities` table is typed `atns:Entity`. Recor
 with the source category `Agreement` are also typed `schema:CreativeWork` and
 soft-typed `catobjtyp:Agreement` using `schema:additionalType`. The original
 `atns:category` Agreement concept is retained as source classification evidence.
-This publication pattern does not entail `odrl:Agreement`; generated ODRL policy
-expressions remain separate resources. A published external class such as
-`schema:Organization` may also be asserted where the mapping is clear.
+This publication pattern does not by itself entail `odrl:Agreement`. Under the current modelling proposal, a sufficiently evidenced and reviewed record may later be enriched as `odrl:Agreement` using the same resource IRI. A published external class such as `schema:Organization` may also be asserted where the mapping is clear.
 Classification values such as `Category`, `Country` and `Relationship type`
 remain resources, allowing stable identifiers and labels to be reused across
 records.
 
-Reviewed ODRL enrichments are linked bidirectionally to their corresponding
-ATNS CreativeWork with `dcterms:relation`. Run `task audit-odrl-candidates` to
-report which Agreement-classified records contain signatory relationship
-evidence. The audit never generates a Permission: source signatory rows do not
-by themselves establish ODRL roles, actions, targets, duties or constraints.
+The provisional ODRL design now treats reviewed policy assertions as enrichment of the existing ATNS CreativeWork rather than as a separate related Policy resource. Run `task audit-odrl-candidates` to report which Agreement-classified records contain signatory relationship evidence. The audit never generates a Rule: source signatory rows do not by themselves establish ODRL roles, actions, targets, duties or constraints. See [Provisional ODRL modelling for ATNS agreements](docs/odrl-agreement-modelling.md) and the draft [TOGAF-lite architecture decision](docs/adr/0001-curated-rdf-operational-source-of-truth.md).
 
 ## Integration with IDN catalogues
 

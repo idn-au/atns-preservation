@@ -5,6 +5,8 @@ from __future__ import annotations
 import csv
 from pathlib import Path
 
+from publication_filters import confidential_entity_ids
+
 
 ROOT = Path(__file__).resolve().parent.parent
 SOURCE_DIR = ROOT / "build" / "csv"
@@ -65,6 +67,8 @@ def indexed_source(table: str, key: str) -> dict[str, dict[str, str]]:
 def removal_candidates(
     selection_rows: list[dict[str, str]],
 ) -> list[dict[str, str]]:
+    _, additional_rows = read_rows(SOURCE_DIR / "Additional.csv")
+    confidential_ids = confidential_entity_ids(additional_rows)
     tables = {
         "entity": (indexed_source("Entities", "EntityID"), "Deleted", "Public"),
         "reference": (indexed_source("Refs", "RefID"), "Deleted", "Public"),
@@ -91,6 +95,8 @@ def removal_candidates(
             reason = "source-deleted"
         elif public_field and source[public_field].strip() != "1":
             reason = "no-longer-public"
+        elif kind == "entity" and source_id in confidential_ids:
+            reason = "confidential-additional-data"
         if reason:
             reasons[identity] = reason
             candidates.append(

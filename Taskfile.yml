@@ -16,8 +16,8 @@ tasks:
       - uv sync --frozen
 
   test-text-normalization:
-    desc: Test conservative conversion of legacy ATNS HTML to structured plain text
-    cmd: uv run --frozen python -m unittest tests/test_normalize_source_xml.py
+    desc: Test source normalization and publication filtering
+    cmd: uv run --frozen python -m unittest discover -s tests
 
   normalize-source:
     desc: Create a strictly valid, text-normalized working copy of the preserved XML
