@@ -24,7 +24,7 @@ ont:
     schema:creator <https://orcid.org/0000-0001-5640-3202> ;
     schema:dateCreated "2026-08-16"^^xsd:date ;
     schema:dateIssued "2099-08-16"^^xsd:date ;
-    schema:dateModified "2026-08-16"^^xsd:date ;
+    schema:dateModified "2026-10-02"^^xsd:date ;
     schema:description "OCRL SHACL validator adapted for the IDN Catalogue Profile."@en ;
     schema:license <http://purl.org/NET/rdflicense/cc-by4.0> ;
     schema:name "ODRL validator for IDN Catalogue Profile"@en ;
@@ -73,8 +73,9 @@ schema:name "Action range shape" ;
 :targetRangeShape
     a sh:NodeShape ;
     sh:targetObjectsOf :target ;
-    sh:deactivated true ; # use only rdfs:domain/range?
     sh:class :Asset ;
+    sh:severity sh:Warning ;
+    sh:message "An ODRL target SHOULD be typed as odrl:Asset"@en ;
 rdfs:isDefinedBy ont: ;
 schema:name "Target range shape" ;
 .
@@ -277,6 +278,32 @@ schema:description "Rule node shape for indicating an Assigner, Assignee and Act
 sh:message "A Rule MUST indicate at least one assigner, at least one assignee and exactly one action" ;
 .
 
+# Duty
+
+:DutyShape
+    a sh:NodeShape ;
+    sh:targetClass :Duty ;
+    sh:targetObjectsOf :obligation ;
+    sh:property
+        [
+            a sh:PropertyShape ;
+            sh:path :action ;
+            sh:minCount 1 ;
+            sh:severity sh:Warning ;
+            sh:message "An ODRL Duty SHOULD indicate at least one action"@en ;
+        ] ,
+        [
+            a sh:PropertyShape ;
+            sh:path :target ;
+            sh:minCount 1 ;
+            sh:severity sh:Warning ;
+            sh:message "An ODRL Duty used as an obligation SHOULD indicate at least one target"@en ;
+        ] ;
+    rdfs:isDefinedBy ont: ;
+    schema:name "Duty completeness shape"@en ;
+    schema:description "Warning-level completeness checks for ODRL duties and obligation values."@en ;
+.
+
 ## Prohibition
 
 :ProhibitionShape
@@ -470,10 +497,7 @@ rdfs:isDefinedBy ont: ;
     a sh:NodeShape ;
     sh:targetClass :Action ;              
     sh:property [ rdfs:isDefinedBy ont: ; skos:prefLabel "includedIn property constraint" ; schema:description "Constraint on includedIn property constraint."@en ;
-    sh:message "An Action MUST indicate at least one includedIn object" ;
-
     sh:path :includedIn ;
-        sh:minCount 1 ;
     ] ;
 rdfs:isDefinedBy ont: ;
 schema:name "Action includedIn shape" ;
