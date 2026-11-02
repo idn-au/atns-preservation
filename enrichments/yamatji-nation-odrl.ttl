@@ -1,0 +1,143 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX idn-resource: <https://data.idnau.org/pid/resource/>
+PREFIX idn-org: <https://data.idnau.org/pid/org/>
+PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+PREFIX odrl-action: <https://linked.data.gov.au/def/odrl-action/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+# Draft, reviewed enrichment of the preserved ATNS record. This overlay is kept
+# separate from generated source RDF until its interpretation has been approved.
+
+idn-resource:e450e34e-9806-5ed5-ba85-37a01c121064
+    a odrl:Agreement ;
+    dcterms:conformsTo <https://www.w3.org/TR/odrl-model/> ;
+    odrl:obligation
+        idn-resource:13203572-7f9a-5e7a-a91b-d94e96cfbe45 ,
+        idn-resource:27dbbfb8-5dd2-5c10-ae87-5e54a52e357f ,
+        idn-resource:695b0929-add2-5157-805f-983955bd8139 ,
+        idn-resource:b8259d84-cc39-5969-900b-44e97f5e6065 ;
+    prov:wasDerivedFrom
+        <https://www.wa.gov.au/system/files/2021-06/Yamatji%20Nation%20ILUA%20%20Execuited%20Agreement_Redacted.pdf> ;
+    schema:citation
+        <https://www.wa.gov.au/government/document-collections/yamatji-nation-indigenous-land-use-agreement-documents> ,
+        <https://www.wa.gov.au/system/files/2021-06/Yamatji%20Nation%20ILUA%20%20Execuited%20Agreement_Redacted.pdf> ;
+    schema:dateModified "2026-11-02"^^xsd:date ;
+    skos:editorialNote
+        "Draft IDN ODRL interpretation for review. The ODRL statements are not assertions supplied by the ATNS source owners and do not replace the executed agreement."@en ;
+.
+
+# The State is the party bound to provide the principal compensation and
+# benefit package described in clause 10 and the associated schedules.
+idn-resource:695b0929-add2-5157-805f-983955bd8139
+    a odrl:Duty ;
+    odrl:action odrl:compensate ;
+    odrl:assignee <https://ror.org/00wqdbc63> ;
+    odrl:assigner idn-resource:04ec94c0-2a3f-5d8f-b223-982b45554cbe ;
+    odrl:target idn-resource:6c3a553d-067b-5ae2-a882-e3a8fcd65622 ;
+    schema:citation
+        <https://www.wa.gov.au/system/files/2021-06/Yamatji%20Nation%20ILUA%20%20Execuited%20Agreement_Redacted.pdf> ;
+    schema:description
+        "The State is to provide the cash payments and wider benefits package for the benefit of the Yamatji Nation, subject to the agreement's conditions and payment schedule."@en ;
+    schema:name "Provide the Yamatji Nation compensation and benefits package"@en ;
+    skos:editorialNote "Modelled principally from clause 10 and the benefit provisions summarised in the executed agreement."@en ;
+.
+
+# Native Title Parties are bound to surrender the specified rights and
+# interests in the Surrender Area under clause 7.2.
+idn-resource:b8259d84-cc39-5969-900b-44e97f5e6065
+    a odrl:Duty ;
+    odrl:action odrl-action:surrender-rights ;
+    odrl:assignee idn-resource:04ec94c0-2a3f-5d8f-b223-982b45554cbe ;
+    odrl:assigner <https://ror.org/00wqdbc63> ;
+    odrl:target idn-resource:263d93ce-27f3-55b5-96c5-8e0a435f9b13 ;
+    schema:citation
+        <https://www.wa.gov.au/system/files/2021-06/Yamatji%20Nation%20ILUA%20%20Execuited%20Agreement_Redacted.pdf> ;
+    schema:description
+        "The Native Title Parties surrender the native title rights and interests in the Surrender Area from the Conclusive Registration Date, with the intended effect of extinguishment."@en ;
+    schema:name "Surrender native title rights in the Surrender Area"@en ;
+    skos:editorialNote "Modelled from clause 7.2."@en ;
+.
+
+# Clause 11.3 provides a clear example of transfer, distinct from surrender:
+# ownership of the Corporate Headquarters property passes to the Regional Entity.
+idn-resource:13203572-7f9a-5e7a-a91b-d94e96cfbe45
+    a odrl:Duty ;
+    odrl:action odrl:transfer ;
+    odrl:assignee <https://ror.org/00wqdbc63> ;
+    odrl:assigner idn-org:02f08bf6-163d-5ba6-98d3-6164df364316 ;
+    odrl:target idn-resource:6fbcd0f7-6d3a-528f-90c8-dc3a68d5b2a1 ;
+    schema:citation
+        <https://www.wa.gov.au/system/files/2021-06/Yamatji%20Nation%20ILUA%20%20Execuited%20Agreement_Redacted.pdf> ;
+    schema:description
+        "Following purchase of the Corporate Headquarters property, the State is to transfer the property in fee simple to the Regional Entity."@en ;
+    schema:name "Transfer the Corporate Headquarters property"@en ;
+    skos:editorialNote "Modelled from clause 11.3."@en ;
+.
+
+# Clause 17.4 establishes a joint program. Using the same PartyCollection as
+# assigner and assignee makes the reciprocal character explicit without claiming
+# an unsupported one-way direction between the State and Regional Entity.
+idn-resource:27dbbfb8-5dd2-5c10-ae87-5e54a52e357f
+    a odrl:Duty ;
+    odrl:action odrl-action:restore-site ;
+    odrl:assignee <https://ror.org/00wqdbc63> ;
+    odrl:assigner idn-resource:c87bda35-f7d3-5d09-ac77-0cb3c007563c ;
+    odrl:target idn-resource:925fb479-54c7-5c70-8718-2bd64b45f86d ;
+    schema:citation
+        <https://www.wa.gov.au/system/files/2021-06/Yamatji%20Nation%20ILUA%20%20Execuited%20Agreement_Redacted.pdf> ;
+    schema:description
+        "The State and Regional Entity are to prepare and execute a project agreement for a joint program to identify, restore and protect water cultural sites."@en ;
+    schema:name "Restore and protect water cultural sites"@en ;
+    skos:editorialNote "Modelled from clause 17.4; the related State funding obligation is not separately represented in this first draft."@en ;
+.
+
+idn-resource:04ec94c0-2a3f-5d8f-b223-982b45554cbe
+    a odrl:PartyCollection ;
+    schema:hasPart
+        idn-resource:423afd30-8453-57de-9222-f2265d5dbdda ,
+        idn-resource:6f7d83f8-aa88-5258-aef5-dca7924ced56 ,
+        idn-resource:c5742169-e285-524f-a60f-37e572d6e3a0 ,
+        idn-resource:d3e508d4-983a-5dfa-b2cf-09b5f95bffd7 ;
+    schema:name "Yamatji Nation Native Title Parties"@en ;
+    skos:editorialNote
+        "Review collection derived from the representative claim-group parties recorded by ATNS; it is not intended as a substitute for the executed agreement's complete definition of Native Title Parties."@en ;
+.
+
+idn-resource:c87bda35-f7d3-5d09-ac77-0cb3c007563c
+    a odrl:PartyCollection ;
+    schema:hasPart
+        idn-org:02f08bf6-163d-5ba6-98d3-6164df364316 ,
+        <https://ror.org/00wqdbc63> ;
+    schema:name "Aboriginal Water Sites Restoration Project parties"@en ;
+.
+
+idn-resource:263d93ce-27f3-55b5-96c5-8e0a435f9b13
+    a odrl:Asset ;
+    schema:description "Native title rights and interests in the Surrender Area identified by the executed agreement."@en ;
+    schema:name "Native title rights and interests in the Surrender Area"@en ;
+.
+
+idn-resource:6c3a553d-067b-5ae2-a882-e3a8fcd65622
+    a odrl:Asset ;
+    schema:description "The cash payments and other benefits to be provided for the benefit of the Yamatji Nation under the executed agreement."@en ;
+    schema:name "Yamatji Nation compensation and benefits package"@en ;
+.
+
+idn-resource:6fbcd0f7-6d3a-528f-90c8-dc3a68d5b2a1
+    a odrl:Asset ;
+    schema:name "Yamatji Southern Regional Corporation Corporate Headquarters property"@en ;
+.
+
+idn-resource:925fb479-54c7-5c70-8718-2bd64b45f86d
+    a odrl:Asset ;
+    schema:description "Water cultural sites to be identified, restored and protected through the project established under clause 17.4."@en ;
+    schema:name "Yamatji Nation water cultural sites"@en ;
+.
+
+<https://www.wa.gov.au/system/files/2021-06/Yamatji%20Nation%20ILUA%20%20Execuited%20Agreement_Redacted.pdf>
+    a schema:DigitalDocument ;
+    schema:name "Yamatji Nation Indigenous Land Use Agreement — executed agreement (redacted)"@en ;
+.

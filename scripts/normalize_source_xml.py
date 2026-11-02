@@ -13,12 +13,16 @@ import csv
 import hashlib
 import re
 import shutil
-import uuid
 from collections import Counter
 from pathlib import Path
 
 import yaml
 from lxml import etree, html as lxml_html
+
+try:
+    from resource_identity import entity_iri, load_entity_identity_mappings
+except ModuleNotFoundError:  # imported as scripts.normalize_source_xml in tests
+    from scripts.resource_identity import entity_iri, load_entity_identity_mappings
 
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -27,12 +31,6 @@ SOURCE_DIR = ROOT / "raw" / "xml" / "ATNS_XML_05Apr22"
 OUTPUT_DIR = ROOT / "build" / "normalized-xml" / "ATNS_XML_05Apr22"
 REPORT_PATH = ROOT / "build" / "reports" / "text-normalization.csv"
 REVIEW_REPORT_PATH = ROOT / "build" / "reports" / "text-normalization-review.csv"
-SAMPLE_REGISTRY = ROOT / "specs" / "public-sample-resources.csv"
-PID_BASE = "https://data.idnau.org/pid/resource/"
-UUID_NAMESPACE = uuid.uuid5(
-    uuid.NAMESPACE_URL,
-    "https://data.idnau.org/pid/resource/atns-preservation/source-identity",
-)
 
 RICH_TEXT_FIELDS = {"Summary", "Body"}
 BLOCK_TAGS = {
@@ -63,20 +61,12 @@ def sha256_text(value: str) -> str:
     return hashlib.sha256(value.encode("utf-8")).hexdigest()
 
 
-def existing_entity_iris() -> dict[str, str]:
-    with SAMPLE_REGISTRY.open(newline="", encoding="utf-8") as stream:
-        return {
-            row["source_id"]: row["resource_iri"]
-            for row in csv.DictReader(stream)
-            if row["kind"] == "entity"
-        }
-
-
-def entity_resource_iri(source_id: str, overrides: dict[str, str]) -> str:
-    return overrides.get(
-        source_id,
-        f"{PID_BASE}{uuid.uuid5(UUID_NAMESPACE, f'entity:{source_id}')}",
-    )
+def entity_resource_iri(
+    source_id: str,
+    category_id: str = "",
+    mappings: dict[str, str] | None = None,
+) -> str:
+    return entity_iri(source_id, category_id, mappings)
 
 
 def local_name(tag: object) -> str:
@@ -205,7 +195,7 @@ def main() -> None:
         shutil.rmtree(OUTPUT_DIR)
     shutil.copytree(SOURCE_DIR, OUTPUT_DIR)
     REPORT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    entity_iri_overrides = existing_entity_iris()
+    entity_identity_mappings = load_entity_identity_mappings()
 
     audit_rows: list[dict[str, object]] = []
     for table in manifest["tables"]:
@@ -226,6 +216,7 @@ def main() -> None:
                     for child in row
                 }
                 source_id = source_values.get("entityid", "")
+                category_id = source_values.get("categoryid", "")
                 title = source_values.get("name", "")
                 is_published = (
                     source_values.get("public") == "1"
@@ -236,7 +227,7 @@ def main() -> None:
                     "published-in-sandbox" if is_published else "not-published-in-sandbox"
                 )
                 resource_iri = (
-                    entity_resource_iri(source_id, entity_iri_overrides)
+                    entity_resource_iri(source_id, category_id, entity_identity_mappings)
                     if is_published
                     else ""
                 )

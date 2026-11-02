@@ -18,11 +18,13 @@ from pathlib import Path
 from rdflib import Graph, Literal, Namespace, URIRef
 from rdflib.namespace import RDF
 
+from agent_sources import default_agents_dir
+
 
 ROOT = Path(__file__).resolve().parents[1]
 RDF_DIR = ROOT / "build" / "sandbox" / "rdf"
 REPORT_DIR = ROOT / "build" / "sandbox" / "reports"
-DEFAULT_AGENTS_DIR = ROOT.parent / "agentsdb-data/data/raw"
+DEFAULT_AGENTS_DIR = default_agents_dir()
 
 ATNS = Namespace("https://linked.data.gov.au/def/atns/model/")
 SCHEMA = Namespace("https://schema.org/")
@@ -47,7 +49,15 @@ class LabelEntry:
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--agents-dir", type=Path, default=DEFAULT_AGENTS_DIR)
+    parser.add_argument(
+        "--agents-dir",
+        type=Path,
+        default=DEFAULT_AGENTS_DIR,
+        help=(
+            "Agents Database item directory; defaults to IDN_AGENTS_DIR, then "
+            "the Indigenous Data Catalogue checkout, with legacy fallback"
+        ),
+    )
     return parser.parse_args()
 
 
@@ -259,6 +269,7 @@ def main() -> None:
         f"Audited {len(agreements):,} agreements against {len({entry.agent for entry in entries}):,} "
         f"agents; {len(matched_agreements):,} agreements have at least one mention."
     )
+    print(f"Agents source: {agents_dir}")
     print(f"Wrote {csv_path.relative_to(ROOT)} and {summary_path.relative_to(ROOT)}")
 
 

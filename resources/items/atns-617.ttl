@@ -10,11 +10,12 @@ PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX schema: <https://schema.org/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-idn-resource:92c9e33d-4ac3-5bc8-8bcb-e76171dd13c9
+<https://data.idnau.org/pid/org/92c9e33d-4ac3-5bc8-8bcb-e76171dd13c9>
     a atns:Entity, schema:Organization ;
     atns:category atns-cat:1dad59ae-4020-598a-b5df-d9e0eae7f9c6 ;
     atns:deleted "false"^^xsd:boolean ;
     schema:conditionsOfAccess <https://linked.data.gov.au/def/data-access-rights/open> ;
     atns:sourceEntityId "617"^^xsd:token ;
+    schema:sameAs idn-resource:92c9e33d-4ac3-5bc8-8bcb-e76171dd13c9 ;
     schema:name "Commonwealth of Australia"@en ;
 .

@@ -5,6 +5,7 @@ from __future__ import annotations
 import csv
 import os
 import re
+import sys
 from collections import defaultdict
 from functools import lru_cache
 from pathlib import Path
@@ -12,6 +13,12 @@ from pathlib import Path
 import yaml
 from rdflib import Graph, Literal, URIRef
 from rdflib.namespace import SKOS
+
+SCRIPT_DIR = Path(__file__).resolve().parent
+if str(SCRIPT_DIR) not in sys.path:
+    sys.path.insert(0, str(SCRIPT_DIR))
+
+from resource_identity import legacy_entity_iri
 
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -129,6 +136,11 @@ def legacy_atns_page_iri(source_id: str) -> str:
         "https://database.atns.net.au/agreement.asp?EntityID="
         + source_id.strip()
     )
+
+
+def legacy_source_entity_iri(source_id: str) -> str:
+    """Return the pre-migration generic IDN IRI for an ATNS entity."""
+    return legacy_entity_iri(source_id.strip())
 
 
 @lru_cache(maxsize=1)

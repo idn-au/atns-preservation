@@ -9,13 +9,38 @@ from scripts.normalize_source_xml import (
     html_to_structured_text,
     remove_illegal_xml_characters,
 )
+from scripts.resource_identity import legacy_entity_iri
 
 
 class RichTextNormalizationTests(unittest.TestCase):
     def test_generated_entity_iri_matches_sandbox_identity_rule(self) -> None:
         self.assertEqual(
-            entity_resource_iri("3814", {}),
+            entity_resource_iri("3814", "1", {}),
             "https://data.idnau.org/pid/resource/b614bba5-8456-5bdd-a1c9-e161b5b1e35a",
+        )
+
+    def test_organization_uses_agent_specific_iri_with_stable_uuid(self) -> None:
+        self.assertEqual(
+            entity_resource_iri("8105", "3", {}),
+            "https://data.idnau.org/pid/org/02f08bf6-163d-5ba6-98d3-6164df364316",
+        )
+
+    def test_established_agreement_iri_is_retained(self) -> None:
+        self.assertEqual(
+            entity_resource_iri("27", "1", {}),
+            "https://data.idnau.org/pid/resource/dd9b004b-1c22-5b53-8381-bd93760ee922",
+        )
+
+    def test_reviewed_external_identity_overrides_generated_iri(self) -> None:
+        self.assertEqual(
+            entity_resource_iri("383", "3", {"383": "https://ror.org/00wqdbc63"}),
+            "https://ror.org/00wqdbc63",
+        )
+
+    def test_previously_published_sample_iri_is_preserved_as_legacy_alias(self) -> None:
+        self.assertEqual(
+            legacy_entity_iri("618"),
+            "https://data.idnau.org/pid/resource/050308f6-67e6-52f6-82c9-56c20413cac6",
         )
 
     def test_entity_3814_style_underlined_headings_are_retained(self) -> None:

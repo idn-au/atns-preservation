@@ -12,7 +12,6 @@ import argparse
 import csv
 import re
 import unicodedata
-import uuid
 from collections import defaultdict
 from dataclasses import dataclass
 from difflib import SequenceMatcher
@@ -22,16 +21,17 @@ from urllib.parse import urlparse
 from rdflib import Graph, Literal, Namespace, URIRef
 from rdflib.namespace import RDF
 
+from agent_sources import default_agents_dir
+
 
 ROOT = Path(__file__).resolve().parents[1]
 RDF_DIR = ROOT / "build" / "sandbox" / "rdf"
 REPORT_DIR = ROOT / "build" / "sandbox" / "reports"
-DEFAULT_AGENTS_DIR = ROOT.parent / "agentsdb-data/data/raw"
+DEFAULT_AGENTS_DIR = default_agents_dir()
 
 ATNS = Namespace("https://linked.data.gov.au/def/atns/model/")
 SDO = Namespace("https://schema.org/")
 AGREEMENT_TYPE = URIRef("https://data.idnau.org/pid/vocab/cat-obj-types/Agreement")
-ORGANIZATION_BASE = "https://data.idnau.org/pid/organization/"
 FUZZY_THRESHOLD = 0.92
 
 
@@ -47,7 +47,15 @@ class Candidate:
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--agents-dir", type=Path, default=DEFAULT_AGENTS_DIR)
+    parser.add_argument(
+        "--agents-dir",
+        type=Path,
+        default=DEFAULT_AGENTS_DIR,
+        help=(
+            "Agents Database item directory; defaults to IDN_AGENTS_DIR, then "
+            "the Indigenous Data Catalogue checkout, with legacy fallback"
+        ),
+    )
     parser.add_argument(
         "--limit",
         type=int,
@@ -132,8 +140,8 @@ def closest_existing(name: str, labels: dict[str, set[URIRef]]) -> tuple[str, fl
 
 
 def minted_iri(source: URIRef) -> URIRef:
-    identifier = uuid.uuid5(uuid.NAMESPACE_URL, f"atns-organization:{source}")
-    return URIRef(f"{ORGANIZATION_BASE}{identifier}")
+    """Reuse the canonical ATNS organisation IRI instead of minting a duplicate."""
+    return source
 
 
 def build_candidates(graph: Graph) -> list[Candidate]:
@@ -357,6 +365,7 @@ def main() -> None:
         f"to {ttl_path.relative_to(ROOT)}"
     )
     print(f"Wrote {csv_path.relative_to(ROOT)} and {fuzzy_path.relative_to(ROOT)}")
+    print(f"Agents source: {agents_dir}")
 
 
 if __name__ == "__main__":

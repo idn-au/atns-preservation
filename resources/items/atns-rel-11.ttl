@@ -12,7 +12,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 idn-resource:21aeb88a-d1ea-5a87-9078-b5a2b0297767
     a atns:EntityRelationship ;
-    atns:objectEntity idn-resource:24e6bdb4-39f2-5b5c-b7d8-54d7cc8e7f9b ;
+    atns:objectEntity <https://data.idnau.org/pid/org/24e6bdb4-39f2-5b5c-b7d8-54d7cc8e7f9b> ;
     atns:relationshipType atns-rel:a00a860d-f0b0cea-6aacab6d119903c ;
     atns:sourceRelationshipId "11"^^xsd:token ;
     atns:subjectEntity idn-resource:34524ede-2abc-50f1-af30-8493753c928e ;

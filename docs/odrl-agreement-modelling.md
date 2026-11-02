@@ -339,7 +339,7 @@ The dual-role Party Collection is most defensible when all of the following hold
 
 1. Select a public ATNS CreativeWork soft-typed as an Agreement.
 2. Confirm that the record is eligible for enrichment and carries no unresolved access or confidentiality concern.
-3. Identify structured Signatory relationships and reconcile related entities with stable organization or person IRIs.
+3. Identify structured Signatory relationships and reconcile related entities with stable organization or person IRIs. Search the current Agents Database authoring data in `indigenous-data-catalogue/resources/agents/sync/items` before minting anything. Reuse its canonical IRI for every confirmed match; exact normalized names and alternate names may identify candidates, but ambiguous, fuzzy or identifier-conflicting matches require human review.
 4. Compare structured parties with names in the public summary, body and supporting sources; flag incomplete or ambiguous party sets.
 5. Extract candidate action phrases without asserting ODRL Rules automatically.
 6. Reuse an existing ODRL Action where the semantics fit; otherwise propose a governed Action concept with evidence.
@@ -349,6 +349,10 @@ The dual-role Party Collection is most defensible when all of the following hold
 10. rdf:Type the object of odrl:Target as odrl:Asset, if not already typed this way.
 10. Record evidence, reviewer, confidence, interpretation status and derivation provenance.
 11. Add `odrl:Agreement` to the existing CreativeWork only after the minimum ODRL structure passes review and validation.
+
+The agent reconciliation scripts use the Indigenous Data Catalogue checkout by default. `IDN_AGENTS_DIR` or `--agents-dir` may point them at a review branch or another checkout. They retain a legacy fallback to `agentsdb-data/data/raw` only for environments that have not yet acquired the consolidated catalogue. The pending catalogue work that types the Agents Database as a Dataset and adds `schema:isPartOf` to its members does not change the identity lookup location or matching rule.
+
+An enduring person or organisation is maintained in the Agents Database as `schema:Person` or `schema:Organization`. Its contextual `odrl:Party` assertion belongs to the reviewed agreement enrichment. Because both graphs use the same canonical IRI, the combined knowledge graph has both types without duplicating the agent. A policy-local `odrl:PartyCollection` is not promoted to the Agents Database unless it is independently established as an enduring agent.
 
 ## Minimum publication gate
 

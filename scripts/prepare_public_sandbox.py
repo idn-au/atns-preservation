@@ -4,11 +4,16 @@ from __future__ import annotations
 
 import csv
 import re
-import uuid
 from collections import Counter
 from pathlib import Path
 
 from publication_filters import confidential_entity_ids, is_public
+from resource_identity import (
+    entity_iri,
+    generated_resource_iri,
+    legacy_entity_iri,
+    load_entity_identity_mappings,
+)
 
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -18,11 +23,6 @@ CSV_DIR = SANDBOX_DIR / "csv"
 RDF_DIR = SANDBOX_DIR / "rdf"
 REPORT_DIR = SANDBOX_DIR / "reports"
 SAMPLE_REGISTRY = ROOT / "specs" / "public-sample-resources.csv"
-PID_BASE = "https://data.idnau.org/pid/resource/"
-UUID_NAMESPACE = uuid.uuid5(
-    uuid.NAMESPACE_URL,
-    "https://data.idnau.org/pid/resource/atns-preservation/source-identity",
-)
 
 
 def read_rows(table: str) -> tuple[list[str], list[dict[str, str]]]:
@@ -53,39 +53,43 @@ def existing_iris() -> dict[tuple[str, str], str]:
         }
 
 
-def resource_iri(
+def non_entity_iri(
     kind: str,
     source_id: str,
     overrides: dict[tuple[str, str], str],
 ) -> str:
     return overrides.get(
         (kind, source_id),
-        f"{PID_BASE}{uuid.uuid5(UUID_NAMESPACE, f'{kind}:{source_id}')}",
+        generated_resource_iri(kind, source_id),
     )
 
 
 def write_registry(
-    entity_ids: set[str],
+    entities: list[dict[str, str]],
     reference_ids: set[str],
     relationship_ids: set[str],
 ) -> None:
     overrides = existing_iris()
-    identities = [
-        *(('entity', source_id) for source_id in entity_ids),
-        *(('reference', source_id) for source_id in reference_ids),
-        *(('relationship', source_id) for source_id in relationship_ids),
-    ]
+    mappings = load_entity_identity_mappings()
     rows = [
+        {
+            "kind": "entity",
+            "source_id": row["EntityID"],
+            "resource_iri": entity_iri(row["EntityID"], row["CategoryID"], mappings),
+            "profile": "full",
+        }
+        for row in sorted(entities, key=lambda value: int(value["EntityID"]))
+    ]
+    rows.extend(
         {
             "kind": kind,
             "source_id": source_id,
-            "resource_iri": resource_iri(kind, source_id, overrides),
+            "resource_iri": non_entity_iri(kind, source_id, overrides),
             "profile": "full",
         }
-        for kind, source_id in sorted(
-            identities, key=lambda value: (value[0], int(value[1]))
-        )
-    ]
+        for kind, ids in (("reference", reference_ids), ("relationship", relationship_ids))
+        for source_id in sorted(ids, key=int)
+    )
     iris = [row["resource_iri"] for row in rows]
     if len(iris) != len(set(iris)):
         raise ValueError("Generated sandbox resource IRIs are not unique")
@@ -98,6 +102,44 @@ def write_registry(
         )
         writer.writeheader()
         writer.writerows(rows)
+
+
+def write_identity_reports(entities: list[dict[str, str]]) -> None:
+    mappings = load_entity_identity_mappings()
+    fields = [
+        "source_id", "name", "category_id", "legacy_iri", "canonical_iri", "strategy"
+    ]
+    rows = []
+    people = []
+    for row in sorted(entities, key=lambda value: int(value["EntityID"])):
+        source_id = row["EntityID"]
+        canonical = entity_iri(source_id, row["CategoryID"], mappings)
+        strategy = (
+            "reviewed-external-identity"
+            if source_id in mappings
+            else "idn-organisation"
+            if row["CategoryID"] == "3"
+            else "generic-atns-resource"
+        )
+        report_row = {
+            "source_id": source_id,
+            "name": row["Name"],
+            "category_id": row["CategoryID"],
+            "legacy_iri": legacy_entity_iri(source_id),
+            "canonical_iri": canonical,
+            "strategy": strategy,
+        }
+        rows.append(report_row)
+        if row["CategoryID"] == "6":
+            people.append(report_row)
+    for filename, values in (
+        ("entity-identity-migration.csv", rows),
+        ("people-identity-review.csv", people),
+    ):
+        with (REPORT_DIR / filename).open("w", newline="", encoding="utf-8") as stream:
+            writer = csv.DictWriter(stream, fieldnames=fields)
+            writer.writeheader()
+            writer.writerows(values)
 
 
 def write_reports(
@@ -172,7 +214,8 @@ def main() -> None:
     for table, (headers, rows) in table_filters.items():
         write_rows(table, headers, rows)
 
-    write_registry(entity_ids, reference_ids, relationship_ids)
+    write_registry(entities, reference_ids, relationship_ids)
+    write_identity_reports(entities)
 
     omissions = [
         *(

@@ -38,7 +38,7 @@ Every changed field is recorded without its private content in `build/reports/te
 
 ### Public sample selection
 
-`specs/public-sample-resources.csv` declares every included source row, its stable published resource IRI and whether an entity receives the full or supporting-record profile. `scripts/prepare_public_sample.py` applies that declaration to the normalized tables. The generated sample therefore cannot silently expand to private or deleted records.
+`specs/public-sample-resources.csv` declares every included source row, its stable published resource IRI and whether an entity receives the full or supporting-record profile. `specs/entity-identity-mappings.csv` is the authoritative exception registry for ATNS entities reconciled to an already reviewed IDN agent or external identity. `scripts/prepare_public_sample.py` applies the sample declaration to the normalized tables. The generated sample therefore cannot silently expand to private or deleted records.
 
 ### Declarative RDF mapping
 
@@ -132,7 +132,11 @@ task sandbox
 
 `scripts/prepare_public_sandbox.py` selects public, non-deleted entities and references with usable source display labels, then retains relationship and entity-reference rows only when both endpoints are published. As a conservative safeguard, it also withholds any entity linked to an `Additional` row whose `Confidential` flag is true; the resulting relationship and reference links are filtered with the entity. It writes the complete selection to `build/sandbox/csv`, a resource registry to `build/sandbox/resources.csv`, and review reports to `build/sandbox/reports`. No private source values are written to tracked files.
 
-Existing sample IRIs are retained. Every other resource IRI is generated deterministically as a UUIDv5 from its source table kind and source primary key using a fixed, documented namespace. Repeated runs therefore produce the same IRI instead of duplicates. This algorithm preserves source-row identity; it does not assert that two distinct source IDs describe different real-world things.
+Resource UUIDs are generated deterministically as UUIDv5 values from the source table kind and source primary key using a fixed, documented namespace. Repeated runs therefore produce the same UUID instead of duplicates. Agreements, references, relationships and unresolved entity records use `https://data.idnau.org/pid/resource/{uuid}`. Source CategoryID `3` organisations use `https://data.idnau.org/pid/org/{uuid}` unless `specs/entity-identity-mappings.csv` identifies an already reviewed IDN or external agent IRI. The UUID component remains unchanged when a formerly generic organisation IRI is moved from `/pid/resource/` to `/pid/org/`.
+
+The generated organisation description includes `schema:sameAs` pointing to its former generic `/pid/resource/{uuid}` IRI so previously published sample identifiers remain traceable. The identity migration is reported in `build/sandbox/reports/entity-identity-migration.csv`. CategoryID `6` is labelled “People” in the source but contains individuals, collectives, representative descriptions and offices; those rows remain generic resources and are listed in `build/sandbox/reports/people-identity-review.csv` rather than being guessed into `/person/` or `/org/` namespaces.
+
+The curated organisation enrichment predates the global entity conversion. Its reviewed internal agents now use the current `/pid/org/` convention; historical `/pid/organization/` IRIs are no longer minted. Candidate generation reuses the canonical ATNS organisation IRI instead of manufacturing a second agent identity.
 
 Blank source lookup entries are not turned into invented vocabulary concepts. The affected resource is retained while that classification triple is omitted and reported. Public entities or references without any source display label are omitted and reported because loading them would recreate unlabeled resources in Prez.
 
@@ -160,14 +164,14 @@ The golden graph check is expected to fail when an accepted source update legiti
 
 `tests/golden-baseline.yaml` freezes the approved graph characteristics:
 
-- 269 triples
+- 291 triples
 - no blank-node triples
 - every entity soft-typed `catobjtyp:Agreement` is also typed `atns:Entity` and `schema:CreativeWork` and linked to the Keeping Place ATNS dataset with `schema:isPartOf`
-- canonical sorted N-Triples SHA-256 `b0789ca5a7d5600f57e036092b568023d03917c82876b646d9d0abe1e1e35661`
+- canonical sorted N-Triples SHA-256 `2c2e57cca572ed299b4e125b820eefc73f3628818cb6701c3d5087755bd043bc`
 - 27 split resource item files plus the catalogue wrapper
 
 `scripts/check_rdf_equivalence.py` rejects a conversion if the golden baseline changes unexpectedly, if any generated triple is missing or extra, or if the published split files cease to represent the same graph. Turtle whitespace, prefix choice and triple ordering may differ because RDF graph identity—not byte identity—is the preservation requirement.
 
 ## Current scope and replacement decision
 
-The sample pipeline reproduces the complete current public sample exactly and remains the maintenance path for that 269-triple graph after review. The sandbox pipeline exercises the current mappings over the complete usable public subset of the six mapped tables, but it is not yet a production full-database publication converter. Additional ATNS tables, source-owner confirmation of publication filtering and sensitivity decisions, and vocabulary-overlay rules still require review before a production release.
+The sample pipeline reproduces the complete current public sample exactly and remains the maintenance path for that 291-triple graph after review. The sandbox pipeline exercises the current mappings over the complete usable public subset of the six mapped tables, but it is not yet a production full-database publication converter. Additional ATNS tables, source-owner confirmation of publication filtering and sensitivity decisions, and vocabulary-overlay rules still require review before a production release.
