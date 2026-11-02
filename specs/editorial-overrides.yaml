@@ -4,7 +4,19 @@ entities:
   "24":
     description: Public ATNS summary describes a 2002 health agreement between Queensland, Commonwealth, ATSIC and Queensland Aboriginal and Islander Health Forum parties.
   "27":
-    description: Public ATNS summary describes an Indigenous Land Use Agreement concerning native title and Telstra Corporation Limited interests in the agreement area.
+    description: >-
+      The Telstra Ngaanyatjarra Indigenous Land Use Agreement (ILUA) 'provides
+      for the relationship between the native title and Telstra Corporation
+      Limited's interests within the Agreement Area.'
+
+
+      The parties to the agreement are Telstra Corporation Limited, Yarnangu
+      Ngaanyatjarra Parna Aboriginal Corporation and Ngaanyatjarra Land Council
+      Aboriginal Corporation. Under the ILUA the parties consent to the doing
+      of various acts, 'whether or not they are future acts', including the
+      grant of Sub-leases to Telstra. The parties agree that the right to
+      negotiate provisions of the Native Title Act 1993 (Cth) are not intended
+      to apply with respect to any future acts consented to.
   "30":
     description: Public ATNS summary describes a 2005-2008 agreement between Australian Government and ACT Government parties for Indigenous housing provision.
   "37":

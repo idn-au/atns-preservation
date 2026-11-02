@@ -44,6 +44,20 @@ odrl:transfer
 	skos:prefLabel "Transfer Ownership"@en ;
 	skos:definition "To transfer the ownership of the Asset in perpetuity."@en ;
     skos:inScheme cs: ;
+    skos:scopeNote
+        "Use when ownership of an asset or right passes from one party to another. When rights are relinquished or extinguished without passing to another party, use surrender rights instead."@en ;
+.
+
+odrl-action:surrender-rights
+    a odrl:Action, skos:Concept ;
+    skos:broader odrl-action:fulfil-commitments ;
+    skos:definition
+        "Surrender rights or interests so that they are relinquished or extinguished in accordance with an agreement."@en ;
+    skos:inScheme cs: ;
+    rdfs:isDefinedBy odrl-action: ;
+    skos:prefLabel "surrender rights"@en ;
+    skos:scopeNote
+        "Use when rights or interests are relinquished or extinguished without passing to another party. When ownership passes from one party to another, use transfer ownership instead."@en ;
 .
 
 odrl-action:cooperate
@@ -91,6 +105,17 @@ odrl-action:protect-heritage
     rdfs:isDefinedBy odrl-action: ;
     skos:prefLabel "protect heritage"@en ;
     skos:altLabel "protect cultural heritage"@en ;
+    skos:narrower odrl-action:restore-site ;
+.
+
+odrl-action:restore-site
+    a odrl:Action, skos:Concept ;
+    skos:broader odrl-action:protect-heritage ;
+    skos:definition
+        "Restore a place or site whose cultural, environmental or heritage values are protected under a policy."@en ;
+    skos:inScheme cs: ;
+    rdfs:isDefinedBy odrl-action: ;
+    skos:prefLabel "restore site"@en ;
 .
 
 odrl-action:report-performance
@@ -108,7 +133,7 @@ odrl-action:report-performance
 cs:
     a skos:ConceptScheme ;
     schema:dateCreated "2026-09-15"^^xsd:date ;
-    schema:dateModified "2026-10-03"^^xsd:date ;
+    schema:dateModified "2026-11-02"^^xsd:date ;
     schema:creator <https://kurrawong.ai> ;
     schema:publisher <https://linked.data.gov.au/org/idn> ;
     skos:definition

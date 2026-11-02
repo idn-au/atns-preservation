@@ -3,6 +3,10 @@
 
 PREFIX sdo: <https://schema.org/>
 
+<https://data.idnau.org/pid/resource/dd9b004b-1c22-5b53-8381-bd93760ee922>
+    sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2004-006> ;
+.
+
 <https://data.idnau.org/pid/resource/00129161-6f7d-5a0c-b270-2238ccaf75e5>
     sdo:spatialCoverage <https://data.idnau.org/pid/nntt/WI2011-008> ;
 .

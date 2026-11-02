@@ -62,7 +62,9 @@ def main() -> None:
             continue
         if (subject, RDF.type, SCHEMA_CREATIVE_WORK) not in graph:
             continue
-        if row["Summary"]:
+        # Preserve a reviewed editorial description when one was deliberately
+        # generated. Otherwise use the legacy ATNS Summary as the description.
+        if row["Summary"] and not any(graph.objects(subject, SCHEMA_DESCRIPTION)):
             graph.add(
                 (subject, SCHEMA_DESCRIPTION, Literal(rich_text(row["Summary"]), lang="en"))
             )
