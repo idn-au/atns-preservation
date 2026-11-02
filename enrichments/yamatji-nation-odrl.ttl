@@ -24,7 +24,8 @@ idn-resource:e450e34e-9806-5ed5-ba85-37a01c121064
     schema:citation
         <https://www.wa.gov.au/government/document-collections/yamatji-nation-indigenous-land-use-agreement-documents> ,
         <https://www.wa.gov.au/system/files/2021-06/Yamatji%20Nation%20ILUA%20%20Execuited%20Agreement_Redacted.pdf> ;
-    schema:dateModified "2026-11-02"^^xsd:date ;
+    schema:alternateName "Yamatji Nation ILUA"@en ;
+    schema:dateModified "2026-11-03"^^xsd:date ;
     skos:editorialNote
         "Draft IDN ODRL interpretation for review. The ODRL statements are not assertions supplied by the ATNS source owners and do not replace the executed agreement."@en ;
 .

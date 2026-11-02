@@ -91,6 +91,13 @@ tasks:
     cmds:
       - task: sandbox-validate
 
+  export-yamatji-demo:
+    desc: Export the reviewed Yamatji Nation ILUA as a compact publication graph
+    deps: [sandbox-validate]
+    requires:
+      vars: [OUTPUT]
+    cmd: uv run --frozen python scripts/export_yamatji_demo.py "{{.OUTPUT}}"
+
   audit-odrl-candidates:
     desc: Report evidence available for reviewed ODRL enrichment of ATNS agreements
     deps: [sandbox]
